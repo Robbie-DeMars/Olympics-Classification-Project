@@ -1,31 +1,40 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql.types import ArrayType, StringType
+from itertools import combinations
 
 # Create spark session and dataframe
 spark = SparkSession.builder.appName("olympic_abb").getOrCreate()
 df = spark.read.csv("./mock_olympics.csv", header=True)
 
+
+# ================================
 # 1 Preprocessing text / Normalizing
+# =================================
 punctuation = r'[^\w\s]' # Get rid of punctuation regex
 
-for col_name in df.columns:
-    if isinstance(df.schema[col_name].dataType, StringType): # If col is string
-        df = df.withColumn(col_name, F.lower(F.col(col_name))) # Lowercase for everything
-        df = df.withColumn(col_name, F.regexp_replace(F.col(col_name), punctuation, '')) # Remove puncuation
-        df = df.withColumn(col_name, F.trim(F.regexp_replace(F.col(col_name), r'\s+', ' '))) # Remove whitespace
+for col in df.columns:
+    if isinstance(df.schema[col].dataType, StringType): # If col is string
+        df = df.withColumn(col, F.lower(F.col(col))) # Lowercase for everything
+        df = df.withColumn(col, F.regexp_replace(F.col(col), punctuation, '')) # Remove puncuation
+        df = df.withColumn(col, F.trim(F.regexp_replace(F.col(col), r'\s+', ' '))) # Remove whitespace
 
-# TODO: handle edge cases like Null and empty
-token_cols = []
+
+
+df = df.withColumn("row_id", F.monotonically_increasing_id()) 
+
+string_cols = [c for c in df.columns if isinstance(df.schema[c].dataType, StringType)]
+
+# =====================================
+# 2. Tokenization
+# ======================================
 
 # Create token columns
-for col_name in df.columns:
-    token_cols.append(F.col(col_name)) # Keep the original column
-    if isinstance(df.schema[col_name].dataType, StringType): # if column is string type
-        token_cols.append(F.split(F.col(col_name), " ").alias(f"{col_name}_tokens")) # tokenize by whitespace split
-df = df.select(*token_cols) # Finalize changes to df
+for col in string_cols:
+    df = df.withColumn(f"{col}_tokens", F.split(F.col(col), " "))
 
-# =================== 2. Build Abbreviation Sets ====================
+base_cols = [c for c in df.columns if isinstance(df.schema[c].dataType, StringType)]
+string_cols = [f"{c}_tokens" for c in base_cols]
 
 # ======== per-column abbreviation dictionaries ==========
 
@@ -40,7 +49,6 @@ nationality_id_abbr = {}
 year_of_birth_abbr = {}
 nationality_at_birth_abbr = {}
 gender_abbr = {}
-
 
 # --- Olympics table columns ---
 olympics_id_abbr = {}
@@ -72,86 +80,53 @@ event_id_abbr = {}
 time_abbr = {}
 result_abbr = {}
 
-
-
 # ===== start building up early pairs ======
 
-# Give each row a unique id so can form ordered pairs
-# and avoid comparing row with itself or counting each pair twice
-df = df.withColumn("row_id", F.monotonically_increasing_id()) 
 
 # Create specific keys that will likely provide a match
 # Target col   - Column for token mining for abbreviations
 # blocking keys   - columns that must match exactly to form block
 # dict_target  - which named abbreviation dictionary this belongs to
-discovery_tasks = [
-    {
-        "target_col": "event_name",
-        "blocking_keys": ["event_type"], # Rows sharing event type
-        "dict_target": "event_name_abbr"
-    },
-    {
-        "target_col": "event_name",
-        "blocking_keys": ["year"], # Rows sharing year
-        "dict_target": "event_name_abbr"
-    },
-    {
-        "target_col": "event_name",
-        "blocking_keys": ["country_id"], # Rows with same country id
-        "dict_target": "event_name_abbr"
-    }
-]
 
-# Global candidate set to accumulate candidate rules from every task
-all_candidates= None 
+#abbr_columns = [c for c in df.columns if isinstance(df.schema[c].dataType, StringType)]
 
-for task in discovery_tasks:
-    col = task["target_col"]
-    keys = task["blocking_keys"]
+#discovery_tasks = []
+
+all_candidates = None
+
+
+
+
+
+for col in base_cols:
     token_col = f"{col}_tokens"
 
-    # Join to find pairs in this block
-    # so only rows sharing same key values are paired together.
-    # Row id makes sure each unordered pair appears exactly once
-    # and so a row never pairs with itself
-    #
+    blocking_keys = [c for c in df.columns if c != col and c != "row_id"]
+
     pairs = df.alias("a").join(
         df.alias("b"),
-        on=keys,
+        on=blocking_keys,
         how="inner"
     ).filter(F.col("a.row_id") < F.col("b.row_id"))
 
-    # Mismatches are pairs (not the same thing joined to itself) where text isnt the same.
-    # Find tokens that are in 'a' but not in 'b' as potential abbreviations
-    # and tokens in 'b' but not in 'a' that would be potential full forms
-
-    # only_in_a    - tokens exclusive to row a taht are candidate abbreviations
-    # only_in_b    - tokens exclusive to row b that are candidate full forms
     mismatches = pairs.filter(F.col(f"a.{col}") != F.col(f"b.{col}")) \
-        .select(
-            "a.row_id", "b.row_id",
-            F.array_except(F.col(f"a.{token_col}"), F.col(f"b.{token_col}")).alias("only_in_a"),
-            F.array_except(F.col(f"b.{token_col}"), F.col(f"a.{token_col}")).alias("only_in_b")
-        ).filter((F.size("only_in_a") > 0) & (F.size("only_in_b") > 0))
-    # Size filter drops pairs where one side has no unique tokens ^
+    .select(
+        "a.row_id", "b.row_id",
+        F.array_except(F.col(f"a.{token_col}"), F.col(f"b.{token_col}")).alias("only_a"),
+        F.array_except(F.col(f"b.{token_col}"), F.col(f"a.{token_col}")).alias("only_b")
+    ).filter((F.size("only_a") > 0) & (F.size("only_b") > 0))
 
-
-    # List of candidate map
-    # Flatten so theres only one row per candidate table
-    # explode turns the only_in_a array into individual rows so theres one abbreviation per row
-    # Array join collapses only_in_b back into single string as full form
-    # Category label represents which dictionary this rule targets
-    task_rules = mismatches.select(
-        F.explode("only_in_a").alias("abbr"),
-        F.array_join("only_in_b", " ").alias("full_form"),
-        F.lit(task["dict_target"]).alias("category")
+    rules = mismatches.select(
+        F.explode("only_a").alias("abbr"),
+        F.array_join("only_b", " ").alias("full_form"),
+        F.lit(f"{col}_abbr").alias("category")
     )
 
-    # Build up rules from every task into one df
     if all_candidates is None:
-        all_candidates = task_rules
+        all_candidates = rules
     else:
-        all_candidates = all_candidates.union(task_rules)
+        all_candidates = all_candidates.union(rules)
+
 
 # Count frequencies to filter low occurrences (LCS)
 # group identical (category, abbr, full_form) triples and count
@@ -160,31 +135,32 @@ for task in discovery_tasks:
 final_suggestions = all_candidates.groupBy("category", "abbr", "full_form") \
     .count() \
     .filter(F.col("count") > 1) \
+    .filter(F.length("abbr") <= 5) \
+    .filter(F.size(F.split("full_form", " ")) <= 3) \
     .orderBy(F.desc("count"))
 
-# List to hold (category, abbr, full_form) tuples from manual dicts
-manual_rules_list = []
+
+
+# ========================
+# 4. Manual dicts
+# ========================
+
 
 # Map dictionary names to their actual python dict objects
 manual_dicts = {
-    "athlete_id_abbr": athlete_id_abbr,
-    "first_name_abbr": first_name_abbr,
-    "height_abbr": height_abbr,
-    "weight_abbr": weight_abbr,
-    "nationality_abbr": nationality_id_abbr,
-    "gender_abbr": gender_abbr,
-    "host_city_abbr": host_city_name_abbr,
-    "event_name_abbr": event_name_abbr,
-    "result_abbr": result_abbr
+    f"{col}_abbr": {}
+    for col in base_cols
 }
+
+manual_rules =[]
 
 # Flatten each manual dict into shared lsit
 for category, d in manual_dicts.items():
     for abbr, full in d.items():
-        manual_rules_list.append((category, abbr, full))
+        manual_rules.append((category, abbr, full))
 
 # Create dataframe based off manual rule set
-manual_df = spark.createDataFrame(manual_rules_list, ["category", "abbr", "full_form"])
+manual_df = spark.createDataFrame(manual_rules, ["category", "abbr", "full_form"])
 
 # Union with auto suggestions, drop dups on category and abbr so if mapping
 # in both sources its kept only once.
@@ -193,122 +169,269 @@ all_rules_df = final_suggestions.select("category", "abbr", "full_form") \
     .union(manual_df) \
     .drop_duplicates(["category", "abbr"])
 
-# =================== 3. multipass blocking casts a wider net for abbreviations and full forms =================
+abbr_map = {
+    (row["category"], row["abbr"]): row["full_form"]
+    for row in all_rules_df.collect()
+}
+broadcast_map = spark.sparkContext.broadcast(abbr_map)
+
+# ==============================
+# 5 Token Expansion
+# ==============================
 
 # Each inner list is a blocking pass.
 # Blocking pass = rows must match on all listed columns to be placed in the same block for that pass.
-blocking_passes = [
-    ["last_name", "nationality_id"],
-    ["first_name", "year_of_birth"],
-    ["event_name", "year"]
-]
 
-all_candidate_pairs = None
+def expand_tokens(tokens, category):
+    if tokens is None:
+        return []
+    expanded = []
+    for t in tokens:
+        val = broadcast_map.value.get((category, t), t)
+        expanded.extend(val.split(" "))
+    return expanded
+
+expand_udf = F.udf(expand_tokens,  ArrayType(StringType()))
+
+for col in string_cols:
+    category = f"{col.replace('_tokens', '')}_abbr"
+    df = df.withColumn(
+        f"{col}_expanded",
+        expand_udf(F.col(col), F.lit(category))
+    )
+
+
+# =====================
+# 6. Blocking Passes
+# =====================
+
+
+blocking_passes = []
+
+for k in [1]:
+    for combo in combinations(base_cols, k):
+        blocking_passes.append(list(combo))
+
+all_pairs = None
 
 for keys in blocking_passes:
     # self join on this pass's blocking keys. Same row_id trick from above to get
     # each unordered pair exactly once.
-    pass_pairs = df.alias("a").join(
+    pairs = df.alias("a").join(
         df.alias("b"),
         on=keys,
         how="inner"
     ).filter(F.col("a.row_id") < F.col("b.row_id")) \
-    .select(F.col("a.row_id").alias("id_a"), F.col("b.row_id").alias("id_b"))
+    .select(
+        F.col("a.row_id").alias("id_a"),
+        F.col("b.row_id").alias("id_b")
+    )
 
-    if all_candidate_pairs is None:
-        all_candidate_pairs = pass_pairs
+    if all_pairs is None:
+        all_pairs = pairs
     else:
-        all_candidate_pairs = all_candidate_pairs.union(pass_pairs)
+        all_pairs = all_pairs.union(pairs)
 
 # Drop dups
-final_pairs_to_compare = all_candidate_pairs.distinct()
-
-#  =========== 4. Record Comparison ==============
-
-# Apply abbreviation expansion for every column
-# replace tokens using abbreviation sets
-# TODO: HARDCODING THIS FOR RIGHT NOW
-def expand_tokens(tokens):
-    if tokens is None:
-        return []
-    # look up each token in event_name abbr dict.
-    # if its not found then keep original token
-    return [event_name_abbr.get(token, token) for token in tokens]
+candidate_pairs = all_pairs.distinct()
 
 
-expand_udf = F.udf(expand_tokens,  ArrayType(StringType()))
 
-# TODO: HARDCODED FOR NOW
-# Call expansion on event_name token array. store the result in new col
-# so both orig and exp versions exist.
-df = df.withColumn(
-    "event_name_expanded",
-    expand_udf(F.col("event_name_tokens"))
-)
-
-# Create expanded abbreviation dictionaries based off of 'abbreviation tokens'
-
-
-# Join candidate pair id's back to full df twice (once per side)
-# so each result row contains all cols from both row A and row B
-pairs = final_pairs_to_compare \
-    .join(df.alias("a"), F.col("id_a") == F.col("a.row_id")) \
-    .join(df.alias("b"), F.col("id_b") == F.col("b.row_id"))
+# ========================
+# 7 Similarity
+# ========================
 
 # Similarity with Jaccard
 # Get intersection, union size, and final jaccard score
-# F.when covers union size == 0
-pairs = pairs.withColumn(
-    "intersection",
-    F.size(F.array_intersect(
-        F.col("a.event_name_expanded"),
-        F.col("b.event_name_expanded")
-    ))
-).withColumn(
-    "union",
-    F.size(F.array_union(
-        F.col("a.event_name_expanded"),
-        F.col("b.event_name_expanded")
-        ))
-).withColumn(
-    "similarity",
-    F.when(F.col("union") == 0, 0)
-    .otherwise(F.col("intersection") / F.col("union"))
+
+#Jaccard
+def jaccard(colA, colB):
+    return F.when(
+        F.size(F.array_union(colA, colB)) == 0,0
+    ).otherwise(
+        F.size(F.array_intersect(colA, colB)) /
+        F.size(F.array_union(colA, colB))
+    )
+
+# Fuzzy jaccard
+def fuzzy_jaccard(colA, colB, j_weight=0.7):
+    base_j = jaccard(colA, colB)
+    joinedA = F.array_join(colA, " ")
+    joinedB = F.array_join(colB, " ")
+    lev_sim = 1 - (F.levenshtein(joinedA, joinedB) / F.greatest(F.length(joinedA), F.length(joinedB)))
+    return j_weight * base_j + (1-j_weight) * lev_sim
+
+# Join candidate pair id's back to full df twice (once per side)
+# so each result row contains all cols from both row A and row B
+pairs = candidate_pairs \
+    .join(df.alias("a"), F.col("id_a") == F.col("a.row_id")) \
+    .join(df.alias("b"), F.col("id_b") == F.col("b.row_id"))
+
+sim_cols = []
+
+for col in base_cols:
+    expanded_col = f"{col}_expanded"
+    sim_name = f"sim_{col}"
+    pairs = pairs.withColumn(
+        sim_name,
+        fuzzy_jaccard(F.col(f"a.{expanded_col}"), F.col(f"b.{expanded_col}"))
+    )
+    sim_cols.append(sim_name)
+
+
+
+
+# Default dynamic
+weight = 1.0 / len(sim_cols)
+
+score_expr = sum(weight * F.col(c) for c in sim_cols)
+
+pairs = pairs.withColumn("final_score", score_expr)
+
+j_threshold = 0.8
+matches = pairs.filter(F.col("final_score") > j_threshold)
+matches.select("id_a", "id_b", "final_score").show(20, False)
+
+# ===================
+# Clustering
+# ===================
+
+
+# Do a union find
+match_pairs = matches.select("id_a", "id_b").collect()
+
+parent = {}
+
+# Find node's parent
+def find(x):
+    if parent[x] != x:
+        parent[x] = find(parent[x]) # Doing path compression to filter down parents of each node
+    return parent[x]
+
+# Union between two rows
+def union(x,y):
+    root_x = find(x)
+    root_y = find(y)
+    if root_x != root_y: # Dont union similar pairs
+        parent[root_y] = root_x
+
+# Init parent pointers
+for row in match_pairs:
+    a = row["id_a"]
+    b = row["id_b"]
+    parent.setdefault(a, a)
+    parent.setdefault(b,b)
+
+for row in match_pairs:
+    union(row["id_a"], row["id_b"])
+
+
+all_ids = [row["row_id"] for row in df.select("row_id").collect()]
+# If there are rows not in a cluster, put them in a cluster
+for r_id in all_ids:
+    parent.setdefault(r_id, r_id)
+
+clusters = {}
+
+for node in parent:
+    root = find(node)
+    if root not in clusters:
+        clusters[root] = []
+    clusters[root].append(node)
+
+cluster_rows = []
+
+for root, members in clusters.items():
+    for m in members:
+        cluster_rows.append((m, root))
+
+cluster_df = spark.createDataFrame(cluster_rows, ["row_id", "cluster_id"])
+df_w_clusters = df.join(cluster_df, on= "row_id", how="left")
+# Group clusters for null values
+df_w_clusters = df_w_clusters.withColumn(
+    "cluster_id",
+    F.coalesce(F.col("cluster_id"), F.col("row_id"))
 )
 
-# Only keep pairs with jaccard similarity above threshold
-# so at least 80% of combined token vocab is shared.
-j_threshold = 0.8
-matches = pairs. filter(F.col("similarity") > j_threshold)
 
-# TODO: Maybe do fuzzy?
+# ===========================
+# 9. Merging
+# ===========================
+agg_exprs = []
 
+for col in df.columns:
+    if col in ["row_id", "cluster_id"]:
+        continue
+    if isinstance(df.schema[col].dataType, StringType):
+        agg_exprs.append(F.mode(col, ignorenulls=True).alias(col))
+    else:
+        agg_exprs.append(F.first(col, ignorenulls=True).alias(col))
 
-# 5. TODO: de duplication and entity resolution
-
-
-# Make similarity threshold
-# if similarity > threshold then its a match
-
-# Merge matched records
-#  combine attributes
-#  resolve conflicts
+merged = df_w_clusters.groupBy("cluster_id").agg(*agg_exprs)
 
 
-# 6. Eval vs ground truth kaggle database
+# ==============================
+# 10. Eval
+# ==============================
 
-# Compare predicted matches to ground truth
+# Time to start filtering the truth.
+# Build truth pairs the same way
+truth_cols = [c for c in df.columns if "id" in c.lower()]
 
-# get evaluation metrics
-#  precision
-#  recall
-#  F1 score
+truth_clusters = df.groupBy(*truth_cols).agg(
+    F.collect_list("row_id").alias("members")
+)
 
-#  Look at errors
-#  - false positives
-#  - false negatives
+pairs_truth = truth_clusters \
+    .withColumn("a", F.explode("members")) \
+    .withColumn("b", F.explode("members")) \
+    .filter(F.col("a") < F.col("b")) \
+    .select(
+        F.col("a").alias("id_a"),
+        F.col("b").alias("id_b")
+    )
 
 
-# 7. Optimization with tweaks 
-# thresholds, similarity, different block sizes,
-# increase recall, abbr rules could be less noisy potentially
+clusters_grouped = cluster_df.groupBy("cluster_id").agg(
+    F.collect_list("row_id").alias("members")
+)
+
+pairs_prediction = clusters_grouped \
+.withColumn("a", F.explode("members")) \
+.withColumn("b", F.explode("members")) \
+.filter(F.col("a") < F.col("b")) \
+.select(
+    F.col("a").alias("id_a"),
+    F.col("b").alias("id_b")
+)
+
+# True positives
+tp = pairs_prediction.join(
+    pairs_truth,
+    on=["id_a", "id_b"],
+    how="inner"
+)
+
+# False positives
+fp = pairs_prediction.join(
+    pairs_truth,
+    on=["id_a", "id_b"],
+    how="left_anti"
+)
+
+# False negatives
+fn = pairs_truth.join(
+    pairs_prediction,
+    on=["id_a", "id_b"],
+    how="left_anti"
+)
+
+tp_count = tp.count()
+fp_count = fp.count()
+fn_count = fn.count()
+
+precision = tp_count / (tp_count + fp_count) if (tp_count + fp_count) > 0 else 0
+recall = tp_count / (tp_count + fn_count) if (tp_count + fn_count) > 0 else 0
+f1 = 2*precision*recall / (precision + recall) if (precision + recall) > 0 else 0
+
+print(f"Precisiton: {precision}, Recall: {recall}, F1: {f1}")
