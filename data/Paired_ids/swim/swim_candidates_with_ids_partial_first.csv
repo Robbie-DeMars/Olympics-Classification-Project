@@ -1,6 +1,7 @@
 scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nationality_id,year_of_birth,nationality_at_birth,gender,match_notes
 23374,MITCHELL_LARKIN,Mitchell,,Larkin,,,AUS,,,Men,partial_first
 26745,NIC_FINK,Nic,,Fink,,,USA,,,Men,partial_first
+26994,ALEX_WALSH,Alex,,Walsh,,,USA,,,Women,partial_first
 25184,MATTHEW_ABOOD,Matthew,,Abood,,,AUS,,,Men,partial_first
 23374,MITCHELL_LARKIN,Mitchell,,Larkin,,,AUS,,,Men,partial_first
 25170,BRADLEY_EDWARD_TANDY,Bradley,Edward,Tandy,,,RSA,,,Men,partial_first
@@ -8,6 +9,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 21855,NICK_FFROST,Nick,,Ffrost,,,AUS,,,Men,partial_first
 18553,MATTHEW_WELSH,Matthew,,Welsh,,,AUS,,,Men,partial_first
 18583,GEOFFREY_HUEGILL,Geoffrey,,Huegill,,,AUS,,,Men,partial_first
+1422,JR.,Jr.,,,,,USA,,,Men,partial_first
 18996,B_J_BEDFORD,B,J,Bedford,,,USA,,,Women,partial_first
 15530,CHRISTOPHER_JOHN_FYDLER,Christopher,John,Fydler,,,AUS,,,Men,partial_first
 18553,MATTHEW_WELSH,Matthew,,Welsh,,,AUS,,,Men,partial_first
@@ -65,8 +67,10 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 11387,DOUGLAS_CAMPBELL,Douglas,,Campbell,,,GBR,,,Men,partial_first
 10462,MAXWELL_METZKER,Maxwell,,Metzker,,,AUS,,,Men,partial_first
 9571,CLAYTON_EVANS,Clayton,,Evans,,,CAN,,,Men,partial_first
+1422,JACK,Jack,,,,,USA,,,Men,partial_first
 10468,DANIEL_LEE_HARRIGAN,Daniel,Lee,Harrigan,,,USA,,,Men,partial_first
 10523,TIMOTHY_ANDREW_SHAW,Timothy,Andrew,Shaw,,,USA,,,Men,partial_first
+1422,JACK,Jack,,,,,USA,,,Men,partial_first
 9571,CLAYTON_EVANS,Clayton,,Evans,,,CAN,,,Men,partial_first
 10615,JOSEFINE_(JOSE)_DAMEN,Josefine,(Jose),Damen,,,NLD,,,Women,partial_first
 9672,DOUGLAS_DALE_NORTHWAY,Douglas,Dale,Northway,,,USA,,,Men,partial_first

@@ -1,9 +1,6 @@
 scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nationality_id,year_of_birth,nationality_at_birth,gender,match_notes
-11933|5437,ALLAN_LAWRENCE,Allan,,LAWRENCE,,,AUS,,,Men,ambiguous_partial_first
 2371|2415,PHILIP_EDWARDS,Philip,,EDWARDS,,,CAN,,,Men,ambiguous_partial_first
 6269|6294,LESTER_NELSON_CARNEY,Lester,Nelson,CARNEY,,,USA,,,Men,ambiguous_partial_first
-11038|11040,YURI_KUTSENKO,Yuri,,KUTSENKO,,,URS,,,Men,ambiguous_partial_first
 6533|7390,VALERI_BRUMEL,Valeri,,BRUMEL,,,URS,,,Men,ambiguous_partial_first
 21066|21067,TSEGAY_KEBEDE,Tsegay,,KEBEDE,,,ETH,,,Men,ambiguous_partial_first
-24431|26057,TOMAS_WALSH,Tomas,,WALSH,,,NZL,,,Men,ambiguous_partial_first
-21581|23258|23260,JENNIFER_SUHR,Jennifer,,SUHR,,,USA,,,Women,ambiguous_partial_first
+21581|23260,JENNIFER_SUHR,Jennifer,,SUHR,,,USA,,,Women,ambiguous_partial_first

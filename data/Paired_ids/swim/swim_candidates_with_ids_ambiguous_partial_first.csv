@@ -1,9 +1,5 @@
 scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nationality_id,year_of_birth,nationality_at_birth,gender,match_notes
-26994|28007,ALEX_WALSH,Alex,,Walsh,,,USA,,,Women,ambiguous_partial_first
-10100|13099|13219|1422|15168|16505|17180|17475|22875|26973|3909|405,JR.,Jr.,,,,,USA,,,Men,ambiguous_partial_first
 10602|11554|11589,MARIAM_PARIS,Mariam,,Paris,,,CRC,,,Women,ambiguous_partial_first
-10100|13099|13219|1422|15168|16505|17180|17475|22875|26973|3909|405,JACK,Jack,,,,,USA,,,Men,ambiguous_partial_first
-10100|13099|13219|1422|15168|16505|17180|17475|22875|26973|3909|405,JACK,Jack,,,,,USA,,,Men,ambiguous_partial_first
 8644|8651,ANA-MARIA_NORBIS,Ana-Maria,,Norbis,,,URU,,,Women,ambiguous_partial_first
 7813|8713,LYNETTE_BELL,Lynette,,Bell,,,AUS,,,Women,ambiguous_partial_first
 7813|8713,LYNETTE_BELL,Lynette,,Bell,,,AUS,,,Women,ambiguous_partial_first

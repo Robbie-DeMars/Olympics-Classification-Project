@@ -47,7 +47,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 6915,RON_CLARKE,Ron,,CLARKE,,,AUS,,,Men,exact
 5436,VLADIMIR_KUTS,Vladimir,,KUTS,,,URS,,,Men,exact
 ,JÃ³ZSEF_KOVÃCS,JÃ³zsef,,KOVÃCS,,,HUN,,,Men,no_match
-11933|5437,ALLAN_LAWRENCE,Allan,,LAWRENCE,,,AUS,,,Men,ambiguous_partial_first
+5437,ALLAN_LAWRENCE,Allan,,LAWRENCE,,,AUS,,,Men,partial_first
 3693,BERTIL_ALBERTSSON,Bertil,,ALBERTSSON,,,SWE,,,Men,exact
 2576,JANUSZ_KUSOCINSKI,Janusz,,KUSOCINSKI,,,POL,,,Men,exact
 2711,LAURI_VIRTANEN,Lauri,,VIRTANEN,,,FIN,,,Men,exact
@@ -58,7 +58,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 19459,USAIN_BOLT,Usain,,BOLT,,,JAM,,,Men,exact
 19301,JUSTIN_GATLIN,Justin,,GATLIN,,,USA,,,Men,exact
 23780,ANDRE_DE_GRASSE,Andre,DE,GRASSE,,,CAN,,,Men,exact
-20674|23966,RICHARD_THOMPSON,Richard,,THOMPSON,,,TTO,,,Men,ambiguous_exact
+23966,RICHARD_THOMPSON,Richard,,THOMPSON,,,TTO,,,Men,exact
 20675,WALTER_DIX,Walter,,DIX,,,USA,,,Men,exact
 17447,MAURICE_GREENE,Maurice,,GREENE,,,USA,,,Men,exact
 14571,ATO_BOLDON,Ato,,BOLDON,,,TTO,,,Men,exact
@@ -140,13 +140,13 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 14613,TONY_DEES,Tony,,DEES,,,USA,,,Men,exact
 14614,JACK_PIERCE,Jack,,PIERCE,,,USA,,,Men,exact
 11672,ROGER_KINGDOM,Roger,,KINGDOM,,,USA,,,Men,exact
-11673|11685,GREG_FOSTER,Greg,,FOSTER,,,USA,,,Men,ambiguous_exact
+11685,GREG_FOSTER,Greg,,FOSTER,,,USA,,,Men,exact
 10797,ARTO_BRYGGARE,Arto,,BRYGGARE,,,FIN,,,Men,exact
 8858,GUY_DRUT,Guy,,DRUT,,,FRA,,,Men,exact
 ,ALEJANDRO_CASAÃAS,Alejandro,,CASAÃAS,,,CUB,,,Men,no_match
 7040,WILLIE_DAVENPORT,Willie,,DAVENPORT,,,USA,,,Men,exact
 7916,ERVIN_HALL,Ervin,,HALL,,,USA,,,Men,exact
-7057|7070,EDDY_OTTOZ,Eddy,,OTTOZ,,,ITA,,,Men,ambiguous_exact
+7070,EDDY_OTTOZ,Eddy,,OTTOZ,,,ITA,,,Men,exact
 5502,LEE_CALHOUN,Lee,,CALHOUN,,,USA,,,Men,exact
 6188,WILLIE_MAY,Willie,,MAY,,,USA,,,Men,exact
 6189,HAYES_JONES,Hayes,,JONES,,,USA,,,Men,exact
@@ -170,7 +170,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 22310,ARIES_MERRITT,Aries,,MERRITT,,,USA,,,Men,exact
 22311,JASON_RICHARDSON,Jason,,RICHARDSON,,,USA,,,Men,exact
 22312,HANSLE_PARCHMENT,Hansle,,PARCHMENT,,,JAM,,,Men,exact
-19355|25415,XIANG_LIU,Xiang,,LIU,,,CHN,,,Men,ambiguous_reversed
+19355,XIANG_LIU,Xiang,,LIU,,,CHN,,,Men,reversed
 15995,ALLEN_JOHNSON,Allen,,JOHNSON,,,USA,,,Men,exact
 ,FLORIAN_SCHWARTHOFF,Florian,,SCHWARTHOFF,,,GER,,,Men,no_match
 10005,THOMAS_MUNKELT,Thomas,,MUNKELT,,,GDR,,,Men,exact
@@ -222,7 +222,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 ,ROBERT_MCMILLEN,Robert,,MCMILLEN,,,USA,,,Men,no_match
 4683,WERNER_LUEG,Werner,,LUEG,,,GER,,,Men,exact
 ,JOHN_LOVELOCK,John,,LOVELOCK,,,NZL,,,Men,no_match
-2634|3072,GLENN_CUNNINGHAM,Glenn,,CUNNINGHAM,,,USA,,,Men,ambiguous_exact
+3072,GLENN_CUNNINGHAM,Glenn,,CUNNINGHAM,,,USA,,,Men,exact
 2632,LUIGI_BECCALI,Luigi,,BECCALI,,,ITA,,,Men,exact
 2277,HARRI_LARVA,Harri,,LARVA,,,FIN,,,Men,exact
 2278,JULES_LADOUMEGUE,Jules,,LADOUMEGUE,,,FRA,,,Men,exact
@@ -238,7 +238,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 91,JOHN_BRAY,John,,BRAY,,,USA,,,Men,exact
 20759,LEONEL_MANZANO,Leonel,,MANZANO,,,USA,,,Men,exact
 20776,ABDALAATI_IGUIDER,Abdalaati,,IGUIDER,,,MAR,,,Men,exact
-17677|20673|9961,RUI_SILVA,Rui,,SILVA,,,POR,,,Men,ambiguous_exact
+17677,RUI_SILVA,Rui,,SILVA,,,POR,,,Men,exact
 14649,NOUREDDINE_MORCELI,Noureddine,,MORCELI,,,ALG,,,Men,exact
 16061,STEPHEN_KIPKORIR,Stephen,,KIPKORIR,,,KEN,,,Men,exact
 ,JÃ¼RGEN_STRAUB,JÃ¼rgen,,STRAUB,,,GDR,,,Men,no_match
@@ -247,8 +247,8 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 8887,RODNEY_DIXON,Rodney,,DIXON,,,NZL,,,Men,partial_first
 ,PETER_SNELL,Peter,,SNELL,,,NZL,,,Men,no_match
 7071,JOSEF_ODLOZIL,Josef,,ODLOZIL,,,TCH,,,Men,exact
-4384|7072|7074,JOHN_DAVIES,John,,DAVIES,,,NZL,,,Men,ambiguous_exact
-5518|6468,RON_DELANY,Ron,,DELANY,,,IRL,,,Men,ambiguous_exact
+7072|7074,JOHN_DAVIES,John,,DAVIES,,,NZL,,,Men,ambiguous_exact
+5518,RON_DELANY,Ron,,DELANY,,,IRL,,,Men,exact
 5519,KLAUS_RICHTZENHAIN,Klaus,,RICHTZENHAIN,,,EUA,,,Men,exact
 4707,JOHN_LANDY,John,,LANDY,,,AUS,,,Men,exact
 3787,HENRY_ERIKSSON,Henry,,ERIKSSON,,,SWE,,,Men,exact
@@ -265,13 +265,13 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 ,WILLIAM_VERNER,William,,VERNER,,,USA,,,Men,no_match
 200,LACEY_HEARN,Lacey,,HEARN,,,USA,,,Men,exact
 18,EDWIN_FLACK,Edwin,,FLACK,,,AUS,,,Men,exact
-13122|19|21,ARTHUR_BLAKE,Arthur,,BLAKE,,,USA,,,Men,ambiguous_exact
+21,ARTHUR_BLAKE,Arthur,,BLAKE,,,USA,,,Men,exact
 20,ALBIN_LERMUSIAUX,Albin,,LERMUSIAUX,,,FRA,,,Men,exact
 22423,CHRISTOPHE_LEMAITRE,Christophe,,LEMAITRE,,,FRA,,,Men,exact
 19316,SHAWN_CRAWFORD,Shawn,,CRAWFORD,,,USA,,,Men,exact
 ,KOSTAS_KENTERIS,Kostas,,KENTERIS,,,GRE,,,Men,no_match
 17471,DARREN_CAMPBELL,Darren,,CAMPBELL,,,GBR,,,Men,exact
-14688|16142,MICHAEL_MARSH,Michael,,MARSH,,,USA,,,Men,ambiguous_exact
+14688,MICHAEL_MARSH,Michael,,MARSH,,,USA,,,Men,exact
 14689,MICHAEL_BATES,Michael,,BATES,,,USA,,,Men,exact
 11865,KIRK_BAPTISTE,Kirk,,BAPTISTE,,,USA,,,Men,exact
 11866,THOMAS_JEFFERSON,Thomas,,JEFFERSON,,,USA,,,Men,exact
@@ -307,14 +307,14 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 22386,ZELIN_CAI,Zelin,,CAI,,,CHN,,,Men,reversed
 24027,DANE_BIRD-SMITH,Dane,,BIRD-SMITH,,,AUS,,,Men,exact
 20795,VALERIY_BORCHIN,Valeriy,,BORCHIN,,,RUS,,,Men,exact
-16104|20796,JEFFERSON_PEREZ,Jefferson,,PEREZ,,,ECU,,,Men,ambiguous_exact
+16104,JEFFERSON_PEREZ,Jefferson,,PEREZ,,,ECU,,,Men,exact
 20797,JARED_TALLENT,Jared,,TALLENT,,,AUS,,,Men,exact
 16109,ROBERT_KORZENIOWSKI,Robert,,KORZENIOWSKI,,,POL,,,Men,exact
 17679,NOE_HERNANDEZ,Noe,,HERNANDEZ,,,MEX,,,Men,exact
 14675,VLADIMIR_ANDREYEV,Vladimir,,ANDREYEV,,,RUS,,,Men,exact
 13188,DANIEL_PLAZA,Daniel,,PLAZA,,,ESP,,,Men,exact
-11836|13187,GUILLAUME_LEBLANC,Guillaume,,LEBLANC,,,CAN,,,Men,ambiguous_exact
-13186|17684,GIOVANNI_DE_BENEDICTIS,Giovanni,DE,BENEDICTIS,,,ITA,,,Men,ambiguous_exact
+11836,GUILLAUME_LEBLANC,Guillaume,,LEBLANC,,,CAN,,,Men,exact
+13186,GIOVANNI_DE_BENEDICTIS,Giovanni,DE,BENEDICTIS,,,ITA,,,Men,exact
 11835,ERNESTO_CANTO,Ernesto,,CANTO,,,MEX,,,Men,exact
 ,RAÃºL_GONZÃLEZ,RaÃºl,,GONZÃLEZ,,,MEX,,,Men,no_match
 10837,MAURIZIO_DAMILANO,Maurizio,,DAMILANO,,,ITA,,,Men,exact
@@ -327,7 +327,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 6247,NOEL_FREEMAN,Noel,,FREEMAN,,,AUS,,,Men,exact
 5551,STANLEY_FRANK_VICKERS,Stanley,Frank,VICKERS,,,GBR,,,Men,partial_first
 22376,DING_CHEN,Ding,,CHEN,,,CHN,,,Men,reversed
-22377|22385,ERICK_BARRONDO,Erick,,BARRONDO,,,GUA,,,Men,ambiguous_exact
+22385,ERICK_BARRONDO,Erick,,BARRONDO,,,GUA,,,Men,exact
 19414,IVANO_BRUGNETTI,Ivano,,BRUGNETTI,,,ITA,,,Men,exact
 ,FRANCISCO_JAVIER_FERNANDEZ,Francisco,Javier,FERNANDEZ,,,ESP,,,Men,no_match
 17682,NATHAN_DEAKES,Nathan,,DEAKES,,,AUS,,,Men,exact
@@ -349,7 +349,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 20614,MAHIEDINE_MEKHISSI-BENABBAD,Mahiedine,,MEKHISSI-BENABBAD,,,FRA,,,Men,exact
 20615,RICHARD_KIPKEMBOI_MATEELONG,Richard,Kipkemboi,MATEELONG,,,KEN,,,Men,exact
 17740,REUBEN_KOSGEI,Reuben,,KOSGEI,,,KEN,,,Men,exact
-17741|17917,WILSON_BOIT_KIPKETER,Wilson,Boit,KIPKETER,,,KEN,,,Men,ambiguous_exact
+17741,WILSON_BOIT_KIPKETER,Wilson,Boit,KIPKETER,,,KEN,,,Men,exact
 17742,ALI_EZZINE,Ali,,EZZINE,,,MAR,,,Men,exact
 14730,MATTHEW_BIRIR,Matthew,,BIRIR,,,KEN,,,Men,exact
 13254,PATRICK_SANG,Patrick,,SANG,,,KEN,,,Men,exact
@@ -362,7 +362,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 10091,FRANK_BAUMGARTL,Frank,,BAUMGARTL,,,GDR,,,Men,exact
 8030,AMOS_BIWOTT,Amos,,BIWOTT,,,KEN,,,Men,exact
 7182,BENJAMIN_KOGO,Benjamin,,KOGO,,,KEN,,,Men,exact
-563|6307|7172,GEORGE_YOUNG,George,,YOUNG,,,USA,,,Men,ambiguous_exact
+6307,GEORGE_YOUNG,George,,YOUNG,,,USA,,,Men,exact
 ,ZDZISLAW_KRZYSZKOWIAK,Zdzislaw,,KRZYSZKOWIAK,,,POL,,,Men,no_match
 6295,NIKOLAY_SOKOLOV,Nikolay,,SOKOLOV,,,URS,,,Men,exact
 ,SEMYON_RZISHCHIN,Semyon,,RZISHCHIN,,,URS,,,Men,no_match
@@ -381,7 +381,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 103,JEAN_CHASTANIE,Jean,,CHASTANIE,,,FRA,,,Men,exact
 19171,EZEKIEL_KEMBOI,Ezekiel,,KEMBOI,,,KEN,,,Men,exact
 22449,ABEL_KIPROP_MUTAI,Abel,Kiprop,MUTAI,,,KEN,,,Men,exact
-15892|19173,PAUL_KIPSIELE_KOECH,Paul,Kipsiele,KOECH,,,KEN,,,Men,ambiguous_exact
+19173,PAUL_KIPSIELE_KOECH,Paul,Kipsiele,KOECH,,,KEN,,,Men,exact
 16193,JOSEPH_KETER,Joseph,,KETER,,,KEN,,,Men,exact
 16194,MOSES_KIPTANUI,Moses,,KIPTANUI,,,KEN,,,Men,exact
 13252,ALESSANDRO_LAMBRUSCHINI,Alessandro,,LAMBRUSCHINI,,,ITA,,,Men,exact
@@ -394,7 +394,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 ,IVAN_BELYAEV,Ivan,,BELYAEV,,,URS,,,Men,no_match
 4782,CHRISTOPHER_WILLIAM_BRASHER,Christopher,William,BRASHER,,,GBR,,,Men,partial_first
 ,SÃÂ¡NDOR_ROZSNYÃ?I,SÃÂ¡ndor,,ROZSNYÃ?I,,,HUN,,,Men,no_match
-3418|5590,ERNST_LARSEN,Ernst,,LARSEN,,,NOR,,,Men,ambiguous_exact
+5590,ERNST_LARSEN,Ernst,,LARSEN,,,NOR,,,Men,exact
 ,TORE_SJÃSTRAND,Tore,,SJÃSTRAND,,,SWE,,,Men,no_match
 ,FRITZ_ERIK_ELMSÃ?TER,Fritz,Erik,ELMSÃ?TER,,,SWE,,,Men,no_match
 3844,GOTE_ERNST_HAGSTROM,Gote,Ernst,HAGSTROM,,,SWE,,,Men,exact
@@ -411,7 +411,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 20890,BERSHAWN_JACKSON,Bershawn,,JACKSON,,,USA,,,Men,exact
 ,HADI_SOUA_AN_AL_SOMAILY,Hadi,Soua An AL,SOMAILY,,,KSA,,,Men,no_match
 16286,LLEWELLYN_HERBERT,Llewellyn,,HERBERT,,,RSA,,,Men,exact
-13321|14791,KEVIN_YOUNG,Kevin,,YOUNG,,,USA,,,Men,ambiguous_exact
+13321,KEVIN_YOUNG,Kevin,,YOUNG,,,USA,,,Men,exact
 13325,WINTHROP_GRAHAM,Winthrop,,GRAHAM,,,JAM,,,Men,exact
 11947,KRISS_AKABUSI,Kriss,,AKABUSI,,,GBR,,,Men,exact
 10125,EDWIN_MOSES,Edwin,,MOSES,,,USA,,,Men,exact
@@ -488,7 +488,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 8105,RON_FREEMAN,Ron,,FREEMAN,,,USA,,,Men,exact
 6372,OTIS_DAVIS,Otis,,DAVIS,,,USA,,,Men,exact
 6373,CARL_KAUFMANN,Carl,,KAUFMANN,,,EUA,,,Men,exact
-5570|5646|5658,MALCOLM_SPENCE,Malcolm,,SPENCE,,,RSA,,,Men,ambiguous_exact
+5646,MALCOLM_SPENCE,Malcolm,,SPENCE,,,RSA,,,Men,exact
 3918,GEORGE_RHODEN,George,,RHODEN,,,JAM,,,Men,exact
 4793,OLLIE_MATSON,Ollie,,MATSON,,,USA,,,Men,exact
 ,ARCHIBALD_FRANKLIN_WILLIAMS,Archibald,Franklin,WILLIAMS,,,USA,,,Men,no_match
@@ -527,7 +527,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 3908,MAL_WHITFIELD,Mal,,WHITFIELD,,,USA,,,Men,exact
 ,WILLIAM_ARTHUR_CARR,William,Arthur,CARR,,,USA,,,Men,no_match
 2685,BENJAMIN_BANGS_EASTMAN,Benjamin,Bangs,EASTMAN,,,USA,,,Men,partial_first
-22419|2330,ALEX_WILSON,Alex,,WILSON,,,CAN,,,Men,ambiguous_exact
+2330,ALEX_WILSON,Alex,,WILSON,,,CAN,,,Men,exact
 1900,HORATIO_FITCH,Horatio,,FITCH,,,USA,,,Men,exact
 831,CHARLES_REIDPATH,Charles,,REIDPATH,,,USA,,,Men,exact
 578,HANNS_BRAUN,Hanns,,BRAUN,,,GER,,,Men,exact
@@ -560,12 +560,12 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 ,,,,,,,BWI,,,Men,no_name
 ,,,,,,,RSA,,,Men,no_name
 ,,,,,,,AUS,,,Men,no_name
-24147|25866,PAUL_KIPKEMOI_CHELIMO,Paul,Kipkemoi,CHELIMO,,,USA,,,Men,ambiguous_exact
+24147,PAUL_KIPKEMOI_CHELIMO,Paul,Kipkemoi,CHELIMO,,,USA,,,Men,exact
 ,HAGOS_GEBRHIWET,Hagos,,GEBRHIWET,,,ETH,,,Men,no_match
 ,ELIUD_KIPCHOGE_ROTICH,Eliud,Kipchoge,ROTICH,,,KEN,,,Men,no_match
 20960,EDWIN_CHERUIYOT_SOI,Edwin,Cheruiyot,SOI,,,KEN,,,Men,exact
 ,MILLON_WOLDE,Millon,,WOLDE,,,ETH,,,Men,no_match
-17907|19551,ALI_SAIDI-SIEF,Ali,,SAIDI-SIEF,,,ALG,,,Men,ambiguous_exact
+17907,ALI_SAIDI-SIEF,Ali,,SAIDI-SIEF,,,ALG,,,Men,exact
 16371,BRAHIM_LAHLAFI,Brahim,,LAHLAFI,,,MAR,,,Men,exact
 13387,DIETER_BAUMANN,Dieter,,BAUMANN,,,GER,,,Men,exact
 14880,PAUL_BITOK,Paul,,BITOK,,,KEN,,,Men,exact
@@ -616,7 +616,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 7278,INGVAR_PETTERSSON,Ingvar,,PETTERSSON,,,SWE,,,Men,exact
 5664,NORMAN_READ,Norman,,READ,,,NZL,,,Men,exact
 5665,YEVGENI_MASKINSKOV,Yevgeni,,MASKINSKOV,,,URS,,,Men,partial_first
-3940|7117,JOHN_LJUNGGREN,John,,LJUNGGREN,,,SWE,,,Men,ambiguous_exact
+3940,JOHN_LJUNGGREN,John,,LJUNGGREN,,,SWE,,,Men,exact
 3941,GASTON_GODEL,Gaston,,GODEL,,,SUI,,,Men,exact
 ,TERENCE_LLOYD_JOHNSON,Terence,Lloyd,JOHNSON,,,GBR,,,Men,no_match
 ,THOMAS_WILLIAM_GREEN,Thomas,William,GREEN,,,GBR,,,Men,no_match
@@ -646,7 +646,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 19250,ISMAIL_AHMED_ISMAIL,Ismail,Ahmed,ISMAIL,,,SUD,,,Men,exact
 20987,ALFRED_KIRWA_YEGO,Alfred,Kirwa,YEGO,,,KEN,,,Men,exact
 17916,NILS_SCHUMANN,Nils,,SCHUMANN,,,GER,,,Men,exact
-17741|17917,WILSON_KIPKETER,Wilson,,KIPKETER,,,DEN,,,Men,ambiguous_exact
+17917,WILSON_KIPKETER,Wilson,,KIPKETER,,,DEN,,,Men,exact
 ,DJABIR_SAID_GUERNI,Djabir,SAID,GUERNI,,,ALG,,,Men,no_match
 14924,WILLIAM_TANUI,William,,TANUI,,,KEN,,,Men,exact
 13411,NIXON_KIPROTICH,Nixon,,KIPROTICH,,,KEN,,,Men,exact
@@ -658,7 +658,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 7271,WILSON_KIPRUGUT,Wilson,,KIPRUGUT,,,KEN,,,Men,exact
 ,THOMAS_FRANCIS_FARRELL,Thomas,Francis,FARRELL,,,USA,,,Men,no_match
 4854,ROGER_MOENS,Roger,,MOENS,,,BEL,,,Men,exact
-5654|6442|7353,GEORGE_KERR,George,,KERR,,,BWI,,,Men,ambiguous_exact
+6442,GEORGE_KERR,George,,KERR,,,BWI,,,Men,exact
 4920,HEINZ_ULZHEIMER,Heinz,,ULZHEIMER,,,GER,,,Men,exact
 3257,JOHN_WOODRUFF,John,,WOODRUFF,,,USA,,,Men,exact
 3187,MARIO_LANZI,Mario,,LANZI,,,ITA,,,Men,exact
@@ -724,7 +724,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 3998,FLOYD_SIMMONS,Floyd,,SIMMONS,,,USA,,,Men,exact
 3277,GLENN_MORRIS,Glenn,,MORRIS,,,USA,,,Men,exact
 ,ROBERT_HYATT_CLARK,Robert,Hyatt,CLARK,,,USA,,,Men,no_match
-3279|4669,JACK_PARKER,Jack,,PARKER,,,USA,,,Men,ambiguous_exact
+3279,JACK_PARKER,Jack,,PARKER,,,USA,,,Men,exact
 ,PAAVO_YRJÃLÃ,Paavo,,YRJÃLÃ,,,FIN,,,Men,no_match
 ,AKI_JÃRVINEN,Aki,,JÃRVINEN,,,FIN,,,Men,no_match
 13391|14919,JOHN_KENNETH_DOHERTY,John,Kenneth,DOHERTY,,,USA,,,Men,ambiguous_exact
@@ -742,8 +742,8 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 13449,CHRISTIAN_SCHENK,Christian,,SCHENK,,,GDR,,,Men,exact
 13450,TORSTEN_VOSS,Torsten,,VOSS,,,GDR,,,Men,exact
 12161,DAVE_STEEN,Dave,,STEEN,,,CAN,,,Men,exact
-11038|11040,YURI_KUTSENKO,Yuri,,KUTSENKO,,,URS,,,Men,ambiguous_partial_first
-11039|11041,SERGEI_ZHELANOV,Sergei,,ZHELANOV,,,URS,,,Men,ambiguous_exact
+11040,YURI_KUTSENKO,Yuri,,KUTSENKO,,,URS,,,Men,partial_first
+11041,SERGEI_ZHELANOV,Sergei,,ZHELANOV,,,URS,,,Men,exact
 ,LEONID_LITVINENKO,Leonid,,LITVINENKO,,,URS,,,Men,no_match
 9178,RYSZARD_KATUS,Ryszard,,KATUS,,,POL,,,Men,exact
 7363,WILLI_HOLDORF,Willi,,HOLDORF,,,EUA,,,Men,exact
@@ -809,7 +809,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 30,PANAGIOTIS_PARASKEVOPOULOS,Panagiotis,,PARASKEVOPOULOS,,,GRE,,,Men,exact
 31,SOTIRIOS_VERSIS,Sotirios,,VERSIS,,,GRE,,,Men,exact
 21035,DILSHOD_NAZAROV,Dilshod,,NAZAROV,,,TJK,,,Men,exact
-18006|19583,IVAN_TSIKHAN,Ivan,,TSIKHAN,,,BLR,,,Men,ambiguous_exact
+19583,IVAN_TSIKHAN,Ivan,,TSIKHAN,,,BLR,,,Men,exact
 24284,WOJCIECH_NOWICKI,Wojciech,,NOWICKI,,,POL,,,Men,exact
 19578,PRIMOZ_KOZMUS,Primoz,,KOZMUS,,,SLO,,,Men,exact
 ,VADIM_DEVYATOVSKIY,Vadim,,DEVYATOVSKIY,,,BLR,,,Men,no_match
@@ -872,7 +872,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 6534|7391,JOHN_THOMAS,John,,THOMAS,,,USA,,,Men,ambiguous_exact
 5000,WALT_DAVIS,Walt,,DAVIS,,,USA,,,Men,exact
 5001,KENNETH_WIESNER,Kenneth,,WIESNER,,,USA,,,Men,partial_first
-5002|5561,JOSE_TELLES_DA_CONCEICAO,Jose,TELLES DA,CONCEICAO,,,BRA,,,Men,ambiguous_exact
+5002,JOSE_TELLES_DA_CONCEICAO,Jose,TELLES DA,CONCEICAO,,,BRA,,,Men,exact
 606,HARRY_PORTER,Harry,,PORTER,,,USA,,,Men,exact
 ,ISTVÃ¡N_SOMODI,IstvÃ¡n,,SOMODI,,,HUN,,,Men,no_match
 ,CORNELIUS_LEAHY,Cornelius,,LEAHY,,,GBR,,,Men,no_match
@@ -903,7 +903,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 233,GARRETT_SERVISS,Garrett,,SERVISS,,,USA,,,Men,exact
 234,PAUL_WEINSTEIN,Paul,,WEINSTEIN,,,GER,,,Men,exact
 33|36,ELLERY_CLARK,Ellery,,CLARK,,,USA,,,Men,ambiguous_exact
-1257|34|37,JAMES_CONNOLLY,James,,CONNOLLY,,,USA,,,Men,ambiguous_exact
+34|37,JAMES_CONNOLLY,James,,CONNOLLY,,,USA,,,Men,ambiguous_exact
 24301,THOMAS_ROHLER,Thomas,,ROHLER,,,GER,,,Men,exact
 22688,JULIUS_YEGO,Julius,,YEGO,,,KEN,,,Men,exact
 22681,KESHORN_WALCOTT,Keshorn,,WALCOTT,,,TTO,,,Men,exact
@@ -954,7 +954,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 15023,IVAN_PEDROSO,Ivan,,PEDROSO,,,CUB,,,Men,exact
 18030,JAI_TAURIMA,Jai,,TAURIMA,,,AUS,,,Men,exact
 ,ROMAN_SCHURENKO,Roman,,SCHURENKO,,,UKR,,,Men,no_match
-13516|13517,MIKE_POWELL,Mike,,POWELL,,,USA,,,Men,ambiguous_exact
+13517,MIKE_POWELL,Mike,,POWELL,,,USA,,,Men,exact
 15022|16496,JOE_GREENE,Joe,,GREENE,,,USA,,,Men,ambiguous_exact
 9263,ARNIE_ROBINSON,Arnie,,ROBINSON,,,USA,,,Men,exact
 ,RANDEL_LUVELLE_WILLIAMS,Randel,Luvelle,WILLIAMS,,,USA,,,Men,no_match
@@ -1002,7 +1002,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 16507,ERICK_WAINAINA,Erick,,WAINAINA,,,KEN,,,Men,exact
 18042,TESFAYE_TOLA,Tesfaye,,TOLA,,,ETH,,,Men,exact
 14428,YOUNG-CHO_HWANG,Young-Cho,,HWANG,,,KOR,,,Men,reversed
-14429|14431,KOICHI_MORISHITA,Koichi,,MORISHITA,,,JPN,,,Men,ambiguous_exact
+14431,KOICHI_MORISHITA,Koichi,,MORISHITA,,,JPN,,,Men,exact
 14430,STEPHAN_FREIGANG,Stephan,,FREIGANG,,,GER,,,Men,exact
 10991,JOHN_TREACY,John,,TREACY,,,IRL,,,Men,exact
 ,CHARLES_SPEDDING,Charles,,SPEDDING,,,GBR,,,Men,no_match
@@ -1035,7 +1035,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 ,WILSON_KIPSANG_KIPROTICH,Wilson,Kipsang,KIPROTICH,,,KEN,,,Men,no_match
 15896,STEFANO_BALDINI,Stefano,,BALDINI,,,ITA,,,Men,exact
 17611,MEBRAHTOM_KEFLEZIGHI,Mebrahtom,,KEFLEZIGHI,,,USA,,,Men,exact
-16535|18082,VANDERLEI_DE_LIMA,Vanderlei,DE,LIMA,,,BRA,,,Men,ambiguous_exact
+16535,VANDERLEI_DE_LIMA,Vanderlei,DE,LIMA,,,BRA,,,Men,exact
 ,JOSIA_THUGWANE,Josia,,THUGWANE,,,RSA,,,Men,no_match
 ,BONG_JU_LEE,Bong,Ju,LEE,,,KOR,,,Men,no_match
 13524,GELINDO_BORDIN,Gelindo,,BORDIN,,,ITA,,,Men,exact
@@ -1112,7 +1112,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 1026,MARC_WRIGHT,Marc,,WRIGHT,,,USA,,,Men,exact
 ,WILLIAM_HAPPENNY,William,,HAPPENNY,,,CAN,,,Men,no_match
 1028,BERTIL_UGGLA,Bertil,,UGGLA,,,SWE,,,Men,exact
-1027|7981|9172,FRANK_MURPHY,Frank,,MURPHY,,,USA,,,Men,ambiguous_exact
+1027,FRANK_MURPHY,Frank,,MURPHY,,,USA,,,Men,exact
 158,CHARLES_DVORAK,Charles,,DVORAK,,,USA,,,Men,exact
 254,LEROY_SAMSE,Leroy,,SAMSE,,,USA,,,Men,exact
 255,LOUIS_WILKINS,Louis,,WILKINS,,,USA,,,Men,exact
@@ -1122,7 +1122,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 53,IOANNIS_THEODOROPOULOS,Ioannis,,THEODOROPOULOS,,,GRE,,,Men,exact
 24429,RYAN_CROUSER,Ryan,,CROUSER,,,USA,,,Men,exact
 24430,JOE_KOVACS,Joe,,KOVACS,,,USA,,,Men,exact
-24431|26057,TOMAS_WALSH,Tomas,,WALSH,,,NZL,,,Men,ambiguous_partial_first
+24431,TOMAS_WALSH,Tomas,,WALSH,,,NZL,,,Men,partial_first
 21124,TOMASZ_MAJEWSKI,Tomasz,,MAJEWSKI,,,POL,,,Men,exact
 21125,CHRISTIAN_CANTWELL,Christian,,CANTWELL,,,USA,,,Men,exact
 21126,DYLAN_ARMSTRONG,Dylan,,ARMSTRONG,,,CAN,,,Men,exact
@@ -1175,7 +1175,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 16611,JONATHAN_EDWARDS,Jonathan,,EDWARDS,,,GBR,,,Men,exact
 ,YOEL_GARCÃA,Yoel,,GARCÃA,,,CUB,,,Men,no_match
 18107,DENIS_KAPUSTIN,Denis,,KAPUSTIN,,,RUS,,,Men,exact
-12302|12303,MIKE_CONLEY,Mike,,CONLEY,,,USA,,,Men,ambiguous_exact
+12302,MIKE_CONLEY,Mike,,CONLEY,,,USA,,,Men,exact
 13613,CHARLES_SIMPKINS,Charles,,SIMPKINS,,,USA,,,Men,exact
 15043,FRANK_RUTHERFORD,Frank,,RUTHERFORD,,,BAH,,,Men,exact
 ,JOZEF_SCHMIDT,Jozef,,SCHMIDT,,,POL,,,Men,no_match
@@ -1228,7 +1228,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 23870,KRISTI_CASTLIN,Kristi,,CASTLIN,,,USA,,,Women,exact
 ,DAWN_HARPER,Dawn,,HARPER,,,USA,,,Women,no_match
 21161|22843,SALLY_PEARSON,Sally,,PEARSON,,,AUS,,,Women,ambiguous_exact
-19732|21162,PRISCILLA_LOPES-SCHLIEP,Priscilla,,LOPES-SCHLIEP,,,CAN,,,Women,ambiguous_exact
+21162,PRISCILLA_LOPES-SCHLIEP,Priscilla,,LOPES-SCHLIEP,,,CAN,,,Women,exact
 18114,OLGA_SHISHIGINA,Olga,,SHISHIGINA,,,KAZ,,,Women,exact
 18132,GLORIA_ALOZIE,Gloria,,ALOZIE,,,NGR,,,Women,exact
 18116,MELISSA_MORRISON,Melissa,,MORRISON,,,USA,,,Women,exact
@@ -1261,7 +1261,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 16703,EKATERINI_THANOU,Ekaterini,,THANOU,,,GRE,,,Women,exact
 ,TANYA_LAWRENCE,Tanya,,LAWRENCE,,,JAM,,,Women,no_match
 11246|12362,MERLENE_OTTEY,Merlene,,OTTEY,,,JAM,,,Women,ambiguous_exact
-13647|13652,GAIL_DEVERS,Gail,,DEVERS,,,USA,,,Women,ambiguous_exact
+13647,GAIL_DEVERS,Gail,,DEVERS,,,USA,,,Women,exact
 ,JULIET_CUTHBERT,Juliet,,CUTHBERT,,,JAM,,,Women,no_match
 15150,IRINA_PRIVALOVA,Irina,,PRIVALOVA,,,EUN,,,Women,exact
 12333,EVELYN_ASHFORD,Evelyn,,ASHFORD,,,USA,,,Women,exact
@@ -1276,14 +1276,14 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 6039,DOROTHY_HYMAN,Dorothy,,HYMAN,,,GBR,,,Women,exact
 4507,GIUSEPPINA_LEONE,Giuseppina,,LEONE,,,ITA,,,Women,exact
 ,MARJORIE_JACKSON,Marjorie,,JACKSON,,,AUS,,,Women,no_match
-4150|4190|4523,DAPHNE_HASENJAGER,Daphne,,HASENJAGER,,,RSA,,,Women,ambiguous_exact
+4190|4523,DAPHNE_HASENJAGER,Daphne,,HASENJAGER,,,RSA,,,Women,ambiguous_exact
 4136,SHIRLEY_STRICKLAND,Shirley,,STRICKLAND,,,AUS,,,Women,exact
 3449,HELEN_STEPHENS,Helen,,STEPHENS,,,USA,,,Women,exact
 ,STANISLAWA_WALASIEWICZ,Stanislawa,,WALASIEWICZ,,,POL,,,Women,no_match
 ,KÃ¤THE_KRAUSS,KÃ¤the,,KRAUSS,,,GER,,,Women,no_match
 ,ELIZABETH_ROBINSON,Elizabeth,,ROBINSON,,,USA,,,Women,no_match
 ,FANNY_ROSENFELD,Fanny,,ROSENFELD,,,CAN,,,Women,no_match
-2488|2492,ETHEL_SMITH,Ethel,,SMITH,,,CAN,,,Women,ambiguous_exact
+2492,ETHEL_SMITH,Ethel,,SMITH,,,CAN,,,Women,exact
 22879,CARMELITA_JETER,Carmelita,,JETER,,,USA,,,Women,exact
 ,VERONICA_CAMPBELL-BROWN,Veronica,,CAMPBELL-BROWN,,,JAM,,,Women,no_match
 ,YULIYA_NESTSIARENKA,Yuliya,,NESTSIARENKA,,,BLR,,,Women,no_match
@@ -1303,7 +1303,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 ,DOROTHY_HALL,Dorothy,,HALL,,,GBR,,,Women,no_match
 2837,HILDA_STRIKE,Hilda,,STRIKE,,,CAN,,,Women,exact
 2838,WILHELMINA_VON_BREMEN,Wilhelmina,VON,BREMEN,,,USA,,,Women,exact
-22960|24568,FAITH_CHEPNGETICH_KIPYEGON,Faith,Chepngetich,KIPYEGON,,,KEN,,,Women,ambiguous_exact
+24568,FAITH_CHEPNGETICH_KIPYEGON,Faith,Chepngetich,KIPYEGON,,,KEN,,,Women,exact
 22961,GENZEBE_DIBABA,Genzebe,,DIBABA,,,ETH,,,Women,exact
 ,JENNIFER_SIMPSON,Jennifer,,SIMPSON,,,USA,,,Women,no_match
 ,NANCY_JEBET_LAGAT,Nancy,Jebet,LAGAT,,,KEN,,,Women,no_match
@@ -1346,7 +1346,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 ,NADEZHDA_KHNYKINA,Nadezhda,,KHNYKINA,,,URS,,,Women,no_match
 19869,DEBBIE_FERGUSON-MCKENZIE,Debbie,,FERGUSON-MCKENZIE,,,BAH,,,Women,exact
 ,MARIE-JOSÃ©_PÃREC,Marie-JosÃ©,,PÃREC,,,FRA,,,Women,no_match
-13717|18163,MARY_ONYALI,Mary,,ONYALI,,,NGR,,,Women,ambiguous_exact
+13717,MARY_ONYALI,Mary,,ONYALI,,,NGR,,,Women,exact
 ,NATALIA_BOCHINA,Natalia,,BOCHINA,,,URS,,,Women,no_match
 7450,MARILYN_BLACK,Marilyn,,BLACK,,,AUS,,,Women,exact
 4174,AUDREY_WILLIAMSON,Audrey,,WILLIAMSON,,,GBR,,,Women,exact
@@ -1361,11 +1361,11 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 16631,MARIA_VASCO,Maria,,VASCO,,,ESP,,,Women,exact
 22968,ELENA_LASHMANOVA,Elena,,LASHMANOVA,,,RUS,,,Women,exact
 ,SHENJIE_QIEYANG,Shenjie,,QIEYANG,,,CHN,,,Women,no_match
-19817|21316,ATHANASIA_TSOUMELEKA,Athanasia,,TSOUMELEKA,,,GRE,,,Women,ambiguous_exact
+19817,ATHANASIA_TSOUMELEKA,Athanasia,,TSOUMELEKA,,,GRE,,,Women,exact
 19818,OLIMPIADA_IVANOVA,Olimpiada,,IVANOVA,,,RUS,,,Women,exact
 16629,JANE_SAVILLE,Jane,,SAVILLE,,,AUS,,,Women,exact
 24629,RUTH_JEBET,Ruth,,JEBET,,,BRN,,,Women,exact
-24630|26310,HYVIN_KIYENG_JEPKEMOI,Hyvin,Kiyeng,JEPKEMOI,,,KEN,,,Women,ambiguous_exact
+24630,HYVIN_KIYENG_JEPKEMOI,Hyvin,Kiyeng,JEPKEMOI,,,KEN,,,Women,exact
 23005,EMMA_COBURN,Emma,,COBURN,,,USA,,,Women,exact
 ,GULNARA_SAMITOVA,Gulnara,,SAMITOVA,,,RUS,,,Women,no_match
 21345,EUNICE_JEPKORIR,Eunice,,JEPKORIR,,,KEN,,,Women,exact
@@ -1376,7 +1376,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 23065,SARA_SLOTT_PETERSEN,Sara,Slott,PETERSEN,,,DEN,,,Women,exact
 24686,ASHLEY_SPENCER,Ashley,,SPENCER,,,USA,,,Women,exact
 21418,MELAINE_WALKER,Melaine,,WALKER,,,JAM,,,Women,exact
-19918|21419,SHEENA_TOSTA,Sheena,,TOSTA,,,USA,,,Women,ambiguous_exact
+21419,SHEENA_TOSTA,Sheena,,TOSTA,,,USA,,,Women,exact
 18326,NATASHA_DANVERS,Natasha,,DANVERS,,,GBR,,,Women,exact
 15150,IRINA_PRIVALOVA,Irina,,PRIVALOVA,,,RUS,,,Women,exact
 15274,DEON_MARIE_HEMMINGS,Deon,Marie,HEMMINGS,,,JAM,,,Women,exact
@@ -1399,9 +1399,9 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 24687,SHERICKA_JACKSON,Shericka,,JACKSON,,,JAM,,,Women,exact
 19887,CHRISTINE_OHURUOGU,Christine,,OHURUOGU,,,GBR,,,Women,exact
 21402,SHERICKA_WILLIAMS,Shericka,,WILLIAMS,,,JAM,,,Women,exact
-19943|22978,SANYA_RICHARDS-ROSS,Sanya,,RICHARDS-ROSS,,,USA,,,Women,ambiguous_exact
+22978,SANYA_RICHARDS-ROSS,Sanya,,RICHARDS-ROSS,,,USA,,,Women,exact
 15253,CATHY_FREEMAN,Cathy,,FREEMAN,,,AUS,,,Women,exact
-18353|18378,LORRAINE_FENTON,Lorraine,,FENTON,,,JAM,,,Women,ambiguous_exact
+18378,LORRAINE_FENTON,Lorraine,,FENTON,,,JAM,,,Women,exact
 16758,KATHARINE_MERRY,Katharine,,MERRY,,,GBR,,,Women,exact
 13790,OLGA_BRYZGINA,Olga,,BRYZGINA,,,EUN,,,Women,exact
 13734,XIMENA_RESTREPO,Ximena,,RESTREPO,,,COL,,,Women,exact
@@ -1444,7 +1444,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 ,,,,,,,FRA,,,Women,no_name
 ,,,,,,,AUS,,,Women,no_name
 ,,,,,,,NED,,,Women,no_name
-22936|24728,HELLEN_ONSANDO_OBIRI,Hellen,Onsando,OBIRI,,,KEN,,,Women,ambiguous_exact
+24728,HELLEN_ONSANDO_OBIRI,Hellen,Onsando,OBIRI,,,KEN,,,Women,exact
 19948,MESERET_DEFAR,Meseret,,DEFAR,,,ETH,,,Women,exact
 15208,SONIA_O'SULLIVAN,Sonia,,O'SULLIVAN,,,IRL,,,Women,exact
 19949,ISABELLA_OCHICHI,Isabella,,OCHICHI,,,KEN,,,Women,exact
@@ -1496,7 +1496,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 15333,DANIELA_COSTIAN,Daniela,,COSTIAN,,,AUS,,,Women,exact
 12483,RIA_STALMAN,Ria,,STALMAN,,,NED,,,Women,exact
 12484,LESLIE_DENIZ,Leslie,,DENIZ,,,USA,,,Women,exact
-11322|12485,FLORENTA_CRACIUNESCU,Florenta,,CRACIUNESCU,,,ROU,,,Women,ambiguous_exact
+11322,FLORENTA_CRACIUNESCU,Florenta,,CRACIUNESCU,,,ROU,,,Women,exact
 5159,LIA_MANOLIU,Lia,,MANOLIU,,,ROU,,,Women,exact
 8341,LIESEL_WESTERMANN,Liesel,,WESTERMANN,,,FRG,,,Women,exact
 8342,JOLAN_KLEIBER-KONTSEK,Jolan,,KLEIBER-KONTSEK,,,HUN,,,Women,exact
@@ -1513,7 +1513,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 20009,YANFENG_LI,Yanfeng,,LI,,,CHN,,,Women,reversed
 23105,YARELYS_BARRIOS,Yarelys,,BARRIOS,,,CUB,,,Women,exact
 16899,NATALYA_SADOVA,Natalya,,SADOVA,,,RUS,,,Women,exact
-20006|21484,VERA_POSPISILOVA-CECHLOVA,Vera,,POSPISILOVA-CECHLOVA,,,CZE,,,Women,ambiguous_exact
+20006,VERA_POSPISILOVA-CECHLOVA,Vera,,POSPISILOVA-CECHLOVA,,,CZE,,,Women,exact
 15339,ILKE_WYLUDDA,Ilke,,WYLUDDA,,,GER,,,Women,exact
 ,EVELIN_SCHLAAK-JAHL,Evelin,,SCHLAAK-JAHL,,,GDR,,,Women,no_match
 ,MARIA_VERGOVA-PETKOVA,Maria,,VERGOVA-PETKOVA,,,BUL,,,Women,no_match
@@ -1524,7 +1524,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 7537,INGRID_LOTZ,Ingrid,,LOTZ,,,EUA,,,Women,exact
 4210,MICHELINE_OSTERMEYER,Micheline,,OSTERMEYER,,,FRA,,,Women,exact
 4213,EDERA_CORDIALE-GENTILE,Edera,,CORDIALE-GENTILE,,,ITA,,,Women,exact
-4212|4214,JACQUELINE_MAZEAS,Jacqueline,,MAZEAS,,,FRA,,,Women,ambiguous_exact
+4214,JACQUELINE_MAZEAS,Jacqueline,,MAZEAS,,,FRA,,,Women,exact
 2860,RUTH_OSBURN,Ruth,,OSBURN,,,USA,,,Women,exact
 ,ANITA_WLODARCZYK,Anita,,WLODARCZYK,,,POL,,,Women,no_match
 20014,WENXIU_ZHANG,Wenxiu,,ZHANG,,,CHN,,,Women,reversed
@@ -1635,7 +1635,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 ,TIANNA_BARTOLETTA,Tianna,,BARTOLETTA,,,USA,,,Women,no_match
 21523,BRITTNEY_REESE,Brittney,,REESE,,,USA,,,Women,exact
 23180,IVANA_SPANOVIC,Ivana,,SPANOVIC,,,SRB,,,Women,exact
-21519|21522,MAURREN_HIGA_MAGGI,Maurren,Higa,MAGGI,,,BRA,,,Women,ambiguous_exact
+21522,MAURREN_HIGA_MAGGI,Maurren,Higa,MAGGI,,,BRA,,,Women,exact
 21520,BLESSING_OKAGBARE,Blessing,,OKAGBARE,,,NGR,,,Women,exact
 13669,HEIKE_DRECHSLER,Heike,,DRECHSLER,,,GER,,,Women,exact
 13868,FIONA_MAY,Fiona,,MAY,,,ITA,,,Women,exact
@@ -1687,7 +1687,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 24957,SANDI_MORRIS,Sandi,,MORRIS,,,USA,,,Women,exact
 24958,ELIZA_MCCARTNEY,Eliza,,MCCARTNEY,,,NZL,,,Women,exact
 ,YELENA_ISINBAEVA,Yelena,,ISINBAEVA,,,RUS,,,Women,no_match
-21581|23258|23260,JENNIFER_SUHR,Jennifer,,SUHR,,,USA,,,Women,ambiguous_partial_first
+21581|23260,JENNIFER_SUHR,Jennifer,,SUHR,,,USA,,,Women,ambiguous_partial_first
 20104,SVETLANA_FEOFANOVA,Svetlana,,FEOFANOVA,,,RUS,,,Women,exact
 18519,STACY_DRAGILA,Stacy,,DRAGILA,,,USA,,,Women,exact
 18520,TATIANA_GRIGORIEVA,Tatiana,,GRIGORIEVA,,,AUS,,,Women,exact

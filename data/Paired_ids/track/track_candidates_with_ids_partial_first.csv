@@ -1,6 +1,7 @@
 scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nationality_id,year_of_birth,nationality_at_birth,gender,match_notes
 20974,MOHAMED_FARAH,Mohamed,,FARAH,,,USA,,,Men,partial_first
 20974,MOHAMED_FARAH,Mohamed,,FARAH,,,GBR,,,Men,partial_first
+5437,ALLAN_LAWRENCE,Allan,,LAWRENCE,,,AUS,,,Men,partial_first
 7869,JIM_HINES,Jim,,HINES,,,USA,,,Men,partial_first
 3822,HERBERT_MCKENLEY,Herbert,,MCKENLEY,,,JAM,,,Men,partial_first
 70,STANLEY_ROWLEY,Stanley,,ROWLEY,,,AUS,,,Men,partial_first
@@ -23,6 +24,7 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 16114,VALENTIN_MASSANA,Valentin,,MASSANA,,,ESP,,,Men,partial_first
 6398,DONALD_JAMES_THOMPSON,Donald,James,THOMPSON,,,GBR,,,Men,partial_first
 4951,MILTON_GRAY_CAMPBELL,Milton,Gray,CAMPBELL,,,USA,,,Men,partial_first
+11040,YURI_KUTSENKO,Yuri,,KUTSENKO,,,URS,,,Men,partial_first
 10202,YURI_SEDYKH,Yuri,,SEDYKH,,,URS,,,Men,partial_first
 9218,ANATOLI_BONDARCHUK,Anatoli,,BONDARCHUK,,,URS,,,Men,partial_first
 2437,PATRICK_O'CALLAGHAN,Patrick,,O'CALLAGHAN,,,IRL,,,Men,partial_first
@@ -36,4 +38,5 @@ scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nat
 987,KENNEDY_KANE_MCARTHUR,Kennedy,Kane,MCARTHUR,,,RSA,,,Men,partial_first
 21116,STEVE_HOOKER,Steve,,HOOKER,,,AUS,,,Men,partial_first
 6613,RONALD_MORRIS,Ronald,,MORRIS,,,USA,,,Men,partial_first
+24431,TOMAS_WALSH,Tomas,,WALSH,,,NZL,,,Men,partial_first
 1032,PATRICK_MCDONALD,Patrick,,MCDONALD,,,USA,,,Men,partial_first

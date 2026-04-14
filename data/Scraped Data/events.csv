@@ -4,7 +4,7 @@ events_id,gold_id,silver_id,bronze_id,olympics_id,event_name,event_type
 3,1,2,3,1,Men's 100 metres – Heat 3,Athletics
 4,1,2,3,1,Men's 100 metres – Final,Athletics
 5,1,2,3,1,Men's 100 metres – Results summary,Athletics
-6,8,14,,1,Men's 110 metre hurdles – Semifinal 1,Athletics
+6,,8,14,1,Men's 110 metre hurdles – Semifinal 1,Athletics
 7,8,14,,1,Men's 110 metre hurdles – Semifinal 2,Athletics
 8,8,14,,1,Men's 110 metre hurdles – Final,Athletics
 9,8,14,,1,Men's 110 metre hurdles – Results summary,Athletics
