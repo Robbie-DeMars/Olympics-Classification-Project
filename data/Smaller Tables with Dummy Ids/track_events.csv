@@ -221,581 +221,581 @@ event_id,gold_id,silver_id,bronze_id,olympics_id,event_name,event_type
 219,529.0,530.0,531.0,23,400M Men,Athletics
 220,437.0,438.0,532.0,26,400M Men,Athletics
 221,123.0,533.0,534.0,27,400M Men,Athletics
-222,-1.0,-1.0,-1.0,1,4X100M Relay Men,Athletics
-223,,-1.0,-1.0,2,4X100M Relay Men,Athletics
-224,-1.0,-1.0,-1.0,3,4X100M Relay Men,Athletics
-225,-1.0,-1.0,-1.0,4,4X100M Relay Men,Athletics
-226,-1.0,-1.0,-1.0,5,4X100M Relay Men,Athletics
-227,-1.0,-1.0,-1.0,6,4X100M Relay Men,Athletics
-228,-1.0,-1.0,-1.0,7,4X100M Relay Men,Athletics
-229,-1.0,-1.0,-1.0,8,4X100M Relay Men,Athletics
-230,-1.0,-1.0,-1.0,9,4X100M Relay Men,Athletics
-231,-1.0,-1.0,-1.0,10,4X100M Relay Men,Athletics
-232,-1.0,-1.0,-1.0,11,4X100M Relay Men,Athletics
-233,-1.0,-1.0,-1.0,12,4X100M Relay Men,Athletics
-234,-1.0,-1.0,-1.0,13,4X100M Relay Men,Athletics
-235,-1.0,-1.0,-1.0,14,4X100M Relay Men,Athletics
-236,-1.0,-1.0,-1.0,15,4X100M Relay Men,Athletics
-237,-1.0,-1.0,-1.0,16,4X100M Relay Men,Athletics
-238,-1.0,-1.0,-1.0,17,4X100M Relay Men,Athletics
-239,-1.0,-1.0,-1.0,18,4X100M Relay Men,Athletics
-240,-1.0,-1.0,-1.0,19,4X100M Relay Men,Athletics
-241,-1.0,-1.0,-1.0,20,4X100M Relay Men,Athletics
-242,-1.0,-1.0,-1.0,21,4X100M Relay Men,Athletics
-243,-1.0,-1.0,-1.0,22,4X100M Relay Men,Athletics
-244,-1.0,-1.0,,23,4X100M Relay Men,Athletics
-245,-1.0,-1.0,-1.0,1,4X400M Relay Men,Athletics
-246,-1.0,-1.0,,2,4X400M Relay Men,Athletics
-247,-1.0,-1.0,-1.0,3,4X400M Relay Men,Athletics
-248,-1.0,-1.0,-1.0,4,4X400M Relay Men,Athletics
-249,-1.0,-1.0,-1.0,5,4X400M Relay Men,Athletics
-250,-1.0,-1.0,-1.0,6,4X400M Relay Men,Athletics
-251,-1.0,-1.0,-1.0,7,4X400M Relay Men,Athletics
-252,-1.0,-1.0,-1.0,8,4X400M Relay Men,Athletics
-253,-1.0,-1.0,-1.0,9,4X400M Relay Men,Athletics
-254,-1.0,-1.0,-1.0,10,4X400M Relay Men,Athletics
-255,-1.0,-1.0,-1.0,11,4X400M Relay Men,Athletics
-256,-1.0,-1.0,-1.0,12,4X400M Relay Men,Athletics
-257,-1.0,-1.0,-1.0,24,4X400M Relay Men,Athletics
-258,-1.0,-1.0,-1.0,13,4X400M Relay Men,Athletics
-259,-1.0,-1.0,-1.0,14,4X400M Relay Men,Athletics
-260,-1.0,-1.0,-1.0,15,4X400M Relay Men,Athletics
-261,-1.0,-1.0,-1.0,16,4X400M Relay Men,Athletics
-262,-1.0,-1.0,-1.0,17,4X400M Relay Men,Athletics
-263,-1.0,-1.0,-1.0,18,4X400M Relay Men,Athletics
-264,-1.0,-1.0,-1.0,19,4X400M Relay Men,Athletics
-265,-1.0,-1.0,-1.0,20,4X400M Relay Men,Athletics
-266,-1.0,-1.0,-1.0,21,4X400M Relay Men,Athletics
-267,-1.0,-1.0,-1.0,22,4X400M Relay Men,Athletics
-268,-1.0,-1.0,-1.0,23,4X400M Relay Men,Athletics
-269,0.0,535.0,536.0,1,5000M Men,Athletics
-270,3.0,537.0,538.0,2,5000M Men,Athletics
-271,539.0,540.0,541.0,3,5000M Men,Athletics
-272,542.0,543.0,544.0,4,5000M Men,Athletics
-273,545.0,546.0,547.0,5,5000M Men,Athletics
-274,15.0,548.0,549.0,6,5000M Men,Athletics
+222,535.0,536.0,537.0,1,4X100M Relay Men,Athletics
+223,,538.0,539.0,2,4X100M Relay Men,Athletics
+224,540.0,541.0,542.0,3,4X100M Relay Men,Athletics
+225,543.0,544.0,545.0,4,4X100M Relay Men,Athletics
+226,546.0,547.0,548.0,5,4X100M Relay Men,Athletics
+227,549.0,550.0,551.0,6,4X100M Relay Men,Athletics
+228,552.0,553.0,554.0,7,4X100M Relay Men,Athletics
+229,555.0,556.0,557.0,8,4X100M Relay Men,Athletics
+230,558.0,559.0,560.0,9,4X100M Relay Men,Athletics
+231,561.0,562.0,563.0,10,4X100M Relay Men,Athletics
+232,564.0,565.0,566.0,11,4X100M Relay Men,Athletics
+233,567.0,568.0,569.0,12,4X100M Relay Men,Athletics
+234,570.0,571.0,572.0,13,4X100M Relay Men,Athletics
+235,573.0,574.0,575.0,14,4X100M Relay Men,Athletics
+236,576.0,577.0,578.0,15,4X100M Relay Men,Athletics
+237,579.0,580.0,581.0,16,4X100M Relay Men,Athletics
+238,582.0,583.0,584.0,17,4X100M Relay Men,Athletics
+239,585.0,586.0,587.0,18,4X100M Relay Men,Athletics
+240,588.0,589.0,590.0,19,4X100M Relay Men,Athletics
+241,591.0,592.0,593.0,20,4X100M Relay Men,Athletics
+242,594.0,595.0,596.0,21,4X100M Relay Men,Athletics
+243,597.0,598.0,599.0,22,4X100M Relay Men,Athletics
+244,600.0,601.0,,23,4X100M Relay Men,Athletics
+245,602.0,535.0,603.0,1,4X400M Relay Men,Athletics
+246,604.0,605.0,,2,4X400M Relay Men,Athletics
+247,606.0,607.0,608.0,3,4X400M Relay Men,Athletics
+248,543.0,545.0,609.0,4,4X400M Relay Men,Athletics
+249,546.0,610.0,611.0,5,4X400M Relay Men,Athletics
+250,549.0,612.0,613.0,6,4X400M Relay Men,Athletics
+251,552.0,614.0,615.0,7,4X400M Relay Men,Athletics
+252,616.0,555.0,617.0,8,4X400M Relay Men,Athletics
+253,618.0,558.0,619.0,9,4X400M Relay Men,Athletics
+254,620.0,561.0,563.0,10,4X400M Relay Men,Athletics
+255,564.0,565.0,621.0,11,4X400M Relay Men,Athletics
+256,622.0,623.0,568.0,12,4X400M Relay Men,Athletics
+257,624.0,625.0,626.0,24,4X400M Relay Men,Athletics
+258,627.0,628.0,571.0,13,4X400M Relay Men,Athletics
+259,574.0,629.0,575.0,14,4X400M Relay Men,Athletics
+260,577.0,630.0,631.0,15,4X400M Relay Men,Athletics
+261,579.0,632.0,633.0,16,4X400M Relay Men,Athletics
+262,634.0,635.0,636.0,17,4X400M Relay Men,Athletics
+263,585.0,637.0,638.0,18,4X400M Relay Men,Athletics
+264,588.0,639.0,640.0,19,4X400M Relay Men,Athletics
+265,591.0,641.0,642.0,20,4X400M Relay Men,Athletics
+266,594.0,643.0,644.0,21,4X400M Relay Men,Athletics
+267,597.0,645.0,598.0,22,4X400M Relay Men,Athletics
+268,646.0,647.0,600.0,23,4X400M Relay Men,Athletics
+269,0.0,648.0,649.0,1,5000M Men,Athletics
+270,3.0,650.0,651.0,2,5000M Men,Athletics
+271,652.0,653.0,654.0,3,5000M Men,Athletics
+272,655.0,656.0,657.0,4,5000M Men,Athletics
+273,658.0,659.0,660.0,5,5000M Men,Athletics
+274,15.0,661.0,662.0,6,5000M Men,Athletics
 275,20.0,212.0,18.0,7,5000M Men,Athletics
-276,550.0,22.0,551.0,8,5000M Men,Athletics
-277,24.0,25.0,552.0,9,5000M Men,Athletics
-278,553.0,554.0,555.0,10,5000M Men,Athletics
+276,663.0,22.0,664.0,8,5000M Men,Athletics
+277,24.0,25.0,665.0,9,5000M Men,Athletics
+278,666.0,667.0,668.0,10,5000M Men,Athletics
 279,31.0,30.0,32.0,11,5000M Men,Athletics
-280,33.0,30.0,556.0,12,5000M Men,Athletics
-281,0.0,557.0,558.0,13,5000M Men,Athletics
-282,201.0,3.0,537.0,14,5000M Men,Athletics
-283,559.0,543.0,560.0,15,5000M Men,Athletics
-284,39.0,561.0,40.0,16,5000M Men,Athletics
-285,15.0,20.0,562.0,17,5000M Men,Athletics
-286,563.0,564.0,565.0,18,5000M Men,Athletics
-287,45.0,566.0,567.0,19,5000M Men,Athletics
-288,568.0,24.0,253.0,20,5000M Men,Athletics
-289,554.0,569.0,50.0,21,5000M Men,Athletics
+280,33.0,30.0,669.0,12,5000M Men,Athletics
+281,0.0,670.0,671.0,13,5000M Men,Athletics
+282,201.0,3.0,650.0,14,5000M Men,Athletics
+283,672.0,656.0,673.0,15,5000M Men,Athletics
+284,39.0,674.0,40.0,16,5000M Men,Athletics
+285,15.0,20.0,675.0,17,5000M Men,Athletics
+286,676.0,677.0,678.0,18,5000M Men,Athletics
+287,45.0,679.0,680.0,19,5000M Men,Athletics
+288,681.0,24.0,253.0,20,5000M Men,Athletics
+289,667.0,682.0,50.0,21,5000M Men,Athletics
 290,30.0,31.0,32.0,22,5000M Men,Athletics
-291,52.0,570.0,571.0,23,5000M Men,Athletics
-292,572.0,308.0,573.0,1,50Km Race Walk Men,Athletics
-293,574.0,308.0,575.0,2,50Km Race Walk Men,Athletics
-294,309.0,576.0,577.0,3,50Km Race Walk Men,Athletics
-295,578.0,579.0,334.0,4,50Km Race Walk Men,Athletics
-296,316.0,580.0,581.0,5,50Km Race Walk Men,Athletics
-297,582.0,583.0,584.0,17,50Km Race Walk Men,Athletics
-298,585.0,586.0,587.0,18,50Km Race Walk Men,Athletics
-299,588.0,589.0,590.0,19,50Km Race Walk Men,Athletics
-300,590.0,591.0,592.0,20,50Km Race Walk Men,Athletics
-301,593.0,594.0,595.0,21,50Km Race Walk Men,Athletics
-302,308.0,596.0,597.0,13,50Km Race Walk Men,Athletics
-303,309.0,575.0,598.0,14,50Km Race Walk Men,Athletics
-304,309.0,599.0,600.0,15,50Km Race Walk Men,Athletics
-305,601.0,334.0,602.0,28,50Km Race Walk Men,Athletics
-306,602.0,603.0,604.0,16,50Km Race Walk Men,Athletics
-307,605.0,606.0,584.0,7,50Km Race Walk Men,Athletics
-308,607.0,590.0,585.0,8,50Km Race Walk Men,Athletics
-309,608.0,609.0,610.0,9,50Km Race Walk Men,Athletics
-310,611.0,612.0,613.0,10,50Km Race Walk Men,Athletics
-311,614.0,196.0,615.0,1,800M Men,Athletics
-312,616.0,617.0,618.0,2,800M Men,Athletics
-313,619.0,620.0,621.0,3,800M Men,Athletics
-314,622.0,623.0,624.0,4,800M Men,Athletics
-315,625.0,206.0,626.0,5,800M Men,Athletics
-316,480.0,210.0,627.0,6,800M Men,Athletics
-317,628.0,629.0,630.0,7,800M Men,Athletics
-318,245.0,631.0,632.0,8,800M Men,Athletics
-319,524.0,523.0,633.0,9,800M Men,Athletics
-320,634.0,635.0,255.0,10,800M Men,Athletics
-321,636.0,637.0,638.0,11,800M Men,Athletics
-322,227.0,639.0,497.0,12,800M Men,Athletics
-323,230.0,640.0,530.0,24,800M Men,Athletics
-324,641.0,642.0,643.0,25,800M Men,Athletics
-325,614.0,644.0,645.0,13,800M Men,Athletics
-326,646.0,647.0,620.0,14,800M Men,Athletics
-327,648.0,649.0,650.0,15,800M Men,Athletics
-328,242.0,206.0,651.0,16,800M Men,Athletics
-329,652.0,653.0,654.0,17,800M Men,Athletics
-330,245.0,655.0,629.0,18,800M Men,Athletics
-331,656.0,657.0,658.0,19,800M Men,Athletics
-332,524.0,523.0,659.0,20,800M Men,Athletics
-333,660.0,527.0,255.0,21,800M Men,Athletics
-334,636.0,661.0,662.0,22,800M Men,Athletics
-335,663.0,230.0,664.0,23,800M Men,Athletics
-336,261.0,665.0,666.0,26,800M Men,Athletics
-337,264.0,667.0,668.0,27,800M Men,Athletics
-338,669.0,670.0,671.0,1,Decathlon Men,Athletics
-339,672.0,673.0,674.0,2,Decathlon Men,Athletics
-340,675.0,676.0,677.0,3,Decathlon Men,Athletics
-341,678.0,679.0,680.0,4,Decathlon Men,Athletics
-342,681.0,682.0,683.0,5,Decathlon Men,Athletics
-343,684.0,685.0,686.0,6,Decathlon Men,Athletics
-344,687.0,688.0,689.0,7,Decathlon Men,Athletics
-345,690.0,691.0,692.0,8,Decathlon Men,Athletics
-346,693.0,694.0,695.0,9,Decathlon Men,Athletics
-347,696.0,697.0,698.0,10,Decathlon Men,Athletics
-348,699.0,700.0,701.0,11,Decathlon Men,Athletics
-349,702.0,703.0,704.0,12,Decathlon Men,Athletics
-350,705.0,706.0,707.0,26,Decathlon Men,Athletics
-351,669.0,708.0,674.0,13,Decathlon Men,Athletics
-352,676.0,672.0,709.0,14,Decathlon Men,Athletics
-353,710.0,711.0,712.0,15,Decathlon Men,Athletics
-354,713.0,714.0,715.0,28,Decathlon Men,Athletics
-355,681.0,716.0,717.0,16,Decathlon Men,Athletics
-356,686.0,718.0,719.0,17,Decathlon Men,Athletics
-357,720.0,721.0,688.0,18,Decathlon Men,Athletics
-358,694.0,690.0,692.0,19,Decathlon Men,Athletics
-359,693.0,722.0,695.0,20,Decathlon Men,Athletics
-360,723.0,700.0,724.0,21,Decathlon Men,Athletics
-361,725.0,726.0,727.0,22,Decathlon Men,Athletics
-362,728.0,730.0,731.0,23,Decathlon Men,Athletics
-363,732.0,733.0,734.0,1,Discus Throw Men,Athletics
-364,735.0,733.0,736.0,2,Discus Throw Men,Athletics
-365,736.0,737.0,738.0,3,Discus Throw Men,Athletics
-366,739.0,740.0,741.0,4,Discus Throw Men,Athletics
-367,742.0,743.0,744.0,5,Discus Throw Men,Athletics
-368,743.0,745.0,744.0,6,Discus Throw Men,Athletics
-369,746.0,747.0,748.0,7,Discus Throw Men,Athletics
-370,746.0,749.0,750.0,8,Discus Throw Men,Athletics
-371,751.0,752.0,753.0,9,Discus Throw Men,Athletics
-372,754.0,755.0,756.0,24,Discus Throw Men,Athletics
-373,757.0,758.0,735.0,13,Discus Throw Men,Athletics
-374,736.0,759.0,760.0,14,Discus Throw Men,Athletics
-375,737.0,761.0,762.0,15,Discus Throw Men,Athletics
-376,763.0,764.0,765.0,16,Discus Throw Men,Athletics
-377,746.0,748.0,766.0,18,Discus Throw Men,Athletics
-378,767.0,768.0,769.0,21,Discus Throw Men,Athletics
-379,770.0,771.0,772.0,22,Discus Throw Men,Athletics
-380,773.0,774.0,775.0,23,Discus Throw Men,Athletics
-381,754.0,776.0,777.0,26,Discus Throw Men,Athletics
-382,778.0,779.0,780.0,27,Discus Throw Men,Athletics
-383,781.0,782.0,783.0,1,Hammer Throw Men,Athletics
-384,784.0,785.0,782.0,2,Hammer Throw Men,Athletics
-385,786.0,787.0,788.0,3,Hammer Throw Men,Athletics
-386,789.0,788.0,790.0,4,Hammer Throw Men,Athletics
-387,791.0,792.0,793.0,6,Hammer Throw Men,Athletics
-388,794.0,795.0,796.0,8,Hammer Throw Men,Athletics
-389,797.0,798.0,799.0,9,Hammer Throw Men,Athletics
-390,800.0,801.0,802.0,24,Hammer Throw Men,Athletics
-391,800.0,707.0,803.0,25,Hammer Throw Men,Athletics
-392,804.0,784.0,805.0,13,Hammer Throw Men,Athletics
-393,805.0,,806.0,14,Hammer Throw Men,Athletics
-394,807.0,808.0,809.0,15,Hammer Throw Men,Athletics
-395,791.0,811.0,812.0,16,Hammer Throw Men,Athletics
-396,813.0,795.0,814.0,18,Hammer Throw Men,Athletics
-397,815.0,816.0,817.0,21,Hammer Throw Men,Athletics
-398,818.0,801.0,819.0,22,Hammer Throw Men,Athletics
-399,801.0,820.0,821.0,23,Hammer Throw Men,Athletics
-400,800.0,822.0,776.0,26,Hammer Throw Men,Athletics
-401,823.0,824.0,825.0,1,High Jump Men,Athletics
-402,826.0,827.0,828.0,2,High Jump Men,Athletics
-403,829.0,830.0,831.0,3,High Jump Men,Athletics
-404,830.0,832.0,833.0,4,High Jump Men,Athletics
-405,836.0,837.0,838.0,6,High Jump Men,Athletics
-406,839.0,840.0,841.0,8,High Jump Men,Athletics
-407,842.0,843.0,844.0,9,High Jump Men,Athletics
-408,845.0,846.0,,24,High Jump Men,Athletics
-409,849.0,850.0,851.0,25,High Jump Men,Athletics
-410,852.0,853.0,823.0,13,High Jump Men,Athletics
-411,855.0,856.0,857.0,14,High Jump Men,Athletics
-412,858.0,834.0,859.0,15,High Jump Men,Athletics
-413,860.0,836.0,861.0,16,High Jump Men,Athletics
-414,840.0,841.0,862.0,18,High Jump Men,Athletics
-415,863.0,864.0,865.0,21,High Jump Men,Athletics
-416,725.0,866.0,867.0,22,High Jump Men,Athletics
-417,868.0,869.0,870.0,23,High Jump Men,Athletics
-418,871.0,872.0,873.0,26,High Jump Men,Athletics
-419,874.0,778.0,,27,High Jump Men,Athletics
-420,876.0,877.0,878.0,1,Javelin Throw Men,Athletics
-421,879.0,880.0,881.0,2,Javelin Throw Men,Athletics
-422,882.0,883.0,884.0,3,Javelin Throw Men,Athletics
-423,882.0,885.0,883.0,4,Javelin Throw Men,Athletics
-424,886.0,887.0,888.0,5,Javelin Throw Men,Athletics
-425,889.0,890.0,891.0,6,Javelin Throw Men,Athletics
-426,892.0,893.0,894.0,8,Javelin Throw Men,Athletics
-427,895.0,896.0,897.0,9,Javelin Throw Men,Athletics
-428,898.0,899.0,900.0,24,Javelin Throw Men,Athletics
-429,878.0,,901.0,13,Javelin Throw Men,Athletics
-430,879.0,902.0,884.0,14,Javelin Throw Men,Athletics
-431,882.0,883.0,885.0,15,Javelin Throw Men,Athletics
-432,903.0,904.0,905.0,16,Javelin Throw Men,Athletics
-433,906.0,894.0,907.0,18,Javelin Throw Men,Athletics
-434,908.0,909.0,910.0,21,Javelin Throw Men,Athletics
-435,911.0,912.0,913.0,22,Javelin Throw Men,Athletics
-436,898.0,914.0,915.0,23,Javelin Throw Men,Athletics
-437,916.0,917.0,918.0,1,Long Jump Men,Athletics
-438,919.0,920.0,921.0,2,Long Jump Men,Athletics
-439,922.0,923.0,924.0,3,Long Jump Men,Athletics
-440,66.0,925.0,926.0,4,Long Jump Men,Athletics
-441,927.0,928.0,929.0,6,Long Jump Men,Athletics
-442,930.0,931.0,932.0,8,Long Jump Men,Athletics
-443,933.0,934.0,935.0,9,Long Jump Men,Athletics
-444,81.0,936.0,937.0,10,Long Jump Men,Athletics
-445,938.0,939.0,940.0,11,Long Jump Men,Athletics
-446,941.0,942.0,943.0,24,Long Jump Men,Athletics
-447,164.0,944.0,850.0,25,Long Jump Men,Athletics
-448,918.0,945.0,946.0,13,Long Jump Men,Athletics
-449,947.0,948.0,949.0,14,Long Jump Men,Athletics
-450,66.0,950.0,926.0,15,Long Jump Men,Athletics
-451,951.0,952.0,953.0,16,Long Jump Men,Athletics
-452,954.0,930.0,932.0,18,Long Jump Men,Athletics
-453,955.0,956.0,957.0,21,Long Jump Men,Athletics
-454,958.0,959.0,960.0,22,Long Jump Men,Athletics
-455,961.0,943.0,962.0,23,Long Jump Men,Athletics
-456,944.0,963.0,964.0,26,Long Jump Men,Athletics
-457,874.0,778.0,875.0,27,Long Jump Men,Athletics
-458,537.0,965.0,35.0,1,Marathon Men,Athletics
-459,966.0,967.0,968.0,2,Marathon Men,Athletics
-460,969.0,970.0,971.0,3,Marathon Men,Athletics
-461,972.0,973.0,974.0,4,Marathon Men,Athletics
-462,16.0,975.0,976.0,5,Marathon Men,Athletics
-463,977.0,978.0,979.0,6,Marathon Men,Athletics
-464,19.0,980.0,981.0,7,Marathon Men,Athletics
-465,982.0,983.0,984.0,8,Marathon Men,Athletics
-466,24.0,985.0,986.0,9,Marathon Men,Athletics
-467,987.0,988.0,989.0,10,Marathon Men,Athletics
-468,990.0,991.0,992.0,11,Marathon Men,Athletics
-469,52.0,993.0,994.0,12,Marathon Men,Athletics
-470,995.0,996.0,997.0,24,Marathon Men,Athletics
-471,998.0,999.0,1000.0,25,Marathon Men,Athletics
-472,1001.0,1002.0,1003.0,13,Marathon Men,Athletics
-473,1004.0,1005.0,1006.0,14,Marathon Men,Athletics
-474,1007.0,1008.0,970.0,15,Marathon Men,Athletics
-475,1009.0,1010.0,1011.0,28,Marathon Men,Athletics
-476,977.0,1012.0,1013.0,16,Marathon Men,Athletics
-477,978.0,979.0,19.0,17,Marathon Men,Athletics
-478,982.0,1014.0,1015.0,18,Marathon Men,Athletics
-479,25.0,1016.0,1017.0,19,Marathon Men,Athletics
-480,1018.0,1019.0,1020.0,20,Marathon Men,Athletics
-481,1021.0,1022.0,1023.0,21,Marathon Men,Athletics
-482,54.0,1024.0,1025.0,22,Marathon Men,Athletics
-483,1026.0,1027.0,1028.0,23,Marathon Men,Athletics
-484,1029.0,1030.0,403.0,26,Marathon Men,Athletics
-485,1031.0,1032.0,1033.0,27,Marathon Men,Athletics
-486,1034.0,1035.0,1036.0,1,Pole Vault Men,Athletics
-487,1037.0,1038.0,,2,Pole Vault Men,Athletics
-488,1039.0,1040.0,1041.0,3,Pole Vault Men,Athletics
-489,1041.0,1042.0,1043.0,4,Pole Vault Men,Athletics
-490,1044.0,1045.0,1046.0,8,Pole Vault Men,Athletics
-491,1047.0,1048.0,1049.0,9,Pole Vault Men,Athletics
-492,1050.0,,1052.0,24,Pole Vault Men,Athletics
-493,849.0,1055.0,1056.0,25,Pole Vault Men,Athletics
-494,1035.0,1057.0,1058.0,13,Pole Vault Men,Athletics
-495,1059.0,1060.0,1061.0,14,Pole Vault Men,Athletics
-496,1062.0,1042.0,1063.0,15,Pole Vault Men,Athletics
-497,1064.0,1065.0,,16,Pole Vault Men,Athletics
-498,1067.0,1068.0,1069.0,18,Pole Vault Men,Athletics
-499,1070.0,1071.0,1072.0,21,Pole Vault Men,Athletics
-500,1073.0,1074.0,1075.0,22,Pole Vault Men,Athletics
-501,1076.0,1077.0,1079.0,23,Pole Vault Men,Athletics
-502,1082.0,1083.0,1084.0,26,Pole Vault Men,Athletics
-503,1085.0,1086.0,1087.0,27,Pole Vault Men,Athletics
-504,1089.0,1090.0,1091.0,1,Shot Put Men,Athletics
-505,1092.0,1093.0,1094.0,2,Shot Put Men,Athletics
-506,1095.0,1096.0,1097.0,3,Shot Put Men,Athletics
-507,1098.0,1099.0,1100.0,4,Shot Put Men,Athletics
-508,1101.0,1102.0,1103.0,5,Shot Put Men,Athletics
-509,1104.0,1105.0,1106.0,8,Shot Put Men,Athletics
-510,1105.0,1107.0,1108.0,9,Shot Put Men,Athletics
-511,1109.0,1110.0,1111.0,10,Shot Put Men,Athletics
-512,776.0,1112.0,162.0,24,Shot Put Men,Athletics
-513,1113.0,803.0,778.0,25,Shot Put Men,Athletics
-514,1092.0,1114.0,1115.0,13,Shot Put Men,Athletics
-515,1096.0,1116.0,1117.0,14,Shot Put Men,Athletics
-516,1118.0,1097.0,1119.0,15,Shot Put Men,Athletics
-517,1120.0,1121.0,1122.0,16,Shot Put Men,Athletics
-518,1106.0,1123.0,1124.0,18,Shot Put Men,Athletics
-519,1125.0,1126.0,1127.0,21,Shot Put Men,Athletics
-520,770.0,1128.0,1129.0,22,Shot Put Men,Athletics
-521,1130.0,776.0,1131.0,23,Shot Put Men,Athletics
-522,776.0,1132.0,1133.0,26,Shot Put Men,Athletics
-523,778.0,1134.0,1135.0,27,Shot Put Men,Athletics
-524,1136.0,946.0,1137.0,1,Triple Jump Men,Athletics
-525,1138.0,1139.0,1140.0,2,Triple Jump Men,Athletics
-526,1141.0,1142.0,1143.0,3,Triple Jump Men,Athletics
-527,1144.0,1145.0,1146.0,4,Triple Jump Men,Athletics
-528,1147.0,1148.0,1149.0,8,Triple Jump Men,Athletics
-529,1150.0,1151.0,1152.0,9,Triple Jump Men,Athletics
-530,1153.0,1154.0,1155.0,24,Triple Jump Men,Athletics
-531,944.0,875.0,1156.0,25,Triple Jump Men,Athletics
-532,1136.0,946.0,1157.0,13,Triple Jump Men,Athletics
-533,1158.0,1159.0,1160.0,14,Triple Jump Men,Athletics
-534,1161.0,1141.0,1162.0,15,Triple Jump Men,Athletics
-535,1163.0,1164.0,1165.0,16,Triple Jump Men,Athletics
-536,1147.0,1166.0,1167.0,18,Triple Jump Men,Athletics
-537,957.0,1168.0,1169.0,21,Triple Jump Men,Athletics
-538,1170.0,1171.0,1172.0,22,Triple Jump Men,Athletics
-539,1173.0,962.0,1174.0,23,Triple Jump Men,Athletics
-540,944.0,1175.0,964.0,26,Triple Jump Men,Athletics
-541,875.0,1176.0,1177.0,27,Triple Jump Men,Athletics
-542,1178.0,1179.0,1180.0,1,10000M Women,Athletics
-543,1180.0,1181.0,1182.0,2,10000M Women,Athletics
-544,1183.0,1184.0,1185.0,3,10000M Women,Athletics
-545,1183.0,1186.0,1187.0,4,10000M Women,Athletics
-546,1180.0,1188.0,1179.0,13,10000M Women,Athletics
-547,1189.0,1190.0,1183.0,14,10000M Women,Athletics
-548,1185.0,1191.0,1184.0,15,10000M Women,Athletics
-549,1192.0,1193.0,1194.0,1,100M Hurdles Women,Athletics
-550,1195.0,1196.0,1197.0,2,100M Hurdles Women,Athletics
-551,1198.0,1199.0,1200.0,3,100M Hurdles Women,Athletics
-552,1201.0,1202.0,1203.0,4,100M Hurdles Women,Athletics
-553,1204.0,1205.0,1206.0,5,100M Hurdles Women,Athletics
-554,1208.0,1209.0,1210.0,6,100M Hurdles Women,Athletics
-555,1196.0,1195.0,1211.0,13,100M Hurdles Women,Athletics
-556,1212.0,1213.0,1200.0,14,100M Hurdles Women,Athletics
-557,1214.0,1215.0,1216.0,15,100M Hurdles Women,Athletics
-558,1217.0,1208.0,1218.0,16,100M Hurdles Women,Athletics
-559,1219.0,1220.0,1221.0,17,100M Hurdles Women,Athletics
-560,1222.0,1223.0,1224.0,1,100M Women,Athletics
-561,1224.0,1225.0,,2,100M Women,Athletics
-562,,1227.0,1229.0,3,100M Women,Athletics
-563,1230.0,1231.0,1232.0,4,100M Women,Athletics
-564,1233.0,1234.0,1229.0,5,100M Women,Athletics
-565,1235.0,1236.0,1237.0,6,100M Women,Athletics
-566,1238.0,1239.0,1240.0,7,100M Women,Athletics
-567,1241.0,1242.0,1243.0,8,100M Women,Athletics
-568,1244.0,1245.0,1246.0,9,100M Women,Athletics
-569,1247.0,1248.0,1249.0,10,100M Women,Athletics
-570,1250.0,1251.0,1252.0,11,100M Women,Athletics
-571,1224.0,1253.0,1254.0,13,100M Women,Athletics
-572,1255.0,1256.0,1254.0,14,100M Women,Athletics
-573,1230.0,1229.0,1257.0,15,100M Women,Athletics
-574,1258.0,1259.0,1260.0,16,100M Women,Athletics
-575,1236.0,1261.0,1262.0,17,100M Women,Athletics
-576,1238.0,1263.0,1264.0,18,100M Women,Athletics
-577,1265.0,1266.0,1267.0,19,100M Women,Athletics
-578,1268.0,1269.0,1246.0,20,100M Women,Athletics
-579,1248.0,1270.0,1271.0,21,100M Women,Athletics
-580,1272.0,1273.0,1274.0,1,1500M Women,Athletics
-581,1275.0,1276.0,1277.0,2,1500M Women,Athletics
-582,1278.0,1279.0,1280.0,3,1500M Women,Athletics
-583,1281.0,1282.0,1283.0,4,1500M Women,Athletics
-584,1284.0,1285.0,1286.0,5,1500M Women,Athletics
-585,1287.0,1288.0,1289.0,6,1500M Women,Athletics
-586,,1290.0,1291.0,13,1500M Women,Athletics
-587,1292.0,1293.0,1294.0,14,1500M Women,Athletics
-588,1295.0,1280.0,1296.0,15,1500M Women,Athletics
-589,1287.0,1297.0,1298.0,16,1500M Women,Athletics
-590,1299.0,1288.0,1300.0,17,1500M Women,Athletics
-591,1222.0,1301.0,1223.0,1,200M Women,Athletics
-592,1254.0,1302.0,1226.0,2,200M Women,Athletics
-593,1303.0,1304.0,1305.0,3,200M Women,Athletics
-594,1257.0,1231.0,1229.0,4,200M Women,Athletics
-595,1306.0,1307.0,1229.0,5,200M Women,Athletics
-596,1308.0,1235.0,1236.0,6,200M Women,Athletics
-597,1240.0,1261.0,1309.0,7,200M Women,Athletics
-598,1241.0,1310.0,1242.0,8,200M Women,Athletics
-599,1244.0,1311.0,1312.0,9,200M Women,Athletics
-600,1302.0,1224.0,1253.0,13,200M Women,Athletics
-601,1254.0,1302.0,1313.0,14,200M Women,Athletics
-602,1314.0,1229.0,1315.0,15,200M Women,Athletics
-603,1308.0,1316.0,1229.0,16,200M Women,Athletics
-604,1236.0,1261.0,1240.0,17,200M Women,Athletics
-605,1263.0,1240.0,1317.0,18,200M Women,Athletics
-606,1265.0,1266.0,1267.0,19,200M Women,Athletics
-607,1268.0,1318.0,1319.0,20,200M Women,Athletics
-608,1320.0,1321.0,1322.0,1,20Km Race Walk Women,Athletics
-609,1323.0,1324.0,1325.0,2,20Km Race Walk Women,Athletics
-610,1326.0,1324.0,1327.0,3,20Km Race Walk Women,Athletics
-611,1328.0,,1329.0,13,20Km Race Walk Women,Athletics
-612,1330.0,1331.0,1332.0,14,20Km Race Walk Women,Athletics
-613,1333.0,1334.0,1335.0,1,3000M Steeplechase Women,Athletics
-614,1336.0,1337.0,,2,3000M Steeplechase Women,Athletics
-615,1338.0,1339.0,1340.0,13,3000M Steeplechase Women,Athletics
-616,1341.0,1342.0,1343.0,1,400M Hurdles Women,Athletics
-617,1344.0,1345.0,1346.0,2,400M Hurdles Women,Athletics
-618,1232.0,1347.0,1348.0,3,400M Hurdles Women,Athletics
-619,1349.0,1350.0,1351.0,4,400M Hurdles Women,Athletics
-620,1352.0,1353.0,1354.0,5,400M Hurdles Women,Athletics
-621,1355.0,1356.0,1357.0,13,400M Hurdles Women,Athletics
-622,1358.0,1359.0,1360.0,14,400M Hurdles Women,Athletics
-623,1347.0,1361.0,1362.0,15,400M Hurdles Women,Athletics
-624,1363.0,1302.0,1364.0,1,400M Women,Athletics
-625,1365.0,1366.0,1367.0,2,400M Women,Athletics
-626,1368.0,1369.0,1370.0,3,400M Women,Athletics
-627,1314.0,1371.0,1372.0,4,400M Women,Athletics
-628,1306.0,1373.0,1374.0,5,400M Women,Athletics
-629,1240.0,1375.0,1376.0,6,400M Women,Athletics
-630,1377.0,1378.0,1379.0,7,400M Women,Athletics
-631,1367.0,1365.0,1380.0,13,400M Women,Athletics
-632,1381.0,1382.0,1355.0,14,400M Women,Athletics
-633,1314.0,1368.0,1383.0,15,400M Women,Athletics
-634,1384.0,1385.0,1375.0,16,400M Women,Athletics
-635,1386.0,1387.0,1388.0,17,400M Women,Athletics
-636,1265.0,1389.0,1390.0,18,400M Women,Athletics
-637,-1.0,-1.0,-1.0,1,4X100M Relay Women,Athletics
-638,-1.0,-1.0,-1.0,2,4X100M Relay Women,Athletics
-639,-1.0,-1.0,-1.0,3,4X100M Relay Women,Athletics
-640,-1.0,-1.0,-1.0,4,4X100M Relay Women,Athletics
-641,-1.0,-1.0,-1.0,5,4X100M Relay Women,Athletics
-642,-1.0,-1.0,-1.0,6,4X100M Relay Women,Athletics
-643,-1.0,-1.0,-1.0,7,4X100M Relay Women,Athletics
-644,-1.0,-1.0,-1.0,8,4X100M Relay Women,Athletics
-645,-1.0,-1.0,-1.0,9,4X100M Relay Women,Athletics
-646,-1.0,-1.0,-1.0,10,4X100M Relay Women,Athletics
-647,-1.0,-1.0,-1.0,11,4X100M Relay Women,Athletics
-648,-1.0,-1.0,-1.0,13,4X100M Relay Women,Athletics
-649,-1.0,-1.0,-1.0,14,4X100M Relay Women,Athletics
-650,-1.0,-1.0,-1.0,15,4X100M Relay Women,Athletics
-651,-1.0,-1.0,-1.0,16,4X100M Relay Women,Athletics
-652,-1.0,-1.0,-1.0,17,4X100M Relay Women,Athletics
-653,-1.0,-1.0,-1.0,18,4X100M Relay Women,Athletics
-654,-1.0,-1.0,-1.0,19,4X100M Relay Women,Athletics
-655,-1.0,-1.0,-1.0,20,4X100M Relay Women,Athletics
-656,-1.0,-1.0,-1.0,21,4X100M Relay Women,Athletics
-657,-1.0,-1.0,-1.0,1,4X400M Relay Women,Athletics
-658,-1.0,,-1.0,2,4X400M Relay Women,Athletics
-659,-1.0,-1.0,-1.0,3,4X400M Relay Women,Athletics
-660,-1.0,-1.0,-1.0,4,4X400M Relay Women,Athletics
-661,-1.0,-1.0,-1.0,5,4X400M Relay Women,Athletics
-662,-1.0,-1.0,-1.0,6,4X400M Relay Women,Athletics
-663,-1.0,-1.0,-1.0,13,4X400M Relay Women,Athletics
-664,-1.0,-1.0,-1.0,14,4X400M Relay Women,Athletics
-665,-1.0,-1.0,-1.0,15,4X400M Relay Women,Athletics
-666,-1.0,-1.0,-1.0,16,4X400M Relay Women,Athletics
-667,-1.0,-1.0,-1.0,17,4X400M Relay Women,Athletics
-668,1179.0,1391.0,1178.0,1,5000M Women,Athletics
-669,1180.0,1181.0,1392.0,2,5000M Women,Athletics
-670,1280.0,1393.0,1184.0,3,5000M Women,Athletics
-671,1392.0,1179.0,1180.0,13,5000M Women,Athletics
-672,1392.0,1394.0,1180.0,14,5000M Women,Athletics
-673,1191.0,1395.0,1396.0,15,5000M Women,Athletics
-674,1397.0,1398.0,1399.0,1,800M Women,Athletics
-675,1400.0,1401.0,1402.0,2,800M Women,Athletics
-676,1403.0,1404.0,1292.0,3,800M Women,Athletics
-677,1405.0,1406.0,1407.0,4,800M Women,Athletics
-678,1285.0,1408.0,1409.0,5,800M Women,Athletics
-679,1287.0,1410.0,1411.0,6,800M Women,Athletics
-680,1412.0,1413.0,1414.0,7,800M Women,Athletics
-681,1415.0,1416.0,1417.0,8,800M Women,Athletics
-682,1418.0,1397.0,1419.0,13,800M Women,Athletics
-683,1292.0,1402.0,1420.0,14,800M Women,Athletics
-684,1295.0,1407.0,1403.0,15,800M Women,Athletics
-685,1298.0,1421.0,1422.0,16,800M Women,Athletics
-686,1423.0,1424.0,1288.0,17,800M Women,Athletics
-687,1389.0,1425.0,1426.0,18,800M Women,Athletics
-688,1427.0,1428.0,1429.0,11,800M Women,Athletics
-689,1430.0,1431.0,1432.0,1,Discus Throw Women,Athletics
-690,1433.0,,1434.0,2,Discus Throw Women,Athletics
-691,1435.0,1436.0,1437.0,3,Discus Throw Women,Athletics
-692,1438.0,1439.0,1440.0,4,Discus Throw Women,Athletics
-693,1441.0,1442.0,1443.0,5,Discus Throw Women,Athletics
-694,1444.0,1445.0,1446.0,7,Discus Throw Women,Athletics
-695,1447.0,1448.0,1444.0,8,Discus Throw Women,Athletics
-696,1447.0,1449.0,1450.0,9,Discus Throw Women,Athletics
-697,1451.0,1452.0,1453.0,10,Discus Throw Women,Athletics
-698,1454.0,1455.0,1456.0,11,Discus Throw Women,Athletics
-699,1430.0,1457.0,1458.0,13,Discus Throw Women,Athletics
-700,1459.0,1436.0,1460.0,14,Discus Throw Women,Athletics
-701,1461.0,1459.0,1435.0,15,Discus Throw Women,Athletics
-702,1462.0,1463.0,1464.0,16,Discus Throw Women,Athletics
-703,1465.0,1466.0,1467.0,17,Discus Throw Women,Athletics
-704,1448.0,1468.0,1444.0,18,Discus Throw Women,Athletics
-705,1469.0,1470.0,1471.0,20,Discus Throw Women,Athletics
-706,1455.0,1472.0,1452.0,21,Discus Throw Women,Athletics
-707,1473.0,1474.0,1475.0,1,Hammer Throw Women,Athletics
-708,1476.0,1474.0,1477.0,2,Hammer Throw Women,Athletics
-709,1478.0,1479.0,1480.0,3,Hammer Throw Women,Athletics
-710,,1473.0,1481.0,13,Hammer Throw Women,Athletics
-711,1479.0,1476.0,1482.0,14,Hammer Throw Women,Athletics
-712,1483.0,1484.0,1485.0,1,Heptathlon Women,Athletics
-713,1486.0,1487.0,1488.0,2,Heptathlon Women,Athletics
-714,1489.0,1490.0,1491.0,3,Heptathlon Women,Athletics
-715,1492.0,1493.0,1494.0,4,Heptathlon Women,Athletics
-716,1495.0,1492.0,1496.0,5,Heptathlon Women,Athletics
-717,1484.0,1497.0,1488.0,13,Heptathlon Women,Athletics
-718,1498.0,1499.0,1500.0,14,Heptathlon Women,Athletics
-719,1501.0,1491.0,1489.0,15,Heptathlon Women,Athletics
-720,1492.0,1502.0,1503.0,28,Heptathlon Women,Athletics
-721,1504.0,1505.0,1506.0,1,High Jump Women,Athletics
-722,1507.0,1506.0,,2,High Jump Women,Athletics
-723,1508.0,1509.0,1510.0,3,High Jump Women,Athletics
-724,1512.0,1513.0,1514.0,4,High Jump Women,Athletics
-725,1515.0,1516.0,1517.0,6,High Jump Women,Athletics
-726,1518.0,1519.0,,8,High Jump Women,Athletics
-727,1521.0,1522.0,1523.0,9,High Jump Women,Athletics
-728,1524.0,1525.0,1526.0,10,High Jump Women,Athletics
-729,1527.0,1528.0,1529.0,13,High Jump Women,Athletics
-730,1530.0,1509.0,1531.0,14,High Jump Women,Athletics
-731,1532.0,1533.0,1534.0,15,High Jump Women,Athletics
-732,1516.0,1535.0,1536.0,16,High Jump Women,Athletics
-733,1518.0,1537.0,1538.0,18,High Jump Women,Athletics
-734,1539.0,1525.0,1469.0,20,High Jump Women,Athletics
-735,1540.0,1541.0,1542.0,21,High Jump Women,Athletics
-736,1543.0,1544.0,1545.0,1,Javelin Throw Women,Athletics
-737,1545.0,,1546.0,2,Javelin Throw Women,Athletics
-738,1547.0,1548.0,1549.0,3,Javelin Throw Women,Athletics
-739,1550.0,1551.0,1552.0,4,Javelin Throw Women,Athletics
-740,1553.0,1554.0,1555.0,6,Javelin Throw Women,Athletics
-741,1556.0,1557.0,1558.0,7,Javelin Throw Women,Athletics
-742,1559.0,1560.0,1561.0,8,Javelin Throw Women,Athletics
-743,1560.0,1523.0,1562.0,9,Javelin Throw Women,Athletics
-744,1563.0,1564.0,1565.0,10,Javelin Throw Women,Athletics
-745,1545.0,1546.0,1566.0,13,Javelin Throw Women,Athletics
-746,1549.0,1567.0,1548.0,14,Javelin Throw Women,Athletics
-747,1568.0,1569.0,1547.0,15,Javelin Throw Women,Athletics
-748,1570.0,1571.0,1572.0,16,Javelin Throw Women,Athletics
-749,1553.0,1573.0,1555.0,17,Javelin Throw Women,Athletics
-750,1557.0,1574.0,1562.0,18,Javelin Throw Women,Athletics
-751,1575.0,1576.0,1577.0,20,Javelin Throw Women,Athletics
-752,1541.0,1578.0,1563.0,21,Javelin Throw Women,Athletics
-753,1579.0,1580.0,1581.0,1,Long Jump Women,Athletics
-754,1582.0,,1583.0,2,Long Jump Women,Athletics
-755,1584.0,1585.0,1586.0,3,Long Jump Women,Athletics
-756,1584.0,1587.0,1492.0,4,Long Jump Women,Athletics
-757,1588.0,1589.0,1590.0,6,Long Jump Women,Athletics
-758,1591.0,1592.0,1593.0,8,Long Jump Women,Athletics
-759,1594.0,1523.0,1595.0,9,Long Jump Women,Athletics
-760,1580.0,1596.0,1597.0,13,Long Jump Women,Athletics
-761,1598.0,1599.0,1586.0,14,Long Jump Women,Athletics
-762,1600.0,1585.0,1492.0,15,Long Jump Women,Athletics
-763,1601.0,1602.0,1603.0,16,Long Jump Women,Athletics
-764,1604.0,1240.0,1605.0,18,Long Jump Women,Athletics
-765,1606.0,1607.0,1608.0,1,Marathon Women,Athletics
-766,1609.0,1610.0,1611.0,2,Marathon Women,Athletics
-767,1612.0,1613.0,1614.0,3,Marathon Women,Athletics
-768,1615.0,1616.0,1617.0,4,Marathon Women,Athletics
-769,1618.0,1619.0,1620.0,5,Marathon Women,Athletics
-770,1621.0,1622.0,1623.0,13,Marathon Women,Athletics
-771,1624.0,1610.0,1625.0,14,Marathon Women,Athletics
-772,1626.0,1615.0,1616.0,15,Marathon Women,Athletics
-773,1620.0,1627.0,1628.0,28,Marathon Women,Athletics
-774,1629.0,1630.0,1631.0,1,Pole Vault Women,Athletics
-775,1632.0,1633.0,1634.0,2,Pole Vault Women,Athletics
-776,1635.0,1636.0,1637.0,3,Pole Vault Women,Athletics
-777,1633.0,1638.0,1632.0,13,Pole Vault Women,Athletics
-778,1632.0,1634.0,1639.0,14,Pole Vault Women,Athletics
-779,1640.0,1641.0,1642.0,1,Shot Put Women,Athletics
-780,1641.0,,,2,Shot Put Women,Athletics
-781,1643.0,1644.0,1645.0,3,Shot Put Women,Athletics
-782,1646.0,1647.0,1648.0,4,Shot Put Women,Athletics
-783,1649.0,1650.0,1651.0,5,Shot Put Women,Athletics
-784,1652.0,1653.0,1654.0,6,Shot Put Women,Athletics
-785,1655.0,1656.0,1653.0,7,Shot Put Women,Athletics
-786,1448.0,1657.0,1658.0,8,Shot Put Women,Athletics
-787,1659.0,1660.0,1661.0,9,Shot Put Women,Athletics
-788,1641.0,,1662.0,13,Shot Put Women,Athletics
-789,1663.0,1664.0,,14,Shot Put Women,Athletics
-790,1645.0,1665.0,1666.0,15,Shot Put Women,Athletics
-791,1667.0,1668.0,1669.0,16,Shot Put Women,Athletics
-792,1653.0,1655.0,1652.0,17,Shot Put Women,Athletics
-793,1448.0,1670.0,1659.0,18,Shot Put Women,Athletics
-794,1671.0,1672.0,1673.0,1,Triple Jump Women,Athletics
-795,1674.0,,,2,Triple Jump Women,Athletics
-796,1675.0,1598.0,1676.0,3,Triple Jump Women,Athletics
-797,1673.0,1671.0,1677.0,13,Triple Jump Women,Athletics
-798,1674.0,1678.0,1598.0,14,Triple Jump Women,Athletics
-799,1587.0,1679.0,1680.0,15,Triple Jump Women,Athletics
+291,52.0,683.0,684.0,23,5000M Men,Athletics
+292,685.0,308.0,686.0,1,50Km Race Walk Men,Athletics
+293,687.0,308.0,688.0,2,50Km Race Walk Men,Athletics
+294,309.0,689.0,690.0,3,50Km Race Walk Men,Athletics
+295,691.0,692.0,334.0,4,50Km Race Walk Men,Athletics
+296,316.0,693.0,694.0,5,50Km Race Walk Men,Athletics
+297,695.0,696.0,697.0,17,50Km Race Walk Men,Athletics
+298,698.0,699.0,700.0,18,50Km Race Walk Men,Athletics
+299,701.0,702.0,703.0,19,50Km Race Walk Men,Athletics
+300,703.0,704.0,705.0,20,50Km Race Walk Men,Athletics
+301,706.0,707.0,708.0,21,50Km Race Walk Men,Athletics
+302,308.0,709.0,710.0,13,50Km Race Walk Men,Athletics
+303,309.0,688.0,711.0,14,50Km Race Walk Men,Athletics
+304,309.0,712.0,713.0,15,50Km Race Walk Men,Athletics
+305,714.0,334.0,715.0,28,50Km Race Walk Men,Athletics
+306,715.0,716.0,717.0,16,50Km Race Walk Men,Athletics
+307,718.0,719.0,697.0,7,50Km Race Walk Men,Athletics
+308,720.0,703.0,698.0,8,50Km Race Walk Men,Athletics
+309,721.0,722.0,723.0,9,50Km Race Walk Men,Athletics
+310,724.0,725.0,726.0,10,50Km Race Walk Men,Athletics
+311,727.0,196.0,728.0,1,800M Men,Athletics
+312,729.0,730.0,731.0,2,800M Men,Athletics
+313,732.0,733.0,734.0,3,800M Men,Athletics
+314,735.0,736.0,737.0,4,800M Men,Athletics
+315,738.0,206.0,739.0,5,800M Men,Athletics
+316,480.0,210.0,740.0,6,800M Men,Athletics
+317,741.0,742.0,743.0,7,800M Men,Athletics
+318,245.0,744.0,745.0,8,800M Men,Athletics
+319,524.0,523.0,746.0,9,800M Men,Athletics
+320,747.0,748.0,255.0,10,800M Men,Athletics
+321,749.0,750.0,751.0,11,800M Men,Athletics
+322,227.0,752.0,497.0,12,800M Men,Athletics
+323,230.0,753.0,530.0,24,800M Men,Athletics
+324,754.0,755.0,756.0,25,800M Men,Athletics
+325,727.0,757.0,758.0,13,800M Men,Athletics
+326,759.0,760.0,733.0,14,800M Men,Athletics
+327,761.0,762.0,763.0,15,800M Men,Athletics
+328,242.0,206.0,764.0,16,800M Men,Athletics
+329,765.0,766.0,767.0,17,800M Men,Athletics
+330,245.0,768.0,742.0,18,800M Men,Athletics
+331,769.0,770.0,771.0,19,800M Men,Athletics
+332,524.0,523.0,772.0,20,800M Men,Athletics
+333,773.0,527.0,255.0,21,800M Men,Athletics
+334,749.0,774.0,775.0,22,800M Men,Athletics
+335,776.0,230.0,777.0,23,800M Men,Athletics
+336,261.0,778.0,779.0,26,800M Men,Athletics
+337,264.0,780.0,781.0,27,800M Men,Athletics
+338,782.0,783.0,784.0,1,Decathlon Men,Athletics
+339,785.0,786.0,787.0,2,Decathlon Men,Athletics
+340,788.0,789.0,790.0,3,Decathlon Men,Athletics
+341,791.0,792.0,793.0,4,Decathlon Men,Athletics
+342,794.0,795.0,796.0,5,Decathlon Men,Athletics
+343,797.0,798.0,799.0,6,Decathlon Men,Athletics
+344,800.0,801.0,802.0,7,Decathlon Men,Athletics
+345,803.0,804.0,805.0,8,Decathlon Men,Athletics
+346,806.0,807.0,808.0,9,Decathlon Men,Athletics
+347,809.0,810.0,811.0,10,Decathlon Men,Athletics
+348,812.0,813.0,814.0,11,Decathlon Men,Athletics
+349,815.0,816.0,817.0,12,Decathlon Men,Athletics
+350,818.0,819.0,820.0,26,Decathlon Men,Athletics
+351,782.0,821.0,787.0,13,Decathlon Men,Athletics
+352,789.0,785.0,822.0,14,Decathlon Men,Athletics
+353,823.0,824.0,825.0,15,Decathlon Men,Athletics
+354,826.0,827.0,828.0,28,Decathlon Men,Athletics
+355,794.0,829.0,830.0,16,Decathlon Men,Athletics
+356,799.0,831.0,832.0,17,Decathlon Men,Athletics
+357,833.0,834.0,801.0,18,Decathlon Men,Athletics
+358,807.0,803.0,805.0,19,Decathlon Men,Athletics
+359,806.0,835.0,808.0,20,Decathlon Men,Athletics
+360,836.0,813.0,837.0,21,Decathlon Men,Athletics
+361,838.0,839.0,840.0,22,Decathlon Men,Athletics
+362,841.0,843.0,844.0,23,Decathlon Men,Athletics
+363,845.0,846.0,847.0,1,Discus Throw Men,Athletics
+364,848.0,846.0,849.0,2,Discus Throw Men,Athletics
+365,849.0,850.0,851.0,3,Discus Throw Men,Athletics
+366,852.0,853.0,854.0,4,Discus Throw Men,Athletics
+367,855.0,856.0,857.0,5,Discus Throw Men,Athletics
+368,856.0,858.0,857.0,6,Discus Throw Men,Athletics
+369,859.0,860.0,861.0,7,Discus Throw Men,Athletics
+370,859.0,862.0,863.0,8,Discus Throw Men,Athletics
+371,864.0,865.0,866.0,9,Discus Throw Men,Athletics
+372,867.0,868.0,869.0,24,Discus Throw Men,Athletics
+373,870.0,871.0,848.0,13,Discus Throw Men,Athletics
+374,849.0,872.0,873.0,14,Discus Throw Men,Athletics
+375,850.0,874.0,875.0,15,Discus Throw Men,Athletics
+376,876.0,877.0,878.0,16,Discus Throw Men,Athletics
+377,859.0,861.0,879.0,18,Discus Throw Men,Athletics
+378,880.0,881.0,882.0,21,Discus Throw Men,Athletics
+379,883.0,884.0,885.0,22,Discus Throw Men,Athletics
+380,886.0,887.0,888.0,23,Discus Throw Men,Athletics
+381,867.0,889.0,890.0,26,Discus Throw Men,Athletics
+382,891.0,892.0,893.0,27,Discus Throw Men,Athletics
+383,894.0,895.0,896.0,1,Hammer Throw Men,Athletics
+384,897.0,898.0,895.0,2,Hammer Throw Men,Athletics
+385,899.0,900.0,901.0,3,Hammer Throw Men,Athletics
+386,902.0,901.0,903.0,4,Hammer Throw Men,Athletics
+387,904.0,905.0,906.0,6,Hammer Throw Men,Athletics
+388,907.0,908.0,909.0,8,Hammer Throw Men,Athletics
+389,910.0,911.0,912.0,9,Hammer Throw Men,Athletics
+390,913.0,914.0,915.0,24,Hammer Throw Men,Athletics
+391,913.0,820.0,916.0,25,Hammer Throw Men,Athletics
+392,917.0,897.0,918.0,13,Hammer Throw Men,Athletics
+393,918.0,,919.0,14,Hammer Throw Men,Athletics
+394,920.0,921.0,922.0,15,Hammer Throw Men,Athletics
+395,904.0,924.0,925.0,16,Hammer Throw Men,Athletics
+396,926.0,908.0,927.0,18,Hammer Throw Men,Athletics
+397,928.0,929.0,930.0,21,Hammer Throw Men,Athletics
+398,931.0,914.0,932.0,22,Hammer Throw Men,Athletics
+399,914.0,933.0,934.0,23,Hammer Throw Men,Athletics
+400,913.0,935.0,889.0,26,Hammer Throw Men,Athletics
+401,936.0,937.0,938.0,1,High Jump Men,Athletics
+402,939.0,940.0,941.0,2,High Jump Men,Athletics
+403,942.0,943.0,944.0,3,High Jump Men,Athletics
+404,943.0,945.0,946.0,4,High Jump Men,Athletics
+405,949.0,950.0,951.0,6,High Jump Men,Athletics
+406,952.0,953.0,954.0,8,High Jump Men,Athletics
+407,955.0,956.0,957.0,9,High Jump Men,Athletics
+408,958.0,959.0,,24,High Jump Men,Athletics
+409,962.0,963.0,964.0,25,High Jump Men,Athletics
+410,965.0,966.0,936.0,13,High Jump Men,Athletics
+411,968.0,969.0,970.0,14,High Jump Men,Athletics
+412,971.0,947.0,972.0,15,High Jump Men,Athletics
+413,973.0,949.0,974.0,16,High Jump Men,Athletics
+414,953.0,954.0,975.0,18,High Jump Men,Athletics
+415,976.0,977.0,978.0,21,High Jump Men,Athletics
+416,838.0,979.0,980.0,22,High Jump Men,Athletics
+417,981.0,982.0,983.0,23,High Jump Men,Athletics
+418,984.0,985.0,986.0,26,High Jump Men,Athletics
+419,987.0,891.0,,27,High Jump Men,Athletics
+420,989.0,990.0,991.0,1,Javelin Throw Men,Athletics
+421,992.0,993.0,994.0,2,Javelin Throw Men,Athletics
+422,995.0,996.0,997.0,3,Javelin Throw Men,Athletics
+423,995.0,998.0,996.0,4,Javelin Throw Men,Athletics
+424,999.0,1000.0,1001.0,5,Javelin Throw Men,Athletics
+425,1002.0,1003.0,1004.0,6,Javelin Throw Men,Athletics
+426,1005.0,1006.0,1007.0,8,Javelin Throw Men,Athletics
+427,1008.0,1009.0,1010.0,9,Javelin Throw Men,Athletics
+428,1011.0,1012.0,1013.0,24,Javelin Throw Men,Athletics
+429,991.0,,1014.0,13,Javelin Throw Men,Athletics
+430,992.0,1015.0,997.0,14,Javelin Throw Men,Athletics
+431,995.0,996.0,998.0,15,Javelin Throw Men,Athletics
+432,1016.0,1017.0,1018.0,16,Javelin Throw Men,Athletics
+433,1019.0,1007.0,1020.0,18,Javelin Throw Men,Athletics
+434,1021.0,1022.0,1023.0,21,Javelin Throw Men,Athletics
+435,1024.0,1025.0,1026.0,22,Javelin Throw Men,Athletics
+436,1011.0,1027.0,1028.0,23,Javelin Throw Men,Athletics
+437,1029.0,1030.0,1031.0,1,Long Jump Men,Athletics
+438,1032.0,1033.0,1034.0,2,Long Jump Men,Athletics
+439,1035.0,1036.0,1037.0,3,Long Jump Men,Athletics
+440,66.0,1038.0,1039.0,4,Long Jump Men,Athletics
+441,1040.0,1041.0,1042.0,6,Long Jump Men,Athletics
+442,1043.0,1044.0,1045.0,8,Long Jump Men,Athletics
+443,1046.0,1047.0,1048.0,9,Long Jump Men,Athletics
+444,81.0,1049.0,1050.0,10,Long Jump Men,Athletics
+445,1051.0,1052.0,1053.0,11,Long Jump Men,Athletics
+446,1054.0,1055.0,1056.0,24,Long Jump Men,Athletics
+447,164.0,1057.0,963.0,25,Long Jump Men,Athletics
+448,1031.0,1058.0,1059.0,13,Long Jump Men,Athletics
+449,1060.0,1061.0,1062.0,14,Long Jump Men,Athletics
+450,66.0,1063.0,1039.0,15,Long Jump Men,Athletics
+451,1064.0,1065.0,1066.0,16,Long Jump Men,Athletics
+452,1067.0,1043.0,1045.0,18,Long Jump Men,Athletics
+453,1068.0,1069.0,1070.0,21,Long Jump Men,Athletics
+454,1071.0,1072.0,1073.0,22,Long Jump Men,Athletics
+455,1074.0,1056.0,1075.0,23,Long Jump Men,Athletics
+456,1057.0,1076.0,1077.0,26,Long Jump Men,Athletics
+457,987.0,891.0,988.0,27,Long Jump Men,Athletics
+458,650.0,1078.0,35.0,1,Marathon Men,Athletics
+459,1079.0,1080.0,1081.0,2,Marathon Men,Athletics
+460,1082.0,1083.0,1084.0,3,Marathon Men,Athletics
+461,1085.0,1086.0,1087.0,4,Marathon Men,Athletics
+462,16.0,1088.0,1089.0,5,Marathon Men,Athletics
+463,1090.0,1091.0,1092.0,6,Marathon Men,Athletics
+464,19.0,1093.0,1094.0,7,Marathon Men,Athletics
+465,1095.0,1096.0,1097.0,8,Marathon Men,Athletics
+466,24.0,1098.0,1099.0,9,Marathon Men,Athletics
+467,1100.0,1101.0,1102.0,10,Marathon Men,Athletics
+468,1103.0,1104.0,1105.0,11,Marathon Men,Athletics
+469,52.0,1106.0,1107.0,12,Marathon Men,Athletics
+470,1108.0,1109.0,1110.0,24,Marathon Men,Athletics
+471,1111.0,1112.0,1113.0,25,Marathon Men,Athletics
+472,1114.0,1115.0,1116.0,13,Marathon Men,Athletics
+473,1117.0,1118.0,1119.0,14,Marathon Men,Athletics
+474,1120.0,1121.0,1083.0,15,Marathon Men,Athletics
+475,1122.0,1123.0,1124.0,28,Marathon Men,Athletics
+476,1090.0,1125.0,1126.0,16,Marathon Men,Athletics
+477,1091.0,1092.0,19.0,17,Marathon Men,Athletics
+478,1095.0,1127.0,1128.0,18,Marathon Men,Athletics
+479,25.0,1129.0,1130.0,19,Marathon Men,Athletics
+480,1131.0,1132.0,1133.0,20,Marathon Men,Athletics
+481,1134.0,1135.0,1136.0,21,Marathon Men,Athletics
+482,54.0,1137.0,1138.0,22,Marathon Men,Athletics
+483,1139.0,1140.0,1141.0,23,Marathon Men,Athletics
+484,1142.0,1143.0,403.0,26,Marathon Men,Athletics
+485,1144.0,1145.0,1146.0,27,Marathon Men,Athletics
+486,1147.0,1148.0,1149.0,1,Pole Vault Men,Athletics
+487,1150.0,1151.0,,2,Pole Vault Men,Athletics
+488,1152.0,1153.0,1154.0,3,Pole Vault Men,Athletics
+489,1154.0,1155.0,1156.0,4,Pole Vault Men,Athletics
+490,1157.0,1158.0,1159.0,8,Pole Vault Men,Athletics
+491,1160.0,1161.0,1162.0,9,Pole Vault Men,Athletics
+492,1163.0,,1165.0,24,Pole Vault Men,Athletics
+493,962.0,1168.0,1169.0,25,Pole Vault Men,Athletics
+494,1148.0,1170.0,1171.0,13,Pole Vault Men,Athletics
+495,1172.0,1173.0,1174.0,14,Pole Vault Men,Athletics
+496,1175.0,1155.0,1176.0,15,Pole Vault Men,Athletics
+497,1177.0,1178.0,,16,Pole Vault Men,Athletics
+498,1180.0,1181.0,1182.0,18,Pole Vault Men,Athletics
+499,1183.0,1184.0,1185.0,21,Pole Vault Men,Athletics
+500,1186.0,1187.0,1188.0,22,Pole Vault Men,Athletics
+501,1189.0,1190.0,1192.0,23,Pole Vault Men,Athletics
+502,1195.0,1196.0,1197.0,26,Pole Vault Men,Athletics
+503,1198.0,1199.0,1200.0,27,Pole Vault Men,Athletics
+504,1202.0,1203.0,1204.0,1,Shot Put Men,Athletics
+505,1205.0,1206.0,1207.0,2,Shot Put Men,Athletics
+506,1208.0,1209.0,1210.0,3,Shot Put Men,Athletics
+507,1211.0,1212.0,1213.0,4,Shot Put Men,Athletics
+508,1214.0,1215.0,1216.0,5,Shot Put Men,Athletics
+509,1217.0,1218.0,1219.0,8,Shot Put Men,Athletics
+510,1218.0,1220.0,1221.0,9,Shot Put Men,Athletics
+511,1222.0,1223.0,1224.0,10,Shot Put Men,Athletics
+512,889.0,1225.0,162.0,24,Shot Put Men,Athletics
+513,1226.0,916.0,891.0,25,Shot Put Men,Athletics
+514,1205.0,1227.0,1228.0,13,Shot Put Men,Athletics
+515,1209.0,1229.0,1230.0,14,Shot Put Men,Athletics
+516,1231.0,1210.0,1232.0,15,Shot Put Men,Athletics
+517,1233.0,1234.0,1235.0,16,Shot Put Men,Athletics
+518,1219.0,1236.0,1237.0,18,Shot Put Men,Athletics
+519,1238.0,1239.0,1240.0,21,Shot Put Men,Athletics
+520,883.0,1241.0,1242.0,22,Shot Put Men,Athletics
+521,1243.0,889.0,1244.0,23,Shot Put Men,Athletics
+522,889.0,1245.0,1246.0,26,Shot Put Men,Athletics
+523,891.0,1247.0,1248.0,27,Shot Put Men,Athletics
+524,1249.0,1059.0,1250.0,1,Triple Jump Men,Athletics
+525,1251.0,1252.0,1253.0,2,Triple Jump Men,Athletics
+526,1254.0,1255.0,1256.0,3,Triple Jump Men,Athletics
+527,1257.0,1258.0,1259.0,4,Triple Jump Men,Athletics
+528,1260.0,1261.0,1262.0,8,Triple Jump Men,Athletics
+529,1263.0,1264.0,1265.0,9,Triple Jump Men,Athletics
+530,1266.0,1267.0,1268.0,24,Triple Jump Men,Athletics
+531,1057.0,988.0,1269.0,25,Triple Jump Men,Athletics
+532,1249.0,1059.0,1270.0,13,Triple Jump Men,Athletics
+533,1271.0,1272.0,1273.0,14,Triple Jump Men,Athletics
+534,1274.0,1254.0,1275.0,15,Triple Jump Men,Athletics
+535,1276.0,1277.0,1278.0,16,Triple Jump Men,Athletics
+536,1260.0,1279.0,1280.0,18,Triple Jump Men,Athletics
+537,1070.0,1281.0,1282.0,21,Triple Jump Men,Athletics
+538,1283.0,1284.0,1285.0,22,Triple Jump Men,Athletics
+539,1286.0,1075.0,1287.0,23,Triple Jump Men,Athletics
+540,1057.0,1288.0,1077.0,26,Triple Jump Men,Athletics
+541,988.0,1289.0,1290.0,27,Triple Jump Men,Athletics
+542,1291.0,1292.0,1293.0,1,10000M Women,Athletics
+543,1293.0,1294.0,1295.0,2,10000M Women,Athletics
+544,1296.0,1297.0,1298.0,3,10000M Women,Athletics
+545,1296.0,1299.0,1300.0,4,10000M Women,Athletics
+546,1293.0,1301.0,1292.0,13,10000M Women,Athletics
+547,1302.0,1303.0,1296.0,14,10000M Women,Athletics
+548,1298.0,1304.0,1297.0,15,10000M Women,Athletics
+549,1305.0,1306.0,1307.0,1,100M Hurdles Women,Athletics
+550,1308.0,1309.0,1310.0,2,100M Hurdles Women,Athletics
+551,1311.0,1312.0,1313.0,3,100M Hurdles Women,Athletics
+552,1314.0,1315.0,1316.0,4,100M Hurdles Women,Athletics
+553,1317.0,1318.0,1319.0,5,100M Hurdles Women,Athletics
+554,1321.0,1322.0,1323.0,6,100M Hurdles Women,Athletics
+555,1309.0,1308.0,1324.0,13,100M Hurdles Women,Athletics
+556,1325.0,1326.0,1313.0,14,100M Hurdles Women,Athletics
+557,1327.0,1328.0,1329.0,15,100M Hurdles Women,Athletics
+558,1330.0,1321.0,1331.0,16,100M Hurdles Women,Athletics
+559,1332.0,1333.0,1334.0,17,100M Hurdles Women,Athletics
+560,1335.0,1336.0,1337.0,1,100M Women,Athletics
+561,1337.0,1338.0,,2,100M Women,Athletics
+562,,1340.0,1342.0,3,100M Women,Athletics
+563,1343.0,1344.0,1345.0,4,100M Women,Athletics
+564,1346.0,1347.0,1342.0,5,100M Women,Athletics
+565,1348.0,1349.0,1350.0,6,100M Women,Athletics
+566,1351.0,1352.0,1353.0,7,100M Women,Athletics
+567,1354.0,1355.0,1356.0,8,100M Women,Athletics
+568,1357.0,1358.0,1359.0,9,100M Women,Athletics
+569,1360.0,1361.0,1362.0,10,100M Women,Athletics
+570,1363.0,1364.0,1365.0,11,100M Women,Athletics
+571,1337.0,1366.0,1367.0,13,100M Women,Athletics
+572,1368.0,1369.0,1367.0,14,100M Women,Athletics
+573,1343.0,1342.0,1370.0,15,100M Women,Athletics
+574,1371.0,1372.0,1373.0,16,100M Women,Athletics
+575,1349.0,1374.0,1375.0,17,100M Women,Athletics
+576,1351.0,1376.0,1377.0,18,100M Women,Athletics
+577,1378.0,1379.0,1380.0,19,100M Women,Athletics
+578,1381.0,1382.0,1359.0,20,100M Women,Athletics
+579,1361.0,1383.0,1384.0,21,100M Women,Athletics
+580,1385.0,1386.0,1387.0,1,1500M Women,Athletics
+581,1388.0,1389.0,1390.0,2,1500M Women,Athletics
+582,1391.0,1392.0,1393.0,3,1500M Women,Athletics
+583,1394.0,1395.0,1396.0,4,1500M Women,Athletics
+584,1397.0,1398.0,1399.0,5,1500M Women,Athletics
+585,1400.0,1401.0,1402.0,6,1500M Women,Athletics
+586,,1403.0,1404.0,13,1500M Women,Athletics
+587,1405.0,1406.0,1407.0,14,1500M Women,Athletics
+588,1408.0,1393.0,1409.0,15,1500M Women,Athletics
+589,1400.0,1410.0,1411.0,16,1500M Women,Athletics
+590,1412.0,1401.0,1413.0,17,1500M Women,Athletics
+591,1335.0,1414.0,1336.0,1,200M Women,Athletics
+592,1367.0,1415.0,1339.0,2,200M Women,Athletics
+593,1416.0,1417.0,1418.0,3,200M Women,Athletics
+594,1370.0,1344.0,1342.0,4,200M Women,Athletics
+595,1419.0,1420.0,1342.0,5,200M Women,Athletics
+596,1421.0,1348.0,1349.0,6,200M Women,Athletics
+597,1353.0,1374.0,1422.0,7,200M Women,Athletics
+598,1354.0,1423.0,1355.0,8,200M Women,Athletics
+599,1357.0,1424.0,1425.0,9,200M Women,Athletics
+600,1415.0,1337.0,1366.0,13,200M Women,Athletics
+601,1367.0,1415.0,1426.0,14,200M Women,Athletics
+602,1427.0,1342.0,1428.0,15,200M Women,Athletics
+603,1421.0,1429.0,1342.0,16,200M Women,Athletics
+604,1349.0,1374.0,1353.0,17,200M Women,Athletics
+605,1376.0,1353.0,1430.0,18,200M Women,Athletics
+606,1378.0,1379.0,1380.0,19,200M Women,Athletics
+607,1381.0,1431.0,1432.0,20,200M Women,Athletics
+608,1433.0,1434.0,1435.0,1,20Km Race Walk Women,Athletics
+609,1436.0,1437.0,1438.0,2,20Km Race Walk Women,Athletics
+610,1439.0,1437.0,1440.0,3,20Km Race Walk Women,Athletics
+611,1441.0,,1442.0,13,20Km Race Walk Women,Athletics
+612,1443.0,1444.0,1445.0,14,20Km Race Walk Women,Athletics
+613,1446.0,1447.0,1448.0,1,3000M Steeplechase Women,Athletics
+614,1449.0,1450.0,,2,3000M Steeplechase Women,Athletics
+615,1451.0,1452.0,1453.0,13,3000M Steeplechase Women,Athletics
+616,1454.0,1455.0,1456.0,1,400M Hurdles Women,Athletics
+617,1457.0,1458.0,1459.0,2,400M Hurdles Women,Athletics
+618,1345.0,1460.0,1461.0,3,400M Hurdles Women,Athletics
+619,1462.0,1463.0,1464.0,4,400M Hurdles Women,Athletics
+620,1465.0,1466.0,1467.0,5,400M Hurdles Women,Athletics
+621,1468.0,1469.0,1470.0,13,400M Hurdles Women,Athletics
+622,1471.0,1472.0,1473.0,14,400M Hurdles Women,Athletics
+623,1460.0,1474.0,1475.0,15,400M Hurdles Women,Athletics
+624,1476.0,1415.0,1477.0,1,400M Women,Athletics
+625,1478.0,1479.0,1480.0,2,400M Women,Athletics
+626,1481.0,1482.0,1483.0,3,400M Women,Athletics
+627,1427.0,1484.0,1485.0,4,400M Women,Athletics
+628,1419.0,1486.0,1487.0,5,400M Women,Athletics
+629,1353.0,1488.0,1489.0,6,400M Women,Athletics
+630,1490.0,1491.0,1492.0,7,400M Women,Athletics
+631,1480.0,1478.0,1493.0,13,400M Women,Athletics
+632,1494.0,1495.0,1468.0,14,400M Women,Athletics
+633,1427.0,1481.0,1496.0,15,400M Women,Athletics
+634,1497.0,1498.0,1488.0,16,400M Women,Athletics
+635,1499.0,1500.0,1501.0,17,400M Women,Athletics
+636,1378.0,1502.0,1503.0,18,400M Women,Athletics
+637,602.0,535.0,1504.0,1,4X100M Relay Women,Athletics
+638,1505.0,1506.0,1507.0,2,4X100M Relay Women,Athletics
+639,608.0,607.0,540.0,3,4X100M Relay Women,Athletics
+640,543.0,1508.0,544.0,4,4X100M Relay Women,Athletics
+641,546.0,548.0,610.0,5,4X100M Relay Women,Athletics
+642,550.0,613.0,551.0,6,4X100M Relay Women,Athletics
+643,552.0,553.0,1509.0,7,4X100M Relay Women,Athletics
+644,616.0,555.0,1510.0,8,4X100M Relay Women,Athletics
+645,558.0,619.0,1511.0,9,4X100M Relay Women,Athletics
+646,561.0,620.0,1512.0,10,4X100M Relay Women,Athletics
+647,621.0,564.0,565.0,11,4X100M Relay Women,Athletics
+648,628.0,570.0,1513.0,13,4X100M Relay Women,Athletics
+649,1514.0,1515.0,1516.0,14,4X100M Relay Women,Athletics
+650,577.0,1517.0,631.0,15,4X100M Relay Women,Athletics
+651,632.0,579.0,1518.0,16,4X100M Relay Women,Athletics
+652,584.0,1519.0,1520.0,17,4X100M Relay Women,Athletics
+653,586.0,585.0,637.0,18,4X100M Relay Women,Athletics
+654,639.0,640.0,588.0,19,4X100M Relay Women,Athletics
+655,1521.0,1522.0,1523.0,20,4X100M Relay Women,Athletics
+656,594.0,644.0,643.0,21,4X100M Relay Women,Athletics
+657,602.0,535.0,1504.0,1,4X400M Relay Women,Athletics
+658,604.0,,1524.0,2,4X400M Relay Women,Athletics
+659,540.0,607.0,1525.0,3,4X400M Relay Women,Athletics
+660,1508.0,543.0,609.0,4,4X400M Relay Women,Athletics
+661,546.0,548.0,1526.0,5,4X400M Relay Women,Athletics
+662,550.0,549.0,551.0,6,4X400M Relay Women,Athletics
+663,628.0,570.0,1513.0,13,4X400M Relay Women,Athletics
+664,574.0,1515.0,1514.0,14,4X400M Relay Women,Athletics
+665,577.0,1527.0,1528.0,15,4X400M Relay Women,Athletics
+666,579.0,632.0,1518.0,16,4X400M Relay Women,Athletics
+667,1519.0,582.0,584.0,17,4X400M Relay Women,Athletics
+668,1292.0,1529.0,1291.0,1,5000M Women,Athletics
+669,1293.0,1294.0,1530.0,2,5000M Women,Athletics
+670,1393.0,1531.0,1297.0,3,5000M Women,Athletics
+671,1530.0,1292.0,1293.0,13,5000M Women,Athletics
+672,1530.0,1532.0,1293.0,14,5000M Women,Athletics
+673,1304.0,1533.0,1534.0,15,5000M Women,Athletics
+674,1535.0,1536.0,1537.0,1,800M Women,Athletics
+675,1538.0,1539.0,1540.0,2,800M Women,Athletics
+676,1541.0,1542.0,1405.0,3,800M Women,Athletics
+677,1543.0,1544.0,1545.0,4,800M Women,Athletics
+678,1398.0,1546.0,1547.0,5,800M Women,Athletics
+679,1400.0,1548.0,1549.0,6,800M Women,Athletics
+680,1550.0,1551.0,1552.0,7,800M Women,Athletics
+681,1553.0,1554.0,1555.0,8,800M Women,Athletics
+682,1556.0,1535.0,1557.0,13,800M Women,Athletics
+683,1405.0,1540.0,1558.0,14,800M Women,Athletics
+684,1408.0,1545.0,1541.0,15,800M Women,Athletics
+685,1411.0,1559.0,1560.0,16,800M Women,Athletics
+686,1561.0,1562.0,1401.0,17,800M Women,Athletics
+687,1502.0,1563.0,1564.0,18,800M Women,Athletics
+688,1565.0,1566.0,1567.0,11,800M Women,Athletics
+689,1568.0,1569.0,1570.0,1,Discus Throw Women,Athletics
+690,1571.0,,1572.0,2,Discus Throw Women,Athletics
+691,1573.0,1574.0,1575.0,3,Discus Throw Women,Athletics
+692,1576.0,1577.0,1578.0,4,Discus Throw Women,Athletics
+693,1579.0,1580.0,1581.0,5,Discus Throw Women,Athletics
+694,1582.0,1583.0,1584.0,7,Discus Throw Women,Athletics
+695,1585.0,1586.0,1582.0,8,Discus Throw Women,Athletics
+696,1585.0,1587.0,1588.0,9,Discus Throw Women,Athletics
+697,1589.0,1590.0,1591.0,10,Discus Throw Women,Athletics
+698,1592.0,1593.0,1594.0,11,Discus Throw Women,Athletics
+699,1568.0,1595.0,1596.0,13,Discus Throw Women,Athletics
+700,1597.0,1574.0,1598.0,14,Discus Throw Women,Athletics
+701,1599.0,1597.0,1573.0,15,Discus Throw Women,Athletics
+702,1600.0,1601.0,1602.0,16,Discus Throw Women,Athletics
+703,1603.0,1604.0,1605.0,17,Discus Throw Women,Athletics
+704,1586.0,1606.0,1582.0,18,Discus Throw Women,Athletics
+705,1607.0,1608.0,1609.0,20,Discus Throw Women,Athletics
+706,1593.0,1610.0,1590.0,21,Discus Throw Women,Athletics
+707,1611.0,1612.0,1613.0,1,Hammer Throw Women,Athletics
+708,1614.0,1612.0,1615.0,2,Hammer Throw Women,Athletics
+709,1616.0,1617.0,1618.0,3,Hammer Throw Women,Athletics
+710,,1611.0,1619.0,13,Hammer Throw Women,Athletics
+711,1617.0,1614.0,1620.0,14,Hammer Throw Women,Athletics
+712,1621.0,1622.0,1623.0,1,Heptathlon Women,Athletics
+713,1624.0,1625.0,1626.0,2,Heptathlon Women,Athletics
+714,1627.0,1628.0,1629.0,3,Heptathlon Women,Athletics
+715,1630.0,1631.0,1632.0,4,Heptathlon Women,Athletics
+716,1633.0,1630.0,1634.0,5,Heptathlon Women,Athletics
+717,1622.0,1635.0,1626.0,13,Heptathlon Women,Athletics
+718,1636.0,1637.0,1638.0,14,Heptathlon Women,Athletics
+719,1639.0,1629.0,1627.0,15,Heptathlon Women,Athletics
+720,1630.0,1640.0,1641.0,28,Heptathlon Women,Athletics
+721,1642.0,1643.0,1644.0,1,High Jump Women,Athletics
+722,1645.0,1644.0,,2,High Jump Women,Athletics
+723,1646.0,1647.0,1648.0,3,High Jump Women,Athletics
+724,1650.0,1651.0,1652.0,4,High Jump Women,Athletics
+725,1653.0,1654.0,1655.0,6,High Jump Women,Athletics
+726,1656.0,1657.0,,8,High Jump Women,Athletics
+727,1659.0,1660.0,1661.0,9,High Jump Women,Athletics
+728,1662.0,1663.0,1664.0,10,High Jump Women,Athletics
+729,1665.0,1666.0,1667.0,13,High Jump Women,Athletics
+730,1668.0,1647.0,1669.0,14,High Jump Women,Athletics
+731,1670.0,1671.0,1672.0,15,High Jump Women,Athletics
+732,1654.0,1673.0,1674.0,16,High Jump Women,Athletics
+733,1656.0,1675.0,1676.0,18,High Jump Women,Athletics
+734,1677.0,1663.0,1607.0,20,High Jump Women,Athletics
+735,1678.0,1679.0,1680.0,21,High Jump Women,Athletics
+736,1681.0,1682.0,1683.0,1,Javelin Throw Women,Athletics
+737,1683.0,,1684.0,2,Javelin Throw Women,Athletics
+738,1685.0,1686.0,1687.0,3,Javelin Throw Women,Athletics
+739,1688.0,1689.0,1690.0,4,Javelin Throw Women,Athletics
+740,1691.0,1692.0,1693.0,6,Javelin Throw Women,Athletics
+741,1694.0,1695.0,1696.0,7,Javelin Throw Women,Athletics
+742,1697.0,1698.0,1699.0,8,Javelin Throw Women,Athletics
+743,1698.0,1661.0,1700.0,9,Javelin Throw Women,Athletics
+744,1701.0,1702.0,1703.0,10,Javelin Throw Women,Athletics
+745,1683.0,1684.0,1704.0,13,Javelin Throw Women,Athletics
+746,1687.0,1705.0,1686.0,14,Javelin Throw Women,Athletics
+747,1706.0,1707.0,1685.0,15,Javelin Throw Women,Athletics
+748,1708.0,1709.0,1710.0,16,Javelin Throw Women,Athletics
+749,1691.0,1711.0,1693.0,17,Javelin Throw Women,Athletics
+750,1695.0,1712.0,1700.0,18,Javelin Throw Women,Athletics
+751,1713.0,1714.0,1715.0,20,Javelin Throw Women,Athletics
+752,1679.0,1716.0,1701.0,21,Javelin Throw Women,Athletics
+753,1717.0,1718.0,1719.0,1,Long Jump Women,Athletics
+754,1720.0,,1721.0,2,Long Jump Women,Athletics
+755,1722.0,1723.0,1724.0,3,Long Jump Women,Athletics
+756,1722.0,1725.0,1630.0,4,Long Jump Women,Athletics
+757,1726.0,1727.0,1728.0,6,Long Jump Women,Athletics
+758,1729.0,1730.0,1731.0,8,Long Jump Women,Athletics
+759,1732.0,1661.0,1733.0,9,Long Jump Women,Athletics
+760,1718.0,1734.0,1735.0,13,Long Jump Women,Athletics
+761,1736.0,1737.0,1724.0,14,Long Jump Women,Athletics
+762,1738.0,1723.0,1630.0,15,Long Jump Women,Athletics
+763,1739.0,1740.0,1741.0,16,Long Jump Women,Athletics
+764,1742.0,1353.0,1743.0,18,Long Jump Women,Athletics
+765,1744.0,1745.0,1746.0,1,Marathon Women,Athletics
+766,1747.0,1748.0,1749.0,2,Marathon Women,Athletics
+767,1750.0,1751.0,1752.0,3,Marathon Women,Athletics
+768,1753.0,1754.0,1755.0,4,Marathon Women,Athletics
+769,1756.0,1757.0,1758.0,5,Marathon Women,Athletics
+770,1759.0,1760.0,1761.0,13,Marathon Women,Athletics
+771,1762.0,1748.0,1763.0,14,Marathon Women,Athletics
+772,1764.0,1753.0,1754.0,15,Marathon Women,Athletics
+773,1758.0,1765.0,1766.0,28,Marathon Women,Athletics
+774,1767.0,1768.0,1769.0,1,Pole Vault Women,Athletics
+775,1770.0,1771.0,1772.0,2,Pole Vault Women,Athletics
+776,1773.0,1774.0,1775.0,3,Pole Vault Women,Athletics
+777,1771.0,1776.0,1770.0,13,Pole Vault Women,Athletics
+778,1770.0,1772.0,1777.0,14,Pole Vault Women,Athletics
+779,1778.0,1779.0,1780.0,1,Shot Put Women,Athletics
+780,1779.0,,,2,Shot Put Women,Athletics
+781,1781.0,1782.0,1783.0,3,Shot Put Women,Athletics
+782,1784.0,1785.0,1786.0,4,Shot Put Women,Athletics
+783,1787.0,1788.0,1789.0,5,Shot Put Women,Athletics
+784,1790.0,1791.0,1792.0,6,Shot Put Women,Athletics
+785,1793.0,1794.0,1791.0,7,Shot Put Women,Athletics
+786,1586.0,1795.0,1796.0,8,Shot Put Women,Athletics
+787,1797.0,1798.0,1799.0,9,Shot Put Women,Athletics
+788,1779.0,,1800.0,13,Shot Put Women,Athletics
+789,1801.0,1802.0,,14,Shot Put Women,Athletics
+790,1783.0,1803.0,1804.0,15,Shot Put Women,Athletics
+791,1805.0,1806.0,1807.0,16,Shot Put Women,Athletics
+792,1791.0,1793.0,1790.0,17,Shot Put Women,Athletics
+793,1586.0,1808.0,1797.0,18,Shot Put Women,Athletics
+794,1809.0,1810.0,1811.0,1,Triple Jump Women,Athletics
+795,1812.0,,,2,Triple Jump Women,Athletics
+796,1813.0,1736.0,1814.0,3,Triple Jump Women,Athletics
+797,1811.0,1809.0,1815.0,13,Triple Jump Women,Athletics
+798,1812.0,1816.0,1736.0,14,Triple Jump Women,Athletics
+799,1725.0,1817.0,1818.0,15,Triple Jump Women,Athletics
