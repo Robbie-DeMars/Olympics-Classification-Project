@@ -892,8 +892,9 @@ athlete_events_all = athlete_events_all.join(
 athletes_final = candidates_canon.groupBy("canonical_athlete_id").agg(
     F.first("first_name").alias("first_name"),
     F.first("last_name").alias("last_name"),
-    F.first("country_code").alias("country_code"), # Change to country code from nationality id
-    F.first("year_of_birth").alias("year_of_birth")
+    F.first("country_code").alias("country_code"),
+    F.first("year_of_birth", ignorenulls=True).alias("year_of_birth"),
+    F.first("gender", ignorenulls=True).alias("gender")
 )
 
 athletes_final = athletes_final.groupBy(
