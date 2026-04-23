@@ -1,13 +1,14 @@
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql.types import *
-from itertools import combinations
+from pyspark.sql.functions import levenshtein, greatest, length
+from pyspark.sql.window import Window
 from graphframes import GraphFrame
-from pyspark.sql.functions import broadcast
-from pyspark.sql.functions import when, col, lit, concat
 import re
-import os
 import sys
+import os
+import shutil
+import tempfile
 
 #############################
 
@@ -15,27 +16,61 @@ import sys
 
 #############################
 
+# LINUX ONLY.
+# Using wsl
+
+# Must use these specific versions of python, pyspark, and graphframes
+# Requirements
 # Python 3.11
 # PySpark 3.5.3
 # GraphFrames 0.8.3-spark3.5-s_2.12
-# Java: OpenJDK 17
 
-# Installation
+# Installation with linux.
 #     python3 -m venv venv
 #     source venv/bin/activate
 #     pip install pyspark==3.5.3 graphframes==0.8.3
+
+# sudo apt update && sudo apt install python3-pip openjdk-11-jdk
+# pip3 install pyspark==3.5.3 graphframes
+# sudo apt install python3-venv python3-full -y
+
+# NAVIGATE TO PROJECT FOLDER
+# cd /mnt/c/...
+# 
+#############################
+
+# SETUP END
+
+#############################
+
 
 spark = SparkSession.builder \
     .appName("olympic_joins") \
     .config("spark.jars.packages", "graphframes:graphframes:0.8.3-spark3.5-s_2.12") \
     .config("spark.local.dir", "/home/logan/tmp") \
-    .config("spark.driver.memory", "4g") \
-    .config("spark.executor.memory", "4g") \
+    .config("spark.driver.memory", "10g") \
+    .config("spark.executor.memory", "10g") \
     .config("spark.sql.adaptive.enabled", "true") \
     .config("spark.sql.adaptive.coalescePartitions.enabled", "true") \
     .getOrCreate()
 
 spark.sparkContext.setCheckpointDir("file:///mnt/c/temp/spark-checkpoint")
+
+################################
+################################
+
+# NORMALIZE COUNTRIES
+
+################################
+################################
+
+countries = spark.read.csv("./datasets/Scraped Data/countries.csv", header=True, inferSchema=True)
+city_country = spark.read.csv("./datasets/Scraped Data/city_country.csv", header=True, inferSchema=True)
+
+country_code_map = countries.groupBy("id").agg(
+    F.first("country_id").alias("country_code")
+)
+
 
 # EVENTS DF'S
 events = spark.read.csv("./datasets/Scraped Data/events.csv", header=True, inferSchema=True)
@@ -52,16 +87,21 @@ events = events.withColumn("source", F.lit("base_events"))
 events_all = events.unionByName(swim_events.unionByName(track_events))
 events_all = events_all.withColumn("row_id", F.monotonically_increasing_id())
 
-# event_clusters = events_all.select("event_id", "source", "cluster_id")
 
-# swim_events = swim_events.withColumn("source", F.lit("swim_events"))
-# track_events = track_events.withColumn("source", F.lit("track_events"))
-# events = events.withColumn("source", F.lit("base_events"))
+# Regex clean for garbage values
 
-# swim_events = swim_events.join(event_clusters, on=["event_id", "source"], how="left")
-# track_events = track_events.join(event_clusters, on=["event_id", "source"], how="left")
-# events = events.join(event_clusters, on=["event_id", "source"], how="left")
-
+events_all = events_all.withColumn(
+    "event_name_clean",
+    F.lower(F.regexp_replace("event_name", r"&nbsp;|&ndash;|&mdash;|–|—", " "))
+)
+events_all = events_all.withColumn(
+    "event_name_clean",
+    F.regexp_replace("event_name_clean", r"\s+", " ")
+)
+events_all = events_all.withColumn(
+    "event_name_clean",
+    F.regexp_replace("event_name_clean", r"(\d+)\s*(metre|meter)s?\b", "$1m")
+)
 
 # ============================================
 # ============================================
@@ -77,6 +117,7 @@ schema = StructType([
 ])
 
 def parse_event(name, event_type):
+
     try:
         if name is None or not isinstance(name, str):
             name_str = str(name) if name is not None else ""
@@ -161,9 +202,18 @@ def parse_event(name, event_type):
 
 parse_udf = F.udf(lambda e_name, e_type: parse_event(e_name, e_type), schema)
 
+
+################################
+################################
+
+# EVENTS
+
+################################
+################################
+
 events_all = events_all.withColumn(
     "parsed",
-    parse_udf("event_name", "event_type")
+    parse_udf("event_name_clean", "event_type")
 )
 
 events_all = events_all.select(
@@ -174,25 +224,26 @@ events_all = events_all.select(
     "parsed.round"
 ).drop("parsed")
 
-events_all.select("event_name", "distance", "gender", "discipline", "round").show(5, truncate=False)
+#events_all.select("event_name", "distance", "gender", "discipline", "round").show(5, truncate=False)
 
 # Catch any crappy disciplines with tokens
 events_all = events_all.withColumn(
     "tokens",
     F.array_except(
-        F.split(F.lower(F.regexp_replace("event_name", r"[^\w\s]", "")), " "),
+        F.split(F.lower(F.regexp_replace("event_name_clean", r"[^\w\s]", "")), " "),
         F.array(F.lit("mens"), F.lit("womens"), F.lit("heat"), F.lit("final"))
     )
 )
 
-events_all = events_all.filter(
-    ~F.col("event_name").rlike("summary|results summary")
-)
+# events_all = events_all.filter(
+#     ~F.col("event_name_clean").rlike("summary|results summary")
+# )
 
 pairs = events_all.alias("a").join(
     events_all.alias("b"),
     on=["olympics_id", "event_type"],
 ).filter(F.col("a.row_id") < F.col("b.row_id")) \
+.filter(F.col("a.distance") == F.col("b.distance"))
 
 pairs = pairs.withColumn(
     "distance_match",
@@ -234,7 +285,7 @@ pairs = pairs.withColumn(
     0.2 * F.col("discipline_match")
 )
 
-matches = pairs.filter(F.col("score") >= 0.8)
+matches = pairs.filter(F.col("score") >= 0.825)
 
 vertices = events_all.select(F.col("row_id").alias("id"))
 
@@ -247,36 +298,105 @@ g = GraphFrame(
     events_all.select(F.col("row_id").alias("id")),
     edges
 )
-components = g.connectedComponents()
+components = g.connectedComponents(checkpointInterval=2)
 
 event_clusters = components.select(
     F.col("id").alias("row_id"),
     F.col("component").alias("cluster_id")
 )
 
+
 events_all = events_all.join(event_clusters, on="row_id", how="left")
+
+
+event_lookup_raw = events_all.groupBy(
+    "event_id") \
+    .agg(
+        F.first("cluster_id").alias("event_cluster_id"))
 
 swim_events = swim_events.join(events_all.select("event_id", "cluster_id"), "event_id", "left")
 track_events = track_events.join(events_all.select("event_id", "cluster_id"), "event_id", "left")
 events = events.join(events_all.select("event_id", "cluster_id"), "event_id", "left")
 
-events_canon = events_all.select(
-    "row_id",
-    "event_id",
-    "olympics_id",
-    "event_name",
-    "event_type",
-    "distance",
-    "gender",
-    "discipline",
-    "round",
-    "cluster_id"
+
+
+################################
+################################
+
+# OLYMPICS
+
+################################
+################################
+
+olympics = spark.read.csv(
+    "./datasets/Scraped Data/olympics.csv", header=True, inferSchema=True)
+swim_olympics = spark.read.csv(
+    "./datasets/Smaller Tables with Dummy Ids/swim_olympics.csv", header=True, inferSchema=True)
+track_olympics = spark.read.csv(
+    "./datasets/Smaller Tables with Dummy Ids/track_olympics.csv", header=True, inferSchema=True)
+
+olympics = olympics.withColumn("source", F.lit("base_olympics"))
+swim_olympics = swim_olympics.withColumn("source", F.lit("swim_olympics"))
+track_olympics = track_olympics.withColumn("source", F.lit("track_olympics"))
+
+olympics_all = olympics.unionByName(swim_olympics).unionByName(track_olympics)
+olympics_all = olympics_all.withColumn("row_id", F.monotonically_increasing_id())
+
+olympics_all = olympics_all.withColumn("host_city_norm", F.lower(F.trim("host_city_name")))
+
+
+
+olympics_all = olympics_all.withColumn(
+    "block_key",
+    F.concat_ws("_", F.col("year"), F.col("summer"), F.substring("host_city_norm", 1, 5))
 )
 
-event_lookup = events_canon.groupBy("event_id") \
-    .agg(F.first("cluster_id") \
-         .alias("cluster_id")
+pairs = olympics_all.alias("a").join(
+    olympics_all.alias("b"),
+    on="block_key"
+).filter(F.col("a.row_id") < F.col("b.row_id"))
+
+pairs = pairs.withColumn(
+    "lev_dist",
+    levenshtein(F.col("a.host_city_norm"), F.col("b.host_city_norm"))
+).withColumn(
+    "max_len",
+    greatest(length("a.host_city_norm"), length("b.host_city_norm"))
+).withColumn(
+    "city_sim",
+    F.when(F.col("max_len") == 0, 1.0) \
+    .otherwise(1.0 - (F.col("lev_dist") / F.col("max_len")))
 )
+
+pairs = pairs.withColumn("score", F.col("city_sim"))
+
+
+edges = pairs.filter(F.col("score") >= 0.75).select(
+    F.col("a.row_id").alias("src"),
+    F.col("b.row_id").alias("dst")
+)
+
+
+g = GraphFrame(olympics_all.select(F.col("row_id").alias("id")), edges)
+components = g.connectedComponents(checkpointInterval=2)
+
+olympics_clusters = olympics_all.join(
+    components.select(F.col("id").alias("row_id"), F.col("component").alias("olympics_cluster_id")),
+    on="row_id",
+    how="left"
+)
+
+window_oly = Window.orderBy("olympics_cluster_id")
+olympics_clusters = olympics_clusters.withColumn(
+    "canonical_olympics_id",
+    F.row_number().over(window_oly)
+)
+
+olympics_lookup = olympics_clusters.select("olympics_id", "canonical_olympics_id").distinct()
+
+events_all = events_all.join(olympics_lookup, on="olympics_id", how="left")
+
+
 
 ################################
 ################################
@@ -319,25 +439,11 @@ time_udf = F.udf(parse_time, DoubleType())
 
 athlete_events_all = athlete_events_all.withColumn("time_seconds", time_udf("time"))
 
-# athlete_events_all = athlete_events_all.withColumn(
-#     "result",
-#     F.coalesce(F.col("result"), F.lit(-1))
-# )
-
 athlete_events_all = athlete_events_all.join(
-    event_lookup,
+    event_lookup_raw,
     on="event_id",
     how="left"
 )
-
-athlete_events_canon = athlete_events_all.groupBy(
-    "cluster_id", "time_seconds", "result"
-).agg(
-    F.collect_list("athlete_id").alias("athletes")
-)
-
-
-
 
 ################################
 ################################
@@ -351,6 +457,16 @@ candidates = spark.read.csv("./datasets/Scraped Data/athletes.csv", header=True,
 swim_candidates = spark.read.csv("./datasets/Smaller Tables with Dummy Ids/swim_candidates.csv", header=True, inferSchema=True)
 track_candidates = spark.read.csv("./datasets/Smaller Tables with Dummy Ids/track_candidates.csv", header=True, inferSchema=True)
 
+candidates = candidates.join(
+    country_code_map,
+    candidates["nationality_id"] == country_code_map["id"],
+    "left"
+).withColumn("country_code", F.col("country_code")).drop("id")
+
+# Remap nation_id to country code
+swim_candidates = swim_candidates.withColumn("country_code", F.col("nationality_id"))
+track_candidates = track_candidates.withColumn("country_code", F.col("nationality_id"))
+
 
 # DATASET LABELS FOR CANDIDATES
 swim_candidates = swim_candidates.withColumn("source", F.lit("swim_candidates"))
@@ -360,53 +476,77 @@ candidates = candidates.withColumn("source", F.lit("candidates"))
 # BIG UNIFIED TABLE
 candidates_all = candidates.unionByName(swim_candidates.unionByName(track_candidates))
 
+# 1. Only process rows where middle_name contains commas and looks like a relay list
+def is_valid_relay_list(mid):
+    if mid is None: return False
+    parts = [p.strip() for p in mid.split(",")]
+    if any(p == "" for p in parts):      # dont use trailing/leading commas
+        return False
+    if len(parts) < 2: return False
+    middle_parts = parts[1:-1] if len(parts) > 2 else []
+    return all(len(p.split()) >= 2 for p in middle_parts if p)
 
-# ==========================
-# CLEAN RELAYS FOR SWIMMING
-# ==========================
+is_valid_udf = F.udf(is_valid_relay_list, BooleanType())
 
-relay_rows = candidates_all.filter(
-    F.col("middle_name").contains(",")
+candidates_all = candidates_all.withColumn("relay_list", is_valid_udf("middle_name"))
+relay_df = candidates_all.filter(F.col("relay_list"))
+relay_df = relay_df.filter(F.col("middle_name").isNotNull() & (F.col("middle_name") != ""))
+non_relay_df = candidates_all.filter(~F.col("relay_list"))
+
+"""
+Assumes first athlete = (first, first word of middle)
+            last athlete  = (last word of middle, last)
+            middle athletes = each comma-separated segment between first and last
+"""
+def extract_athletes(first, middle, last):
+    if not middle:
+        return []
+    parts = [p.strip() for p in middle.split(",")]
+    athletes = []
+    # First athlete
+    first_last = parts[0].split()[0] if parts[0] else ""
+    athletes.append((first, first_last))
+    # Middle athletes
+    for part in parts[1:-1]:
+        tokens = part.split()
+        if len(tokens) >= 2:
+            athletes.append((tokens[0], tokens[-1]))   # first and last word
+        else:
+            athletes.append((tokens[0], ""))
+    # Last athlete
+    last_first = parts[-1].split()[-1] if parts[-1] else ""
+    athletes.append((last_first, last))
+    return athletes
+
+extract_athletes_udf = F.udf(extract_athletes, ArrayType(StructType([
+    StructField("first", StringType(), True),
+    StructField("last", StringType(), True)
+])))
+
+relay_processed = relay_df.withColumn(
+    "athlete_array",
+    extract_athletes_udf("first_name", "middle_name", "last_name")
 )
 
-split_names = relay_rows.withColumn(
-    "name_list",
-    F.split(F.col("middle_name"), ",")
-)
+relay_exploded = relay_processed.withColumn("athlete", F.explode("athlete_array"))
 
-exploded = split_names.withColumn(
+relay_exploded = relay_exploded.withColumn("first_name", F.col("athlete.first")) \
+                               .withColumn("last_name", F.col("athlete.last")) \
+                               .drop("athlete", "athlete_array", "relay_list")
+
+
+non_relay_df = non_relay_df.drop("relay_list")
+
+# TODO: show exploded relays
+#relay_exploded.select("first_name","last_name","middle_name","country_code").show(20, truncate=False)
+
+candidates_all = non_relay_df.unionByName(relay_exploded)
+
+# Get rid of any commas or whitespace
+candidates_all = candidates_all.withColumn(
     "middle_name",
-    F.explode("name_list")
+    F.regexp_replace(F.col("middle_name"), r",\s*$", "")
 )
-
-exploded = exploded.withColumn(
-    "middle_name",
-    F.trim("middle_name")
-)
-
-exploded = exploded.withColumn(
-    "name_sections",
-    F.split("middle_name", " ")
-)
-
-exploded = exploded.withColumn(
-    "first_name",
-    F.col("name_sections").getItem(0)
-).withColumn(
-    "last_name",
-    F.element_at("name_sections", - 1) # Parses for middle names in list
-)
-
-exploded = exploded.drop("name_list", "name_sections")
-
-clean_candidates = candidates_all.filter(
-    ~F.col("middle_name").contains(",")
-)
-
-candidates_all = clean_candidates.unionByName(exploded)
-# Row id
-#candidates_all = candidates_all.withColumn("row_id", F.monotonically_increasing_id())
-
 
 candidates_all = candidates_all.withColumn(
     "first_name", F.lower(F.trim("first_name"))
@@ -414,6 +554,18 @@ candidates_all = candidates_all.withColumn(
     "last_name", F.lower(F.trim("last_name"))
 ).withColumn(
     "middle_name", F.lower(F.trim("middle_name"))
+)
+
+candidates_all = candidates_all.withColumn("first_name", F.regexp_replace("first_name", '["“”]', ''))
+candidates_all = candidates_all.withColumn("last_name", F.regexp_replace("last_name", '["“”]', ''))
+
+candidates_all = candidates_all.withColumn(
+    "middle_name",
+    F.when(
+        F.col("middle_name").contains(F.col("first_name")) |
+        F.col("middle_name").contains(F.col("last_name")),
+        F.lit(None)
+    ).otherwise(F.col("middle_name"))
 )
 
 # Do a quick substring of athlete fnames for blocking later
@@ -426,7 +578,6 @@ candidates_all = candidates_all.withColumn(
     "last_four",
     F.substring("last_name", 1, 4)
 )
-
 
 # Tokenize names
 candidates_all = candidates_all.withColumn(
@@ -443,91 +594,200 @@ candidates_all = candidates_all.withColumn(
     )
 )
 
+# Coalesce bad decade blocks of yob's 
+candidates_all = candidates_all.withColumn(
+    "birth_decade", 
+    F.when(F.col("year_of_birth").isNotNull(), 
+           F.floor(F.col("year_of_birth") / 10) * 10)
+     .otherwise(F.lit(0))
+)
+
+candidates_all = candidates_all.filter(
+    F.col("first_name").rlike("^[a-zA-ZÀ-ÖØ-öø-ÿ'.-]+$") &   # accented / cool letters allowed
+    (F.length("first_name") >= 2) &
+    ~F.lower(F.col("first_name")).rlike("record|progression|kilometre|metre|world|summary|qualif|heat|final")
+)
+
+# Suffix swap
+suffix_list = ["jr", "sr", "ii", "iii", "iv", "v", "jr.", "sr."]
+
+# If last name is a suffix and middle name is not empty, swap them
+candidates_all = candidates_all.withColumn(
+    "temp_last",
+    F.when(
+        F.lower(F.col("last_name")).isin(suffix_list) & (F.length(F.col("middle_name")) > 0),
+        F.col("middle_name")
+    ).otherwise(F.col("last_name"))
+).withColumn(
+    "temp_middle",
+    F.when(
+        F.lower(F.col("last_name")).isin(suffix_list) & (F.length(F.col("middle_name")) > 0),
+        F.col("last_name")                      # the suffix becomes the new middle name
+    ).otherwise(F.col("middle_name"))
+).withColumn("last_name", F.col("temp_last")) \
+ .withColumn("middle_name", F.col("temp_middle")) \
+ .drop("temp_last", "temp_middle")
+
+# Remove trailing suffix from last_name
+candidates_all = candidates_all.withColumn(
+    "last_name",
+    F.regexp_replace(F.col("last_name"), r" (jr\.?|sr\.?|ii|iii|iv|v)$", "")
+)
+
+# Drop rows where first or last name is purely a suffix
+candidates_all = candidates_all.filter(
+    ~F.lower(F.col("first_name")).isin(suffix_list) &
+    ~F.lower(F.col("last_name")).isin(suffix_list)
+)
+
+
+candidates_all = candidates_all.withColumn(
+    "gender",
+    F.when(F.lower(F.col("gender")).startswith("m"), "M")
+     .when(F.lower(F.col("gender")).startswith("w"), "F")
+     .when(F.lower(F.col("gender")).startswith("f"), "F")
+     .otherwise(F.col("gender"))
+)
+
 # Create blocking key
 candidates_all = candidates_all.withColumn(
     "block_key",
     F.concat_ws(
         "_",
         F.col("first_initial"),
-        F.col("last_name"),
         F.col("last_four"),
-        F.coalesce(F.col("nationality_id"), F.lit("UNK"))
+        F.col("birth_decade"),
+        F.col("gender"),
+        F.coalesce(F.col("country_code"), F.lit("UNK")) # Changed to country code instead of nationality id
+    )
+)
+
+candidates_all = candidates_all.withColumn(
+    "block_key_no_decade",
+    F.concat_ws("_",
+        F.col("first_initial"),
+        F.col("last_four"),
+        F.col("gender"),
+        F.coalesce(F.col("country_code"), F.lit("UNK"))
     )
 )
 
 # Extract distinct athlete_ids from athlete_events that are not in candidates_all
-missing_athlete_ids = athlete_events.select("athlete_id").distinct() \
+missing_athlete_ids = athlete_events_all.select("athlete_id").distinct() \
     .join(candidates_all.select("athlete_id").distinct(), "athlete_id", "left_anti")
 
-# Create minimal candidate rows for them (you'll need to fill required columns)
 missing_candidates = missing_athlete_ids.select(
     F.col("athlete_id"),
-    F.lit("").alias("first_name"),
+    F.lit("").alias("first_name"), 
     F.lit("").alias("last_name"),
-    F.lit("").alias("middle_name"),
+    F.lit("").alias("middle_name"), 
     F.lit(None).cast(IntegerType()).alias("year_of_birth"),
-    F.lit("").alias("nationality_id"),
+    F.lit("").alias("nationality_id"), 
     F.lit("missing_from_candidates").alias("source")
-)
+    )
 
 candidates_all = candidates_all.unionByName(missing_candidates, allowMissingColumns=True)
-# Row ID after
+
 candidates_all = candidates_all.withColumn("row_id", F.monotonically_increasing_id())
+
+# Constantly going OOM, setting checkpoint
+candidates_all = candidates_all.checkpoint()
 
 # Self join on block key
 pairs = candidates_all.alias("a").join(
     candidates_all.alias("b"),
     on="block_key"
-).filter(F.col("a.row_id") < F.col("b.row_id"))
-
-# Sim features with easy matching
-pairs = pairs.withColumn(
-    "first_match",
-    F.when(F.col("a.first_name") == F.col("b.first_name"), 1).otherwise(0)
+).filter(F.col("a.row_id") < F.col("b.row_id")) \
+ .select(
+    F.col("a.row_id").alias("row_id_a"),
+    F.col("b.row_id").alias("row_id_b"),
+    F.col("a.first_name").alias("first_a"),
+    F.col("b.first_name").alias("first_b"),
+    F.col("a.last_name").alias("last_a"),
+    F.col("b.last_name").alias("last_b"),
+    F.col("a.year_of_birth").alias("yob_a"),
+    F.col("b.year_of_birth").alias("yob_b"),
+    F.col("a.name_tokens").alias("tokens_a"),
+    F.col("b.name_tokens").alias("tokens_b")
 )
 
-pairs = pairs.withColumn(
-    "last_match",
-    F.when(F.col("a.last_name") == F.col("b.last_name"), 1).otherwise(0)
-)
+# Add similarity features
+pairs = pairs.withColumn("first_match", F.when(F.col("first_a") == F.col("first_b"), 1).otherwise(0))
+pairs = pairs.withColumn("last_match", F.when(F.col("last_a") == F.col("last_b"), 1).otherwise(0))
+pairs = pairs.withColumn("yob_match", F.when(F.col("yob_a") == F.col("yob_b"), 1).otherwise(0))
+pairs = pairs.withColumn("token_sim", jaccard(F.col("tokens_a"), F.col("tokens_b")))
 
-pairs = pairs.withColumn(
-    "yob_match",
-    F.when(F.col("a.year_of_birth") == F.col("b.year_of_birth"), 1).otherwise(0)
-)
-
-# Jaccard sim with name tokens
-pairs = pairs.withColumn(
-    "token_sim",
-    jaccard(F.col("a.name_tokens"), F.col("b.name_tokens"))
-)
-
-
-# TODO : optional hard filter on last names
-# pairs = pairs.filter(
-#     (F.col("a.last_name") == F.col("b.last_name"))
-# )
-
-pairs = pairs.filter(
-    (F.col("token_sim") > 0.3) | 
-    (F.col("a.last_name") == F.col("b.last_name"))
+pairs = pairs.withColumn("fullname_a", F.concat_ws(" ", F.col("first_a"), F.col("last_a")))
+pairs = pairs.withColumn("fullname_b", F.concat_ws(" ", F.col("first_b"), F.col("last_b")))
+pairs = pairs.withColumn("lev_dist", levenshtein(F.col("fullname_a"), F.col("fullname_b")))
+pairs = pairs.withColumn("max_len", greatest(F.length("fullname_a"), F.length("fullname_b")))
+pairs = pairs.withColumn("name_sim",
+    F.when(F.col("max_len") == 0, 1.0)
+     .otherwise(1.0 - (F.col("lev_dist") / F.col("max_len")))
 )
 
 pairs = pairs.withColumn(
     "score",
-    0.4 * F.col("last_match") +
-    0.3 * F.col("first_match") +
-    0.2 * F.col("yob_match") +
-    0.1 * F.col("token_sim")
+    0.25 * F.col("last_match") +
+    0.15 * F.col("first_match") +
+    0.15 * F.col("yob_match") +
+    0.15 * F.col("token_sim") +
+    0.30 * F.col("name_sim")
 )
+
+# New block key for athletes that dont have yob listed. Michael phelps had this issue for some reason.
+pairs2 = candidates_all.alias("a").join(
+    candidates_all.alias("b"),
+    on="block_key_no_decade"
+).filter(F.col("a.row_id") < F.col("b.row_id")) \
+ .select(
+    F.col("a.row_id").alias("row_id_a"),
+    F.col("b.row_id").alias("row_id_b"),
+    F.col("a.first_name").alias("first_a"),
+    F.col("b.first_name").alias("first_b"),
+    F.col("a.last_name").alias("last_a"),
+    F.col("b.last_name").alias("last_b"),
+    F.col("a.year_of_birth").alias("yob_a"),
+    F.col("b.year_of_birth").alias("yob_b"),
+    F.col("a.name_tokens").alias("tokens_a"),
+    F.col("b.name_tokens").alias("tokens_b")
+)
+
+# Same similarity columns
+pairs2 = pairs2.withColumn("first_match", F.when(F.col("first_a") == F.col("first_b"), 1).otherwise(0))
+pairs2 = pairs2.withColumn("last_match", F.when(F.col("last_a") == F.col("last_b"), 1).otherwise(0))
+pairs2 = pairs2.withColumn("yob_match", F.when(F.col("yob_a") == F.col("yob_b"), 1).otherwise(0))
+pairs2 = pairs2.withColumn("token_sim", jaccard(F.col("tokens_a"), F.col("tokens_b")))
+
+# Levy again
+pairs2 = pairs2.withColumn("fullname_a", F.concat_ws(" ", F.col("first_a"), F.col("last_a")))
+pairs2 = pairs2.withColumn("fullname_b", F.concat_ws(" ", F.col("first_b"), F.col("last_b")))
+pairs2 = pairs2.withColumn("lev_dist", levenshtein(F.col("fullname_a"), F.col("fullname_b")))
+pairs2 = pairs2.withColumn("max_len", greatest(F.length("fullname_a"), F.length("fullname_b")))
+pairs2 = pairs2.withColumn("name_sim",
+    F.when(F.col("max_len") == 0, 1.0)
+     .otherwise(1.0 - (F.col("lev_dist") / F.col("max_len")))
+)
+
+pairs2 = pairs2.withColumn(
+    "score",
+    0.25 * F.col("last_match") +
+    0.15 * F.col("first_match") +
+    0.15 * F.col("yob_match") +
+    0.15 * F.col("token_sim") +
+    0.30 * F.col("name_sim")
+)
+
+# Union the two pairs
+pairs = pairs.unionByName(pairs2)
 
 
 # Cluster matches again
-matches = pairs.filter(F.col("score") >= 0.8)
+matches = pairs.filter(F.col("score") >= 0.825)
 
 edges = matches.select(
-    F.col("a.row_id").alias("src"),
-    F.col("b.row_id").alias("dst")
+    F.col("row_id_a").alias("src"),
+    F.col("row_id_b").alias("dst")
 )
 
 g = GraphFrame(
@@ -535,7 +795,7 @@ g = GraphFrame(
     edges
 )
 
-components = g.connectedComponents()
+components = g.connectedComponents(checkpointInterval=2)
 
 # Build canon for candidates
 candidates_canon = candidates_all.join(
@@ -547,45 +807,79 @@ candidates_canon = candidates_all.join(
     how="left"
 )
 
-# Connect a_events and candidates
+# Drop empty athletes
+candidates_canon = candidates_canon.filter(
+    (F.col("first_name") != "") | (F.col("last_name") != "")
+)
+
+# Help normalize athlete ID's to keep them at low numbers
+window_spec = Window.orderBy("cluster_id")
+candidates_canon = candidates_canon.withColumn(
+    "canonical_athlete_id",
+    F.row_number().over(window_spec)
+)
+
+# Create medal map for candidates
+medal_map = candidates_canon.select("athlete_id", F.col("canonical_athlete_id").alias("athlete_cluster_id")).distinct()
+
+events_all = events_all.join(
+    medal_map.withColumnRenamed("athlete_id", "gold_id").withColumnRenamed("athlete_cluster_id", "gold_cluster_id"),
+    on="gold_id",
+    how="left"
+).join(
+    medal_map.withColumnRenamed("athlete_id", "silver_id").withColumnRenamed("athlete_cluster_id", "silver_cluster_id"),
+    on="silver_id",
+    how="left"
+).join(
+    medal_map.withColumnRenamed("athlete_id", "bronze_id").withColumnRenamed("athlete_cluster_id", "bronze_cluster_id"),
+    on="bronze_id",
+    how="left"
+)
+
+events_canon = events_all.select(
+    "row_id",
+    "event_id",
+    "olympics_id",
+    "canonical_olympics_id",
+    "event_name",
+    "event_type",
+    "distance",
+    "gender",
+    "discipline",
+    "round",
+    "cluster_id",
+    "gold_cluster_id",
+    "silver_cluster_id",
+    "bronze_cluster_id"
+)
+
+# Window and partition to help keep id's readable
+window_event = Window.orderBy("cluster_id")
+events_canon = events_canon.withColumn(
+    "canonical_event_id",
+    F.row_number().over(window_event)
+)
+
+event_id_mapping = events_canon.select("cluster_id", "canonical_event_id").distinct()
+
+athlete_events_all = athlete_events_all.join(event_id_mapping,
+    athlete_events_all["event_cluster_id"] == event_id_mapping["cluster_id"], "left") \
+    .drop("cluster_id", "event_cluster_id") \
+    .withColumnRenamed("canonical_event_id", "event_cluster_id")
+
 athlete_lookup = candidates_canon.select(
     "athlete_id",
-    "cluster_id"
-).dropDuplicates(["athlete_id"]) \
-.withColumnRenamed("cluster_id", "athlete_cluster_id")
-
-
-print(f"Distinct athlete_id in athlete_events_all: {athlete_events_all.select('athlete_id').distinct().count()}")
-print(f"Distinct athlete_id in athlete_lookup: {athlete_lookup.select('athlete_id').distinct().count()}")
-
-# Show a few athlete_id from each that are missing in the other
-athlete_ids_events = athlete_events_all.select('athlete_id').distinct()
-athlete_ids_lookup = athlete_lookup.select('athlete_id').distinct()
-
-missing_in_lookup = athlete_ids_events.join(athlete_ids_lookup, 'athlete_id', 'left_anti')
-missing_in_events = athlete_ids_lookup.join(athlete_ids_events, 'athlete_id', 'left_anti')
-
-print(f"Athlete IDs in events but NOT in lookup: {missing_in_lookup.count()}")
-missing_in_lookup.show(10, truncate=False)
-
-print(f"Athlete IDs in lookup but NOT in events: {missing_in_events.count()}")
-missing_in_events.show(10, truncate=False)
+    "canonical_athlete_id") \
+    .dropDuplicates(["athlete_id"]) \
+    .withColumnRenamed("canonical_athlete_id",
+                       "athlete_cluster_id"
+    )
 
 
 athlete_events_all = athlete_events_all.join(
     athlete_lookup,
     on="athlete_id",
-    how="left"
-)
-
-# athlete_events_all = athlete_events_all.withColumn(
-#     "athlete_cluster_id",
-#     F.coalesce(
-#         F.col("athlete_cluster_id"),
-#         F.col("athlete_id") + 10000000   # dont collide with real id
-#     )
-# )
-
+    how="left")
 
 ################################
 ################################
@@ -595,11 +889,18 @@ athlete_events_all = athlete_events_all.join(
 ################################
 ################################
 
-athletes_final = candidates_canon.groupBy("cluster_id").agg(
+athletes_final = candidates_canon.groupBy("canonical_athlete_id").agg(
     F.first("first_name").alias("first_name"),
     F.first("last_name").alias("last_name"),
-    F.first("nationality_id").alias("nationality_id"),
+    F.first("country_code").alias("country_code"), # Change to country code from nationality id
     F.first("year_of_birth").alias("year_of_birth")
+)
+
+athletes_final = athletes_final.groupBy(
+    "first_name", "last_name", "country_code", "gender"
+).agg(
+    F.min("canonical_athlete_id").alias("athlete_id"),
+    F.first("year_of_birth", ignorenulls=True).alias("year_of_birth")
 )
 
 ################################
@@ -610,13 +911,17 @@ athletes_final = candidates_canon.groupBy("cluster_id").agg(
 ################################
 ################################
 
-events_final = events_canon.groupBy("cluster_id").agg(
+events_final = events_canon.groupBy("canonical_event_id").agg(
     F.first("event_name", ignorenulls=True).alias("event_name"),
     F.first("event_type", ignorenulls=True).alias("event_type"),
     F.first("distance", ignorenulls=True).alias("distance"),
     F.first("gender", ignorenulls=True).alias("gender"),
-    F.first("discipline", ignorenulls=True).alias("discipline")
-)
+    F.first("discipline", ignorenulls=True).alias("discipline"),
+    F.first("canonical_olympics_id", ignorenulls=True).alias("olympics_id"),
+    F.first("gold_cluster_id", ignorenulls=True).alias("gold_id"),
+    F.first("silver_cluster_id", ignorenulls=True).alias("silver_id"),
+    F.first("bronze_cluster_id", ignorenulls=True).alias("bronze_id")
+).withColumnRenamed("canonical_event_id", "event_id")
 
 ################################
 ################################
@@ -628,18 +933,10 @@ events_final = events_canon.groupBy("cluster_id").agg(
 
 results_final = athlete_events_all.select(
     "athlete_cluster_id",
-    "cluster_id",
+    "event_cluster_id",
     "time_seconds",
     "result"
 )
-
-# Drop extra id columns.
-# TODO: maybe come back and fix this / comment out
-# results_final = results_final.dropDuplicates([
-#     "athlete_cluster_id",
-#     "cluster_id",
-#     ##"time_seconds"
-# ])
 
 
 print("20 of results_final:")
@@ -660,4 +957,203 @@ print(f"events final count: {events_final.count()}")
 print(f"final results count: {results_final.count()}")
 print(f"athlete cluster id distinct count: {athlete_events_all.select('athlete_cluster_id').distinct().count()}")
 
+
+
+
+
+
+##############################################################################
+##############################################################################
+##############################################################################
+
+######################## SCHEMA ALIGNED CREATION #############################
+
+##############################################################################
+##############################################################################
+##############################################################################
+
+events_clean = events_canon.select(
+    F.col("canonical_event_id").alias("event_id"),
+    F.col("gold_cluster_id").alias("gold_id"),
+    F.col("silver_cluster_id").alias("silver_id"),
+    F.col("bronze_cluster_id").alias("bronze_id"),
+    F.col("canonical_olympics_id").alias("olympics_id"),
+    "event_name",
+    "event_type"
+).distinct()
+
+events_clean = events_clean.groupBy(
+    "olympics_id", "event_name", "event_type"
+).agg(
+    F.min("event_id").alias("event_id_old"),   # keep track for remapping
+    F.first("gold_id", ignorenulls=True).alias("gold_id"),
+    F.first("silver_id", ignorenulls=True).alias("silver_id"),
+    F.first("bronze_id", ignorenulls=True).alias("bronze_id")
+)
+
+# # Create a mapping from old canonical event IDs to the new dedup ID
+# event_remap = events_clean.select(
+#     F.col("event_id_old").alias("old_event_id"),
+#     F.monotonically_increasing_id().alias("new_event_id")
+# )
+
+# athlete_event_clean = athlete_event_clean.alias("aec") \
+#     .join(event_remap, F.col("aec.event_id") == F.col("old_event_id"), "left") \
+#     .select(
+#         F.col("athlete_id"),
+#         F.col("new_event_id").alias("event_id"),
+#         "time", "result"
+#     )
+
+# # Remap results_final event IDs
+# results_final = results_final.alias("rf") \
+#     .join(event_remap, F.col("rf.event_cluster_id") == F.col("old_event_id"), "left") \
+#     .select(
+#         "athlete_cluster_id",
+#         F.col("new_event_id").alias("event_cluster_id"),
+#         "time_seconds", "result"
+#     )
+
+events_clean = events_clean.select(
+    F.col("event_id_old").alias("event_id"),
+    "gold_id", "silver_id", "bronze_id",
+    "olympics_id", "event_name", "event_type"
+)
+
+
+athlete_event_clean = athlete_events_all.select(
+    F.col("athlete_cluster_id").alias("athlete_id"),
+    F.col("event_cluster_id").alias("event_id"),
+    "time",
+    "result"
+)
+
+
+
+# athletes_clean = candidates_canon.select(
+#     F.col("canonical_athlete_id").alias("athlete_id"),
+#     "first_name",
+#     "middle_name",
+#     "last_name",
+#     "height(cm)",
+#     "weight(kg)",
+#     F.col("country_code").alias("nationality_id"),
+#     "year_of_birth",
+#     "nationality_id_at_birth",
+#     "gender"
+# ).dropDuplicates([
+#     "athlete_id", 
+#     "nationality_id", 
+#     "year_of_birth", 
+#     "gender"]) \
+# .distinct()
+
+# athletes_clean = candidates_canon.groupBy("canonical_athlete_id").agg(
+#     F.first("first_name", ignorenulls=True).alias("first_name"),
+#     F.first("middle_name", ignorenulls=True).alias("middle_name"),
+#     F.first("last_name", ignorenulls=True).alias("last_name"),
+#     F.first("height(cm)", ignorenulls=True).alias("height(cm)"),
+#     F.first("weight(kg)", ignorenulls=True).alias("weight(kg)"),
+#     F.first("country_code", ignorenulls=True).alias("nationality_id"),
+#     F.first("year_of_birth", ignorenulls=True).alias("year_of_birth"),
+#     F.first("nationality_id_at_birth", ignorenulls=True).alias("nationality_id_at_birth"),
+#     F.first("gender", ignorenulls=True).alias("gender")
+# ).withColumnRenamed("canonical_athlete_id", "athlete_id")
+
+
+athletes_clean = candidates_canon.groupBy("canonical_athlete_id").agg(
+    F.first("first_name", ignorenulls=True).alias("first_name"),
+    F.first("middle_name", ignorenulls=True).alias("middle_name"),
+    F.first("last_name", ignorenulls=True).alias("last_name"),
+    F.first("height(cm)", ignorenulls=True).alias("height(cm)"),
+    F.first("weight(kg)", ignorenulls=True).alias("weight(kg)"),
+    F.first("country_code", ignorenulls=True).alias("nationality_id"),
+    F.first("year_of_birth", ignorenulls=True).alias("year_of_birth"),
+    F.first("nationality_id_at_birth", ignorenulls=True).alias("nationality_id_at_birth"),
+    F.first("gender", ignorenulls=True).alias("gender")
+)
+
+athletes_clean = athletes_clean.groupBy(
+    "first_name", "last_name", "nationality_id", "gender"
+).agg(
+    F.min("canonical_athlete_id").alias("athlete_id"),
+    F.first("middle_name", ignorenulls=True).alias("middle_name"),
+    F.first("height(cm)", ignorenulls=True).alias("height(cm)"),
+    F.first("weight(kg)", ignorenulls=True).alias("weight(kg)"),
+    F.first("year_of_birth", ignorenulls=True).alias("year_of_birth"),
+    F.first("nationality_id_at_birth", ignorenulls=True).alias("nationality_id_at_birth")
+)
+
+olympics_clean = olympics_clusters.select(
+    F.col("canonical_olympics_id").alias("olympics_id"),
+    "year",
+    "summer",
+    "host_city_name"
+).distinct()
+
+olympics_clean = olympics_clean.groupBy("year", "summer", "host_city_name") \
+    .agg(F.min("olympics_id").alias("olympics_id"))
+
+
+# events_clean = events_clean.alias("ec").join(
+#     olympics_clean.select(
+#         F.col("olympics_id").alias("new_oly_id"),
+#         "year", "summer", "host_city_name"
+#     ),
+#     on="host_city_name",   # or on year+summer+city
+#     how="left"
+# ).select(
+#     "event_id", "gold_id", "silver_id", "bronze_id",
+#     F.col("new_oly_id").alias("olympics_id"),
+#     "event_name", "event_type"
+# )
+
+# # Remap events_final similarly, if used later
+# events_final = events_final.alias("ef").join(
+#     olympics_clean.select(F.col("olympics_id").alias("new_oly_id"), "year", "summer", "host_city_name"),
+#     on="host_city_name",
+#     how="left"
+# ).select(
+#     "event_id", "gold_id", "silver_id", "bronze_id",
+#     F.col("new_oly_id").alias("olympics_id"),
+#     "event_name", "event_type", "distance", "gender", "discipline"
+# )
+
+
+def write_single_csv(df, path):
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+
+    # Remove any existing file or directory at the target path
+    if os.path.exists(path):
+        if os.path.isdir(path):
+            shutil.rmtree(path)
+        else:
+            os.remove(path)
+
+    tmp_dir = tempfile.mkdtemp()
+    df.coalesce(1).write.csv(tmp_dir, header=True, mode="overwrite")
+    part_file = None
+    for f in os.listdir(tmp_dir):
+        if f.startswith("part-") and f.endswith(".csv"):
+            part_file = os.path.join(tmp_dir, f)
+            break
+    if part_file:
+        shutil.move(part_file, path)
+        shutil.rmtree(tmp_dir)
+    else:
+        raise RuntimeError("No part file found in " + tmp_dir)
+
+
+# Clean datasets
+write_single_csv(events_clean, "./clean_datasets/events_clean.csv")
+write_single_csv(athlete_event_clean, "./clean_datasets/athlete_event_clean.csv")
+write_single_csv(athletes_clean, "./clean_datasets/athletes_clean.csv")
+write_single_csv(olympics_clean, "./clean_datasets/olympics_clean.csv")
+
+# Canon datasets
+write_single_csv(athletes_final, "./canonical/athletes.csv")
+write_single_csv(events_final, "./canonical/events.csv")
+write_single_csv(results_final, "./canonical/results.csv")
+
+print("All done!")
 exit(0)
