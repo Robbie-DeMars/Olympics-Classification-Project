@@ -5,33 +5,35 @@ from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
+from sklearn.impute import KNNImputer
 
 #Load csv into pandas dataframes
 df_candidates = pd.read_csv("Final Data/athletes_clean.csv") # The individual athletes
+df_candidates['year_of_birth'] = pd.to_numeric(df_candidates['year_of_birth'], errors = "coerce")
 print("Loaded candidates...")
 df_combined = pd.read_csv("Final Data/athlete_event_clean_fixed_time.csv") # The bridge file that connects athletes to their events, and their performance in said event
 df_combined["time"] = pd.to_timedelta(df_combined["time"], errors = 'coerce').dt.total_seconds()
 print("Loaded combined tables...")
 df_events = pd.read_csv("Final Data/events_clean.csv") # The individual events
 print("Loaded events...")
-df_countries_gdp = pd.read_csv("Final Data/countries.csv") # Country / year / gdp tuples
+df_countries_gdp = pd.read_csv("Final Data/countries_clean.csv") # Country / year / gdp tuples
 print("Loaded countries gdp...")
-df_city_countries = pd.read_csv("Final Data/city_country.csv") # City / country pairings
+df_city_countries = pd.read_csv("Final Data/city_country_clean.csv") # City / country pairings
 print("Loaded country city pairs...")
 df_olympics = pd.read_csv("Final Data/olympics_clean.csv") # Olympics and the city they were hosted in
-print(df_countries_gdp['country_id'].unique())
 
 country_list = df_countries_gdp['country_id'].unique() #Save for later
 events_list = df_events["event_name"].unique() #Save for later
 
 #Host countries
 df_host_countries = pd.merge(df_olympics, df_city_countries, on = "city_id")
+print(len(df_host_countries))
 df_host_countries = pd.merge(df_host_countries, df_countries_gdp,
                              left_on = ["country_id", "year"],
                              right_on = ["country_id", "year"],
                              how = "inner",
                              suffixes = ("", "_host"))
-
+print(len(df_host_countries))
 #Candidates
 #Merge candidates to their nationality at birth and gdp of their nationality at birth
 df_tables_merged = pd.merge(df_candidates, df_countries_gdp, 
@@ -61,8 +63,12 @@ df_tables_merged = pd.merge(df_tables_merged, df_countries_gdp,
                             how = "inner",
                             suffixes = ("_birth", "_competing"))
 
+
+
 #Merge to host city
-df_tables_merged = pd.merge(df_tables_merged, df_host_countries)
+df_tables_merged = pd.merge(df_tables_merged, df_host_countries, on = "olympics_id")
+print(len(df_tables_merged))
+print(len(df_host_countries))
 
 df_tables_merged.to_csv("test.csv", index = False)
 
@@ -89,9 +95,15 @@ numerical_cols = ['height(cm)', 'weight(kg)', 'year_of_birth',
        'gdp_per_capita_birth', 'time', 'year',
        'gdp_per_capita_competing', 'summer', 'gdp_per_capita']
 
+#Median imputation
+#preprocessor = ColumnTransformer([
+#    ("cat", OneHotEncoder(handle_unknown = "ignore", sparse_output = False), categorical_cols),
+#    ("num", SimpleImputer(strategy = "median"), numerical_cols)
+#])
+
 preprocessor = ColumnTransformer([
     ("cat", OneHotEncoder(handle_unknown = "ignore", sparse_output = False), categorical_cols),
-    ("num", SimpleImputer(strategy = "median"), numerical_cols)
+    ("num", KNNImputer(n_neighbors = 5), numerical_cols)
 ])
 
 y = df_tables_merged["result"].apply(lambda x: x if x in [1.0, 2.0, 3.0] else 0).fillna(0).astype(int)

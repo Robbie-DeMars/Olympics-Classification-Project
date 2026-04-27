@@ -1,0 +1,47 @@
+city_id,country_id,country_code
+Sydney,Australia,AUS
+Brisbane,Australia,AUS
+Innsbruck,Austria,AUT
+Antwerp,Belgium,BEL
+Rio de Janeiro,Brazil,BRA
+Montreal,Canada,CAN
+Calgary,Canada,CAN
+Vancouver,Canada,CAN
+Beijing,China,CHN
+Tokyo City,Finland,FIN
+Helsinki,Finland,FIN
+Paris,France,FRA
+Chamonix,France,FRA
+Grenoble,France,FRA
+Albertville,France,FRA
+Berlin,Germany,GER
+Garmisch-Partenkirchen,Germany,GER
+Athens,Greece,GRE
+Cortina d'Ampezzo,Italy,ITA
+Rome,Italy,ITA
+Turin,Italy,ITA
+Milan,Italy,ITA
+Sapporo,Japan,JPN
+Tokyo,Japan,JPN
+Nagano,Japan,JPN
+Mexico City,Mexico,MEX
+Amsterdam,Netherlands,NED
+Oslo,Norway,NOR
+Lillehammer,Norway,NOR
+Sochi,Russia,RUS
+Seoul,South Korea,KOR
+Pyeongchang,South Korea,KOR
+Moscow,Soviet Union,URS
+Barcelona,Spain,ESP
+Stockholm,Sweden,SWE
+Melbourne,Sweden,SWE
+St. Moritz,Switzerland,SUI
+London,United Kingdom,GBR
+St. Louis,United States,USA
+Los Angeles,United States,USA
+Lake Placid,United States,USA
+Olympic Valley,United States,USA
+Atlanta,United States,USA
+Salt Lake City,United States,USA
+Munich,West Germany,
+Sarajevo,Yugoslavia,YUG
