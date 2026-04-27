@@ -1,9 +1,0 @@
-# Features to include in classification
-# medals
-#height
-#weight
-#time
-#country
-#country gdp
-#year of event
-#nationality
