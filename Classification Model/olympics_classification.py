@@ -1,3 +1,31 @@
+'''
+olympics classification project
+Group:
+Logan Hunter, u1342460
+Quang Nguyen, u1470229
+Robbie DeMars, u1411323
+
+This script runs classification on our datasets using the following methods:
+
+XGBC Classifier (Extreme Gradient Boosting Classifier) is used as the classification model.
+
+Median Imputation is used as the imputation method.
+
+Run this script the following way:
+python olympics_classification.py <dataset>
+
+# <dataset> can be the following:
+final - All of our datasets combined
+small_swim - Kaggle swimming dataset
+small_track - Kaggle track dataset
+small_weight_height - Kaggle weight height dataset
+scraped - Our scraped dataset
+
+
+At the end of training, it automatically enters an evaluate mode, for testing any arbitrary person.
+'''
+
+
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer

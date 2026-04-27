@@ -5,7 +5,6 @@ def men_to_m_women_to_f(g):
     if pd.isna(g):
         return np.nan
 
-    string_gender = str(g).strip()
     if g == "Men":
         return "M"
     else:
