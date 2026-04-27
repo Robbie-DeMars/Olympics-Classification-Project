@@ -14,7 +14,7 @@ requirements.txt has the requirements, if you want to install the environment an
 python -m venv venv
 
 # Windows:
-venv\Scripts\Activate
+.\venv\Scripts\activate 
 
 # macOS / Linux:          # Im not sure this is correct because I am on Windows
 source venv/bin/activate 
