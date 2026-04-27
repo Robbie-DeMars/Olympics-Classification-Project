@@ -9,25 +9,106 @@ from sklearn.impute import KNNImputer
 from xgboost import XGBClassifier
 from sklearn.utils.class_weight import compute_sample_weight
 from sklearn.model_selection import GridSearchCV
+import sys
+
+
+datasets = ['final', 'small_swim', 'small_track', 'small_weight_height','scraped']
+dataset = datasets[0]
+
+if len(sys.argv) > 1:
+    if sys.argv[1] not in datasets:
+        print(f"Invalid input, please do one of {datasets}")
+        exit(0)
+    dataset = sys.argv[1]
+
+
 
 #Load csv into pandas dataframes
-df_candidates = pd.read_csv("Final Data/athletes_clean.csv") # The individual athletes
-df_candidates['year_of_birth'] = pd.to_numeric(df_candidates['year_of_birth'], errors = "coerce")
-print("Loaded candidates...")
-df_combined = pd.read_csv("Final Data/athlete_event_clean_fixed_time.csv") # The bridge file that connects athletes to their events, and their performance in said event
-df_combined["time"] = pd.to_timedelta(df_combined["time"], errors = 'coerce').dt.total_seconds()
-print("Loaded combined tables...")
-df_events = pd.read_csv("Final Data/events_clean.csv") # The individual events
-print("Loaded events...")
-df_countries_gdp = pd.read_csv("Final Data/countries_clean.csv") # Country / year / gdp tuples
-print("Loaded countries gdp...")
-df_city_countries = pd.read_csv("Final Data/city_country_clean.csv") # City / country pairings
-print("Loaded country city pairs...")
-df_olympics = pd.read_csv("Final Data/olympics_clean.csv") # Olympics and the city they were hosted in
+#If the final dataset was chosen
+if dataset == datasets[0]:
 
-#Drop extra columns that will be dropped physically later
-df_olympics = df_olympics.drop(columns = ['host_country_full', 'host_country_code', 'gdp_per_capita'])
-df_combined = df_combined.drop(columns = ['medal'])
+    df_candidates = pd.read_csv("Final Data/athletes_clean.csv") # The individual athletes
+    df_candidates['year_of_birth'] = pd.to_numeric(df_candidates['year_of_birth'], errors = "coerce")
+    print("Loaded candidates...")
+    df_combined = pd.read_csv("Final Data/athlete_event_clean_fixed_time.csv") # The bridge file that connects athletes to their events, and their performance in said event
+    df_combined["time"] = pd.to_timedelta(df_combined["time"], errors = 'coerce').dt.total_seconds()
+    print("Loaded combined tables...")
+    df_events = pd.read_csv("Final Data/events_clean.csv") # The individual events
+    print("Loaded events...")
+    df_countries_gdp = pd.read_csv("Final Data/countries_clean.csv") # Country / year / gdp tuples
+    print("Loaded countries gdp...")
+    df_city_countries = pd.read_csv("Final Data/city_country_clean.csv") # City / country pairings
+    print("Loaded country city pairs...")
+    df_olympics = pd.read_csv("Final Data/olympics_clean.csv") # Olympics and the city they were hosted in
+
+#If the small dataset was chosen
+elif dataset == datasets[1]:
+
+    df_candidates = pd.read_csv("Smaller Tables/swim_candidates_fixed_gender.csv") # The individual athletes
+    df_candidates['year_of_birth'] = pd.to_numeric(df_candidates['year_of_birth'], errors = "coerce")
+    print("Loaded candidates...")
+    df_combined = pd.read_csv("Smaller Tables/swim_combined.csv") # The bridge file that connects athletes to their events, and their performance in said event
+    df_combined["time"] = pd.to_timedelta(df_combined["time"], errors = 'coerce').dt.total_seconds()
+    print("Loaded combined tables...")
+    df_events = pd.read_csv("Smaller Tables/swim_events.csv") # The individual events
+    print("Loaded events...")
+    df_countries_gdp = pd.read_csv("Smaller Tables/countries.csv") # Country / year / gdp tuples
+    print("Loaded countries gdp...")
+    df_city_countries = pd.read_csv("Smaller Tables/city_country.csv") # City / country pairings
+    print("Loaded country city pairs...")
+    df_olympics = pd.read_csv("Smaller Tables/swim_olympics.csv") # Olympics and the city they were hosted in
+
+#If the small dataset was chosen
+elif dataset == datasets[2]:
+
+    df_candidates = pd.read_csv("Smaller Tables/track_candidates_fixed_gender.csv") # The individual athletes
+    df_candidates['year_of_birth'] = pd.to_numeric(df_candidates['year_of_birth'], errors = "coerce")
+    print("Loaded candidates...")
+    df_combined = pd.read_csv("Smaller Tables/track_combined.csv") # The bridge file that connects athletes to their events, and their performance in said event
+    df_combined["time"] = pd.to_timedelta(df_combined["time"], errors = 'coerce').dt.total_seconds()
+    print("Loaded combined tables...")
+    df_events = pd.read_csv("Smaller Tables/track_events.csv") # The individual events
+    print("Loaded events...")
+    df_countries_gdp = pd.read_csv("Smaller Tables/countries.csv") # Country / year / gdp tuples
+    print("Loaded countries gdp...")
+    df_city_countries = pd.read_csv("Smaller Tables/city_country.csv") # City / country pairings
+    print("Loaded country city pairs...")
+    df_olympics = pd.read_csv("Smaller Tables/track_olympics.csv") # Olympics and the city they were 
+
+#If the small dataset was chosen
+elif dataset == datasets[3]:
+
+    df_candidates = pd.read_csv("Smaller Tables/weight_height_candidates_fixed_gender.csv") # The individual athletes
+    df_candidates['year_of_birth'] = pd.to_numeric(df_candidates['year_of_birth'], errors = "coerce")
+    print("Loaded candidates...")
+    df_combined = pd.read_csv("Smaller Tables/weight_height_combined.csv") # The bridge file that connects athletes to their events, and their performance in said event
+    df_combined["time"] = pd.to_timedelta(df_combined["time"], errors = 'coerce').dt.total_seconds()
+    print("Loaded combined tables...")
+    df_events = pd.read_csv("Smaller Tables/weight_height_events.csv") # The individual events
+    print("Loaded events...")
+    df_countries_gdp = pd.read_csv("Smaller Tables/countries.csv") # Country / year / gdp tuples
+    print("Loaded countries gdp...")
+    df_city_countries = pd.read_csv("Smaller Tables/city_country.csv") # City / country pairings
+    print("Loaded country city pairs...")
+    df_olympics = pd.read_csv("Smaller Tables/weight_height_olympics.csv") # Olympics and the city they were 
+
+#If the scraped dataset was chosen
+else:
+
+    df_candidates = pd.read_csv("Scraped Data/athletes.csv") # The individual athletes
+    df_candidates['year_of_birth'] = pd.to_numeric(df_candidates['year_of_birth'], errors = "coerce")
+    print("Loaded candidates...")
+    df_combined = pd.read_csv("Scraped Data/athlete_event_fixed_time.csv") # The bridge file that connects athletes to their events, and their performance in said event
+    df_combined["time"] = pd.to_timedelta(df_combined["time"], errors = 'coerce').dt.total_seconds()
+    print("Loaded combined tables...")
+    df_events = pd.read_csv("Scraped Data/events.csv") # The individual events
+    print("Loaded events...")
+    df_countries_gdp = pd.read_csv("Scraped Data/countries.csv") # Country / year / gdp tuples
+    print("Loaded countries gdp...")
+    df_city_countries = pd.read_csv("Scraped Data/city_country.csv") # City / country pairings
+    print("Loaded country city pairs...")
+    df_olympics = pd.read_csv("Scraped Data/olympics.csv") # Olympics and the city they were hosted in
+
 
 country_list = df_countries_gdp['country_id'].unique() #Save for later
 events_list = df_events["event_name"].unique() #Save for later
@@ -35,20 +116,19 @@ events_list = df_events["event_name"].unique() #Save for later
 #Host countries
 df_host_countries = pd.merge(df_olympics, df_city_countries, on = "city_id")
 
-#OLD SCHEMA, saving in case we need it
 df_host_countries = pd.merge(df_host_countries, df_countries_gdp,
                              left_on = ["country_id", "year"],
                              right_on = ["country_id", "year"],
-                             how = "inner",
+                             how = "left",
                              suffixes = ("", "_host"))
-
 
 #Candidates
 #Merge candidates to their nationality at birth and gdp of their nationality at birth
+
 df_tables_merged = pd.merge(df_candidates, df_countries_gdp, 
                             left_on = ["nationality_id_at_birth", "year_of_birth"],
                             right_on = ["id", "year"],
-                            how = "inner",
+                            how = "left",
                             suffixes = ("", "_birth"))
 
 #Merge to the intermediate events table that also contains that athletes time for that event
@@ -64,27 +144,32 @@ df_tables_merged = df_tables_merged.rename(columns = {
     "year_y": "year"
 })
 
-
 #Merge to the nationality they are participating for and the gdp of that nationality at the time of the performance
-df_tables_merged = pd.merge(df_tables_merged, df_countries_gdp,
-                            left_on = ["nationality_id", "year"],
-                            right_on = ["country_id", "year"],
-                            how = "inner",
-                            suffixes = ("_birth", "_competing"))
 
-
+if dataset in [datasets[0], datasets[1], datasets[2], datasets[3]]:
+    df_tables_merged = pd.merge(df_tables_merged, df_countries_gdp,
+                                left_on = ["nationality_id", "year"],
+                                right_on = ["country_id", "year"],
+                                how = "left",
+                                suffixes = ("_birth", "_competing"))
+else:
+    df_tables_merged = pd.merge(df_tables_merged, df_countries_gdp,
+                                left_on = ["nationality_id", "year"],
+                                right_on = ["id", "year"],
+                                how = "left",
+                                suffixes = ("_birth", "_competing"))
 
 #Merge to host city
 df_tables_merged = pd.merge(df_tables_merged, df_host_countries, on = "olympics_id")
 
-
 df_tables_merged.to_csv("test.csv", index = False)
+
 #Preprocessing
 
 #Remove answers
 X = df_tables_merged.drop(columns = ["gold_id", "silver_id", "bronze_id", "result"])
 #Remove id noise
-X = X.drop(columns = ["olympics_id", "athlete_id", "id", "id_birth", "id_competing", "nationality_id_at_birth", "nationality_id", "event_id", "city_id"])
+X = X.drop(columns = ["olympics_id", "athlete_id", "id", "id_birth", "id_competing", "nationality_id_at_birth", "nationality_id", "event_id", "city_id"], errors = 'ignore')
 #Remove names (ideally not relevant for your performance in the olympics)
 X = X.drop(columns = ["first_name", "middle_name", "last_name"])
 #Remove extra birth year
@@ -107,6 +192,10 @@ numerical_cols = ['height(cm)', 'weight(kg)', 'year_of_birth',
        'gdp_per_capita_birth', 'time', 'year',
        'gdp_per_capita_competing', 'summer', 'gdp_per_capita']
 
+#Enforce the numerical cols as numeric
+for col in numerical_cols:
+    X[col] = pd.to_numeric(X[col], errors = 'coerce')
+
 #Median imputation
 preprocessor = ColumnTransformer([
     ("cat", OneHotEncoder(handle_unknown = "ignore", sparse_output = False), categorical_cols),
@@ -114,6 +203,10 @@ preprocessor = ColumnTransformer([
 ])
 
 y = df_tables_merged["result"].apply(lambda x: x if x in [1.0, 2.0, 3.0] else 0).fillna(0).astype(int)
+
+#Only medalists in the small dataset, no losers, so have to remap
+if dataset in [datasets[2], datasets[3]]:
+    y = y - 1
 
 #Train the model
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 69)
@@ -139,7 +232,13 @@ rf.fit(X_train, y_train, sample_weight = w)
 y_pred = rf.predict(X_test)
 
 print("Accuracy: ", accuracy_score(y_test, y_pred))
-print(classification_report(y_test, y_pred, target_names = ["No Medal", "Gold", "Silver", "Bronze"]))
+
+if dataset in [datasets[2], datasets[3]]:
+    target_names = ["Gold", "Silver", "Bronze"]
+else:
+    target_names = ["No Medal", "Gold", "Silver", "Bronze"]
+
+print(classification_report(y_test, y_pred, target_names = target_names))
 print(confusion_matrix(y_test, y_pred))
 
 #Evaluate mode
@@ -361,3 +460,4 @@ while (True):
     input_encoded = preprocessor.transform(user_input)
     prediction = rf.predict(input_encoded)
     print(prediction)
+    print(target_names[prediction[0]])

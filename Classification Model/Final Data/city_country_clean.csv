@@ -1,47 +1,47 @@
-city_id,country_name,country_id
-Sydney,Australia,AUS
-Brisbane,Australia,AUS
-Innsbruck,Austria,AUT
-Antwerp,Belgium,BEL
-Rio de Janeiro,Brazil,BRA
-Montreal,Canada,CAN
-Calgary,Canada,CAN
-Vancouver,Canada,CAN
-Beijing,China,CHN
-Tokyo City,Finland,FIN
-Helsinki,Finland,FIN
-Paris,France,FRA
-Chamonix,France,FRA
-Grenoble,France,FRA
-Albertville,France,FRA
-Berlin,Germany,GER
-Garmisch-Partenkirchen,Germany,GER
-Athens,Greece,GRE
-Cortina d'Ampezzo,Italy,ITA
-Rome,Italy,ITA
-Turin,Italy,ITA
-Milan,Italy,ITA
-Sapporo,Japan,JPN
-Tokyo,Japan,JPN
-Nagano,Japan,JPN
-Mexico City,Mexico,MEX
-Amsterdam,Netherlands,NED
-Oslo,Norway,NOR
-Lillehammer,Norway,NOR
-Sochi,Russia,RUS
-Seoul,South Korea,KOR
-Pyeongchang,South Korea,KOR
-Moscow,Soviet Union,URS
-Barcelona,Spain,ESP
-Stockholm,Sweden,SWE
-Melbourne,Sweden,SWE
-St. Moritz,Switzerland,SUI
-London,United Kingdom,GBR
-St. Louis,United States,USA
-Los Angeles,United States,USA
-Lake Placid,United States,USA
-Olympic Valley,United States,USA
-Atlanta,United States,USA
-Salt Lake City,United States,USA
-Munich,West Germany,
-Sarajevo,Yugoslavia,YUG
+city_id,country_id
+Sydney,AUS
+Brisbane,AUS
+Innsbruck,AUT
+Antwerp,BEL
+Rio de Janeiro,BRA
+Montreal,CAN
+Calgary,CAN
+Vancouver,CAN
+Beijing,CHN
+Tokyo City,FIN
+Helsinki,FIN
+Paris,FRA
+Chamonix,FRA
+Grenoble,FRA
+Albertville,FRA
+Berlin,GER
+Garmisch-Partenkirchen,GER
+Athens,GRE
+Cortina d'Ampezzo,ITA
+Rome,ITA
+Turin,ITA
+Milan,ITA
+Sapporo,JPN
+Tokyo,JPN
+Nagano,JPN
+Mexico City,MEX
+Amsterdam,NED
+Oslo,NOR
+Lillehammer,NOR
+Sochi,RUS
+Seoul,KOR
+Pyeongchang,KOR
+Moscow,URS
+Barcelona,ESP
+Stockholm,SWE
+Melbourne,SWE
+St. Moritz,SUI
+London,GBR
+St. Louis,USA
+Los Angeles,USA
+Lake Placid,USA
+Olympic Valley,USA
+Atlanta,USA
+Salt Lake City,USA
+Munich,FRG
+Sarajevo,YUG

@@ -1,0 +1,2855 @@
+athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nationality_id,year_of_birth,nationality_id_at_birth,gender
+0,Evgeny,,Rylov,,,ROC,,,Men
+1,Kliment,,Kolesnikov,,,ROC,,,Men
+2,Ryan,,Murphy,,,USA,,,Men
+3,Thomas,,Ceccon,,,ITA,,,Men
+4,Jiayu,,Xu,,,CHN,,,Men
+5,Hugo,Gonzalez De,Oliveira,,,ESP,,,Men
+6,Mitchell,,Larkin,,,AUS,,,Men
+7,Robert,,Glinta,,,ROU,,,Men
+8,Adam,,Peaty,,,GBR,,,Men
+9,Arno,,Kamminga,,,NED,,,Men
+10,Nicolo,,Martinenghi,,,ITA,,,Men
+11,Michael,,Andrew,,,USA,,,Men
+12,James,,Wilby,,,GBR,,,Men
+13,Zibei,,Yan,,,CHN,,,Men
+14,Andrew,,Wilson,,,USA,,,Men
+15,Ilya,,Shymanovich,,,BLR,,,Men
+16,Caeleb,,Dressel,,,USA,,,Men
+17,Kristof,Kristof,Milak,,,HUN,,,Men
+18,Noe,,Ponti,,,SUI,,,Men
+19,Andrei,,Minakov,,,ROC,,,Men
+20,Jakub,,Majerski,,,POL,,,Men
+21,Matthew,,Temple,,,AUS,,,Men
+22,Luis,,Martinez,,,GUA,,,Men
+23,Josif,,Miladinov,,,BUL,,,Men
+24,Kyle,,Chalmers,,,AUS,,,Men
+25,Maxime,,Grousset,,,FRA,,,Men
+26,Sunwoo,,Hwang,,,KOR,,,Men
+27,Alessandro,,Miressi,,,ITA,,,Men
+28,David,,Popovici,,,ROU,,,Men
+29,Nandor,,Nemeth,,,HUN,,,Men
+30,Robert,,Finke,,,USA,,,Men
+31,Mykhailo,,Romanchuk,,,UKR,,,Men
+32,Florian,,Wellbrock,,,GER,,,Men
+33,Gregorio,,Paltrinieri,,,ITA,,,Men
+34,Daniel,,Jervis,,,GBR,,,Men
+35,Kirill,,Martynychev,,,ROC,,,Men
+36,Felix,,Auboeck,,,AUT,,,Men
+37,Serhii,,Frolov,,,UKR,,,Men
+38,Luke,,Greenbank,,,GBR,,,Men
+39,Bryce,,Mefford,,,USA,,,Men
+40,Adam,,Telegdy,,,HUN,,,Men
+41,Radoslaw,,Kawecki,,,POL,,,Men
+42,Ryosuke,,Irie,,,JPN,,,Men
+43,Nicolas,Garcia,Saiz,,,ESP,,,Men
+44,Izaac,,Stubblety-Cook,,,AUS,,,Men
+45,Matti,,Mattsson,,,FIN,,,Men
+46,Anton,,Chupkov,,,ROC,,,Men
+47,Nic,,Fink,,,USA,,,Men
+48,Ryuya,,Mura,,,JPN,,,Men
+49,Erik,,Persson,,,SWE,,,Men
+50,Tomoru,,Honda,,,JPN,,,Men
+51,Federico,,Burdisso,,,ITA,,,Men
+52,Tamas,,Kenderesi,,,HUN,,,Men
+53,Chad,Le,Clos,,,RSA,,,Men
+54,Leonardo,De,Deus,,,BRA,,,Men
+55,Gunnar,,Bentz,,,USA,,,Men
+56,Krzysztof,,Chmielewski,,,POL,,,Men
+57,Tom,,Dean,,,GBR,,,Men
+58,Duncan,,Scott,,,GBR,,,Men
+59,Fernando,,Scheffer,,,BRA,,,Men
+60,Martin,,Malyutin,,,ROC,,,Men
+61,Kieran,,Smith,,,USA,,,Men
+62,Danas,,Rapsys,,,LTU,,,Men
+63,Shun,,Wang,,,CHN,,,Men
+64,Jeremy,,Desplanches,,,SUI,,,Men
+65,Daiya,,Seto,,,JPN,,,Men
+66,Kosuke,,Hagino,,,JPN,,,Men
+67,Laszlo,,Cseh,,,HUN,,,Men
+68,Lewis,,Clareburt,,,NZL,,,Men
+69,Ahmed,,Hafnaoui,,,TUN,,,Men
+70,Jack,,Mcloughlin,,,AUS,,,Men
+71,Henning,Bennet,Muhlleitner,,,GER,,,Men
+72,Gabriele,,Detti,,,ITA,,,Men
+73,Elijah,,Winnington,,,AUS,,,Men
+74,Jake,,Mitchell,,,USA,,,Men
+75,Chase,,Kalisz,,,USA,,,Men
+76,Jay,,Litherland,,,USA,,,Men
+77,Brendon,,Smith,,,AUS,,,Men
+78,David,,Verraszto,,,HUN,,,Men
+79,Max,,Litchfield,,,GBR,,,Men
+80,Leon,,Marchand,,,FRA,,,Men
+81,Alberto,,Razzetti,,,ITA,,,Men
+82,Florent,,Manaudou,,,FRA,,,Men
+83,Bruno,,Fratus,,,BRA,,,Men
+84,Ben,,Proud,,,GBR,,,Men
+85,Kristian,,Gkolomeev,,,GRE,,,Men
+86,Lorenzo,,Zazzeri,,,ITA,,,Men
+87,Thom,De,Boer,,,NED,,,Men
+88,Guilherme,,Costa,,,BRA,,,Men
+89,Kaylee,,Mckeown,,,AUS,,,Women
+90,Kylie,,Masse,,,CAN,,,Women
+91,Regan,,Smith,,,USA,,,Women
+92,Rhyan,Elizabeth,White,,,USA,,,Women
+93,Emily,,Seebohm,,,AUS,,,Women
+94,Kathleen,,Dawson,,,GBR,,,Women
+95,Kira,,Toussaint,,,NED,,,Women
+96,Anastasya,,Gorbenko,,,ISR,,,Women
+97,Lydia,,Jacoby,,,USA,,,Women
+98,Tatjana,,Schoenmaker,,,RSA,,,Women
+99,Lilly,,King,,,USA,,,Women
+100,Evgeniia,,Chikunova,,,ROC,,,Women
+101,Yuliya,,Efimova,,,ROC,,,Women
+102,Sophie,,Hansson,,,SWE,,,Women
+103,Martina,,Carraro,,,ITA,,,Women
+104,Mona,Mc,Sharry,,,IRL,,,Women
+105,Margaret,Mac,Neil,,,CAN,,,Women
+106,Yufei,,Zhang,,,CHN,,,Women
+107,Emma,,Mckeon,,,AUS,,,Women
+108,Torri,,Huske,,,USA,,,Women
+109,Louise,,Hansson,,,SWE,,,Women
+110,Marie,,Wattel,,,FRA,,,Women
+111,Sarah,,Sjoestroem,,,SWE,,,Women
+112,Anastasiya,,Shkurdai,,,BLR,,,Women
+113,Siobhan,Bernadette,Haughey,,,HKG,,,Women
+114,Cate,,Campbell,,,AUS,,,Women
+115,Penny,,Oleksiak,,,CAN,,,Women
+116,Femke,,Heemskerk,,,NED,,,Women
+117,Anna,,Hopkin,,,GBR,,,Women
+118,Abbey,,Weitzeil,,,USA,,,Women
+119,Katie,,Ledecky,,,USA,,,Women
+120,Erica,,Sullivan,,,USA,,,Women
+121,Sarah,,Kohler,,,GER,,,Women
+122,Jianjiahe,,Wang,,,CHN,,,Women
+123,Simona,,Quadarella,,,ITA,,,Women
+124,Kiah,,Melverton,,,AUS,,,Women
+125,Anastasiia,,Kirpichnikova,,,ROC,,,Women
+126,Maddy,,Gough,,,AUS,,,Women
+127,Phoebe,,Bacon,,,USA,,,Women
+128,Taylor,Madison,Ruck,,,CAN,,,Women
+129,Xuwei,,Peng,,,CHN,,,Women
+130,Yaxin,,Liu,,,CHN,,,Women
+131,Annie,,Lazor,,,USA,,,Women
+132,Kaylene,,Corbett,,,RSA,,,Women
+133,Molly,,Renshaw,,,GBR,,,Women
+134,Abbie,,Wood,,,GBR,,,Women
+135,Fanny,,Lecluyse,,,BEL,,,Women
+136,Hali,,Flickinger,,,USA,,,Women
+137,Boglarka,,Kapas,,,HUN,,,Women
+138,Svetlana,,Chimrova,,,ROC,,,Women
+139,Liyan,,Yu,,,CHN,,,Women
+140,Alys,Margaret,Thomas,,,GBR,,,Women
+141,Brianna,,Throssell,,,AUS,,,Women
+142,Ariarne,,Titmus,,,AUS,,,Women
+143,Junxuan,,Yang,,,CHN,,,Women
+144,Barbora,,Seemanova,,,CZE,,,Women
+145,Federica,,Pellegrini,,,ITA,,,Women
+146,Madison,,Wilson,,,AUS,,,Women
+147,Yui,,Ohashi,,,JPN,,,Women
+148,Alex,,Walsh,,,USA,,,Women
+149,Kate,,Douglass,,,USA,,,Women
+150,Yiting,,Yu,,,CHN,,,Women
+151,Sydney,,Pickrem,,,CAN,,,Women
+152,Katinka,,Hosszu,,,HUN,,,Women
+153,Alicia,,Wilson,,,GBR,,,Women
+154,Bingjie,,Li,,,CHN,,,Women
+155,Summer,,Mcintosh,,,CAN,,,Women
+156,Muhan,,Tang,,,CHN,,,Women
+157,Isabel,,Gose,,,GER,,,Women
+158,Paige,,Madden,,,USA,,,Women
+159,Erika,,Fairweather,,,NZL,,,Women
+160,Pernille,,Blume,,,DEN,,,Women
+161,Ranomi,,Kromowidjojo,,,NED,,,Women
+162,Katarzyna,,Wasick,,,POL,,,Women
+163,Qingfeng,,Wu,,,CHN,,,Women
+164,Katie,,Grimes,,,USA,,,Women
+165,David,,Plummer,,,USA,,,Men
+166,Camille,,Lacourt,,,FRA,,,Men
+0,Evgeny,,Rylov,,,RUS,,,Men
+167,Kathleen,,Baker,,,USA,,,Women
+168,Yuanhui,,Fu,,,CHN,,,Women
+169,Mie,,Nielsen,,,DEN,,,Women
+170,Olivia,,Smoliga,,,USA,,,Women
+171,Cameron,Van Der,Burgh,,,RSA,,,Men
+172,Cody,,Miller,,,USA,,,Men
+173,Kevin,,Cordes,,,USA,,,Men
+174,Joao,,Gomes,,,BRA,,,Men
+175,Yasuhiro,,Koseki,,,JPN,,,Men
+176,Felipe,,Franca,,,BRA,,,Men
+177,Dmitriy,,Balandin,,,KAZ,,,Men
+101,Yuliya,,Efimova,,,RUS,,,Women
+178,Katie,,Meili,,,USA,,,Women
+179,Jinglin,,Shi,,,CHN,,,Women
+180,Rachel,,Nicol,,,CAN,,,Women
+181,Hrafnhildur,,Luthersdottir,,,ISL,,,Women
+182,Ruta,,Meilutyte,,,LTU,,,Women
+183,Alia,,Atkinson,,,JAM,,,Women
+184,Joseph,,Schooling,,,SGP,,,Men
+185,Michael,,Phelps,,,USA,,,Men
+186,Zhuhao,,Li,,,CHN,,,Men
+187,Mehdy,,Metella,,,FRA,,,Men
+188,Tom,,Shields,,,USA,,,Men
+189,Aleksandr,,Sadovnikov,,,RUS,,,Men
+190,Sarah,,Sjostrom,,,SWE,,,Women
+191,Dana,,Vollmer,,,USA,,,Women
+192,Ying,,Lu,,,CHN,,,Women
+193,Rikako,,Ikee,,,JPN,,,Women
+194,Jeanette,,Ottesen,,,DEN,,,Women
+195,Kelsi,,Worrell,,,USA,,,Women
+196,Pieter,,Timmers,,,BEL,,,Men
+197,Nathan,,Adrian,,,USA,,,Men
+198,Santo,,Condorelli,,,CAN,,,Men
+199,Cameron,,Mcevoy,,,AUS,,,Men
+200,Marcelo,,Chierighini,,,BRA,,,Men
+201,Simone,,Manuel,,,USA,,,Women
+202,Bronte,,Campbell,,,AUS,,,Women
+203,Connor,,Jaeger,,,USA,,,Men
+204,Jordan,,Wilimovsky,,,USA,,,Men
+205,Mack,,Horton,,,AUS,,,Men
+206,Ryan,,Cochrane,,,CAN,,,Men
+207,Damien,,Joly,,,FRA,,,Men
+208,Henrik,,Christiansen,,,NOR,,,Men
+209,Jacob,,Pebley,,,USA,,,Men
+210,Guangyuan,,Li,,,CHN,,,Men
+211,Christian,,Diener,,,GER,,,Men
+212,Madeline,,Dirado,,,USA,,,Women
+213,Hilary,,Caldwell,,,CAN,,,Women
+214,Daria,,Ustinova,,,RUS,,,Women
+215,Belinda,,Hocking,,,AUS,,,Women
+216,Kirsty,Leigh,Coventry,,,ZIM,,,Women
+217,Eyglo,,Gustafsdottir,,,ISL,,,Women
+218,Josh,,Prenot,,,USA,,,Men
+46,Anton,,Chupkov,,,RUS,,,Men
+219,Andrew,,Willis,,,GBR,,,Men
+220,Ippei,,Watanabe,,,JPN,,,Men
+221,Marco,,Koch,,,GER,,,Men
+222,Masato,,Sakai,,,JPN,,,Men
+223,Viktor,,Bromer,,,DEN,,,Men
+224,Louis,,Croenen,,,BEL,,,Men
+225,Mireia,,Belmonte,,,ESP,,,Women
+226,Madeline,,Groves,,,AUS,,,Women
+227,Natsumi,,Hoshi,,,JPN,,,Women
+228,Cammile,,Adams,,,USA,,,Women
+229,Yilin,,Zhou,,,CHN,,,Women
+230,Yang,,Sun,,,CHN,,,Men
+231,Conor,,Dwyer,,,USA,,,Men
+232,James,,Guy,,,GBR,,,Men
+233,Townley,,Haas,,,USA,,,Men
+234,Paul,,Biedermann,,,GER,,,Men
+235,Aleksandr,,Krasnykh,,,RUS,,,Men
+236,Duo,,Shen,,,CHN,,,Women
+237,Bronte,,Barratt,,,AUS,,,Women
+238,Michelle,,Coleman,,,SWE,,,Women
+239,Charlotte,,Bonnet,,,FRA,,,Women
+240,Hiromasa,,Fujimori,,,JPN,,,Men
+241,Ryan,,Lochte,,,USA,,,Men
+242,Philip,,Heintz,,,GER,,,Men
+243,Thiago,,Pereira,,,BRA,,,Men
+244,Dan,,Wallace,,,GBR,,,Men
+245,Siobhan-Marie,,Oconnor,,,GBR,,,Women
+246,Melanie,,Margalis,,,USA,,,Women
+247,Alicia,,Coutts,,,AUS,,,Women
+248,Viktoriya,,Andreyeva,,,RUS,,,Women
+249,Shiwen,,Ye,,,CHN,,,Women
+250,David,,Mckeon,,,AUS,,,Men
+251,Jordan,,Pothain,,,FRA,,,Men
+252,Jazz,,Carlin,,,GBR,,,Women
+253,Leah,,Smith,,,USA,,,Women
+254,Brittany,,Maclean,,,CAN,,,Women
+255,Tamsin,,Cook,,,AUS,,,Women
+256,Jessica,,Ashwood,,,AUS,,,Women
+257,Coralie,,Balmy,,,FRA,,,Women
+258,Thomas,,Fraser-Holmes,,,AUS,,,Men
+259,Travis,,Mahoney,,,AUS,,,Men
+260,Joan,Lluis Pons,Ramon,,,ESP,,,Men
+261,Hannah,,Miley,,,GBR,,,Women
+262,Emily,,Overholt,,,CAN,,,Women
+263,Elizabeth,,Beisel,,,USA,,,Women
+264,Aimee,,Willmott,,,GBR,,,Women
+265,Sakiko,,Shimizu,,,JPN,,,Women
+266,Ryan,"Held, Anthony Ervin, Michael Phelps, James Feigen, Nathan Adrian, Caeleb Dressel, Blake",Pieroni,,,USA,,,Men
+267,William,"Meynard, Jeremy Stravius, Fabien Gilot, Mehdy Metella, Florent Manaudou, Clement",Mignon,,,FRA,,,Men
+268,Cameron,"Mcevoy, Kyle Chalmers, Matthew Abood, James Magnussen, James",Roberts,,,AUS,,,Men
+269,Aleksandr,"Popkov, Andrey Grechin, Danila Izotov, Alexander Sukhorukov, Vladimir",Morozov,,,RUS,,,Men
+270,Joao,"De Lucca, Marcelo Chierighini, Gabriel Da Silva Santos, Matheus Santana, Nicolas",Nilo,,,BRA,,,Men
+271,Dieter,"Dekoninck, Pieter Timmers, Jasper Aerents, Emmanuel Vanluchene, Glenn",Surgeloose,,,BEL,,,Men
+272,Markus,"Thormeyer, Yuri Kisil, Santo Condorelli, Evan Van",Moerkerke,,,CAN,,,Men
+273,Junya,"Koga, Shinri Shioura, Katsumi Nakamura, Kenji",Kobase,,,JPN,,,Men
+274,Emma,"Mckeon, Madison Wilson, Bronte Campbell, Brittany Elmslie, Cate",Campbell,,,AUS,,,Women
+275,Simone,"Manuel, Lia Neal, Dana Vollmer, Allison Schmitt, Amanda Weir, Katie Ledecky, Abbey",Weitzeil,,,USA,,,Women
+276,Chantal,"Van Landeghem, Penny Oleksiak, Sandrine Mainville, Taylor Madison Ruck, Michelle",Williams,,,CAN,,,Women
+277,Maud,"Van Der Meer, Ranomi Kromowidjojo, Marrit Steenbergen, Inge Dekker, Femke",Heemskerk,,,NZ,,,Women
+278,Sarah,"Sjostrom, Michelle Coleman, Louise Hansson, Ida Lindborg, Ida",Marko-Varga,,,SWE,,,Women
+279,Erika,"Ferraioli, Aglaia Pezzato, Federica Pellegrini, Silvia Di",Pietro,,,NL,,,Women
+280,Mathilde,"Cini, Beryl Gastaldello, Anna Santamans, Charlotte",Bonnet,,,FRA,,,Women
+281,Yayoi,"Matsumoto, Rikako Ikee, Miki Uchida, Misaki",Yamaguchi,,,JPN,,,Women
+282,Tom,"Shields, Cody Miller, Michael Phelps, Kevin Cordes, Ryan Murphy, David Plummer, Caeleb Dressel, Nathan",Adrian,,,USA,,,Men
+283,Chris,"Walker-Hebborn, Duncan Scott, James Guy, Adam",Peaty,,,GBR,,,Men
+284,Cameron,"Mcevoy, David Morgan, Mitchell Larkin, Kyle Chalmers, Jake",Packard,,,AUS,,,Men
+285,Aleksandr,"Sadovnikov, Anton Chupkov, Evgeny Koptelov, Vladimir Morozov, Grigory Tarasevich, Evgeny Rylov, Alexander",Sukhorukov,,,RUS,,,Men
+286,Yasuhiro,"Koseki, Katsumi Nakamura, Ryosuke Irie, Takuro",Fujii,,,JPN,,,Men
+287,Marcelo,"Chierighini, Joao Gomes, Guilherme Guido, Henrique Martins, Felipe",Franca,,,BRA,,,Men
+288,Steffen,"Deibler, Marco Koch, Damian Wierling, Christian Vom Lehn, Jan-Philip",Glania,,,GER,,,Men
+289,Bence,"Pulai, Richard Bohus, Daniel Gyurta, Gabor",Balog,,,IR,,,Men
+290,Kathleen,"Baker, Lilly King, Kelsi Worrell, Katie Meili, Dana Vollmer, Olivia Smoliga, Simone Manuel, Abbey",Weitzeil,,,USA,,,Women
+291,Madison,"Wilson, Emily Seebohm, Taylor Mckeown, Emma Mckeon, Brittany Elmslie, Madeline Groves, Cate",Campbell,,,AUS,,,Women
+292,Rikke,"Moller Pedersen, Mie Nielsen, Jeanette Ottesen, Pernille",Blume,,,DEN,,,Women
+-1,,,,,,CHN,,,Women
+-1,,,,,,CAN,,,Women
+-1,,,,,,RUS,,,Women
+-1,,,,,,GBR,,,Women
+293,Ilaria,"Bianchi, Carlotta Zofkova, Federica Pellegrini, Arianna",Castiglioni,,,ITA,,,Women
+294,Gunnar,"Bentz, Townley Haas, Ryan Lochte, Jack Conger, Conor Dwyer, Michael Phelps, Clark",Smith,,,USA,,,Men
+295,Dan,"Wallace, James Guy, Robbie Renwick, Stephen Milne, Duncan",Scott,,,GBR,,,Men
+296,Yuki,"Kobori, Naito Ehara, Takeshi Matsuda, Kosuke",Hagino,,,JPN,,,Men
+297,Daniel,"Smith, Mack Horton, Thomas Fraser-Holmes, Jacob Hansford, David",Mckeon,,,AUS,,,Men
+298,Aleksandr,"Krasnykh, Mikhail Dovgalyuk, Nikita Lobintsev, Viacheslav Andrusenko, Danila",Izotov,,,RUS,,,Men
+-1,,,,,,GER,,,Men
+299,Maarten,"Brzoskowski, Ben Schwietert, Sebastiaan Verschuren, Kyle Stolk, Dion",Dreesens,,,NLD,,,Men
+300,Dieter,"Dekoninck, Louis Croenen, Glenn Surgeloose, Emmanuel Vanluchene, Pieter",Timmers,,,BEL,,,Men
+301,Katie,"Ledecky, Allison Schmitt, Madeline Dirado, Leah Smith, Missy Franklin, Melanie Margalis, Cierra",Runge,,,USA,,,Women
+302,Jessica,"Ashwood, Bronte Barratt, Emma Mckeon, Tamsin Cook, Leah",Neale,,,AUS,,,Women
+303,Emily,"Overholt, Taylor Madison Ruck, Penny Oleksiak, Brittany Maclean, Katerine Savard, Kennedy",Goss,,,CAN,,,Women
+304,Yuhan,"Zhang, Jie Dong, Duo Shen, Yanhan Ai, Shijia",Wang,,,CHN,,,Women
+305,Michelle,"Coleman, Louise Hansson, Ida Marko-Varga, Sarah",Sjostrom,,,SWE,,,Women
+306,Zsuzsanna,"Jakabos, Evelin Verraszto, Ajna Kesely, Boglarka Kapas, Katinka",Hosszu,,,HUN,,,Women
+307,Arina,"Openysheva, Daria Ustinova, Veronika",Popova,,,RUS,,,Women
+308,Rikako,"Ikee, Chihiro Igarashi, Sachi Mochida, Tomomi",Aoki,,,JPN,,,Women
+309,Anthony,,Ervin,,,USA,,,Men
+310,Andriy,,Hovorov,,,UKR,,,Men
+311,Bradley,Edward,Tandy,,,RSA,,,Men
+312,Simonas,,Bilis,,,LTU,,,Men
+313,Aliaksandra,,Herasimenia,,,BLR,,,Women
+314,Francesca,,Halsall,,,GBR,,,Women
+315,Etiene,,Medeiros,,,BRA,,,Women
+316,Lotte,,Friis,,,DEN,,,Women
+317,Matt,,Grevers,,,USA,,,Men
+318,Nick,,Thoman,,,USA,,,Men
+319,Liam,,Tancock,,,GBR,,,Men
+320,Helge,,Meeuw,,,GER,,,Men
+321,Hayden,,Stoeckel,,,AUS,,,Men
+322,Feiyi,,Cheng,,,CHN,,,Men
+323,Missy,,Franklin,,,USA,,,Women
+324,Aya,,Terakawa,,,JPN,,,Women
+325,Anastasia,,Zueva,,,RUS,,,Women
+326,Gemma,,Spofforth,,,GBR,,,Women
+327,Jing,,Zhao,,,CHN,,,Women
+328,Christian,,Sprenger,,,AUS,,,Men
+329,Brendan,,Hansen,,,USA,,,Men
+330,Daniel,,Gyurta,,,HUN,,,Men
+331,Kosuke,,Kitajima,,,JPN,,,Men
+332,Brenton,,Rickard,,,AUS,,,Men
+333,Fabio,,Scozzoli,,,ITA,,,Men
+334,Giedrius,,Titenis,,,LTU,,,Men
+335,Rebecca,,Soni,,,USA,,,Women
+336,Satomi,,Suzuki,,,JPN,,,Women
+337,Leisel,,Jones,,,AUS,,,Women
+338,Breeja,,Larson,,,USA,,,Women
+339,Rikke,Moller,Pedersen,,,DEN,,,Women
+340,Evgeny,,Korotyshkin,,,RUS,,,Men
+341,Milorad,,Cavic,,,SRB,,,Men
+342,Steffen,,Deibler,,,GER,,,Men
+343,Joeri,,Verlinden,,,NED,,,Men
+344,Tyler,,Mcgill,,,USA,,,Men
+345,Konrad,,Czerniak,,,POL,,,Men
+346,Ilaria,,Bianchi,,,ITA,,,Women
+347,Claire,,Donahue,,,USA,,,Women
+348,Ellen,,Gandy,,,GBR,,,Women
+349,James,,Magnussen,,,AUS,,,Men
+350,Brent,,Hayden,,,CAN,,,Men
+351,Yannick,,Agnel,,,FRA,,,Men
+352,Sebastiaan,,Verschuren,,,NED,,,Men
+353,Cesar,Cielo,Filho,,,BRA,,,Men
+354,Hanser,,Garcia,,,CUB,,,Men
+355,Nikita,,Lobintsev,,,RUS,,,Men
+356,Yi,,Tang,,,CHN,,,Women
+357,Melanie,,Schlanger,,,AUS,,,Women
+358,Jessica,,Hardy,,,USA,,,Women
+359,Oussama,,Mellouli,,,TUN,,,Men
+360,Tae-Hwan,,Park,,,KOR,,,Men
+361,Mateusz,,Sawrymowicz,,,POL,,,Men
+362,Daniel,,Fogg,,,GBR,,,Men
+363,Tyler,,Clary,,,USA,,,Men
+364,Fenglin,,Zhang,,,CHN,,,Men
+365,Kazuki,,Watanabe,,,JPN,,,Men
+366,Yakov,,Toumarkin,,,ISR,,,Men
+367,Elizabeth,,Simmonds,,,GBR,,,Women
+368,Meagen,,Nay,,,AUS,,,Women
+369,Alexianne,,Castel,,,FRA,,,Women
+370,Sinead,,Russell,,,CAN,,,Women
+371,Michael,,Jamieson,,,GBR,,,Men
+372,Ryo,,Tateishi,,,JPN,,,Men
+373,Scott,,Weltz,,,USA,,,Men
+374,Clark,,Burckle,,,USA,,,Men
+375,Martha,,Mccabe,,,CAN,,,Women
+376,Micah,,Lawrence,,,USA,,,Women
+377,Suzaan,Van,Biljon,,,RSA,,,Women
+378,Sally,,Foster,,,AUS,,,Women
+379,Takeshi,,Matsuda,,,JPN,,,Men
+380,Dinko,,Jukic,,,AUT,,,Men
+381,Velimir,,Stjepanovic,,,SRB,,,Men
+382,Pawel,,Korzeniowski,,,POL,,,Men
+383,Yin,,Chen,,,CHN,,,Men
+384,Liuyang,,Jiao,,,CHN,,,Women
+385,Kathleen,,Hersey,,,USA,,,Women
+386,Jemma,,Lowe,,,GBR,,,Women
+387,Zsuzsanna,,Jakabos,,,HUN,,,Women
+388,Zige,,Liu,,,CHN,,,Women
+389,Robbie,,Renwick,,,GBR,,,Men
+390,Danila,,Izotov,,,RUS,,,Men
+391,Allison,,Schmitt,,,USA,,,Women
+392,Camille,,Muffat,,,FRA,,,Women
+393,Veronika,,Popova,,,RUS,,,Women
+394,Caitlin,,Mcclatchey,,,GBR,,,Women
+395,Kylie,,Palmer,,,AUS,,,Women
+396,Ken,,Takakuwa,,,JPN,,,Men
+397,James,,Goddard,,,GBR,,,Men
+398,Markus,,Deibler,,,GER,,,Men
+399,Caitlin,,Leverenz,,,USA,,,Women
+400,Stephanie,,Rice,,,AUS,,,Women
+401,Ariana,,Kukors,,,USA,,,Women
+402,Peter,,Vanderkaay,,,USA,,,Men
+403,Yun,,Hao,,,CHN,,,Men
+404,Gergo,,Kis,,,HUN,,,Men
+405,David,,Carry,,,GBR,,,Men
+406,Ryan,,Napoleon,,,AUS,,,Men
+407,Rebecca,,Adlington,,,GBR,,,Women
+408,Lauren,,Boyle,,,NZL,,,Women
+409,Yuya,,Horihata,,,JPN,,,Men
+410,Luca,,Marin,,,ITA,,,Men
+411,Xuanxu,,Li,,,CHN,,,Women
+412,Jeremy,"Stravius, Fabien Gilot, Clement Lefert, Amaury Leveaux, Yannick Agnel, Alain",Bernard,,,FRA,,,Men
+413,Michael,"Phelps, Matt Grevers, Nathan Adrian, Cullen Jones, Ryan Lochte, Jason Lezak, Ricky Berens, James",Feigen,,,USA,,,Men
+414,Andrey,"Grechin, Vladimir Morozov, Danila Izotov, Sergey Fesikov, Nikita Lobintsev, Evgeny",Lagunov,,,RUS,,,Men
+415,Matt,"Targett, Eamon Sullivan, Tommaso Dorsogna, Cameron Mcevoy, James Roberts, James",Magnussen,,,AUS,,,Men
+416,Roland,"Schoeman, Gideon Louw, Graeme Moore, Darian",Townsend,,,ZAF,,,Men
+417,Benjamin,"Starke, Christoph Fildebrandt, Marco Di Carli, Markus",Deibler,,,GER,,,Men
+418,Andrea,"Rolla, Michele Santucci, Luca Dotto, Marco Orsi, Filippo",Magnini,,,ITA,,,Men
+419,Jasper,"Aerents, Emmanuel Vanluchene, Pieter Timmers, Dieter",Dekoninck,,,BEL,,,Men
+420,Libby,"Trickett, Brittany Elmslie, Yolane Kukla, Melanie Schlanger, Emily Seebohm, Alicia Coutts, Cate",Campbell,,,AUS,,,Women
+421,Ranomi,"Kromowidjojo, Hinkelien Schreuder, Inge Dekker, Marleen Veldhuis, Femke",Heemskerk,,,NLD,,,Women
+422,Jessica,"Hardy, Lia Neal, Amanda Weir, Allison Schmitt, Natalie Coughlin, Missy",Franklin,,,USA,,,Women
+423,Yi,"Tang, Jiaying Pang, Yuhan Qiu, Haibing Wang, Shijia",Wang,,,CHN,,,Women
+424,Jess,"Lloyd, Rebecca Turner, Amy Smith, Caitlin Mcclatchey, Francesca",Halsall,,,GBR,,,Women
+425,Lotte,"Friis, Mie Nielsen, Jeanette Ottesen, Pernille",Blume,,,DEN,,,Women
+426,Hanae,"Ito, Haruka Ueda, Miki Uchida, Yayoi",Matsumoto,,,JPN,,,Women
+427,Michelle,"Coleman, Gabriella Fagundez, Sarah Sjostrom, Ida",Marko-Varga,,,SWE,,,Women
+428,Nick,"Thoman, Nathan Adrian, Tyler Mcgill, Brendan Hansen, Matt Grevers, Cullen Jones, Eric Shanteau, Michael",Phelps,,,USA,,,Men
+429,Takuro,"Fujii, Ryosuke Irie, Kosuke Kitajima, Takeshi",Matsuda,,,JPN,,,Men
+430,Hayden,"Stoeckel, James Magnussen, Matt Targett, Christian Sprenger, Brenton Rickard, Tommaso",Dorsogna,,,AUS,,,Men
+431,Michael,"Rock, Liam Tancock, Michael Jamieson, Adam Brown, Craig",Benson,,,GBR,,,Men
+432,Dominik,"Kozma, Daniel Gyurta, Bence Pulai, Laszlo",Cseh,,,HUN,,,Men
+433,Steffen,"Deibler, Helge Meeuw, Christian Vom Lehn, Markus Deibler, Marco Di",Carli,,,GER,,,Men
+434,Sebastiaan,"Verschuren, Nick Driebergen, Joeri Verlinden, Lennart",Stekelenburg,,,NLD,,,Men
+435,Brent,"Hayden, Joe Bartoch, Scott Dickens, Charles",Francis,,,CAN,,,Men
+436,Jessica,"Hardy, Allison Schmitt, Rebecca Soni, Dana Vollmer, Breeja Larson, Claire Donahue, Rachel Bootsma, Missy",Franklin,,,USA,,,Women
+437,Brittany,"Elmslie, Alicia Coutts, Melanie Schlanger, Leisel Jones, Emily",Seebohm,,,AUS,,,Women
+438,Aya,"Terakawa, Yuka Kato, Haruka Ueda, Satomi",Suzuki,,,JPN,,,Women
+439,Yuliya,"Efimova, Irina Bespalova, Anastasia Zueva, Maria Gromova, Veronika",Popova,,,RUS,,,Women
+440,Liuyang,"Jiao, Yi Tang, Liping Ji, Chang Gao, Ying Lu, Ye Sun, Jing",Zhao,,,CHN,,,Women
+441,Femke,"Heemskerk, Sharon Van Rouwendaal, Inge Dekker, Moniek Nijhuis, Ranomi",Kromowidjojo,,,NLD,,,Women
+442,Pernille,"Blume, Mie Nielsen, Jeanette Ottesen, Rikke Moller",Pedersen,,,DEN,,,Women
+443,Gemma,"Spofforth, Francesca Halsall, Ellen Gandy, Amy Smith, Jemma Lowe, Siobhan-Marie",Oconnor,,,GBR,,,Women
+444,Charlie,"Houchin, Michael Phelps, Matthew Mclean, Conor Dwyer, Davis Tarwater, Ryan Lochte, Ricky",Berens,,,USA,,,Men
+445,Gregory,"Mallet, Clement Lefert, Yannick Agnel, Amaury Leveaux, Jeremy",Stravius,,,FRA,,,Men
+446,Zhiwu,"Lu, Yang Sun, Haiqi Jiang, Yun Hao, Jun Dai, Yunqi",Li,,,CHN,,,Men
+447,Paul,"Biedermann, Clemens Rapp, Dimitri Colupaev, Tim",Wallburger,,,GER,,,Men
+448,Ned,"Mckendry, Cameron Mcevoy, Thomas Fraser-Holmes, David Mckeon, Kenrick Monk, Ryan",Napoleon,,,AUS,,,Men
+449,Robbie,"Renwick, David Carry, Ieuan Lloyd, Ross Davenport, Rob",Bale,,,GBR,,,Men
+450,Darian,"Townsend, Sebastien Daniel Rousseau, Chad Le Clos, Jean",Basson,,,ZAF,,,Men
+451,Dominik,"Kozma, Laszlo Cseh, Peter Bernek, Gergo",Kis,,,HUN,,,Men
+452,Allison,"Schmitt, Alyssa Anderson, Missy Franklin, Lauren Perdue, Shannon Vreeland, Dana",Vollmer,,,USA,,,Women
+453,Jade,"Neilsen, Melanie Schlanger, Brittany Elmslie, Angie Bainbridge, Blair Evans, Kylie Palmer, Alicia Coutts, Bronte",Barratt,,,AUS,,,Women
+454,Mylene,"Lazare, Ophelie-Cyrielle Etienne, Coralie Balmy, Camille Muffat, Charlotte Bonnet, Margaux",Farrell,,,FRA,,,Women
+455,Amanda,"Reason, Barbara Jardin, Brittany Maclean, Samantha",Cheverton,,,CAN,,,Women
+456,Ellie,"Faulkner, Caitlin Mcclatchey, Joanne Jackson, Rebecca Turner, Hannah",Miley,,,GBR,,,Women
+457,Qianwei,"Zhu, Yi Tang, Qian Chen, Jing Liu, Jiaying Pang, Shijia Wang, Shiwen",Ye,,,CHN,,,Women
+458,Alice,"Mizzau, Federica Pellegrini, Diletta Carli, Alice",Nesti,,,ITA,,,Women
+459,Aya,"Takano, Haruka Ueda, Hanae Ito, Yayoi",Matsumoto,,,JPN,,,Women
+460,Cullen,,Jones,,,USA,,,Men
+461,Roland,,Schoeman,,,RSA,,,Men
+462,George,,Bovell,,,TTO,,,Men
+463,Eamon,,Sullivan,,,AUS,,,Men
+464,Marleen,,Veldhuis,,,NED,,,Women
+465,Britta,,Steffen,,,GER,,,Women
+466,Therese,,Alshammar,,,SWE,,,Women
+467,Arianna,,Vanderpool-Wallace,,,BAH,,,Women
+468,Andreina,,Pinto,,,VEN,,,Women
+469,Aaron,,Peirsol,,,USA,,,Men
+470,Arkady,,Vyatchanin,,,RUS,,,Men
+471,Ashley,,Delaney,,,AUS,,,Men
+472,Aschwin,Wildeboer,Faber,,,ESP,,,Men
+473,Junichi,,Miyashita,,,JPN,,,Men
+474,Natalie,,Coughlin,,,USA,,,Women
+475,Margaret,,Hoelzer,,,USA,,,Women
+476,Reiko,,Nakamura,,,JPN,,,Women
+477,Laure,,Manaudou,,,FRA,,,Women
+478,Hanae,,Ito,,,JPN,,,Women
+479,Alexander,Dale,Oen,,,NOR,,,Men
+480,Hugues,,Duboscq,,,FRA,,,Men
+481,Roman,,Sloudnov,,,RUS,,,Men
+482,Ihor,,Borysyk,,,UKR,,,Men
+483,Mark,,Gangloff,,,USA,,,Men
+484,Mirna,,Jukic,,,AUT,,,Women
+485,Megan,,Quann,,,USA,,,Women
+486,Tarnee,,White,,,AUS,,,Women
+487,Ye,,Sun,,,CHN,,,Women
+488,Asami,,Kitagawa,,,JPN,,,Women
+489,Andrew,,Lauterstein,,,AUS,,,Men
+490,Ian,,Crocker,,,USA,,,Men
+491,Jason,,Dunford,,,KEN,,,Men
+492,Takuro,,Fujii,,,JPN,,,Men
+493,Andriy,,Serdinov,,,UKR,,,Men
+494,Ryan,,Pini,,,PNG,,,Men
+495,Libby,,Trickett,,,AUS,,,Women
+496,Christine,,Magnuson,,,USA,,,Women
+497,Jessicah,,Schipper,,,AUS,,,Women
+498,Yafei,,Zhou,,,CHN,,,Women
+499,Li,,Tao,,,SGP,,,Women
+500,Gabriella,,Silva,,,BRA,,,Women
+501,Inge,,Dekker,,,NED,,,Women
+502,Alain,,Bernard,,,FRA,,,Men
+503,Jason,,Lezak,,,USA,,,Men
+504,Pieter,Van Den,Hoogenband,,,NED,,,Men
+505,Lyndon,,Ferns,,,RSA,,,Men
+506,Matt,,Targett,,,AUS,,,Men
+507,Stefan,,Nystrand,,,SWE,,,Men
+508,Hanna-Maria,,Seppala,,,FIN,,,Women
+509,Yingwen,,Zhu,,,CHN,,,Women
+510,Grant,,Hackett,,,AUS,,,Men
+511,Yuri,,Prilukov,,,RUS,,,Men
+512,Larsen,,Jensen,,,USA,,,Men
+513,David,,Davies,,,GBR,,,Men
+514,Lin,,Zhang,,,CHN,,,Men
+515,Markus,,Rogan,,,AUT,,,Men
+516,Razvan,Ionut,Florea,,,ROU,,,Men
+517,Gregor,,Tait,,,GBR,,,Men
+518,Mike,,Brown,,,CAN,,,Men
+519,Scott,,Spann,,,USA,,,Men
+520,Loris,,Facci,,,ITA,,,Men
+521,Paolo,,Bossini,,,ITA,,,Men
+522,Sara,,Nordenstam,,,NOR,,,Women
+523,Annamay,,Pierse,,,CAN,,,Women
+524,Rie,,Kaneto,,,JPN,,,Women
+525,Megumi,,Taneda,,,JPN,,,Women
+526,Moss,,Burmester,,,NZL,,,Men
+527,Peng,,Wu,,,CHN,,,Men
+528,Kaio,,Marcio,,,BRA,,,Men
+529,Nikolay,,Skvortsov,,,RUS,,,Men
+530,Otylia,,Jedrzejczak,,,POL,,,Women
+531,Yuko,,Nakanishi,,,JPN,,,Women
+532,Aurore,,Mongel,,,FRA,,,Women
+533,Elaine,,Breeden,,,USA,,,Women
+534,Jean,,Basson,,,RSA,,,Men
+535,Dominik,,Meichtry,,,SUI,,,Men
+536,Yoshihiro,,Okumura,,,JPN,,,Men
+537,Sara,,Isakovic,,,SLO,,,Women
+538,Jiaying,,Pang,,,CHN,,,Women
+539,Katie,,Hoff,,,USA,,,Women
+540,Camelia,Alina,Potec,,,ROU,,,Women
+541,Ophelie-Cyrielle,,Etienne,,,FRA,,,Women
+542,Keith,,Beavers,,,CAN,,,Men
+543,Julia,,Wilkinson,,,CAN,,,Women
+544,Katarzyna,,Baranowska,,,POL,,,Women
+545,Joanne,,Jackson,,,GBR,,,Women
+546,Alessio,,Boggiatto,,,ITA,,,Men
+547,Brian,,Johns,,,CAN,,,Men
+548,Alessia,,Filippi,,,ITA,,,Women
+549,Yana,,Martynova,,,RUS,,,Women
+550,Nathan,"Adrian, Ben Wildman-Tobriner, Michael Phelps, Garrett Weber-Gale, Cullen Jones, Jason Lezak, Matt",Grevers,,,USA,,,Men
+551,Alain,"Bernard, Frederick Bousquet, Fabien Gilot, Gregory Mallet, Boris Steimetz, Amaury",Leveaux,,,FRA,,,Men
+552,Leith,"Brodie, Ashley Callus, Andrew Lauterstein, Matt Targett, Eamon Sullivan, Patrick",Murphy,,,AUS,,,Men
+553,Christian,"Galenda, Michele Santucci, Filippo Magnini, Marco Belotti, Alessandro",Calvi,,,ITA,,,Men
+554,Petter,"Stymne, Lars Frolander, Jonas Persson, Stefan",Nystrand,,,SWE,,,Men
+555,Rick,"Say, Brent Hayden, Colin Russell, Joel",Greenshields,,,CAN,,,Men
+556,Roland,"Schoeman, Lyndon Ferns, Ryk Neethling, Darian",Townsend,,,ZAF,,,Men
+557,Adam,"Brown, Simon Burnett, Ross Davenport, Benjamin",Hockin,,,GBR,,,Men
+558,Ranomi,"Kromowidjojo, Inge Dekker, Marleen Veldhuis, Hinkelien Schreuder, Manon Van Rooijen, Femke",Heemskerk,,,NLD,,,Women
+559,Dara,"Torres, Natalie Coughlin, Julia Smit, Emily Silver, Kara Lynn Joyce, Lacey",Nymeyer,,,USA,,,Women
+560,Cate,"Campbell, Libby Trickett, Shayne Reese, Alice Mills, Melanie",Schlanger,,,AUS,,,Women
+561,Yi,"Tang, Yanwei Xu, Jiaying Pang, Yingwen",Zhu,,,CHN,,,Women
+562,Antje,"Buschschulte, Meike Freitag, Daniela Gotz, Britta",Steffen,,,GER,,,Women
+563,Celine,"Couderc, Hanna Shcherba-Lorgeril, Alena Popchanka, Malia Metella, Ophelie-Cyrielle",Etienne,,,FRA,,,Women
+564,Jessica,"Sylvester, Melanie Marshall, Caitlin Mcclatchey, Francesca Halsall, Julia",Beckett,,,GBR,,,Women
+565,Erica,"Morningstar, Audrey Lacroix, Genevieve Saumur, Julia",Wilkinson,,,CAN,,,Women
+566,Michael,"Phelps, Mark Gangloff, Ian Crocker, Garrett Weber-Gale, Matt Grevers, Jason Lezak, Brendan Hansen, Aaron",Peirsol,,,USA,,,Men
+567,Eamon,"Sullivan, Hayden Stoeckel, Adam Pine, Matt Targett, Andrew Lauterstein, Brenton Rickard, Christian Sprenger, Ashley",Delaney,,,AUS,,,Men
+568,Takuro,"Fujii, Junichi Miyashita, Kosuke Kitajima, Hisayoshi",Sato,,,JPN,,,Men
+569,Nikolay,"Skvortsov, Andrey Grechin, Roman Sloudnov, Arkady Vyatchanin, Evgeny Korotyshkin, Evgeny",Lagunov,,,RUS,,,Men
+570,Daniel,"Bell, Corney Swanepoel, Glenn Snyders, Cameron",Gibson,,,NZL,,,Men
+571,Liam,"Tancock, Michael Rock, Christopher Cook, Simon",Burnett,,,GBR,,,Men
+572,Cameron,"Van Der Burgh, Darian Townsend, Lyndon Ferns, Gerhard",Zandberg,,,ZAF,,,Men
+573,Benjamin,"Stasiulis, Christophe Lebon, Fabien Gilot, Hugues",Duboscq,,,FRA,,,Men
+574,Emily,"Seebohm, Libby Trickett, Shayne Reese, Tarnee White, Leisel Jones, Jessicah Schipper, Felicity",Galvez,,,AUS,,,Women
+575,Natalie,"Coughlin, Elaine Breeden, Christine Magnuson, Dara Torres, Kara Lynn Joyce, Margaret Hoelzer, Rebecca Soni, Megan",Quann,,,USA,,,Women
+576,Tianlongzi,"Xu, Jing Zhao, Yafei Zhou, Jiaying Pang, Ye",Sun,,,CHN,,,Women
+577,Kate,"Haywood, Francesca Halsall, Gemma Spofforth, Jemma",Lowe,,,GBR,,,Women
+578,Kseniya,"Moskvina, Anastasiya Tulapina, Yuliya Efimova, Anastasia Zueva, Natalia",Sutyagina,,,RUS,,,Women
+579,Asami,"Kitagawa, Yuka Kato, Reiko Nakamura, Hanae Ito, Haruka",Ueda,,,JPN,,,Women
+580,Audrey,"Lacroix, Annamay Pierse, Erica Morningstar, Julia",Wilkinson,,,CAN,,,Women
+581,Antje,"Buschschulte, Daniela Samulski, Britta Steffen, Sarah",Poewe,,,GER,,,Women
+-1,,,,,,USA,,,Men
+582,Danila,"Izotov, Nikita Lobintsev, Mikhail Polishchuk, Evgeny Lagunov, Alexander",Sukhorukov,,,RUS,,,Men
+583,Grant,"Hackett, Kirk Palmer, Patrick Murphy, Leith Brodie, Nick Ffrost, Grant",Brits,,,AUS,,,Men
+584,Marco,"Belotti, Nicola Cassio, Filippo Magnini, Emiliano Brembilla, Massimiliano",Rosolino,,,ITA,,,Men
+585,Brent,"Hayden, Adam Sioui, Rick Say, Brian Johns, Andrew Hurd, Colin",Russell,,,CAN,,,Men
+586,David,"Carry, Ross Davenport, Robbie Renwick, Andrew",Hunter,,,GBR,,,Men
+587,Yasunori,"Mononobe, Hisato Matsumoto, Sho Uchida, Yoshihiro",Okumura,,,JPN,,,Men
+588,Jean,"Basson, Sebastien Daniel Rousseau, Jan Venter, Darian",Townsend,,,ZAF,,,Men
+589,Stephanie,"Rice, Lara Davenport, Felicity Galvez, Kylie Palmer, Melanie Schlanger, Linda Mackenzie, Bronte Barratt, Angie",Bainbridge,,,AUS,,,Women
+590,Jiaying,"Pang, Miao Tan, Qianwei Zhu, Jingzhi Tang, Yu-Ting",Yang,,,CHN,,,Women
+591,Caroline,"Burckle, Katie Hoff, Christine Marshall, Allison Schmitt, Julia Smit, Natalie Coughlin, Kimberly",Vandenberg,,,USA,,,Women
+592,Alessia,"Filippi, Alice Carpanese, Federica Pellegrini, Flavia Zoccari, Renata Fabiola",Spagnolo,,,ITA,,,Women
+593,Celine,"Couderc, Alena Popchanka, Ophelie-Cyrielle Etienne, Camille Muffat, Coralie Balmy, Aurore",Mongel,,,FRA,,,Women
+594,Eszter,"Dara, Zsuzsanna Jakabos, Evelin Verraszto, Agnes",Mutina,,,HUN,,,Women
+595,Maki,"Mita, Emi Takanabe, Haruka Ueda, Misaki",Yamaguchi,,,JPN,,,Women
+596,Gabriella,"Fagundez, Ida Marko-Varga, Petra Granlund, Josefin",Lillhage,,,SWE,,,Women
+597,Amaury,,Leveaux,,,FRA,,,Men
+598,Ashley,,Callus,,,AUS,,,Men
+599,Ben,,Wildman-Tobriner,,,USA,,,Men
+600,Dara,,Torres,,,USA,,,Women
+601,Kara,Lynn,Joyce,,,USA,,,Women
+602,Hinkelien,,Schreuder,,,NED,,,Women
+603,Elena,,Sokolova,,,RUS,,,Women
+604,Cassandra,,Patten,,,GBR,,,Women
+605,Tomomi,,Morita,,,JPN,,,Men
+606,Lenny,,Krayzelburg,,,USA,,,Men
+607,Matthew,,Welsh,,,AUS,,,Men
+608,Steffen,,Driesen,,,GER,,,Men
+609,Marco,Di,Carli,,,GER,,,Men
+610,Nina,Alexandrovna,Zhivanevskaya,,,ESP,,,Women
+611,Antje,,Buschschulte,,,GER,,,Women
+612,Louise,,Ornstedt,,,DEN,,,Women
+613,Haley,,Cope,,,USA,,,Women
+614,Vladislav,,Polyakov,,,KAZ,,,Men
+615,James,,Gibson,,,GBR,,,Men
+616,Darren,,Mew,,,GBR,,,Men
+617,Oleh,,Lisohor,,,UKR,,,Men
+618,Xuejuan,,Luo,,,CHN,,,Women
+619,Brooke,,Hanson,,,AUS,,,Women
+620,Amanda,,Beard,,,USA,,,Women
+621,Sarah,,Poewe,,,GER,,,Women
+622,Tara,,Kirk,,,USA,,,Women
+623,Svitlana,,Bondarenko,,,UKR,,,Women
+624,Hui,,Qi,,,CHN,,,Women
+625,Thomas,,Rupprath,,,GER,,,Men
+626,Igor,,Marchenko,,,RUS,,,Men
+627,Gabriel,,Mangabeira,,,BRA,,,Men
+628,Duje,,Draganja,,,CRO,,,Men
+629,Geoffrey,,Huegill,,,AUS,,,Men
+630,Petria,,Thomas,,,AUS,,,Women
+631,Inge,De,Bruijn,,,NED,,,Women
+632,Jenny,,Thompson,,,USA,,,Women
+633,Martina,,Moravcova,,,SVK,,,Women
+634,Alena,,Popchanka,,,BLR,,,Women
+635,Junko,,Onishi,,,JPN,,,Women
+636,Ian,,Thorpe,,,AUS,,,Men
+637,Ryk,,Neethling,,,RSA,,,Men
+638,Filippo,,Magnini,,,ITA,,,Men
+639,Salim,,Iles,,,ALG,,,Men
+640,Andrey,,Kapralov,,,RUS,,,Men
+641,Jodie,,Henry,,,AUS,,,Women
+642,Malia,,Metella,,,FRA,,,Women
+643,Nery,Mantey,Niangkouara,,,GRE,,,Women
+644,Spyridon,,Gianniotis,,,GRE,,,Men
+645,Graeme,,Smith,,,GBR,,,Men
+646,Dragos,Cristian,Coman,,,ROU,,,Men
+647,Craig,,Stevens,,,AUS,,,Men
+648,Simon,,Dufour,,,FRA,,,Men
+649,Blaz,,Medvesek,,,SLO,,,Men
+650,Stanislava,,Komarova,,,RUS,,,Women
+651,Katy,,Sexton,,,GBR,,,Women
+652,Scott,,Usher,,,USA,,,Men
+653,Jim,,Piper,,,AUS,,,Men
+654,Anne,,Poleska,,,GER,,,Women
+655,Masami,,Tanaka,,,JPN,,,Women
+656,Agnes,,Kovacs,,,HUN,,,Women
+657,Takashi,,Yamamoto,,,JPN,,,Men
+658,Steve,,Parry,,,GBR,,,Men
+659,Ioan,Stefan,Gherghel,,,ROU,,,Men
+660,Tom,,Malchow,,,USA,,,Men
+661,Kaitlin,,Sandeno,,,USA,,,Women
+662,Felicity,,Galvez,,,AUS,,,Women
+663,Mette,,Jacobsen,,,DEN,,,Women
+664,Paola,,Cavallino,,,ITA,,,Women
+665,Eva,,Risztov,,,HUN,,,Women
+666,Klete,,Keller,,,USA,,,Men
+667,Rick,,Say,,,CAN,,,Men
+668,Simon,,Burnett,,,GBR,,,Men
+669,Emiliano,,Brembilla,,,ITA,,,Men
+670,Solenne,,Figues,,,FRA,,,Women
+671,Paulina,,Barzycka,,,POL,,,Women
+672,Franziska,Van,Almsick,,,GER,,,Women
+673,Josefin,,Lillhage,,,SWE,,,Women
+674,Takahiro,,Mori,,,JPN,,,Men
+675,Vytautas,,Janusaitis,,,LTU,,,Men
+676,Jiro,,Miki,,,JPN,,,Men
+677,Yana,,Klochkova,,,UKR,,,Women
+678,Teresa,,Rohmann,,,GER,,,Women
+679,Lara,,Carroll,,,AUS,,,Women
+680,Beatrice,,Caslaru,,,ROU,,,Women
+681,Massimiliano,,Rosolino,,,ITA,,,Men
+682,Ai,,Shibata,,,JPN,,,Women
+683,Sachiko,,Yamada,,,JPN,,,Women
+684,Linda,,Mackenzie,,,AUS,,,Women
+685,Rebecca,,Cooke,,,GBR,,,Women
+686,Erik,,Vendt,,,USA,,,Men
+687,Ioannis,,Kokkodis,,,GRE,,,Men
+688,Travis,,Nederpelt,,,AUS,,,Men
+689,Georgina,,Bardach,,,ARG,,,Women
+690,Joanna,,Maranhao,,,BRA,,,Women
+691,Nicole,,Hetzer,,,GER,,,Women
+692,Yoosun,,Nam,,,KOR,,,Women
+693,Vasiliki,,Angelopoulou,,,GRE,,,Women
+694,Darian,"Townsend, Roland Schoeman, Ryk Neethling, Lyndon",Ferns,,,ZAF,,,Men
+695,Klaas-Erik,"Zwering, Mitja Zastrow, Mark Hermanus Veens, Johan Kenkhuis, Pieter Van Den",Hoogenband,,,NLD,,,Men
+696,Michael,"Phelps, Nate Dusing, Neil Walker, Jason Lezak, Ian Crocker, Gabe",Woodward,,,USA,,,Men
+697,Denis,"Pimankov, Evgeny Lagunov, Andrey Kapralov, Ivan Usov, Alexander",Popov,,,RUS,,,Men
+698,Filippo,"Magnini, Michele Scarica, Christian Galenda, Lorenzo Vismara, Alessandro",Calvi,,,ITA,,,Men
+699,Todd,"Pearson, Jono Van Hazel, Eamon Sullivan, Michael Klim, Ashley Callus, Ian",Thorpe,,,AUS,,,Men
+700,Frederick,"Bousquet, Julien Sicot, Amaury Leveaux, Romain Barnier, Fabien",Gilot,,,FRA,,,Men
+701,Jens,"Schreiber, Christian Keller, Lars Conrad, Stefan Herbst, Torsten Spanneberg, Stephan",Kunzelmann,,,GER,,,Men
+702,Alice,"Mills, Sarah Ryan, Petria Thomas, Jodie Henry, Libby",Trickett,,,AUS,,,Women
+703,Jenny,"Thompson, Maritza Correia, Lindsay Benko, Colleen Lanne, Natalie Coughlin, Amanda Weir, Kara Lynn",Joyce,,,USA,,,Women
+704,Chantal,"Groot, Inge De Bruijn, Marleen Veldhuis, Inge Dekker, Annabel",Kosten,,,NLD,,,Women
+705,Franziska,"Van Almsick, Petra Dallmann, Daniela Gotz, Antje Buschschulte, Britta",Steffen,,,GER,,,Women
+706,Malia,"Metella, Solenne Figues, Aurore Mongel, Celine",Couderc,,,FRA,,,Women
+707,Karen,"Pickering, Kathryn Evans, Lisa Chapman, Alison Sheppard, Melanie",Marshall,,,GBR,,,Women
+708,Cathrin,"Carlzon, Josefin Lillhage, Johanna Sjoberg, Therese Alshammar, Anna-Karin",Kammerling,,,SWE,,,Women
+709,Yingwen,"Zhu, Yu-Ting Yang, Yanwei Xu, Jiaru",Cheng,,,CHN,,,Women
+710,Lenny,"Krayzelburg, Jason Lezak, Neil Walker, Ian Crocker, Michael Phelps, Mark Gangloff, Brendan Hansen, Aaron",Peirsol,,,USA,,,Men
+711,Helge,"Meeuw, Steffen Driesen, Thomas Rupprath, Jens Kruppa, Lars",Conrad,,,GER,,,Men
+712,Tomomi,"Morita, Takashi Yamamoto, Kosuke Kitajima, Yoshihiro",Okumura,,,JPN,,,Men
+713,Alexander,"Popov, Andrey Kapralov, Arkady Vyatchanin, Roman Sloudnov, Evgeny Korotyshkin, Igor",Marchenko,,,RUS,,,Men
+714,Franck,"Esposito, Hugues Duboscq, Frederick Bousquet, Simon",Dufour,,,FRA,,,Men
+715,Denys,"Sylantiev, Valeriy Dymo, Pavlo Illichov, Yuriy Yegoshin, Andriy",Serdinov,,,UKR,,,Men
+716,Laszlo,"Cseh, Zsolt Gaspar, Attila Zubor, Richard",Bodor,,,HUN,,,Men
+717,Gregor,"Tait, James Hickman, Matthew Kidd, James",Gibson,,,GBR,,,Men
+718,Leisel,"Jones, Jodie Henry, Giaan Rooney, Alice Mills, Petria Thomas, Jessicah Schipper, Brooke",Hanson,,,AUS,,,Women
+719,Tara,"Kirk, Haley Cope, Jenny Thompson, Amanda Beard, Amanda Weir, Rachel Komisarz, Natalie Coughlin, Kara Lynn",Joyce,,,USA,,,Women
+720,Sarah,"Poewe, Antje Buschschulte, Franziska Van Almsick, Daniela",Gotz,,,GER,,,Women
+721,Yingwen,"Zhu, Yafei Zhou, Hui Qi, Xiujun Chen, Shu Zhan, Xuejuan",Luo,,,CHN,,,Women
+722,Reiko,"Nakamura, Noriko Inada, Tomoko Nagai, Masami Tanaka, Junko",Onishi,,,JPN,,,Women
+723,Marleen,"Veldhuis, Madelon Baans, Inge De Bruijn, Stefanie Luiken, Chantal",Groot,,,NLD,,,Women
+724,Nina,"Alexandrovna Zhivanevskaya, Tatiana Rouba, Maria Pelaez, Sara",Perez,,,ESP,,,Women
+725,Kathryn,"Evans, Kirsty Balfour, Georgina Lee, Sarah Price, Melanie Marshall, Katy",Sexton,,,GBR,,,Women
+726,Michael,"Phelps, Ryan Lochte, Dan Ketchum, Klete Keller, Scott Goldblatt, Peter",Vanderkaay,,,USA,,,Men
+727,Antony,"Matkovich, Craig Stevens, Nicholas Sprenger, Grant Hackett, Ian Thorpe, Michael Klim, Todd",Pearson,,,AUS,,,Men
+728,Filippo,"Magnini, Federico Cappellazzo, Emiliano Brembilla, Massimiliano Rosolino, Matteo Pelliciari, Simone",Cercato,,,ITA,,,Men
+729,Ross,"Davenport, David O Brien, Simon Burnett, Gavin Meadows, David",Carry,,,GBR,,,Men
+730,Mark,"Johnston, Andrew Hurd, Brent Hayden, Rick Say, Brian",Johns,,,CAN,,,Men
+731,Christian,"Keller, Lars Conrad, Jens Schreiber, Heiko Hell, Johannes Oesterling, Stefan",Herbst,,,GER,,,Men
+732,Amaury,"Leveaux, Nicolas Kintz, Fabien Horth, Nicolas",Rostoucher,,,FRA,,,Men
+733,Nikolaos,"Xylouris, Dimitrios Manganas, Andreas Zisimos, Apostolos",Antonopoulos,,,GRE,,,Men
+734,Lindsay,"Benko, Dana Vollmer, Rhi Jeffrey, Natalie Coughlin, Carly Piper, Kaitlin Sandeno, Rachel",Komisarz,,,USA,,,Women
+735,Yanwei,"Xu, Yingwen Zhu, Jiaying Pang, Yu-Ting",Yang,,,CHN,,,Women
+736,Petra,"Dallmann, Antje Buschschulte, Hannah Stockbauer, Sara Harstick, Franziska Van",Almsick,,,GER,,,Women
+737,Petria,"Thomas, Linda Mackenzie, Elka Graham, Giaan Rooney, Shayne Reese, Alice",Mills,,,AUS,,,Women
+738,Melanie,"Marshall, Joanne Jackson, Karen Pickering, Georgina Lee, Caitlin",Mcclatchey,,,GBR,,,Women
+739,Tatiana,"Rouba, Arantxa Ramos, Melissa Caballero, Erika",Villaecija,,,ESP,,,Women
+740,Paula,"Ribeiro, Monique Ferreira, Joanna Maranhao, Mariana",Brochado,,,BRA,,,Women
+741,Josefin,"Lillhage, Johanna Sjoberg, Ida Marko-Varga, Malin Svahnstrom, Lotta",Wanberg,,,SWE,,,Women
+742,Gary,"Hall,",Jr.,,,USA,,,Men
+743,Brett,,Hawke,,,AUS,,,Men
+744,Oleksandr,,Volynets,,,UKR,,,Men
+745,Michelle,,Engelsman,,,AUS,,,Women
+746,Flavia,,Cazziolato,,,BRA,,,Women
+747,Diana,,Munz,,,USA,,,Women
+748,Kalyn,,Keller,,,USA,,,Women
+749,Erika,,Villaecija,,,ESP,,,Women
+750,Jana,,Henke,,,GER,,,Women
+751,Simona,,Paduraru,,,ROU,,,Women
+752,Stev,,Theloke,,,GER,,,Men
+753,Josh,,Watson,,,AUS,,,Men
+754,Bartosz,,Kizierowski,,,POL,,,Men
+755,Neil,,Walker,,,USA,,,Men
+756,Eithan,,Urbach,,,ISR,,,Men
+757,Diana,,Mocanu,,,ROU,,,Women
+758,Mai,,Nakamura,,,JPN,,,Women
+759,Roxana,,Maracineanu,,,FRA,,,Women
+760,Noriko,,Inada,,,JPN,,,Women
+761,B,J,Bedford,,,USA,,,Women
+762,Dyana,,Calub,,,AUS,,,Women
+763,Domenico,,Fioravanti,,,ITA,,,Men
+764,Ed,,Moses,,,USA,,,Men
+765,Daniel,,Malek,,,CZE,,,Men
+766,Morgan,,Knabe,,,CAN,,,Men
+767,Brett,,Petersen,,,RSA,,,Men
+768,Remo,,Luetolf,,,SUI,,,Men
+769,Penelope,,Heyns,,,RSA,,,Women
+621,Sarah,,Poewe,,,RSA,,,Women
+770,Sylvia,,Gerasch,,,GER,,,Women
+771,Lars,,Frolander,,,SWE,,,Men
+772,Michael,,Klim,,,AUS,,,Men
+773,Michael,,Mintenko,,,CAN,,,Men
+774,Anatoly,,Polyakov,,,RUS,,,Men
+775,Susan,,O'Neill,,,AUS,,,Women
+776,Alexander,,Popov,,,RUS,,,Men
+777,Denis,,Pimankov,,,RUS,,,Men
+778,Christopher,John,Fydler,,,AUS,,,Men
+779,Helene,,Muller,,,RSA,,,Women
+780,Sumika,,Minamoto,,,JPN,,,Women
+781,Wilma,Van,Rijn,,,NED,,,Women
+782,Kieren,John,Perkins,,,AUS,,,Men
+783,Chris,,Thompson,,,USA,,,Men
+784,Alexei,,Filipets,,,RUS,,,Men
+785,Igor,,Chervynskiy,,,UKR,,,Men
+786,Heiko,,Hell,,,GER,,,Men
+787,Orn,,Arnarson,,,ISL,,,Men
+788,Emanuele,,Merisi,,,ITA,,,Men
+789,Rogerio,,Romero,,,BRA,,,Men
+790,Gordan,,Kozulj,,,CRO,,,Men
+791,Miki,,Nakao,,,JPN,,,Women
+792,Tomoko,,Hagiwara,,,JPN,,,Women
+793,Amanda,,Adkins,,,USA,,,Women
+794,Kelly,,Stefanyshyn,,,CAN,,,Women
+795,Terence,,Parkin,,,RSA,,,Men
+796,Davide,,Rummolo,,,ITA,,,Men
+797,Regan,,Harrison,,,AUS,,,Men
+798,Kyle,,Salyards,,,USA,,,Men
+799,Johan,,Bernard,,,FRA,,,Men
+800,Ryan,,Mitchell,,,AUS,,,Men
+801,Kristy,,Kowal,,,USA,,,Women
+802,Olga,,Bakaldina,,,RUS,,,Women
+803,Denys,,Sylantiev,,,UKR,,,Men
+804,Justin,,Norris,,,AUS,,,Men
+805,Denis,,Pankratov,,,RUS,,,Men
+806,Franck,,Esposito,,,FRA,,,Men
+807,Misty,,Hyman,,,USA,,,Women
+808,Maki,,Mita,,,JPN,,,Women
+809,Josh,,Davis,,,USA,,,Men
+810,Paul,Rory,Palmer,,,GBR,,,Men
+811,James,,Salter,,,GBR,,,Men
+812,Claudia,Poll,Ahrens,,,CRC,,,Women
+813,Kerstin,,Kielgass,,,GER,,,Women
+814,Nadezhda,,Chemezova,,,RUS,,,Women
+815,Natalia,,Baranovskaya-Khatziloizou,,,BLR,,,Women
+816,Luna,,Wang,,,CHN,,,Women
+817,Tom,,Dolan,,,USA,,,Men
+818,Tom,,Wilkens,,,USA,,,Men
+819,Attila,,Czene,,,HUN,,,Men
+820,Marcel,,Wouda,,,NED,,,Men
+821,Christian,,Keller,,,GER,,,Men
+822,Xavier,,Marchand,,,FRA,,,Men
+823,Jani,,Sievinen,,,FIN,,,Men
+824,Cristina,,Teuscher,,,USA,,,Women
+825,Marianne,Luise,Limpert,,,CAN,,,Women
+826,Joanne,Susan,Malar,,,CAN,,,Women
+827,Oxana,,Verevka,,,RUS,,,Women
+828,Gabrielle,,Rose,,,USA,,,Women
+829,Chad,,Carvin,,,USA,,,Men
+830,Brooke,,Bennett,,,USA,,,Women
+831,Janelle,,Atkinson,,,JAM,,,Women
+832,Hannah,,Stockbauer,,,GER,,,Women
+833,Carla,Louise,Geurts,,,NED,,,Women
+834,Hua,,Chen,,,CHN,,,Women
+835,Curtis,Allen,Myden,,,CAN,,,Men
+836,Cezar,Alexandru,Badita,,,ROU,,,Men
+837,Shinya,,Taniguchi,,,JPN,,,Men
+838,Yasuko,,Tajima,,,JPN,,,Women
+839,Maddy,,Crippen,,,USA,,,Women
+840,Jennifer,,Reilly,,,AUS,,,Women
+-1,,,,,,AUS,,,Men
+841,Josh,"Davis, Scott Tucker, Jason Lezak, Anthony Ervin, Neil",Walker,,,USA,,,Men
+842,Carlos,"Jayme, Edvaldo Silva Filho, Fernando Scherer, Gustavo",Borges,,,BRA,,,Men
+843,Torsten,"Spanneberg, Christian Tröger, Stephan Kunzelmann, Stefan Herbst, Lars",Conrad,,,GER,,,Men
+844,Lorenzo,"Vismara, Klaus Lanzarini, Simone Cercato, Massimiliano",Rosolino,,,ITA,,,Men
+845,Lars,"Frolander, Stefan Nystrand, Johan Wallberg, Johan Nystroem, Mattias",Ohlin,,,SWE,,,Men
+846,Nicolas,"Kintz, Frederick Bousquet, Romain Barnier, Hugo",Viart,,,FRA,,,Men
+847,Andrey,"Kapralov, Alexander Popov, Denis",Pimankov,,,RUS,,,Men
+848,Courtney,"Shealy, Dara Torres, Amy Van Dyken, Jenny Thompson, Ashley T Tappin, Erin Ashley",Phenix,,,USA,,,Women
+849,Chantal,"Groot, Inge De Bruijn, Wilma Van Rijn, Manon Van Rooijen, Thamar",Henneken,,,NLD,,,Women
+850,Therese,"Alshammar, Anna-Karin Kammerling, Josefin Lillhage, Louise Johncke, Johanna Sjoberg, Malin",Svahnstrom,,,SWE,,,Women
+851,Antje,"Buschschulte, Katrin Meissner, Britta Steffen, Franziska Van Almsick, Kerstin Kielgass, Sandra Voelker, Daniela",Samulski,,,GER,,,Women
+852,Rosalind,"Brett, Susan Rolph, Alison Sheppard, Karen",Pickering,,,GBR,,,Women
+853,Elka,"Graham, Susan O'Neill, Giaan Rooney, Sarah Ryan, Melanie",Dodd,,,AUS,,,Women
+854,Shannon,"Shakespeare, Marianne Luise Limpert, Laura Nicholls, Jessica",Deglau,,,CAN,,,Women
+855,Cecilia,"Vianini, Cristina Chiuso, Luisa Striani, Sara",Parise,,,ITA,,,Women
+856,Ian,"Crocker, Lenny Krayzelburg, Tommy Hannan, Jason Lezak, Ed Moses, Neil",Walker,,,USA,,,Men
+857,Michael,"Klim, Josh Watson, Adam Pine, Ian Thorpe, Matthew Welsh, Regan Harrison, Ryan Mitchell, Geoffrey",Huegill,,,AUS,,,Men
+858,Stev,"Theloke, Torsten Spanneberg, Thomas Rupprath, Jens",Kruppa,,,GER,,,Men
+859,Pieter,"Van Den Hoogenband, Mark Hermanus Veens, Joris Keizer, Klaas-Erik Zwering, Marcel",Wouda,,,NLD,,,Men
+860,Zsolt,"Gaspar, Karoly Guttler, Attila Zubor, Peter",Horvath,,,HUN,,,Men
+861,Michael,"Mintenko, Yannick Lupien, Morgan Knabe, Chris Renaud, Craig Hutchison, Shamek",Pietucha,,,CAN,,,Men
+862,Frederick,"Bousquet, Franck Esposito, Hugues Duboscq, Simon",Dufour,,,FRA,,,Men
+863,Neil,"Willey, Darren Mew, James Hickman, Sion",Brinn,,,GBR,,,Men
+864,Megan,"Quann, Courtney Shealy, Ashley T Tappin, Jenny Thompson, Dara Torres, Amy Van Dyken, Staciana Stitts, B J",Bedford,,,USA,,,Women
+865,Dyana,"Calub, Susan O'Neill, Petria Thomas, Leisel Jones, Tarnee White, Sarah Ryan, Giaan",Rooney,,,AUS,,,Women
+866,Mai,"Nakamura, Sumika Minamoto, Masami Tanaka, Junko",Onishi,,,JPN,,,Women
+867,Franziska,"Van Almsick, Antje Buschschulte, Katrin Meissner, Sylvia",Gerasch,,,GER,,,Women
+868,Sarah,"Poewe, Helene Muller, Charlene Wittstock, Amanda",Loots,,,ZAF,,,Women
+869,Laura,"Nicholls, Jen Button, Marianne Luise Limpert, Kelly Stefanyshyn, Christin Petelski, Michelle",Lischinsky,,,CAN,,,Women
+870,Karen,"Pickering, Katy Sexton, Susan Rolph, Heidi",Earp,,,GBR,,,Women
+871,Shu,"Zhan, Limin Liu, Xue Han, Hui",Qi,,,CHN,,,Women
+872,Michael,"Klim, Todd Pearson, Daniel Kowalski, William Kirby, Grant Hackett, Ian",Thorpe,,,AUS,,,Men
+873,Nate,"Dusing, Scott Goldblatt, Josh Davis, Klete Keller, Chad Carvin, Jamie",Rauch,,,USA,,,Men
+874,Mark,"Van Der Zijden, Pieter Van Den Hoogenband, Marcel Wouda, Martijn Zuijdweg, Johan",Kenkhuis,,,NLD,,,Men
+-1,,,,,,ITA,,,Men
+875,James,"Salter, Marc Spackman, Andrew Clayton, Edward Sinclair, Paul Rory",Palmer,,,GBR,,,Men
+876,Christian,"Keller, Stefan Herbst, Christian Tröger, Stefan Pohl, Michael Kiedel, Heiko",Hell,,,GER,,,Men
+877,Michael,"Mintenko, Yannick Lupien, Rick Say, Mark Johnston, Brian",Johns,,,CAN,,,Men
+878,Aleksey,"Yegorov, Andrey Kapralov, Alexei Filipets, Serguei",Lavrenov,,,RUS,,,Men
+879,Samantha,"Arsenault, Julia Stowers, Jenny Thompson, Kim Black, Diana Munz, Lindsay",Benko,,,USA,,,Women
+880,Elka,"Graham, Giaan Rooney, Susan O'Neill, Petria Thomas, Jacinta Van Lint, Kirsten",Thomson,,,AUS,,,Women
+881,Sara,"Harstick, Kerstin Kielgass, Meike Freitag, Britta Steffen, Antje Buschschulte, Franziska Van",Almsick,,,GER,,,Women
+882,Camelia,"Alina Potec, Simona Paduraru, Florina Herea, Ioana Diaconescu, Beatrice",Caslaru,,,ROU,,,Women
+883,Marianne,"Luise Limpert, Shannon Shakespeare, Joanne Susan Malar, Jessica Deglau, Jen",Button,,,CAN,,,Women
+884,Karen,"Pickering, Karen Legg, Claire Huddart, Janine",Belton,,,GBR,,,Women
+885,Sara,"Goffi, Cecilia Vianini, Luisa Striani, Sara",Parise,,,ITA,,,Women
+886,Solenne,"Figues, Katarin Quelennec, Leatitia",Choux,,,FRA,,,Women
+887,Lorenzo,,Vismara,,,ITA,,,Men
+888,Mark,Andrew,Foster,,,GBR,,,Men
+889,Amy,Van,Dyken,,,USA,,,Women
+890,Sandra,,Voelker,,,GER,,,Women
+891,Alison,,Sheppard,,,GBR,,,Women
+892,Flavia,,Rigamonti,,,SUI,,,Women
+893,Jeff,Norman,Rouse,,,USA,,,Men
+894,Rodolfo,Falcon,Cabrera,,,CUB,,,Men
+895,Neisser,,Bent,,,CUB,,,Men
+896,Martin,Lopez,Zubero,,,ESP,,,Men
+897,Tripp,,Schwenk,,,USA,,,Men
+898,Ralf,,Braun,,,GER,,,Men
+899,Franck,,Schott,,,FRA,,,Men
+900,Beth,,Botsford,,,USA,,,Women
+901,Whitney,L.,Hedgepeth,,,USA,,,Women
+902,Marianne,,Kriel,,,RSA,,,Women
+903,Yan,,Chen,,,CHN,,,Women
+904,Nicole,,Livingstone,,,AUS,,,Women
+905,Frederik,,Deburghgraeve,,,BEL,,,Men
+906,Jeremy,,Linn,,,USA,,,Men
+907,Mark,,Warnecke,,,GER,,,Men
+908,Karoly,,Guttler,,,HUN,,,Men
+909,Philip,John,Rogers,,,AUS,,,Men
+910,Kurt,,Grote,,,USA,,,Men
+911,Qiliang,,Zeng,,,CHN,,,Men
+912,Stanislav,,Lopukhov,,,RUS,,,Men
+913,Samantha,Linette,Riley,,,AUS,,,Women
+914,Vera,,Lischka,,,AUT,,,Women
+915,Guylaine,,Cloutier,,,CAN,,,Women
+916,Brigitte,,Becue,,,BEL,,,Women
+917,Scott,,Miller,,,AUS,,,Men
+918,Vladislav,,Kulikov,,,RUS,,,Men
+919,Chengji,,Jiang,,,CHN,,,Men
+920,Rafal,,Szukala,,,POL,,,Men
+921,Stephen,,Clarke,,,CAN,,,Men
+922,Pavlo,,Khnykin,,,UKR,,,Men
+923,Limin,,Liu,,,CHN,,,Women
+924,Angel,,Martino,,,USA,,,Women
+925,Hitomi,,Kashima,,,JPN,,,Women
+926,Ayari,,Aoyama,,,JPN,,,Women
+927,Huijue,,Cai,,,CHN,,,Women
+928,Gustavo,,Borges,,,BRA,,,Men
+929,Fernando,,Scherer,,,BRA,,,Men
+930,Ricardo,Busquets,Healy,,,PUR,,,Men
+931,Francisco,,Sanchez,,,VEN,,,Men
+932,Jingyi,,Le,,,CHN,,,Women
+933,Sarah,,Ryan,,,AUS,,,Women
+934,Karin,,Brienesse,,,NED,,,Women
+935,Daniel,,Kowalski,,,AUS,,,Men
+936,Masato,,Hirano,,,JPN,,,Men
+937,Jörg,,Hoffmann,,,GER,,,Men
+938,Aleksey,,Akatyev,,,RUS,,,Men
+939,Brad,,Bridgewater,,,USA,,,Men
+940,Bartosz,,Sikora,,,POL,,,Men
+941,Hajime,,Itoi,,,JPN,,,Men
+942,Mirko,,Mazzari,,,ITA,,,Men
+943,Krisztina,,Egerszegi,,,HUN,,,Women
+944,Cathleen,,Rund,,,GER,,,Women
+945,Anke,,Scholz,,,GER,,,Women
+946,Anna,Katrina,Simcic,,,NZL,,,Women
+947,Lorenza,,Vigarani,,,ITA,,,Women
+610,Nina,Alexandrovna,Zhivanevskaya,,,RUS,,,Women
+948,Norbert,,Rozsa,,,HUN,,,Men
+949,Andrey,,Korneyev,,,RUS,,,Men
+950,Nick,,Gillingham,,,GBR,,,Men
+951,Marek,,Krawczyk,,,POL,,,Men
+952,Eric,,Wunderlich,,,USA,,,Men
+953,Nadine,,Neumann,,,AUS,,,Women
+954,Christin,,Petelski,,,CAN,,,Women
+955,Scott,,Goodman,,,AUS,,,Men
+956,James,,Hickman,,,GBR,,,Men
+957,Peter,,Horvath,,,HUN,,,Men
+958,Michelle,Marie,Smith,,,IRL,,,Women
+959,Yun,,Qu,,,CHN,,,Women
+960,Jessica,,Deglau,,,CAN,,,Women
+961,Mika,,Haruna,,,JPN,,,Women
+962,Trina,,Jackson,,,USA,,,Women
+963,Danyon,Joseph,Loader,,,NZL,,,Men
+964,Anders,,Holmertz,,,SWE,,,Men
+965,Dagmar,,Hase,,,GER,,,Women
+966,Julia,,Greville,,,AUS,,,Women
+967,Liliana,Luminita,Dobrescu,,,ROU,,,Women
+968,Matthew,Stephen,Dunn,,,AUS,,,Men
+969,Gregory,,Burgess,,,USA,,,Men
+970,Li,,Lin,,,CHN,,,Women
+971,Elli,,Overton,,,AUS,,,Women
+972,Allison,,Wagner,,,USA,,,Women
+973,Minouche,,Smit,,,NED,,,Women
+974,Louise,,Karlsson,,,SWE,,,Women
+975,Jacob,,Carstensen,,,DEN,,,Men
+976,Kirsten,,Vlieghuis,,,NED,,,Women
+977,Eri,,Yamanoi,,,JPN,,,Women
+978,Eric,,Namesnik,,,USA,,,Men
+979,Luca,,Sacchi,,,ITA,,,Men
+980,Marcin,,Malinski,,,POL,,,Men
+981,Serghei,,Mariniuc,,,MDA,,,Men
+982,Sabine,,Herbst,,,GER,,,Women
+983,Emma,,Johnson,,,AUS,,,Women
+984,Lourdes,,Becerra,,,ESP,,,Women
+985,Whitney,,Metzler,,,USA,,,Women
+986,Denis,"Pimankov, Konstantin Ushkov, Vladimir Predkin, Vladimir Pyshnenko, Roman Yegorov, Alexander",Popov,,,RUS,,,Men
+987,Bengt,"Zikarsky, Christian Tröger, Alexander Luderitz, Mark Pinger, Björn",Zikarsky,,,GER,,,Men
+988,Gustavo,"Borges, Andre Cordeiro, Alexandre Massura, Fernando",Scherer,,,BRA,,,Men
+989,Pieter,"Van Den Hoogenband, Martin Van Der Spoel, Pie Geelen, Mark Hermanus",Veens,,,NLD,,,Men
+990,Ian,"Vander-Wal, Michael Klim, Matthew Stephen Dunn, Christopher John Fydler, Scott",Logan,,,AUS,,,Men
+991,Fredrik,"Letsler, Anders Holmertz, Christer Wallin, Johan Wallberg, Lars",Frolander,,,SWE,,,Men
+992,Mark,"Stevens, Alan Rapley, Nicholas Shackell, Michael Wenham",Fibbens,,,GBR,,,Men
+993,Amy,"Van Dyken, Melanie Valerio, Catherine Fox, Jenny Thompson, Angel Martino, Lisa",Jacob,,,USA,,,Women
+994,Yun,"Nian, Ying Shan, Jingyi Le, Na",Chao,,,CHN,,,Women
+995,Franziska,"Van Almsick, Simone Osygus, Meike Freitag, Antje Buschschulte, Sandra",Voelker,,,GER,,,Women
+996,Minouche,"Smit, Manon Masseurs, Wilma Van Rijn, Karin Brienesse, Marianne",Muis,,,NLD,,,Women
+997,Linda,"Olofsson, Johanna Sjoberg, Louise Karlsson, Louise",Johncke,,,SWE,,,Women
+998,Susan,"O'Neill, Anna Windsor, Lise Maree Mackie, Sarah Ryan, Julia",Greville,,,AUS,,,Women
+999,Shannon,"Shakespeare, Julie Kathryn Howard, Marianne Luise",Limpert,,,CAN,,,Women
+1000,Natalya,"Sorokina, Yelena Nazemnova, Natalia Meshcheryakova, Svetlana",Leshukova,,,RUS,,,Women
+1001,Mark,"Henderson, Josh Davis, John Hargis, Kurt Grote, Jeff Norman Rouse, Jeremy Linn, Tripp",Schwenk,,,USA,,,Men
+1002,Roman,"Ivanovskiy, Alexander Popov, Vladislav Kulikov, Denis Pankratov, Stanislav Lopukhov, Vladimir Selkov, Roman",Yegorov,,,RUS,,,Men
+1003,Steven,"Dewick, Scott Miller, Philip John Rogers, Michael Klim, Toby Christian",Haenen,,,AUS,,,Men
+1004,Mark,"Warnecke, Stev Theloke, Oliver Lampe, Ralf Braun, Christian Keller, Bengt Zikarsky, Björn",Zikarsky,,,GER,,,Men
+1005,Keitaro,"Konnai, Shunsuke Ito, Takashi Yamamoto, Akira",Hayashi,,,JPN,,,Men
+1006,Tamas,"Deutsch, Karoly Guttler, Peter Horvath, Attila Czene, Attila",Zubor,,,HUN,,,Men
+1007,Marek,"Krawczyk, Mariusz Siembida, Rafal Szukala, Bartosz",Kizierowski,,,POL,,,Men
+1008,Dan,"Kutler, Eithan Urbach, Vadim Alekseyev, Yoav",Bruck,,,ISR,,,Men
+1009,Kristine,"Quance, Angel Martino, Amanda Beard, Beth Botsford, Jenny Thompson, Amy Van Dyken, Whitney L. Hedgepeth, Catherine",Fox,,,USA,,,Women
+1010,Samantha,"Linette Riley, Susan O'Neill, Angela Kennedy, Helen Denman, Sarah Ryan, Nicole",Livingstone,,,AUS,,,Women
+1011,Huijue,"Cai, Ying Shan, Yan Chen, Xue",Han,,,CHN,,,Women
+1012,Amanda,"Loots, Helene Muller, Marianne Kriel, Penelope",Heyns,,,ZAF,,,Women
+1013,Guylaine,"Cloutier, Shannon Shakespeare, Julie Kathryn Howard, Sarah",Evanetz,,,CAN,,,Women
+1014,Antje,"Buschschulte, Sandra Voelker, Kathrin Dumitru, Franziska Van",Almsick,,,GER,,,Women
+1015,Yelena,"Makarova, Svetlana Pozdeyeva, Nina Alexandrovna Zhivanevskaya, Natalia Meshcheryakova, Yelena",Nazemnova,,,RUS,,,Women
+1016,Cecilia,"Vianini, Lorenza Vigarani, Ilaria Tocchini, Manuela Dalla",Valle,,,ITA,,,Women
+1017,Bradley,"Schumacher, Jon Olsen, Joseph Hudepohl, Ryan Berube, Josh",Davis,,,USA,,,Men
+1018,Christer,"Wallin, Anders Holmertz, Anders Lyrbring, Lars",Frolander,,,SWE,,,Men
+1019,Christian,"Keller, Steffen Zesner, Konstantin Dubrovin, Aimo Heilmann, Christian Tröger, Oliver",Lampe,,,GER,,,Men
+1020,Ian,"Vander-Wal, Daniel Kowalski, Matthew Stephen Dunn, Michael Klim, Glen Clifford Housman, Kieren John Perkins, Malcolm",Allen,,,AUS,,,Men
+1021,James,"Salter, Andrew Clayton, Mark Stevens, Paul Rory",Palmer,,,GBR,,,Men
+1022,Emiliano,"Brembilla, Emanuele Merisi, Emanuele Idini, Piermaria Siciliano, Massimiliano",Rosolino,,,ITA,,,Men
+1023,Pieter,"Van Den Hoogenband, Martin Van Der Spoel, Mark Van Der Zijden, Marcel Wouda, Tim",Hoeijmans,,,NLD,,,Men
+1024,Bruno,"Orsoni, Yann De Fabrique, Christophe Bordeau, Lionel",Poirot,,,FRA,,,Men
+1025,Jenny,"Thompson, Trina Jackson, Annette Salmeen, Ashley Whitney, Sheila Taormina, Cristina Teuscher, Lisa",Jacob,,,USA,,,Women
+1026,Meike,"Freitag, Franziska Van Almsick, Anke Scholz, Dagmar Hase, Simone Osygus, Kerstin",Kielgass,,,GER,,,Women
+1027,Julia,"Greville, Lise Maree Mackie, Nicole Livingstone, Emma Johnson, Susan",O'Neill,,,AUS,,,Women
+1028,Aiko,"Miyake, Suzu Chiba, Naoko Imoto, Eri",Yamanoi,,,JPN,,,Women
+1029,Joanne,"Susan Malar, Jessica Deglau, Sophie Simard, Andrea Schwartz, Marianne Luise Limpert, Shannon",Shakespeare,,,CAN,,,Women
+1030,Carla,"Louise Geurts, Minouche Smit, Kirsten Vlieghuis, Karin Brienesse, Patricia",Stokkers,,,NLD,,,Women
+1031,Carla-Creola,"Negrea, Ioana Diaconescu, Liliana Luminita Dobrescu, Loredana",Zisu,,,ROU,,,Women
+1032,Luna,"Wang, Yun Nian, Yan Chen, Yiqi Pu, Ying",Shan,,,CHN,,,Women
+1033,Brendon,,Dedekind,,,RSA,,,Men
+1034,David,,Fox,,,USA,,,Men
+1035,Leah,,Martindale,,,BAR,,,Women
+1036,Linda,,Olofsson,,,SWE,,,Women
+1037,Ying,,Shan,,,CHN,,,Women
+1038,Natalia,,Meshcheryakova,,,RUS,,,Women
+1039,Irene,,Dalby,,,NOR,,,Women
+1040,Janet,,Evans,,,USA,,,Women
+1041,Sarah,,Hardcastle,,,GBR,,,Women
+1042,Mark,,Tewksbury,,,CAN,,,Men
+1043,David,Charles,Berkoff,,,USA,,,Men
+1044,Vladimir,,Selkov,,,EUN,,,Men
+1045,Dirk,,Richter,,,GER,,,Men
+1046,Tunde,,Szabo,,,HUN,,,Women
+1047,Lea,,Loveless,,,USA,,,Women
+1048,Elizabeth,,Wagstaff,,,USA,,,Women
+1049,Joanne,Marie,Meehan,,,AUS,,,Women
+610,Nina,Alexandrovna,Zhivanevskaya,,,EUN,,,Women
+1050,Yoko,,Koikawa,,,JPN,,,Women
+1051,Nelson,,Diebel,,,USA,,,Men
+1052,Akira,,Hayashi,,,JPN,,,Men
+1053,Vassili,,Ivanov,,,EUN,,,Men
+1054,Dmitri,,Volkov,,,EUN,,,Men
+1055,Adrian,David,Moorhouse,,,GBR,,,Men
+1056,Elena,,Rudkovskaya,,,EUN,,,Women
+1057,Anita,,Nall,,,USA,,,Women
+1058,Jana,,Dörris,,,GER,,,Women
+1059,Gabriella,,Csepe,,,HUN,,,Women
+1060,Manuela,Dalla,Valle,,,ITA,,,Women
+1061,Daniela,,Brendel,,,GER,,,Women
+1062,Pablo,,Morales,,,USA,,,Men
+1063,Anthony,Conrad,Nesty,,,SUR,,,Men
+922,Pavlo,,Khnykin,,,EUN,,,Men
+1064,Melvin,,Stewart,,,USA,,,Men
+1065,Marcel,,Gery,,,CAN,,,Men
+918,Vladislav,,Kulikov,,,EUN,,,Men
+1066,Hong,,Qian,,,CHN,,,Women
+1067,Christine,,Ahmann-Leighton,,,USA,,,Women
+1068,Catherine,,Plewinski,,,FRA,,,Women
+1069,Xiaohong,,Wang,,,CHN,,,Women
+1070,Summer,,Sanders,,,USA,,,Women
+1071,Rie,,Shito,,,JPN,,,Women
+776,Alexander,,Popov,,,EUN,,,Men
+1072,Stephan,,Caron,,,FRA,,,Men
+1073,Jon,,Olsen,,,USA,,,Men
+1074,Matthew,,Biondi,,,USA,,,Men
+1075,Tommy,,Werner,,,SWE,,,Men
+1076,Christian,,Tröger,,,GER,,,Men
+1077,Gennady,,Prigoda,,,EUN,,,Men
+1078,Yong,,Zhuang,,,CHN,,,Women
+1079,Nicole,Lee,Haislett,,,USA,,,Women
+1080,Simone,,Osygus,,,GER,,,Women
+1081,Glen,Clifford,Housman,,,AUS,,,Men
+1082,Stefan,,Pfeiffer,,,GER,,,Men
+1083,Ian,,Wilson,,,GBR,,,Men
+1084,Igor,,Majcen,,,SLO,,,Men
+1085,Lawrence,,Frostad,,,USA,,,Men
+1086,Viktor,,Andreev,,,EUN,,,Men
+1087,Stefano,,Battistelli,,,ITA,,,Men
+1088,Tino,,Weber,,,GER,,,Men
+1089,Tamas,,Deutsch,,,HUN,,,Men
+1090,Stefaan,,Maene,,,BEL,,,Men
+1091,Silvia,Poll,Ahrens,,,CRC,,,Women
+1092,Leigh,Christine,Habler,,,AUS,,,Women
+1093,Mike,,Barrowman,,,USA,,,Men
+1094,Sergio,Lopez,Miro,,,ESP,,,Men
+1095,Kenji,,Watanabe,,,JPN,,,Men
+1096,Kyoko,,Iwasaki,,,JPN,,,Women
+1097,Nathalie,,Giguere,,,CAN,,,Women
+1098,Alicja,,Peczak,,,POL,,,Women
+1099,Keiichi,,Kawanaka,,,JPN,,,Men
+805,Denis,,Pankratov,,,EUN,,,Men
+1100,Robert,Doru,Pinter,,,ROU,,,Men
+1101,Martin,Wade,Roberts,,,AUS,,,Men
+1102,Angie,Wester,Krieg,,,USA,,,Women
+1103,Ilaria,,Tocchini,,,ITA,,,Women
+1104,Yevgeny,,Sadovy,,,EUN,,,Men
+1105,Antti,Alexander,Kasvio,,,FIN,,,Men
+1106,Artur,,Wojdat,,,POL,,,Men
+1107,Vladimir,,Pyshnenko,,,EUN,,,Men
+1108,Joseph,,Hudepohl,,,USA,,,Men
+1109,Steffen,,Zesner,,,GER,,,Men
+1110,Douglas,S.,Gjertsen,,,USA,,,Men
+1111,Suzu,,Chiba,,,JPN,,,Women
+1112,Olga,,Kirichenko,,,EUN,,,Women
+1113,Bin,,Lu,,,CHN,,,Women
+1114,Tamas,,Darnyi,,,HUN,,,Men
+1115,Christian,,Gessner,,,GER,,,Men
+1116,Ron,,Karnaugh,,,USA,,,Men
+1117,Gary,Myers,Anderson,,,CAN,,,Men
+1118,Daniela,,Hunger,,,GER,,,Women
+1119,Elena,,Dendeberova,,,EUN,,,Women
+1120,Nancy,,Sweetnam,,,CAN,,,Women
+1121,Ewa,,Synowska,,,POL,,,Women
+1122,Ian,Robert,Brown,,,AUS,,,Men
+1123,Sebastian,,Wiese,,,GER,,,Men
+1124,Hayley,,Lewis,,,AUS,,,Women
+1125,Erika,,Hansen,,,USA,,,Women
+1126,Isabelle,,Arnould,,,BEL,,,Women
+1127,Malin,,Nilsson,,,SWE,,,Women
+1128,David,Lee,Wharton,,,USA,,,Men
+1129,Patrick,,Kuhl,,,GER,,,Men
+981,Serghei,,Mariniuc,,,EUN,,,Men
+1130,Takahiro,,Fujimoto,,,JPN,,,Men
+1131,Hideko,,Hiranaka,,,JPN,,,Women
+1132,Eri,,Kimura,,,JPN,,,Women
+1133,Thomas,"Michael Jager, Shaun Jordan, Matthew Biondi, Jon Olsen, Joel Thomas, Joseph",Hudepohl,,,USA,,,Men
+1134,Vladimir,"Pyshnenko, Pavlo Khnykin, Alexander Popov, Veniamin",Taianovitch,,,Unified Team ,,,Men
+1135,Bengt,"Zikarsky, Mark Pinger, Andreas Szigat, Christian Tröger, Steffen Zesner, Dirk",Richter,,,GER,,,Men
+1136,Frederic,"Lefevre, Bruno Gutzeit, Ludovic Depickere, Stephan Caron, Franck Schott, Christophe",Kalfayan,,,FRA,,,Men
+1137,Anders,"Holmertz, Tommy Werner, Goran Titus, Fredrik Letsler, Hakan",Karlsson,,,SWE,,,Men
+1138,Gustavo,"Borges, Cristiano Rosito",Michelena,,,BRA,,,Men
+1139,Michael,"Wenham Fibbens, Roland Geroge Lee, Mark Andrew Foster, Paul Tony",Howe,,,GBR,,,Men
+1140,Thomas,"Stachewicz, Darren Niel Lange, Andrew James Baildon, Christopher John",Fydler,,,AUS,,,Men
+1141,Christine,"Ahmann-Leighton, Angel Martino, Ashley T Tappin, Jenny Thompson, Dara Torres, Nicole Lee",Haislett,,,USA,,,Women
+1142,Bin,"Lu, Yong Zhuang, Jingyi Le, Wenyi Yang, Kun",Zhao,,,CHN,,,Women
+1143,Annette,"Hadding, Daniela Hunger, Franziska Van Almsick, Manuela Stellmach, Kerstin Kielgass, Simone",Osygus,,,GER,,,Women
+1144,Natalia,"Meshcheryakova, Yevgeniya Yermakova, Svetlana Leshukova, Elena",Dendeberova,,,Unified Team ,,,Women
+1145,Inge,"De Bruijn, Marianne Muis, Mildred Muis, Karin",Brienesse,,,NLD,,,Women
+1146,Mette,"Norskov Nielsen, Berit Raith Puggaard, Gitta Poulsgaard Jensen, Annette Poulsen, Mette",Jacobsen,,,DEN,,,Women
+1147,Eva,"Nyberg, Ellenor Svensson, Linda Olofsson, Malin Nilsson, Louise",Karlsson,,,SWE,,,Women
+1148,Andrea,"Nugent, Marianne Luise Limpert, Nicole Dryden, Allison Ann",Higson,,,CAN,,,Women
+1149,Jeff,"Norman Rouse, Jon Olsen, David Charles Berkoff, Melvin Stewart, Hans Dersch, Nelson Diebel, Pablo Morales, Matthew",Biondi,,,USA,,,Men
+1150,Alexander,"Popov, Vassili Ivanov, Vladislav Kulikov, Vladimir Pyshnenko, Dmitri Volkov, Pavlo Khnykin, Vladimir",Selkov,,,Unified Team ,,,Men
+1151,Jonathan,"Thomas Cleveland, Thomas Ponting, Stephen Clarke, Mark Tewksbury, Marcel",Gery,,,CAN,,,Men
+1152,Mark,"Pinger, Christian Keller, Bengt Zikarsky, Tino Weber, Mark",Warnecke,,,GER,,,Men
+1153,Bruno,"Gutzeit, Christophe Kalfayan, Franck Esposito, Stephane Vossart, Franck Schott, Stephan",Caron,,,FRA,,,Men
+1154,Tamas,"Deutsch, Bela Szabados, Norbert Rozsa, Peter",Horvath,,,HUN,,,Men
+1155,Philip,"John Rogers, Thomas Stachewicz, Christopher John Fydler, Jonathan",Sieben,,,AUS,,,Men
+1156,Tsutomu,"Nakano, Hajime Itoi, Keiichi Kawanaka, Akira",Hayashi,,,JPN,,,Men
+1157,Jenny,"Thompson, Lea Loveless, Megan A. Kleine, Anita Nall, Nicole Lee Haislett, Elizabeth Wagstaff, Christine Ahmann-Leighton, Summer",Sanders,,,USA,,,Women
+1158,Franziska,"Van Almsick, Jana Dörris, Daniela Brendel, Simone Osygus, Bettina Ustrowski, Dagmar Hase, Daniela",Hunger,,,GER,,,Women
+1159,Elena,"Rudkovskaya, Natalia Meshcheryakova, Nina Alexandrovna",Zhivanevskaya,,,Unified Team ,,,Women
+1160,Li,"Lin, Cihong He, Xia Lou, Jingyi Le, Hong",Qian,,,CHN,,,Women
+1161,Lisa,"Gaye Curry-Kenny, Samantha Linette Riley, Nicole Livingstone, Susan O'Neill, Joanne Marie",Meehan,,,AUS,,,Women
+1162,Kristin,"Louise Topham, Andrea Nugent, Guylaine Cloutier, Nicole",Dryden,,,CAN,,,Women
+1163,Yoko,"Koikawa, Kyoko Iwasaki, Yoko Kando, Suzu",Chiba,,,JPN,,,Women
+1164,Inge,"De Bruijn, Marianne Muis, Kira Bulten, Ellen",Elzerman,,,NLD,,,Women
+1165,Vladimir,"Pyshnenko, Veniamin Taianovitch, Dmitri",Lepikov,,,Unified Team ,,,Men
+1166,Tommy,"Werner, Anders Holmertz, Christer Wallin, Lars",Frolander,,,SWE,,,Men
+1167,Douglas,"S. Gjertsen, Daniel Plong Jorgensen, Scott Jaffe, Joseph Hudepohl, Jon Olsen, Melvin",Stewart,,,USA,,,Men
+1168,Peter,"Sitt, Steffen Zesner, Stefan Pfeiffer, Andreas Szigat, Christian",Tröger,,,GER,,,Men
+1169,Massimo,"Trevisan, Giorgio Lamberti, Piermaria Siciliano, Roberto Gleria, Stefano Battistelli, Emanuele",Idini,,,ITA,,,Men
+1170,Paul,"Rory Palmer, Paul Tony Howe, Stephen George Akers, Steven John",Mellor,,,GBR,,,Men
+1171,Gustavo,"Borges, Cristiano Rosito Michelena, Teofilo Laborne",Ferreira,,,BRA,,,Men
+1172,Ian,"Robert Brown, Kieren John Perkins, Duncan Armstrong, Martin Wade Roberts, Deane Anthony",Pieters,,,AUS,,,Men
+1173,Thomas,Michael,Jager,,,USA,,,Men
+1174,Christophe,,Kalfayan,,,FRA,,,Men
+1175,Peter,Rowan,Williams,,,RSA,,,Men
+1176,Nils,,Rudolph,,,GER,,,Men
+1177,Wenyi,,Yang,,,CHN,,,Women
+1038,Natalia,,Meshcheryakova,,,EUN,,,Women
+1178,Philippa,Maree,Langrell,,,NZL,,,Women
+1179,Olga,,Splichalova,,,TCH,,,Women
+1180,Daichi,,Suzuki,,,JPN,,,Men
+1181,Igor,,Polyanski,,,URS,,,Men
+1182,Sergei,,Zabolotnov,,,URS,,,Men
+1183,Frank,,Baltrusch,,,GDR,,,Men
+1184,Frank,,Hoffmeister,,,FRG,,,Men
+1185,Sean,,Murphy,,,CAN,,,Men
+1186,Kristin,,Otto,,,GDR,,,Women
+1187,Cornelia,,Sirch,,,GDR,,,Women
+1188,Elizabeth,,Mitchell,,,USA,,,Women
+1189,Elizabeth,Cynthia,Barr,,,USA,,,Women
+1190,Marion,,Aizpors,,,FRG,,,Women
+1054,Dmitri,,Volkov,,,URS,,,Men
+1191,Victor,,Davis,,,CAN,,,Men
+1192,Tamas,,Debnar,,,HUN,,,Men
+1193,Richard,Alan,Schroeder,,,USA,,,Men
+1194,Gianni,,Minervini,,,ITA,,,Men
+1195,Christian,,Poswiat,,,GDR,,,Men
+1196,Tania,,Bogomilova-Dangalakova,,,BUL,,,Women
+1197,Antoaneta,,Frenkeva,,,BUL,,,Women
+1198,Silke,,Hörner,,,GDR,,,Women
+1199,Allison,Ann,Higson,,,CAN,,,Women
+1200,Elena,,Volkova,,,URS,,,Women
+1201,Tracey,,Mcfarlane,,,USA,,,Women
+1202,Xiao-Min,,Huang,,,CHN,,,Women
+1203,Annett,,Rex,,,GDR,,,Women
+1204,Andrew,David,Jameson,,,GBR,,,Men
+1205,Jonathan,,Sieben,,,AUS,,,Men
+1206,Michael,,Gross,,,FRG,,,Men
+1207,Jay,Paul,Mortenson,,,USA,,,Men
+1208,Thomas,,Ponting,,,CAN,,,Men
+1209,Vadim,,Yaroshchuk,,,URS,,,Men
+1210,Birte,,Weigang,,,GDR,,,Women
+1211,Janet,Simone,Jorgensen,,,USA,,,Women
+1212,Conny,Van,Bentum,,,NED,,,Women
+1213,Mary,T.,Meagher,,,USA,,,Women
+1214,Christopher,Charles,Jacobs,,,USA,,,Men
+1077,Gennady,,Prigoda,,,URS,,,Men
+1215,Iurie,,Başcatov,,,URS,,,Men
+1216,Andrew,James,Baildon,,,AUS,,,Men
+1217,Per,,Johansson,,,SWE,,,Men
+1218,Manuela,,Stellmach,,,GDR,,,Women
+1219,Vladimir,,Salnikov,,,URS,,,Men
+1082,Stefan,,Pfeiffer,,,FRG,,,Men
+1220,Uwe,,Dassler,,,GDR,,,Men
+1221,Matthew,J.,Cetlinski,,,USA,,,Men
+1222,Mariusz,,Podkoscielny,,,POL,,,Men
+1223,Rainer,,Henkel,,,FRG,,,Men
+1224,Kevin,Thomas,Boyd,,,GBR,,,Men
+1225,Darjan,,Petric,,,YUG,,,Men
+1226,Paul,,Kingsman,,,NZL,,,Men
+1045,Dirk,,Richter,,,GDR,,,Men
+1227,Jens-Peter,,Berndt,,,FRG,,,Men
+1228,Daniel,Howard,Veatch,,,USA,,,Men
+1229,Kathrin,,Zimmermann,,,GDR,,,Women
+1230,Andrea,Jean,Hayes,,,USA,,,Women
+1231,Jolanda,De,Rover,,,NED,,,Women
+1232,Svenja,,Schlicht,,,FRG,,,Women
+1233,Jozsef,,Szabo,,,HUN,,,Men
+1234,Valeri,,Lozik,,,URS,,,Men
+1235,Vadim,,Alekseyev,,,URS,,,Men
+1236,Jonathan,Thomas,Cleveland,,,CAN,,,Men
+1237,Peter,,Szabo,,,HUN,,,Men
+1238,Yuliya,,Bogachova,,,URS,,,Women
+1239,Ingrid,,Lempereur,,,BEL,,,Women
+1240,Benny,Leo,Nielsen,,,DEN,,,Men
+1241,Anthony,,Mosse,,,NZL,,,Men
+1242,David,,Wilson,,,AUS,,,Men
+1243,Jon,,Kelly,,,CAN,,,Men
+1244,Kathleen,,Nord,,,GDR,,,Women
+1245,Stela,Marion,Pura,,,ROU,,,Women
+1246,Trina,D.,Radke,,,USA,,,Women
+1247,Kiyomi,,Takahashi,,,JPN,,,Women
+1248,Duncan,,Armstrong,,,AUS,,,Men
+1109,Steffen,,Zesner,,,GDR,,,Men
+1249,Troy,,Dalbey,,,USA,,,Men
+1250,Thomas,,Fahrner,,,FRG,,,Men
+1251,Heike,,Friedrich,,,GDR,,,Women
+1252,Mary,Alice,Wayte,,,USA,,,Women
+1253,Natalya,,Trefilova,,,URS,,,Women
+1254,Mitzi,Patricia,Kremer,,,USA,,,Women
+1255,Stephanie,,Ortwig,,,FRG,,,Women
+1256,Cecile,,Prunier,,,FRA,,,Women
+1129,Patrick,,Kuhl,,,GDR,,,Men
+1257,Mikhail,,Zubkov,,,URS,,,Men
+1258,Peter,,Bermel,,,FRG,,,Men
+1259,Robert,,Bruce,,,AUS,,,Men
+1260,Raik,,Hannemann,,,GDR,,,Men
+1118,Daniela,,Hunger,,,GDR,,,Women
+1119,Elena,,Dendeberova,,,URS,,,Women
+1261,Noemi,Ildiko,Lung,,,ROU,,,Women
+1262,Judith,,Clatworthy,,,AUS,,,Women
+1263,Marianne,,Muis,,,NED,,,Women
+1264,Aneta,,Patrascoiu,,,ROU,,,Women
+1265,Anke,,Möhring,,,GDR,,,Women
+1266,Tami,Lee,Bruce,,,USA,,,Women
+1267,Janelle,,Elford,,,AUS,,,Women
+1268,Donna,,Procter,,,AUS,,,Women
+1269,Thomas,"Michael Jager, Matthew Biondi, Christopher Charles Jacobs, Douglas S. Gjertsen, Shaun Jordan, Troy Dalbey, Brent Dennis",Lang,,,USA,,,Men
+1270,Raimundas,,Mazuolis,,,SUN,,,Men
+1271,Steffen,"Zesner, Dirk Richter, Thomas Flemming, Lars",Hinneburg,,,FIN,,,Men
+1272,Bruno,"Gutzeit, Laurent Neuville, Stephan Caron, Christophe",Kalfayan,,,FRA,,,Men
+1273,Goran,"Titus, Per Johansson, Richard Milton, Joakim Holmquist, Tommy",Werner,,,SWE,,,Men
+1274,Torsten,"Wiegel, Peter Sitt, Thomas Fahrner, Björn Zikarsky, Michael",Gross,,,GER,,,Men
+1275,Mark,"Andrew Foster, Michael Wenham Fibbens, Andrew David Jameson, Roland Geroge",Lee,,,GBR,,,Men
+1276,Giorgio,"Lamberti, Roberto Gleria, Fabrizio Rampazzo, Andrea",Ceccarini,,,ITA,,,Men
+1277,Sabina,"Schulze, Manuela Stellmach, Heike Friedrich, Katrin Meissner, Kristin Otto, Daniela",Hunger,,,GER,,,Women
+1278,Marianne,"Muis, Karin Brienesse, Mildred",Muis,,,NLD,,,Women
+1279,Mary,"Alice Wayte, Kathryn Paige Zemina, Jill Sterkel, Dara Torres, Mitzi Patricia Kremer, Laura Anne",Walker,,,USA,,,Women
+1280,Fu-Jie,"Xia, Wenyi Yang, Yong Zhuang, Ya-Ping",Lou,,,CHN,,,Women
+1281,Inna,"Abramova, Natalya Trefilova, Svetlana Isakova, Elena",Dendeberova,,,SUN,,,Women
+1282,Allison,"Ann Higson, Jane Kerr, Andrea Nugent, Patricia Noall, Kathleen Bald, Kristin Louise",Topham,,,CAN,,,Women
+1283,Stephanie,"Ortwig, Christiane Pielke, Karin Seick, Katja Ziliox, Marion",Aizpors,,,GER,,,Women
+1284,Mette,"Jacobsen, Annette Moldrup Jorgensen, Pia Sorensen, Gitta Poulsgaard",Jensen,,,DEN,,,Women
+1285,Richard,"Alan Schroeder, Thomas Michael Jager, Matthew Biondi, Christopher Charles Jacobs, Jay Paul Mortenson, David Charles",Berkoff,,,USA,,,Men
+1286,Mark,"Tewksbury, Thomas Ponting, Victor Davis, Donald Alexander",Goss,,,CAN,,,Men
+1287,Vadim,"Yaroshchuk, Dmitri Volkov, Konstantin Petrov, Igor Polyanski, Sergei Zabolotnov, Valeri",Lozik,,,SUN,,,Men
+1288,Frank,"Hoffmeister, Björn Zikarsky, Mark Warnecke, Michael Gross, Alexander",Mayer,,,GER,,,Men
+1289,Hiroshi,"Miura, Daichi Suzuki, Hironobu Nagahata, Shigeo",Ogata,,,JPN,,,Men
+1290,Ian,"Mcadam, Jonathan Sieben, Andrew James Baildon, Carl",Wilson,,,AUS,,,Men
+1291,Patrick,"Dybiona, Ronald Dekker, Hans Kroes, Frank",Drost,,,NLD,,,Men
+1292,Gary,"Michael Binfield, Mark Andrew Foster, Adrian David Moorhouse, Andrew David Jameson, Neil John Harper, Roland Geroge",Lee,,,GBR,,,Men
+1293,Cornelia,"Sirch, Birte Weigang, Katrin Meissner, Kristin Otto, Manuela Stellmach, Silke",Hörner,,,GER,,,Women
+1294,Elizabeth,"Mitchell, Mary Alice Wayte, Janet Simone Jorgensen, Tracey Mcfarlane, Elizabeth Cynthia Barr, Mary T. Meagher, Dara",Torres,,,USA,,,Women
+1295,Andrea,"Nugent, Keltie Duggan, Patricia Noall, Lori Melien, Allison Ann Higson, Jane",Kerr,,,CAN,,,Women
+1296,Karen,"Tracey Van Wirdum, Lara Hooiveld, Fiona Alessandrini, Nicole",Livingstone,,,AUS,,,Women
+1297,Linda,"Moes, Karin Brienesse, Jolanda De",Rover,,,NLD,,,Women
+1298,Tania,"Bogomilova-Dangalakova, Natacha Khristova, Neviana Miteva, Bistra",Gospodinova,,,BGR,,,Women
+1299,Marion,"Aizpors, Gabriele Reha, Britta Dahm, Svenja",Schlicht,,,GER,,,Women
+1300,Silvia,"Persi, Ilaria Tocchini, Manuela Dalla Valle, Lorenza",Vigarani,,,ITA,,,Women
+1301,Richard,"Craig Oppel, Matthew Biondi, Douglas S. Gjertsen, Matthew J. Cetlinski, Troy Dalbey, Daniel Plong",Jorgensen,,,USA,,,Men
+1302,Lars,"Hinneburg, Thomas Flemming, Steffen Zesner, Uwe Dassler, Sven",Lodziewski,,,GER,,,Men
+1303,Peter,"Sitt, Michael Gross, Stefan Pfeiffer, Rainer Henkel, Erik Hochstein, Thomas",Fahrner,,,GER,,,Men
+1304,Massimo,"Trevisan, Roberto Gleria, Fabrizio Rampazzo, Valerio Giambalvo, Giorgio",Lamberti,,,ITA,,,Men
+1305,Tommy,"Werner, Michael Soderlund, Henrik Jangvall, Anders Holmertz, Christer",Wallin,,,SWE,,,Men
+-1,,,,,,FRA,,,Men
+1306,Donald,"Haddow, Turlough O'Hare, Donald Alexander Goss, Gary Vandermeulen, Darren",Ward,,,CAN,,,Men
+1307,Dano,,Halsall,,,SUI,,,Men
+1308,Stefan,,Volery,,,SUI,,,Men
+1309,Vladimir,,Tkachenko,,,URS,,,Men
+1310,Frank,,Henter,,,FRG,,,Men
+1311,Katrin,,Meissner,,,GDR,,,Women
+1312,Jill,,Sterkel,,,USA,,,Women
+1313,Leigh,Ann,Fetter,,,USA,,,Women
+1314,Tamara,,Costache,,,ROU,,,Women
+1315,Karen,Tracey Van,Wirdum,,,AUS,,,Women
+1316,Astrid,,Strauss,,,GDR,,,Women
+1317,Julie,M.,Mcdonald,,,AUS,,,Women
+1318,Antoaneta,,Strumenlieva,,,BUL,,,Women
+1319,Richard,John,Carey,,,USA,,,Men
+1320,David,Dennis,Wilson,,,USA,,,Men
+1321,Michael,,West,,,CAN,,,Men
+1322,Gary,,Hurring,,,NZL,,,Men
+1323,Mark,,Kerry,,,AUS,,,Men
+1324,Bengt,,Baron,,,SWE,,,Men
+1325,Donald,Alexander,Goss,,,CAN,,,Men
+1326,Hans,,Kroes,,,NED,,,Men
+1327,Theresa,,Andrews,,,USA,,,Women
+1328,Carmen,,Bunaciu,,,ROU,,,Women
+1329,Beverley,,Rose,,,GBR,,,Women
+1330,Carmel,,Clark,,,NZL,,,Women
+1331,Steven,K.,Lundquist,,,USA,,,Men
+1332,Peter,,Evans,,,AUS,,,Men
+1333,John,Clifford,Moffet,,,USA,,,Men
+1334,Brett,,Stocks,,,AUS,,,Men
+1335,Gerald,,Morken,,,FRG,,,Men
+1336,Raffaele,,Avagnano,,,ITA,,,Men
+1337,Petra,Van,Staveren,,,NED,,,Women
+1338,Anne,,Ottenbrite,,,CAN,,,Women
+1339,Catherine,,Poirot,,,FRA,,,Women
+1340,Tracy,Anne,Caulkins,,,USA,,,Women
+1341,Eva-Marie,,Hakansson,,,SWE,,,Women
+1342,Hiroko,,Nagasaki,,,JPN,,,Women
+1343,Susan,Gerard,Rapp,,,USA,,,Women
+1344,Jean,Cameron,Hill,,,GBR,,,Women
+1345,Glenn,,Buchanan,,,AUS,,,Men
+1346,Rafael,Antonio Vidal,Castro,,,VEN,,,Men
+1347,Andreas,,Behrend,,,FRG,,,Men
+1348,Jenna,Leigh,Johnson,,,USA,,,Women
+1349,Karin,,Seick,,,FRG,,,Women
+1350,Annemarie,,Verstappen,,,NED,,,Women
+1351,Michelle,Mac,Pherson,,,CAN,,,Women
+1352,Janet,,Tibbits,,,AUS,,,Women
+1353,Ina,,Beyermann,,,FRG,,,Women
+1354,Ambrose,Iv,Gaines,,,USA,,,Men
+1355,Marcus,,Stockwell,,,AUS,,,Men
+1356,Michael,Steward,Heath,,,USA,,,Men
+1357,Alberto,Eugenio Mestre,Sosa,,,VEN,,,Men
+1358,Dirk,,Korthals,,,FRG,,,Men
+1359,Nancy,Lynn,Hogshead,,,USA,,,Women
+1360,Carolyn,,Steinseifer,,,USA,,,Women
+1361,Michelle,,Pearson,,,AUS,,,Women
+1362,June,,Croft,,,GBR,,,Women
+1363,Susanne,,Schuster,,,FRG,,,Women
+1364,Angela,,Russell,,,AUS,,,Women
+1365,Michael,Jon,O'Brien,,,USA,,,Men
+1366,George,Thomas,Dicarlo,,,USA,,,Men
+1367,Franck,,Iacono,,,FRA,,,Men
+1368,Stefano,,Grandi,,,ITA,,,Men
+1369,David,,Shemilt,,,CAN,,,Men
+1370,Wayne,,Shillington,,,AUS,,,Men
+1371,Frederic,,Delcourt,,,FRA,,,Men
+1372,Cameron,,Henning,,,CAN,,,Men
+1373,Ricardo,,Prado,,,BRA,,,Men
+1374,Nicolai,,Klapkarek,,,FRG,,,Men
+1375,Ricardo,Aldabe,Moreno,,,ESP,,,Men
+1376,David,,Orbell,,,AUS,,,Men
+1377,Amy,Lee,White,,,USA,,,Women
+1378,Georgina,,Parkes,,,AUS,,,Women
+1379,Torri,Leigh,Trees,,,USA,,,Women
+1380,Glenn,,Beringen,,,AUS,,,Men
+1381,Etienne,,Dagon,,,SUI,,,Men
+1382,Kenneth,,Fitzpatrick,,,CAN,,,Men
+1383,Pablo,,Restrepo,,,COL,,,Men
+1384,Alexandre,,Yokochi,,,POR,,,Men
+1385,Marco,Del,Prete,,,ITA,,,Men
+1386,Sharon,,Kellett,,,AUS,,,Women
+1387,Ute,,Hasse,,,FRG,,,Women
+1388,Susannah,,Brownsdon,,,GBR,,,Women
+1389,Kimberly,Lynne,Rhodenbaugh,,,USA,,,Women
+1390,Peter,,Ward,,,CAN,,,Men
+1391,Patrick,,Kennedy,,,USA,,,Men
+1392,Karen,,Phillips,,,AUS,,,Women
+1393,Samantha,Paula,Purvis,,,GBR,,,Women
+1394,Naoko,,Kume,,,JPN,,,Women
+1395,Sonja,,Hausladen,,,AUT,,,Women
+1396,Jeffrey,James,Float,,,USA,,,Men
+1397,Frank,,Drost,,,NED,,,Men
+1398,Marco,,Dell'Uomo,,,ITA,,,Men
+1399,Peter,,Dale,,,AUS,,,Men
+1400,Cynthia,Lee,Woodhead,,,USA,,,Women
+1401,Anna,,Mcvann,,,AUS,,,Women
+1402,Alexander,,Baumann,,,CAN,,,Men
+1403,Neil,,Cochran,,,GBR,,,Men
+1404,Robin,,Brew,,,GBR,,,Men
+1405,Andrew,,Phillips,,,JAM,,,Men
+1406,Ralf,,Diegel,,,FRG,,,Men
+1407,Lisa,Gaye,Curry-Kenny,,,AUS,,,Women
+1408,Christiane,,Pielke,,,FRG,,,Women
+1409,Petra,,Zindler,,,FRG,,,Women
+1410,Kathrine,,Bomstad,,,NOR,,,Women
+1411,John,Cary,Mykkanen,,,USA,,,Men
+1412,Justin,,Lemberg,,,AUS,,,Men
+1413,Ron,,Mckeon,,,AUS,,,Men
+1414,Tiffany,Lisa,Cohen,,,USA,,,Women
+1415,Kimberly,Ann,Linehan,,,USA,,,Women
+1416,Jolande,Van Der,Meer,,,NED,,,Women
+1417,Birgit,,Kowalczik,,,FRG,,,Women
+1418,Julie,,Daigneault,,,CAN,,,Women
+1419,Robert,,Woodhouse,,,AUS,,,Men
+1420,Jesus,David,Vassallo,,,USA,,,Men
+1421,Maurizio,,Divano,,,ITA,,,Men
+1422,Jeffrey,James,Kostoff,,,USA,,,Men
+1423,Stephen,,Poulter,,,GBR,,,Men
+1424,Giovanni,,Franceschi,,,ITA,,,Men
+1425,Suzanne,,Landells,,,AUS,,,Women
+1426,Susan,,Heon,,,USA,,,Women
+1427,Nathalie,,Gingras,,,CAN,,,Women
+1428,Donna,,Mcginnis,,,CAN,,,Women
+1429,Gaynor,,Stanley,,,GBR,,,Women
+1430,Ambrose,"Iv Gaines, Christopher Carl Cavanaugh, Robin John Leamy, Matthew Biondi, Michael Steward Heath, Thomas Michael",Jager,,,USA,,,Men
+1431,Neil,"Brooks, Graeme Brewer, Marcus Stockwell, Gregory Fasala, Mark Kerry, Michael Delany, Peter",Dale,,,AUS,,,Men
+1432,Richard,"Milton, Michael Soderlund, Bengt Baron, Tommy Werner, Per Johansson, Mikael Orn, Thomas",Lejdstrom,,,SWE,,,Men
+1433,Alexander,"Schowtka, Andreas Schmidt, Dirk Korthals, Michael Gross, Thomas Fahrner, Nicolai",Klapkarek,,,GER,,,Men
+1434,David,"Lowe, Roland Geroge Lee, Paul Robert Easter, Richard",Burrell,,,GBR,,,Men
+1435,Bruno,"Lesaffre, Laurent Neuville, Dominique Bataille, Stephan",Caron,,,FRA,,,Men
+1436,Alexander,"Baumann, Donald Alexander Goss, Blair Hicken, David Churchill, Peter Szmidt, Levente",Mady,,,CAN,,,Men
+1437,Marcello,"Guarducci, Giovanni Franceschi, Metello Savino, Fabrizio Rampazzo, Marco Colombo, Raffaele Franceschi, Paolo",Revelli,,,ITA,,,Men
+1438,Jill,"Sterkel, Nancy Lynn Hogshead, Carolyn Steinseifer, Jenna Leigh Johnson, Dara Torres, Mary Alice",Wayte,,,USA,,,Women
+1439,Elles,"Voskes, Annemarie Verstappen, Desi Reijers, Wilma Van",Velsen,,,NLD,,,Women
+1440,Ina,"Beyermann, Susanne Schuster, Iris Zscherpe, Christiane Pielke, Karin",Seick,,,GER,,,Women
+1441,Lisa,"Gaye Curry-Kenny, Michelle Pearson, Anna Mcvann, Angela Russell, Janet",Tibbits,,,AUS,,,Women
+1442,Cheryl,"Mcarton, Carol Klimpel, Maureen New, Jane Kerr, Pamela",Rai,,,CAN,,,Women
+1443,Nicola,"Fibbens, Debra Gore, Annabelle Cripps, June",Croft,,,GBR,,,Women
+1444,Petra,"Hilder, Maria Kardum, Agneta Eriksson, Karin Furuhed, Ann Linder, Malin Rundgren, Suzanne",Nilsson,,,SWE,,,Women
+1445,Laurence,"Bensimon, Veronique Jardin, Sophie Kamoun, Carole",Amoric,,,FRA,,,Women
+1446,Thomas,"Michael Jager, Pablo Morales, Michael Steward Heath, Richard Alan Schroeder, Steven K. Lundquist, Richard John Carey, Ambrose Iv Gaines, David Dennis",Wilson,,,USA,,,Men
+1447,Donald,"Alexander Goss, Victor Davis, Michael West, Thomas",Ponting,,,CAN,,,Men
+1448,Mark,"Kerry, Jonathan Sieben, Marcus Stockwell, Peter Evans, Neil Brooks, Glenn",Buchanan,,,AUS,,,Men
+1449,Andreas,"Schmidt, Dirk Korthals, Peter Lang, Andreas Behrend, Gerald Morken, Alexander Schowtka, Michael Gross, Nicolai Klapkarek, Stefan",Peter,,,GER,,,Men
+1450,Peter,"Berggren, Per Johansson, Thomas Lejdstrom, Bengt Baron, Michael",Soderlund,,,SWE,,,Men
+1451,Neil,"John Harper, Richard Burrell, Adrian David Moorhouse, David Lowe, Andrew David",Jameson,,,GBR,,,Men
+1452,Etienne,"Dagon, Patrick Ferland, Theophile David, Dano Halsall, Stefan",Volery,,,CHE,,,Men
+1453,Hiroshi,"Sakamoto, Shigeo Ogata, Shigehiro Takahashi, Kenji Watanabe, Daichi Suzuki, Satoshi Sumida, Shudo Kawawa, Taihei",Saka,,,JPN,,,Men
+1454,Elizabeth,"Mitchell, Theresa Andrews, Tracy Anne Caulkins, Mary T. Meagher, Nancy Lynn Hogshead, Susan Gerard Rapp, Jenna Leigh Johnson, Carolyn",Steinseifer,,,USA,,,Women
+1455,Karin,"Seick, Angelika Knipping, Ina Beyermann, Ute Hasse, Svenja",Schlicht,,,GER,,,Women
+1456,Anne,"Ottenbrite, Pamela Rai, Michelle Mac Pherson, Reema",Abdo,,,CAN,,,Women
+1457,Sandra,"Bowman, Jean Cameron Hill, Beverley Rose, Ann Osgerby, Nicola Fibbens, June Croft, Catherine",White,,,GBR,,,Women
+1458,Grazia,"Colombo, Manuela Carosi, Carlotta Tagnin, Monica Olmi, Roberta Lanzarotti, Silvia Persi, Cristina Quintarelli, Manuela Dalla",Valle,,,ITA,,,Women
+1459,Marie-Therese,"Armentero, Carole Brook, Eva Gysling, Patricia",Brulhart,,,CHE,,,Women
+1460,Kaori,"Yanase, Naomi Sekido, Hiroko Nagasaki, Naoko",Kume,,,JPN,,,Women
+1461,Anna-Karin,"Eriksson, Agneta Eriksson, Petra Hilder, Agneta Märtensson, Eva-Marie Hakansson, Annelie Holmstrom, Maria",Kardum,,,SWE,,,Women
+1462,Geoffrey,"Steven Gaberino, David Erwin Larson, Jeffrey James Float, Richard Erwin Saeger, Lawrence Bruce Hayes, Michael Steward",Heath,,,USA,,,Men
+1463,Stefan,"Pfeiffer, Rainer Henkel, Thomas Fahrner, Dirk Korthals, Alexander Schowtka, Michael",Gross,,,GER,,,Men
+1464,Paul,"Robert Easter, Andrew Astbury, Paul Tony Howe, Neil",Cochran,,,GBR,,,Men
+1465,Gregory,"Fasala, Ron Mckeon, Justin Lemberg, Peter Dale, Thomas Stachewicz, Graeme Brewer, Neil",Brooks,,,AUS,,,Men
+1466,Peter,"Szmidt, Alexander Baumann, Donald Alexander Goss, Blair Hicken, Wayne Kelly, Benoit",Clement,,,CAN,,,Men
+1467,Anders,"Grillhammar, Tommy Werner, Michael Soderlund, Thomas Lejdstrom, Anders Holmertz, Mikael",Orn,,,SWE,,,Men
+1468,Hans,"Kroes, Peter Drost, Frank Drost, Edsard Schlingemann, Kees",Vervoorn,,,NLD,,,Men
+1469,Stephan,"Caron, Dominique Bataille, Michel Pou, Pierre",Andraca,,,FRA,,,Men
+1470,Michele,,Richardson,,,USA,,,Women
+1471,Carla,,Lasi,,,ITA,,,Women
+1472,Monica,,Olmi,,,ITA,,,Women
+1473,Karen,,Ward,,,CAN,,,Women
+1474,Viktor,,Kuznetsov,,,URS,,,Men
+1475,Vladimir,,Dolgov,,,URS,,,Men
+1476,Miloslav,,Rolko,,,TCH,,,Men
+1477,Sandor,,Wladar,,,HUN,,,Men
+1478,Fred,,Eefting,,,NED,,,Men
+1479,Mark,,Tonelli,,,AUS,,,Men
+1480,Gary,,Abraham,,,GBR,,,Men
+1481,Rica,,Reinisch,,,GDR,,,Women
+1482,Ina,,Kleber,,,GDR,,,Women
+1483,Petra,,Riedel,,,GDR,,,Women
+1484,Carine,,Verbauwen,,,BEL,,,Women
+1485,Larisa,,Gorchakova,,,URS,,,Women
+1486,Monique,,Bosga,,,NED,,,Women
+1487,Manuela,,Carosi,,,ITA,,,Women
+1488,Duncan,,Goodhew,,,GBR,,,Men
+1489,Arsens,,Miskarovs,,,URS,,,Men
+1490,Aleksandr,,Fedorovski,,,URS,,,Men
+1491,Janos,,Dzvonyar,,,HUN,,,Men
+1492,Lindsay,,Spencer,,,AUS,,,Men
+1493,Peter,,Berggren,,,SWE,,,Men
+1494,Ute,,Geweniger,,,GDR,,,Women
+1495,Elvira,,Vasilkova,,,URS,,,Women
+1496,Susanne,Schultz,Nielsson,,,DEN,,,Women
+1497,Margaret,,Kelly-Hohmann,,,GBR,,,Women
+1498,Lina,,Kachushite,,,URS,,,Women
+1499,Monica,,Bonon,,,ITA,,,Women
+1500,Pär,,Arvidsson,,,SWE,,,Men
+1501,Roger,,Pyttel,,,GDR,,,Men
+1502,David,Lopez-Zubero,Purcell,,,ESP,,,Men
+1503,Kees,,Vervoorn,,,NED,,,Men
+1504,Evgeni,,Seredin,,,URS,,,Men
+1505,Xavier,,Savin,,,FRA,,,Men
+1506,Aleksey,,Markovsky,,,URS,,,Men
+1507,Caren,,Metschuck,,,GDR,,,Women
+1508,Andrea,,Pollack,,,GDR,,,Women
+1509,Christiane,,Knacke,,,GDR,,,Women
+1510,Ann,,Osgerby,,,GBR,,,Women
+1511,Agneta,,Märtensson,,,SWE,,,Women
+1512,Mariam,,Paris,,,CRC,,,Women
+1513,Janet,,Osgerby,,,GBR,,,Women
+1514,Jörg,,Woithe,,,GDR,,,Men
+1515,Per,,Holmertz,,,SWE,,,Men
+1516,Sergei,,Koplyakov,,,URS,,,Men
+1517,Raffaele,,Franceschi,,,ITA,,,Men
+1518,Sergei,,Krasiuk,,,URS,,,Men
+1519,Rene,,Ecuyer,,,FRA,,,Men
+1520,Graeme,,Brewer,,,AUS,,,Men
+1521,Barbara,,Krause,,,GDR,,,Women
+1522,Ines,,Diers,,,GDR,,,Women
+1523,Olga,,Klevakina,,,URS,,,Women
+1524,Natalia,,Strunnikova,,,URS,,,Women
+1525,Guylaine,,Berger,,,FRA,,,Women
+1526,Agneta,,Eriksson,,,SWE,,,Women
+1527,Aleksandr,,Chaev,,,URS,,,Men
+1528,Maxwell,,Metzker,,,AUS,,,Men
+1529,Rainer,,Strohbach,,,GDR,,,Men
+1530,Borut,,Petric,,,YUG,,,Men
+1531,Rafael,,Escalas,,,ESP,,,Men
+1532,Zoltan,,Wladar,,,HUN,,,Men
+1533,Eduard,,Petrov,,,URS,,,Men
+1534,Zoltan,,Verraszto,,,HUN,,,Men
+1535,Vladimir,,Shemetov,,,URS,,,Men
+1536,Michael,,Soderlund,,,SWE,,,Men
+1537,Douglas,,Campbell,,,GBR,,,Men
+1538,Paul,,Moorfoot,,,AUS,,,Men
+1539,Cornelia,,Polit,,,GDR,,,Women
+1540,Birgit,,Treiber,,,GDR,,,Women
+1541,Yolande,Van Der,Straeten,,,BEL,,,Women
+1542,Lisa,,Forrest,,,AUS,,,Women
+1543,Robertas,,Žulpa,,,URS,,,Men
+1544,Alban,,Vermes,,,HUN,,,Men
+1545,Gennadi,,Utenkov,,,URS,,,Men
+1546,Jorg,,Walter,,,GDR,,,Men
+1547,Svetlana,,Varganova,,,URS,,,Women
+1548,Yulia,,Bogdanova,,,URS,,,Women
+1549,Irena,,Fleissnerova,,,TCH,,,Women
+1550,Bettina,,Lobel,,,GDR,,,Women
+1551,Silvia,,Rinka,,,GDR,,,Women
+1552,Sergei,,Fesenko,,,URS,,,Men
+1553,Philip,,Hubble,,,GBR,,,Men
+1554,Peter,,Morris,,,GBR,,,Men
+1555,Mikhail,,Gorelik,,,URS,,,Men
+1556,Ines,,Geissler,,,GDR,,,Women
+1557,Sybille,,Schönrock,,,GDR,,,Women
+1558,Michelle,,Ford,,,AUS,,,Women
+1559,Dorota,,Brzozowska,,,POL,,,Women
+1560,Alla,,Grishchenkova,,,URS,,,Women
+1561,Andrei,,Krylov,,,URS,,,Men
+1562,Paolo,,Revelli,,,ITA,,,Men
+1563,Thomas,,Lejdstrom,,,SWE,,,Men
+1564,Fabrizio,,Rampazzo,,,ITA,,,Men
+1565,Carmela,,Schmidt,,,GDR,,,Women
+1566,Reggie,De,Jong,,,NED,,,Women
+1567,Irina,,Aksenova,,,URS,,,Women
+1568,Ivar,,Stukolkin,,,URS,,,Men
+1569,Djan,Garrido,Madruga,,,BRA,,,Men
+1570,Daniel,,Machek,,,TCH,,,Men
+1571,Sandor,,Nagy,,,HUN,,,Men
+1572,Petra,,Schneider,,,GDR,,,Women
+1573,Annelies,,Maas,,,NED,,,Women
+1574,Aleksandr,,Sidorenko,,,URS,,,Men
+1575,Andras,,Hargitay,,,HUN,,,Men
+1576,Leszek,,Gorski,,,POL,,,Men
+1577,Sharron,Elizabeth,Davies,,,GBR,,,Women
+1578,Agnieszka,,Czopek,,,POL,,,Women
+1579,Grit,,Slaby,,,GDR,,,Women
+1580,Ulrike,,Tauber,,,GDR,,,Women
+1581,Sonia,,Dangalakova,,,BUL,,,Women
+1582,Magdalena,,Bialas,,,POL,,,Women
+1583,Carmela,"Schmidt, Barbara Krause, Caren Metschuck, Ines Diers, Sarina",Hülsenbeck,,,GER,,,Women
+1584,Carina,"Ljungdahl, Birgitta Jonsson, Tina Gustafsson, Agneta Märtensson, Agneta Eriksson, Helena",Peterson,,,SWE,,,Women
+1585,Reggie,"De Jong, Annelies Maas, Wilma Van",Velsen,,,NLD,,,Women
+1586,Jacquelene,"Willmott, Sharron Elizabeth Davies, Kaye Lovatt, June Croft, Susan",Cooper,,,GBR,,,Women
+1587,Rosemary,"Brown, Karen Van De Graaf, Michelle Pearson, Lisa Gaye",Curry-Kenny,,,AUS,,,Women
+1588,Teresa,"Rivera, Dagmar Erdman, Hellen Plaschinski, Isabel",Reuss,,,MEX,,,Women
+1589,Ani,"Kostova, Rumiana Dobreva, Dobrinka Mincheva, Sonia",Dangalakova,,,BGR,,,Women
+1590,Margarita,"Armengol, Laura Flaque, Natalia Mas, Gloria",Casado,,,ESP,,,Women
+1591,Peter,"Evans, Neil Brooks, Glen Patching, Mark Kerry, Mark",Tonelli,,,AUS,,,Men
+1592,Vladimir,"Shemetov, Viktor Kuznetsov, Sergei Krasiuk, Aleksandr Fedorovski, Evgeni Seredin, Sergei",Koplyakov,,,SUN,,,Men
+1593,David,"Lowe, Martin Smith, Philip Hubble, Duncan Goodhew, Mark Taylor, Paul Marshall, Gary Abraham, Leigh",Atkinson,,,GBR,,,Men
+1594,Frank,"Kuhne, Jorg Walter, Dietmar Gohring, Jörg Woithe, Roger",Pyttel,,,GER,,,Men
+1595,Olivier,"Borios, Rene Ecuyer, Frederic Delcourt, Xavier",Savin,,,FRA,,,Men
+1596,Zoltan,"Verraszto, Gabor Meszaros, Sandor Wladar, Janos",Dzvonyar,,,HUN,,,Men
+1597,Cees,"Jan Winkel, Kees Vervoorn, Albert Boonstra, Peter Drost, Fred",Eefting,,,NLD,,,Men
+1598,Claudio,"Mamede Kestener, Sergio Pinto Pinto Ribeiro, Romulo Duncan Duncan Arantes, Jorge Luiz Fernandes, Ciro Marques",Delgado,,,BRA,,,Men
+1599,Ute,"Geweniger, Andrea Pollack, Rica Reinisch, Sarina Hülsenbeck, Caren",Metschuck,,,GER,,,Women
+1600,June,"Croft, Margaret Kelly-Hohmann, Ann Osgerby, Helen",Jameson,,,GBR,,,Women
+1601,Natalia,"Strunnikova, Elvira Vasilkova, Alla Grishchenkova, Irina Aksenova, Olga",Klevakina,,,SUN,,,Women
+1602,Carina,"Ljungdahl, Ann-Sofi Roos, Armi Airaksinen, Tina Gustafsson, Agneta Märtensson, Annika Uvehall, Eva-Marie",Hakansson,,,SWE,,,Women
+1603,Monica,"Vallarin, Laura Foralosso, Sabrina Seminatore, Cinzia Savi",Scarponi,,,ITA,,,Women
+1604,Lisa,"Gaye Curry-Kenny, Rosemary Brown, Karen Van De Graaf, Lisa",Forrest,,,AUS,,,Women
+1605,Mariana,"Paraschiv, Carmen Bunaciu, Irinel Adela Panulescu, Brigitte",Prass,,,ROU,,,Women
+1606,Dobrinka,"Mincheva, Ani Moneva, Tania Bogomilova-Dangalakova, Sonia Dangalakova, Ani",Kostova,,,BGR,,,Women
+1607,Sergei,"Krasiuk, Vladimir Salnikov, Andrei Krylov, Sergei Koplyakov, Ivar Stukolkin, Sergei",Rusin,,,SUN,,,Men
+1608,Frank,"Pfütze, Frank Kuhne, Rainer Strohbach, Detlev Grabs, Jörg",Woithe,,,GER,,,Men
+1609,Marcus,"Laborne Mattioli, Jorge Luiz Fernandes, Ciro Marques Delgado, Djan Garrido",Madruga,,,BRA,,,Men
+1610,Michael,"Soderlund, Per Holmertz, Per Johansson, Anders Rutqvist, Thomas Lejdstrom, Per Wikstrom, Per-Ola Quist, Per-Alvar",Magnusson,,,SWE,,,Men
+1611,Federico,"Silvestri, Andrea Ceccarini, Fabrizio Rampazzo, Raffaele Franceschi, Paolo",Revelli,,,ITA,,,Men
+1612,Kevin,"Lee, Stephen Poulter, Douglas Campbell, Mark Taylor, Andrew Astbury, Martin Smith, Simon Gray, Philip",Hubble,,,GBR,,,Men
+1613,Mark,"Tonelli, Graeme Brewer, Ron Mckeon, Mark Kerry, Maxwell",Metzker,,,AUS,,,Men
+1614,Dominique,"Petit, Fabien Noel, Marc Lazzaro, Pascal",Laget,,,FRA,,,Men
+1615,Heike,,Dähne,,,GDR,,,Women
+1616,Oksana,,Komissarova,,,URS,,,Women
+1617,Pascale,,Verbauwen,,,BEL,,,Women
+1618,Elena,,Ivanova,,,URS,,,Women
+1619,John,Phillips,Naber,,,USA,,,Men
+1620,Peter,Drake,Rocca,,,USA,,,Men
+1621,Roland,,Matthes,,,GDR,,,Men
+1622,Carlos,,Berrocal,,,PUR,,,Men
+1623,Lutz,,Wanja,,,GDR,,,Men
+1624,Robert,Scott,Jackson,,,USA,,,Men
+1625,Ulrike,,Richter,,,GDR,,,Women
+1626,Nancy,Ellen,Garapick,,,CAN,,,Women
+1627,Wendy,,Cook-Hogg,,,CAN,,,Women
+1628,Cheryl,,Gibson,,,CAN,,,Women
+1629,Nadezhda,,Stavko,,,URS,,,Women
+1630,Antje,,Stille,,,GDR,,,Women
+1631,Diane,,Edelijn,,,NED,,,Women
+1632,John,Frederick,Hencken,,,USA,,,Men
+1633,David,Andrew,Wilkie,,,GBR,,,Men
+1634,Arvydas,,Juozaitis,,,URS,,,Men
+1635,Graham,,Smith,,,CAN,,,Men
+1636,Giorgio,,Lalle,,,ITA,,,Men
+1637,Walter,,Kusch,,,FRG,,,Men
+1638,Chris,,Woo,,,USA,,,Men
+1639,Hannelore,,Anke,,,GDR,,,Women
+1640,Lyubov,,Rusanova,,,URS,,,Women
+1641,Marina,,Koshevaya,,,URS,,,Women
+1642,Carola,,Nitschke,,,GDR,,,Women
+1643,Gabriele,,Askamp,,,FRG,,,Women
+1644,Maryna,,Yurchenia,,,URS,,,Women
+1645,Karla,,Linke,,,GDR,,,Women
+1646,Matthew,Haynes,Vogel,,,USA,,,Men
+1647,Joseph,Stuart,Bottom,,,USA,,,Men
+1648,Gary,Jr.,Hall,,,USA,,,Men
+1649,Clayton,,Evans,,,CAN,,,Men
+1650,Hideaki,,Hara,,,JPN,,,Men
+1651,Neil,,Rogers,,,AUS,,,Men
+1652,Kornelia,,Ender,,,GDR,,,Women
+1653,Wendy,Lansbach,Boglioli,,,USA,,,Women
+1654,Camille,,Wright,,,USA,,,Women
+1655,Rosemarie,,Kother-Gabriel,,,GDR,,,Women
+1656,Wendy,,Quirk,,,CAN,,,Women
+1657,Lelei,Alofa,Fonoimoana,,,USA,,,Women
+1658,Tamara,,Shelofastova,,,URS,,,Women
+1659,Jim,,Montgomery,,,USA,,,Men
+1660,"Jack,",Jr.,Babashoff,,,USA,,,Men
+1661,Peter,,Nocke,,,FRG,,,Men
+1662,Klaus,,Steinbach,,,FRG,,,Men
+1663,Marcello,,Guarducci,,,ITA,,,Men
+1664,Vladimir,,Bure,,,URS,,,Men
+1665,Petra,,Priemer,,,GDR,,,Women
+1666,Enith,,Brigitha,,,NED,,,Women
+1667,Kim,Marie,Peyton,,,USA,,,Women
+1668,Shirley,Farber,Babashoff,,,USA,,,Women
+1669,Claudia,,Hempel,,,GDR,,,Women
+1670,Judith,(Jutta),Weber,,,FRG,,,Women
+1671,Brian,Stuart,Goodell,,,USA,,,Men
+1672,Robert,William,Hackett,,,USA,,,Men
+1673,Stephen,,Holland,,,AUS,,,Men
+1674,Paul,Michael,Hartloff,,,USA,,,Men
+1675,Daniel,Lee,Harrigan,,,USA,,,Men
+1676,Robert,,Rudolf,,,HUN,,,Men
+1677,Melissa,Louise,Belote,,,USA,,,Women
+1678,Klavdiya,,Studennikova,,,URS,,,Women
+1679,Richard,Phillip Jr.,Colella,,,USA,,,Men
+1680,Charles,Humphrey,Keating,,,USA,,,Men
+1681,Nikolai,,Pankin,,,URS,,,Men
+1682,Deborah,,Rudd,,,GBR,,,Women
+1683,Mike,,Bruner,,,USA,,,Men
+1684,Steven,Garrett,Gregg,,,USA,,,Men
+1685,William,"Ronald, Jr.",Forrester,,,USA,,,Men
+1686,Michael,,Kraus,,,FRG,,,Men
+1687,Brian,,Brinkley,,,GBR,,,Men
+1688,Jorge,,Delgado,,,ECU,,,Men
+1689,Oleksandr,,Manachynskiy,,,URS,,,Men
+1690,Karen,Patricia,Moe-Thornton,,,USA,,,Women
+1691,Natalya,,Popova,,,URS,,,Women
+1692,Bruce,Macfarlane,Furniss,,,USA,,,Men
+1693,Gordon,Hunter,Downie,,,GBR,,,Men
+1694,Andrei,,Bogdanov,,,URS,,,Men
+1695,Gail,,Amundrud,,,CAN,,,Women
+1696,Jennifer,Leigh,Hooker,,,USA,,,Women
+1697,Irina,,Vlasova,,,URS,,,Women
+1698,Timothy,Andrew,Shaw,,,USA,,,Men
+1699,Vladimir,,Raskatov,,,URS,,,Men
+1700,Vladimir,,Mikheev,,,URS,,,Men
+1701,Stephen,,Badger,,,CAN,,,Men
+1702,Petra,,Thümer,,,GDR,,,Women
+1703,Shannon,,Smith,,,CAN,,,Women
+1704,Rebecca,,Perrott,,,NZL,,,Women
+1705,Kathy,,Heddy,,,USA,,,Women
+1706,Brenda,Grace,Borgh,,,USA,,,Women
+1707,Sabine,,Kahle,,,GDR,,,Women
+1708,Rodney,,Strachan,,,USA,,,Men
+1709,Alexander,Timothy,Mckee,,,USA,,,Men
+1710,Andrei,,Smirnov,,,URS,,,Men
+1711,Steven,Charles,Furniss,,,USA,,,Men
+1712,Andrew,,Ritchie,,,CAN,,,Men
+1713,Hans-Joachim,,Geisler,,,FRG,,,Men
+1714,Becky,,Smith,,,CAN,,,Women
+1715,Donna,Lee,Wennerstrom,,,USA,,,Women
+1716,Joann,,Baker,,,CAN,,,Women
+1717,Monique,,Rodahl,,,NZL,,,Women
+1718,Shirley,"Farber Babashoff, Kim Marie Peyton, Jennifer Leigh Hooker, Wendy Lansbach Boglioli, Jill",Sterkel,,,USA,,,Women
+1719,Andrea,"Pollack, Petra Priemer, Kornelia Ender, Claudia",Hempel,,,GER,,,Women
+1720,Gail,"Amundrud, Deborah Clarke, Barbara Lynny Clark, Anne Elizabeth",Jardin,,,CAN,,,Women
+1721,Annelies,"Maas, Berber Kamstra, Linda Faber, Enith Brigitha, Catharina (Ineke)",Ran,,,NLD,,,Women
+1722,Larisa,"Tsareva, Irina Vlasova, Marina Klyuchnikova, Lyubov",Kobzeva,,,SUN,,,Women
+1723,Chantal,"Schertz, Caroline Carpentier, Guylaine",Berger,,,FRA,,,Women
+1724,Gunilla,"Lundberg, Ylva Persson, Diana Olsson, Carina Ljungdahl, Ida Hansson, Pia",Martensson,,,SWE,,,Women
+1725,Gudrun,"Beckmann, Regina Nissen, Beate Jasch, Judith (Jutta) Weber, Marion",Platten,,,GER,,,Women
+1726,Jim,"Montgomery, Matthew Haynes Vogel, Peter Drake Rocca, John Frederick Hencken, John Phillips Naber, Jack, Jr. Babashoff, Joseph Stuart",Bottom,,,USA,,,Men
+1727,Gary,"Mac Donald, Clayton Evans, Stephen Pickell, Graham Smith, Bruce Richard",Robertson,,,CAN,,,Men
+1728,Peter,"Lang, Walter Kusch, Klaus Steinbach, Peter Nocke, Reinhold Becker, Michael Kraus, Dirk",Braunleder,,,GER,,,Men
+1729,James,"Carter, John Maurice Mills, Brian Brinkley, Gary Abraham, David Andrew Wilkie, Duncan Goodhew, Kevin Robert",Burns,,,GBR,,,Men
+1730,Andrei,"Bogdanov, Andrei Krylov, Igor Evgenevich Omeltchenko, Evgeni Seredin, Nikolai",Pankin,,,SUN,,,Men
+1731,Peter,"Coughlan, Neil Rogers, Mark Kerry, Paul",Jarvie,,,AUS,,,Men
+1732,Paolo,"Barelli, Giorgio Lalle, Marcello Guarducci, Riccardo Urbani, Enrico",Bisso,,,ITA,,,Men
+1733,Tadashi,"Honda, Nobutaka Taguchi, Tsuyoshi Yanagidate, Kozo Higuchi, Hideaki",Hara,,,JPN,,,Men
+1734,Birgit,"Treiber, Hannelore Anke, Rosemarie Kother-Gabriel, Ulrike Richter, Petra Priemer, Andrea Pollack, Carola Nitschke, Kornelia",Ender,,,GER,,,Women
+1735,Linda,"Louise Jezek, Lelei Alofa Fonoimoana, Wendy Lansbach Boglioli, Camille Wright, Shirley Farber Babashoff, Laura Gail",Siering,,,USA,,,Women
+1736,Deborah,"Clarke, Wendy Cook-Hogg, Susan Estelle Smith-Sloan, Anne Elizabeth Jardin, Robin Marie",Corsiglia,,,CAN,,,Women
+1737,Larisa,"Tsareva, Tamara Shelofastova, Nadezhda",Stavko,,,SUN,,,Women
+1738,Josefine,"(Jose) Damen, Wijda Mazereeuw, Diane Edelijn, Catharina (Ineke) Ran, Enith",Brigitha,,,NLD,,,Women
+1739,Deborah,"Hill, Elaine Dorothy Gray, Margaret Kelly-Hohmann, Joy Beasley, Joanne Louise Atkinson, Susan Pamela",Jenner,,,GBR,,,Women
+1740,Kazuyo,"Inaba, Toshiko Haruoka, Yoshimi Nishigawa, Yasue Hatsuda, Sachiko",Yamazaki,,,JPN,,,Women
+1741,Allison,"Smith, Judith Hudson, Glenda Robertson, Linda Hanel, Lyle Smith, Jenny Tate, Michelle",Devries,,,AUS,,,Women
+1742,Jim,"Montgomery, John Phillips Naber, Mike Bruner, Douglas Dale Northway, Timothy Andrew Shaw, Bruce Macfarlane",Furniss,,,USA,,,Men
+1743,Andrei,"Bogdanov, Sergei Koplyakov, Andrei Smirnov, Andrei Krylov, Vladimir Raskatov, Vladimir",Mikheev,,,SUN,,,Men
+1744,David,"Michael Dunne, Gordon Hunter Downie, Alan Mcclatchey, Brian",Brinkley,,,GBR,,,Men
+1745,Hans-Joachim,"Geisler, Andreas Schmidt, Klaus Steinbach, Peter Nocke, Werner",Lampe,,,GER,,,Men
+1746,Rainer,"Strohbach, Roger Pyttel, Frank Pfütze, Lutz Loscher, Wilfried",Hartung,,,GER,,,Men
+1747,Hendrik,"(Henk) Elzerman, Andre In E Weld, Abdul Karim Ressang, Rene Van Der",Kul,,,NLD,,,Men
+1748,Peter,"Pettersson, Anders Bellbring, Bengt Jonsson, Pär Arvidsson, Bengt",Gingsjo,,,SWE,,,Men
+1749,Roberto,"Pangaro, Marcello Guarducci, Paolo Barelli, Paolo",Revelli,,,ITA,,,Men
+1750,Wendy,Elizabeth,Weinberg,,,USA,,,Women
+1751,Rosemary,,Milgate,,,AUS,,,Women
+1752,Nicole,,Kramer,,,USA,,,Women
+1753,Regina,,Jäger,,,GDR,,,Women
+1754,Jenny,,Turrall,,,AUS,,,Women
+1755,Michael,Eugene,Stamm,,,USA,,,Men
+1756,John,Joseph,Murphy,,,USA,,,Men
+1757,Mitchell,,Ivey,,,USA,,,Men
+1758,Igor,,Grivennikov,,,URS,,,Men
+1759,Jürgen,,Krüger,,,GDR,,,Men
+1760,Tadashi,,Honda,,,JPN,,,Men
+1761,Andrea,,Gyarmati,,,HUN,,,Women
+1762,Susanne,Jean,Atwood,,,USA,,,Women
+1763,Christine,,Herbst,,,GDR,,,Women
+1764,Silke,,Pielen,,,FRG,,,Women
+1765,Nobutaka,,Taguchi,,,JPN,,,Men
+1766,Thomas,Edwin,Bruce,,,USA,,,Men
+1767,Mark,Webster,Chatfield,,,USA,,,Men
+1768,Jose,Sylvio,Fiolo,,,BRA,,,Men
+1769,Catherine,L.,Carr,,,USA,,,Women
+1770,Halyna,,Prozumenshchykova-Stepanova,,,URS,,,Women
+1771,Beverley,Joy,Whitfield,,,AUS,,,Women
+1772,Agnes,,Kaczander-Kiss,,,HUN,,,Women
+1773,Judith,Ellen,Melick,,,USA,,,Women
+1774,Verena,(Vreni),Eberle,,,FRG,,,Women
+1775,Britt-Marie,,Smedh,,,SWE,,,Women
+1776,Dorothy,Elizabeth,Harrison,,,GBR,,,Women
+1777,Mark,,Spitz,,,USA,,,Men
+1778,Bruce,Richard,Robertson,,,CAN,,,Men
+1779,Jerry,Alan,Heidenreich,,,USA,,,Men
+1780,David,Holmes,Edgar,,,USA,,,Men
+1781,Byron,Mac,Donald,,,CAN,,,Men
+1782,Hartmut,,Flöckner,,,GDR,,,Men
+1783,Mayumi,,Aoki,,,JPN,,,Women
+1784,Roswitha,,Beier,,,GDR,,,Women
+1785,Deena,Diana,Deardruff,,,USA,,,Women
+1786,Dana,Jayne,Shrader,,,USA,,,Women
+1787,Eleanor,Suzanne,Daniel,,,USA,,,Women
+1788,Gudrun,,Beckmann,,,FRG,,,Women
+1789,Noriko,,Asano,,,JPN,,,Women
+1790,Michael,Vincent,Wenden,,,AUS,,,Men
+1791,Michel,,Rousseau,,,FRA,,,Men
+1792,Alexandra,Lynn,Neilson,,,USA,,,Women
+1793,Shane,,Gould,,,AUS,,,Women
+1794,Gabriele,,Wetzko,,,GDR,,,Women
+1795,Heidemarie,,Reineck,,,FRG,,,Women
+1796,Andrea,,Eife,,,GDR,,,Women
+1797,Magdolna,,Patoh,,,HUN,,,Women
+1798,Mike,,Burton,,,USA,,,Men
+1799,Graham,Claud,Windeatt,,,AUS,,,Men
+1800,Douglas,Dale,Northway,,,USA,,,Men
+1801,Bengt,,Gingsjo,,,SWE,,,Men
+1802,Graham,Rose,White,,,AUS,,,Men
+1803,Marcus,,Treffers,,,NZL,,,Men
+1804,Bradford,Paul,Cooper,,,AUS,,,Men
+1805,Guillermo,,Garcia,,,MEX,,,Men
+1806,Lothar,,Noack,,,GDR,,,Men
+1807,Jean-Paul,,Berjaud,,,FRA,,,Men
+1808,Donna,Marie,Gurr,,,CAN,,,Women
+1809,Annegret,,Kober,,,FRG,,,Women
+1810,Deborah,,Palmer,,,AUS,,,Women
+1811,Leslie,,Cliff,,,CAN,,,Women
+1812,Felipe,,Munoz,,,MEX,,,Men
+1813,Igor,,Cherdakov,,,URS,,,Men
+1814,Klaus,,Katzur,,,GDR,,,Men
+1815,Dana,Lee,Schoenfield,,,USA,,,Women
+1816,Claudia,Jean,Clevenger,,,USA,,,Women
+1817,Petra,,Nows,,,FRG,,,Women
+1818,Lyudmila,,Porubaiko,,,URS,,,Women
+1819,Eva,,Kiss,,,HUN,,,Women
+1820,Robin,James,Backhaus,,,USA,,,Men
+1821,Hans,,Fassnacht,,,FRG,,,Men
+1822,Volkert,,Meeuw,,,FRG,,,Men
+1823,Lynn,Ann,Colella,,,USA,,,Women
+1824,Helga,,Lindner,,,GDR,,,Women
+1825,Gail,,Neall,,,AUS,,,Women
+1826,Robert,Steven,Genter,,,USA,,,Men
+1827,Werner,,Lampe,,,FRG,,,Men
+1828,Frederick,Daniel,Tyler,,,USA,,,Men
+1829,Ralph,,Hutton,,,CAN,,,Men
+1830,Keena,Ruth,Rothhammer,,,USA,,,Women
+1831,Barbara,Ann,Marshall,,,USA,,,Women
+1832,Johanna,(Hansje),Bunschoten,,,NED,,,Women
+1833,Cotharina,(Anke),Rijnders,,,NED,,,Women
+1834,Karin,,Tülling,,,GDR,,,Women
+1835,Gunnar,,Larsson,,,SWE,,,Men
+1836,Mikhail,,Sukharev,,,URS,,,Men
+1837,Juan,Carlos,Bello,,,PER,,,Men
+1838,Hans,,Ljungberg,,,SWE,,,Men
+1839,Lynn,Marie,Vidali,,,USA,,,Women
+1840,Jennifer,Ann,Bartz,,,USA,,,Women
+1841,Evelyn,,Stolze,,,GDR,,,Women
+1842,Yoshimi,,Nishigawa,,,JPN,,,Women
+1843,Carolyn,Ann,Woods,,,USA,,,Women
+1844,Thomas,Sean,Mcbreen,,,USA,,,Men
+1845,Rick,,Demont,,,USA,,,Men
+1846,Novella,,Calligaris,,,ITA,,,Women
+1847,Gudrun,,Wegner,,,GDR,,,Women
+1848,Jenny,,Wylie,,,USA,,,Women
+1849,Wolfram,,Sperling,,,GDR,,,Men
+1850,Mary,Coulter,Montgomery,,,USA,,,Women
+1851,Nina,,Petrova,,,URS,,,Women
+1852,Gary,"Robert Conelly, David William Fairbank, John Joseph Murphy, Mark Spitz, Jerry Alan Heidenreich, David Holmes",Edgar,,,USA,,,Men
+1853,Vladimir,"Bure, Viktor Mazanov, Viktor Aboimov, Igor",Grivennikov,,,SUN,,,Men
+1854,Lutz,"Unger, Udo Poser, Wilfried Hartung, Roland Matthes, Peter",Bruch,,,GER,,,Men
+1855,Paulo,"Zanetti, Rui Tadeu Aquino Oliveira, Jose Roberto Diniz",Aranha,,,BRA,,,Men
+1856,Brian,"Phillips, Timothy Bach, Bruce Richard Robertson, Robert",Kasting,,,CAN,,,Men
+1857,Rainer,"Jacob, Karsten Meier, Hans-Günther Vosseler, Hans Fassnacht, Klaus Steinbach, Gerhard Schiller, Werner",Lampe,,,GER,,,Men
+1858,Michel,"Rousseau, Alain Mosconi, Gilles Vigne, Alain",Hermitte,,,FRA,,,Men
+1859,Jose,"Pujol Simon, Antonio Culebras, Enrique Melo Ramon, Jorge Comas",Lopez,,,ESP,,,Men
+1860,Barbara,"Ann Marshall, Kim Marie Peyton, Lynn Ellen Skrifvars, Shirley Farber Babashoff, Jennifer Jo Kemp, Alexandra Lynn Neilson, Jane Louise",Barkman,,,USA,,,Women
+1861,Sylvia,"Eichner, Andrea Eife, Elke Sehmisch, Kornelia Ender, Gabriele",Wetzko,,,GER,,,Women
+1862,Gudrun,"Beckmann, Angela Steinbach, Heidemarie Reineck, Judith (Jutta)",Weber,,,GER,,,Women
+1863,Andrea,"Gyarmati, Magdolna Patoh, Edit",Kovacs,,,HUN,,,Women
+1864,Cotharina,"(Anke) Rijnders, Enith Brigitha, Johanna (Hansje) Bunschoten, Josephine (Jozien)",Elzerman,,,NLD,,,Women
+1865,Diana,"Olsson, Eva Andersson, Anita Zarnowiecki, Irwi",Johansson,,,SWE,,,Women
+1866,Wendy,"Cook-Hogg, Mary Beth Rondeau, Leslie",Cliff,,,CAN,,,Women
+1867,Shane,"Gould, Debra Cain, Sharon Booth, Deborah Palmer, Leanne",Francis,,,AUS,,,Women
+1868,Mitchell,"Ivey, Thomas Edwin Bruce, Jerry Alan Heidenreich, David William Fairbank, John Frederick Hencken, Mark Spitz, Michael Eugene Stamm, Gary Jr.",Hall,,,USA,,,Men
+1869,Roger,"Pyttel, Hartmut Flöckner, Klaus Katzur, Lutz Unger, Roland",Matthes,,,GER,,,Men
+1870,Bruce,"Richard Robertson, William Mahony, William Kennedy, Clayton Evans, Robert Kasting, Erik Fish, Brian",Phillips,,,CAN,,,Men
+1871,Igor,"Grivennikov, Viktor Stulikov, Vladimir Bure, Nikolai Pankin, Viktor Sharygin, Viktor",Aboimov,,,SUN,,,Men
+1872,Sergio,"Waismann, Jose Roberto Diniz Aranha, Rui Tadeu Aquino Oliveira, Romulo Duncan Duncan Arantes, Jose Sylvio",Fiolo,,,BRA,,,Men
+1873,Jiro,"Sasaki, Tadashi Honda, Yasuhiro Komazaki, Nobutaka",Taguchi,,,JPN,,,Men
+1874,John,"Maurice Mills, Malcolm Barrie Windeatt, Colin Cunningham, David Andrew Wilkie, Malcolm Gregory",O'Connell,,,GBR,,,Men
+1875,Attila,"Csaszari, Andras Hargitay, Laszlo Cseh, Istvan Szentirmai, Sandor",Szabo,,,HUN,,,Men
+1876,Dana,"Jayne Shrader, Susanne Jean Atwood, Jennifer Jo Kemp, Judith Ellen Melick, Melissa Louise Belote, Deena Diana Deardruff, Alexandra Lynn Neilson, Catherine L. Carr, Shirley Farber",Babashoff,,,USA,,,Women
+1877,Gabriele,"Wetzko, Rosemarie Kother-Gabriel, Brigitte Schuchardt, Kornelia Ender, Roswitha Beier, Christine Herbst, Renate",Vogel,,,GER,,,Women
+1878,Dagmar,"Sierck, Gudrun Beckmann, Edeltraud Koch, Annegret Kober, Silke Pielen, Heidemarie Reineck, Judith (Jutta) Weber, Verena (Vreni) Eberle, Heike",Hustede-Nagel,,,GER,,,Women
+1879,Nina,"Petrova, Tatyana",Zolotnitskaya,,,SUN,,,Women
+1880,Enith,"Brigitha, Marianne Vermaat, Cotharina (Anke) Rijnders, Friederike (Frieke) Buys, Alice (Alie) Te Riet, Johanna (Hansje)",Bunschoten,,,NLD,,,Women
+1881,Suzuko,"Matsumura, Yuko Yamamoto, Kikuyo Ishii, Yoshimi Nishigawa, Shigeko Kawanishi, Mayumi",Aoki,,,JPN,,,Women
+1882,Donna,"Marie Gurr, Sylvia Dockerill-Dodd, Mary Beth Rondeau, Wendy Cook-Hogg, Leslie Cliff, Marian",Stuart-Johnson,,,CAN,,,Women
+1883,Jeanette,"Pettersson, Diana Olsson, Anita Zarnowiecki, Britt-Marie Smedh, Eva",Wikner,,,SWE,,,Women
+1884,Frederick,"Daniel Tyler, Mark Spitz, Thomas Sean Mcbreen, Mike Burton, Robert Steven Genter, John Pitann Kinsella, Gary Robert",Conelly,,,USA,,,Men
+1885,Hans,"Fassnacht, Gerhard Schiller, Hans-Günther Vosseler, Werner Lampe, Volkert Meeuw, Klaus",Steinbach,,,GER,,,Men
+1886,Igor,"Grivennikov, Viktor Mazanov, Vladimir Bure, Aleksandr Samsonov, Viktor",Aboimov,,,SUN,,,Men
+1887,Hans,"Ljungberg, Bengt Gingsjo, Anders Bellbring, Rolf Pettersson, Gunnar",Larsson,,,SWE,,,Men
+1888,Graham,"Claud Windeatt, Michael Vincent Wenden, Bradford Paul Cooper, Bruce Featherston, Graham Rose White, Robert",Nay,,,AUS,,,Men
+1889,Udo,"Poser, Roger Pyttel, Lutz Unger, Wilfried Hartung, Peter",Bruch,,,GER,,,Men
+1890,Bruce,"Richard Robertson, Ian Mac Kenzie, Dean Buckboro, Ralph Hutton, Brian",Phillips,,,CAN,,,Men
+1891,Colin,"Cunningham, John Maurice Mills, Michael Bailey, Brian Brinkley, Raymond James",Terrell,,,GBR,,,Men
+1892,Ann,,Simmons,,,USA,,,Women
+1893,Jo,Ann,Harshbarger,,,USA,,,Women
+1894,Narelle,,Moras,,,AUS,,,Women
+1895,Charlie,,Hickcox,,,USA,,,Men
+1896,Ronald,P.,Mills,,,USA,,,Men
+1897,Lawrence,Edward,Barbiere,,,USA,,,Men
+1898,James,,Shaw,,,CAN,,,Men
+1899,Robert,(Bob),Schoutsen,,,NED,,,Men
+1900,Reinhard,,Blechert,,,FRG,,,Men
+1901,Franco,Del,Campo,,,ITA,,,Men
+1902,Kaye,Marie,Hall,,,USA,,,Women
+1903,Elaine,,Tanner,,,CAN,,,Women
+1904,Jane,Ellen,Swagerty,,,USA,,,Women
+1905,Kendis,Marion,Moore,,,USA,,,Women
+1906,Lynette,,Watson,,,AUS,,,Women
+1907,Sylvie,Canet-Le,Noach,,,FRA,,,Women
+1908,Glenda,Joy,Stirling,,,NZL,,,Women
+1909,Donald,Ward Jr.,Mckenzie,,,USA,,,Men
+1910,Vladimir,,Kosinsky,,,URS,,,Men
+1911,Yevhen,,Mykhailov,,,URS,,,Men
+1912,Lawrence,Ian,O'Brien,,,AUS,,,Men
+1913,Alberto,Forelli,Lopez,,,ARG,,,Men
+1914,Egon,,Henninger,,,GDR,,,Men
+1915,Djurdjica,,Bjedov,,,YUG,,,Women
+1916,Sharon,Lynn,Wichman,,,USA,,,Women
+1917,Uta,,Frommater,,,FRG,,,Women
+1918,Catherine,,Ball,,,USA,,,Women
+1919,Kiyoe,,Nakagawa,,,JPN,,,Women
+1920,Svetlana,,Babanina,,,URS,,,Women
+1921,Ana-Maria,,Norbis,,,URU,,,Women
+1922,Douglas,Albert,Russell,,,USA,,,Men
+1923,Ross,Elliott,Wales,,,USA,,,Men
+1924,Vladimir,,Nemshilov,,,URS,,,Men
+1925,Satoshi,,Maruya,,,JPN,,,Men
+1926,Yuri,,Suzdaltsev,,,URS,,,Men
+1927,Lutz,,Stocklasa,,,FRG,,,Men
+1928,Robert,,Cusack,,,AUS,,,Men
+1929,Lynette,,Mcclements,,,AUS,,,Women
+1930,Susanne,Marie,Shields,,,USA,,,Women
+1931,Aagje,Ada,Kok,,,NED,,,Women
+1932,Heike,,Hustede-Nagel,,,FRG,,,Women
+1933,Antonia,(Toni),Hewitt,,,USA,,,Women
+1934,Kenneth,Marshall,Walsh,,,USA,,,Men
+1935,Robert,Bilsland,Mcgregor,,,GBR,,,Men
+1936,Leonid,,Ilyichev,,,URS,,,Men
+1937,Georgijs,,Kuļikovs,,,URS,,,Men
+1938,Luis,Alberto Nicolao,Yanuzzi,,,ARG,,,Men
+1939,Zachary,,Zorn,,,USA,,,Men
+1940,Jane,Margo,Henne,,,USA,,,Women
+1941,Susan,Jane,Pedersen,,,USA,,,Women
+1942,Linda,Lee,Gustavson,,,USA,,,Women
+1943,Marion,Beverly,Lay,,,CAN,,,Women
+1944,Martina,,Grunert,,,GDR,,,Women
+1945,Alexandra,Elizabeth,Jackson,,,GBR,,,Women
+1946,Mirjana,,Šegrt,,,YUG,,,Women
+1947,Judit,,Turóczy,,,HUN,,,Women
+1948,John,Pitann,Kinsella,,,USA,,,Men
+1949,Gregory,,Brough,,,AUS,,,Men
+1950,Guillermo,Echevarria,Perez,,,MEX,,,Men
+1951,Juan,Carlos,Alanis,,,MEX,,,Men
+1952,John,Mauer,Nelson,,,USA,,,Men
+1953,Jack,S.,Horsley,,,USA,,,Men
+1954,Santiago,Esteva,Escoda,,,ESP,,,Men
+1955,Leonid,,Dobroskokin,,,URS,,,Men
+1956,Joachim,,Rother,,,GDR,,,Men
+1957,Lillian,Debra,Watson,,,USA,,,Women
+1958,Wendy,,Burrell,,,GBR,,,Women
+1959,Zdenka,,Gasparac,,,YUG,,,Women
+1960,Maria,Paz Corominas,Guerin,,,ESP,,,Women
+1961,Benedicte,,Duprez,,,FRA,,,Women
+1962,Brian,Gregory,Job,,,USA,,,Men
+1963,Philip,Edward,Long,,,USA,,,Men
+1964,Osamu,,Tsurumine,,,JPN,,,Men
+1965,Alla,,Grebennikova,,,URS,,,Women
+1966,Catherine,,Jamison,,,USA,,,Women
+1967,Chieno,,Shibata,,,JPN,,,Women
+1968,Carl,Joseph Iii,Robie,,,USA,,,Men
+1969,Martyn,John,Woodroffe,,,GBR,,,Men
+1970,John,Edward,Ferris,,,USA,,,Men
+1971,Valentin,,Kuzmin,,,URS,,,Men
+1972,Lars,,Feil,,,SWE,,,Men
+1973,Viktor,,Sharygin,,,URS,,,Men
+1974,Diane,Jean,Giebel,,,USA,,,Women
+1975,Margaret,M.,Auton,,,GBR,,,Women
+1976,Yasuko,,Fujii,,,JPN,,,Women
+1977,Donald,Arthur,Schollander,,,USA,,,Men
+1978,Alain,,Mosconi,,,FRA,,,Men
+1979,Robert,George,Windle,,,AUS,,,Men
+1980,Semyon,,Belits-Geiman,,,URS,,,Men
+1981,Carlos,Van Der,Math,,,ARG,,,Men
+1982,Debbie,,Meyer,,,USA,,,Women
+1983,Jane,Louise,Barkman,,,USA,,,Women
+1984,Claude,,Mandonnaud,,,FRA,,,Women
+1985,Lynette,,Bell,,,AUS,,,Women
+1986,Oľga,,Kozičová,,,TCH,,,Women
+1987,Gregory,F.,Buckingham,,,USA,,,Men
+1988,George,,Smith,,,CAN,,,Men
+1989,John,Alexander,Gilchrist,,,CAN,,,Men
+1990,Michael,,Holthaus,,,FRG,,,Men
+1991,Peter,,Lazar,,,HUN,,,Men
+1992,Claudia,Anne,Kolb,,,USA,,,Women
+1993,Sabine,,Steinbach,,,GDR,,,Women
+1994,Marianne,,Seydel,,,GDR,,,Women
+1995,Larisa,,Zakharova,,,URS,,,Women
+1996,Shelagh,Hudson,Ratcliffe,,,GBR,,,Women
+1997,Brent,Thales,Berk,,,USA,,,Men
+1998,Karen,Lynne,Moras,,,AUS,,,Women
+1999,Pamela,Jean,Kruse,,,USA,,,Women
+2000,Maria,Teresa,Ramirez,,,MEX,,,Women
+2001,Angela,,Coughlaw,,,CAN,,,Women
+2002,Elisabeth,,Ljunggren-Morris,,,SWE,,,Women
+2003,Reinhard,,Merkel,,,FRG,,,Men
+2004,Andrey,,Dunayev,,,URS,,,Men
+2005,Rafael,Hernandez,Rojas,,,MEX,,,Men
+2006,Kathleen,Tui,Shipston,,,NZL,,,Women
+2007,Laura,,Vaca,,,MEX,,,Women
+2008,Mark,"Spitz, Kenneth Marshall Walsh, Stephen Karl Rerych, Zachary Zorn, William Roy Johnson, Donald Arthur Schollander, David Charles Johnson, Michael Allen",Wall,,,USA,,,Men
+2009,Semyon,"Belits-Geiman, Leonid Ilyichev, Sergei Gusev, Viktor",Mazanov,,,SUN,,,Men
+2010,Robert,"Cusack, Robert George Windle, Gregory Rogers, Michael Vincent",Wenden,,,AUS,,,Men
+2011,Robert,"Bilsland Mcgregor, David",Hembrow,,,GBR,,,Men
+2012,Frank,"Wiegand, Horst-Günther Gregor, Lothar Gericke, Udo",Poser,,,GER,,,Men
+2013,Hans,"Fassnacht, Olaf Von Schilling, Peter Schornig, Wolfgang",Kremer,,,GER,,,Men
+2014,George,"Smith, John Alexander Gilchrist, Ralph Hutton, Glenn",Finch,,,CAN,,,Men
+2015,Teruhiko,"Kitani, Masayuki Osawa, Satoru Nakano, Kunihiro",Iwasaki,,,JPN,,,Men
+2016,Linda,"Lee Gustavson, Jane Margo Henne, Jane Louise Barkman, Susan Jane",Pedersen,,,USA,,,Women
+2017,Roswitha,"Krause, Martina Grunert, Gabriele Wetzko, Uta Schmuck, Gabriele",Perthes,,,GER,,,Women
+2018,Angela,"Coughlaw, Marion Beverly Lay, Elaine",Tanner,,,CAN,,,Women
+2019,Janet,"Steinbeck, Julie Mcdonald, Lynette Bell, Susan Eddy, Lynette",Watson,,,AUS,,,Women
+2020,Magdolna,"Patoh, Edit Kovacs, Andrea",Gyarmati,,,HUN,,,Women
+2021,Yoshimi,"Nishigawa, Shigeko Kawanishi, Miwako Kobayashi, Yasuko Fujii, Yumiko",Ono,,,JPN,,,Women
+2022,Shelagh,"Hudson Ratcliffe, Alexandra Elizabeth Jackson, Fiona J. Kellock, Susan Elizabeth",Williams,,,GBR,,,Women
+2023,Marie,"Josephe Kersaudy, Daniele Dorleans, Simone Hanner, Claude",Mandonnaud,,,FRA,,,Women
+2024,Douglas,"Albert Russell, Charlie Hickcox, Kenneth Marshall Walsh, Donald Arthur Schollander, Carl Joseph Iii Robie, Donald Ward Jr. Mckenzie, Ronald P. Mills, Chester Andrew",Jastremski,,,USA,,,Men
+2025,Roland,"Matthes, Frank Wiegand, Egon Henninger, Horst-Günther",Gregor,,,GER,,,Men
+2026,Vladimir,"Kosinsky, Viktor Mazanov, Vladimir Nemshilov, Yuri Suzdaltsev, Sergei Gusev, Nikolai Pankin, Leonid",Ilyichev,,,SUN,,,Men
+2027,Robert,"Cusack, Karl Byrom, Lawrence Ian O'Brien, Michael Vincent",Wenden,,,AUS,,,Men
+2028,Kishio,"Tanaka, Satoshi Maruya, Kunihiro Iwasaki, Nobutaka",Taguchi,,,JPN,,,Men
+2029,Wolfgang,"Kremer, Gregor Betz, Reinhard Blechert, Lutz",Stocklasa,,,GER,,,Men
+2030,William,"Mahony, James Shaw, John Alexander Gilchrist, Toomas",Arusoo,,,CAN,,,Men
+2031,Santiago,"Esteva Escoda, Jose Duran, Arturo Lang-Lenton Leon, Jose Antonio Chicoy",Massa,,,ESP,,,Men
+2032,Susan,"Jane Pedersen, Eleanor Suzanne Daniel, Jane Ellen Swagerty, Susanne Jean Jones, Catherine Ball, Jane Margo Henne, Kaye Marie Hall, Susanne Marie",Shields,,,USA,,,Women
+2033,Lynette,"Watson, Janet Steinbeck, Judith Playfair, Lynette Bell, Lynette",Mcclements,,,AUS,,,Women
+2034,Heike,"Hustede-Nagel, Angelika Kraus, Heidemarie Reineck, Uta",Frommater,,,GER,,,Women
+2035,Alla,"Grebennikova, Larisa",Zakharova,,,SUN,,,Women
+2036,Helga,"Lindner, Martina Grunert, Uta Schmuck, Eva",Wittke,,,GER,,,Women
+2037,Alexandra,"Elizabeth Jackson, Margaret M. Auton, Wendy Burrell, Dorothy Elizabeth",Harrison,,,GBR,,,Women
+2038,Jacobje,"(Cobie) J. Buter, Petronella (Nelly) Bos, Aagje Ada Kok, Clena Geertje",Bimolt,,,NLD,,,Women
+2039,Maria,"Balla-Lantos, Andrea Gyarmati, Edit",Kovacs,,,HUN,,,Women
+2040,Andrew,"Edward Strenk, Michael Allen Wall, Mark Spitz, David Charles Johnson, Donald Arthur Schollander, Stephen Karl Rerych, John Mauer Nelson, William Roy",Johnson,,,USA,,,Men
+2041,Gregory,"Rogers, Robert George Windle, Michael Vincent Wenden, Graham Rose",White,,,AUS,,,Men
+2042,Semyon,"Belits-Geiman, Vladimir Bure, Leonid",Ilyichev,,,SUN,,,Men
+2043,Ralph,"Hutton, George Smith, John Alexander Gilchrist, Ronald Brian",Jacks,,,CAN,,,Men
+2044,Gerard,"Letast, Michel Rousseau, Alain Mosconi, Francis",Luyce,,,FRA,,,Men
+2045,Wolfgang,"Kremer, Hans Fassnacht, Volkert Meeuw, Olaf Von",Schilling,,,GER,,,Men
+2046,Horst-Günther,"Gregor, Alfred Müller, Frank Wiegand, Jochen",Herbst,,,GER,,,Men
+2047,Lester,"Eriksson, Gunnar Larsson, Hans Ljungberg, Sven",Ferm,,,SWE,,,Men
+2048,Patricia,,Caretto,,,USA,,,Women
+2049,Denise,,Langford,,,AUS,,,Women
+2050,Cathy,,Ferguson,,,USA,,,Women
+2051,Christine,(Kiki),Caron,,,FRA,,,Women
+2052,Virginia,Ruth,Duenkel,,,USA,,,Women
+2053,Satoko,,Tanaka,,,JPN,,,Women
+2054,Nina,Adams,Harmer,,,USA,,,Women
+2055,Linda,Kay,Ludgrove,,,GBR,,,Women
+2056,Eileen,,Weir,,,CAN,,,Women
+2057,Jill,Rosemary,Norfolk,,,GBR,,,Women
+2058,Sharon,Marie,Stouder,,,USA,,,Women
+2059,Kathy,,Ellis,,,USA,,,Women
+2060,Eila,Marjatta,Pyrhonen,,,FIN,,,Women
+2061,Donna,Elizabeth De,Varona,,,USA,,,Women
+1932,Heike,,Hustede-Nagel,,,GER,,,Women
+2062,Eiko,,Takahashi,,,JPN,,,Women
+2063,Mary,Pauline,Stewart,,,CAN,,,Women
+2064,Hans-Joachim,,Klein,,,GER,,,Men
+2065,Gary,Steven,Ilman,,,USA,,,Men
+2066,Alain,,Gottvalles,,,FRA,,,Men
+2067,Michael,Mackay,Austin,,,USA,,,Men
+2068,Gyula,,Dobai,,,HUN,,,Men
+2069,Uwe,,Jacobsen,,,GER,,,Men
+2070,Dawn,,Fraser,,,AUS,,,Women
+2071,Erica,Georgine,Terpstra,,,NED,,,Women
+2072,Csilla,,Madarasz-Bajnogel-Dobai,,,HUN,,,Women
+2073,Ann-Christine,,Hagberg,,,SWE,,,Women
+2074,Allan,,Wood,,,AUS,,,Men
+2075,William,Winfield,Farley,,,USA,,,Men
+2076,Russell,,Phegan,,,AUS,,,Men
+2077,Sueaki,,Sasaki,,,JPN,,,Men
+2078,Roy,Allen,Saari,,,USA,,,Men
+2079,Jozsef,,Katona,,,HUN,,,Men
+2080,Jedward,Richard,Graef,,,USA,,,Men
+2081,Gary,J.,Dilley,,,USA,,,Men
+2082,Robert,Earl,Bennett,,,USA,,,Men
+2083,Shigeo,,Fukushima,,,JPN,,,Men
+2084,Ernst,Joachim,Küppers,,,GER,,,Men
+2085,Viktor,,Mazanov,,,URS,,,Men
+2086,Peter,Askin,Reynolds,,,AUS,,,Men
+2087,Georgi,,Prokopenko,,,URS,,,Men
+2088,Chester,Andrew,Jastremski,,,USA,,,Men
+2089,Aleksandr,,Tutakaev,,,URS,,,Men
+1914,Egon,,Henninger,,,GER,,,Men
+2090,Wayne,Robert,Anderson,,,USA,,,Men
+2091,Stella,Marian M.,Mitchell,,,GBR,,,Women
+2092,Jill,,Slattery,,,GBR,,,Women
+2093,Bärbel,,Grimmer,,,GER,,,Women
+2094,Clena,Geertje,Bimolt,,,NED,,,Women
+2095,Ursula,,Küper,,,GER,,,Women
+2096,Kevin,John,Berry,,,AUS,,,Men
+2097,Frederick,Weber,Schmidt,,,USA,,,Men
+2098,Philip,Iii,Riker,,,USA,,,Men
+2099,Yoshinori,,Kadonaga,,,JPN,,,Men
+2100,Brett,Cecil Graeme,Hill,,,AUS,,,Men
+2101,Daniel,John,Sherry,,,CAN,,,Men
+2102,Frank,,Wiegand,,,GER,,,Men
+2103,Tsuyoshi,,Yamanaka,,,JPN,,,Men
+2104,Marilyn,,Ramenofsky,,,USA,,,Women
+2105,Therese,Lee,Stickles,,,USA,,,Women
+2106,Jane,Marion,Hughes-Rogers,,,CAN,,,Women
+2107,Elizabeth,Carole,Long,,,GBR,,,Women
+2108,Kim,,Herford,,,AUS,,,Women
+2109,Ann-Charlotte,,Lilja,,,SWE,,,Women
+2110,Richard,William,Roth,,,USA,,,Men
+2111,Gerhard,,Hetz,,,GER,,,Men
+2112,Johannes,(Jan),Jiskoot,,,NED,,,Men
+2113,Gyorgy,,Kosztolanczi,,,HUN,,,Men
+2114,Terry,,Buck,,,AUS,,,Men
+2115,Sharon,Evans,Finneran,,,USA,,,Women
+2116,Martha,Irene,Randall,,,USA,,,Women
+2117,Veronika,,Holletz,,,GER,,,Women
+2118,Linda,Carol,Mcgill,,,AUS,,,Women
+2119,Elisabeth,Anna,Heukels,,,NED,,,Women
+2120,Anita,,Lonsbrough,,,GBR,,,Women
+2121,Marta,,Egervary,,,HUN,,,Women
+2122,Michael,"Mackay Austin, Gary Steven Ilman, Lawrence Alan Schulhof, Stephen Edward Clark, Donald Arthur",Schollander,,,USA,,,Men
+2123,Horst,"Löffler, Uwe Jacobsen, Frank Wiegand, Hans-Joachim",Klein,,,GER,,,Men
+2124,Peter,"John Doak, John Ryan, David Gavin Dickson, Robert George",Windle,,,AUS,,,Men
+2125,Katsuki,"Ishihara, Tatsuo Fujimoto, Kunihiro Iwasaki, Yukiaki Okabe, Tadaharu",Goto,,,JPN,,,Men
+2126,Per-Ola,"Lindberg, Bengt Nordwall, Ingvar Eriksson, Jan",Lundin,,,SWE,,,Men
+2127,Viktor,"Mazanov, Yuri Sumtsov, Vladimir Berezin, Viktor Semchenkov, Vladimir",Shuvalov,,,SUN,,,Men
+2128,Peter,"Kendrew, Robert Bilsland Mcgregor, Robert Thomas Lord, John",Martin-Dye,,,GBR,,,Men
+2129,Alain,"Gottvalles, Jean Pasqual Curtillet, Pierre Canavese, Gerard Gropaiz, Robert",Christophe,,,FRA,,,Men
+2130,Patience,"Halsey Sherman, Donna Elizabeth De Varona, Erica Eloise Bricker, Jeanne Courtney Hallock, Lynn Marie Allsup, Lillian Debra Watson, Kathy Ellis, Sharon Marie",Stouder,,,USA,,,Women
+2131,Dawn,"Fraser, Robyn Thorn, Lynette Bell, Janice Murphy, Jan",Turner,,,AUS,,,Women
+2132,Paulina,"Van Der Wildt, Wilhelmina Van Weerdenburg, Erica Georgine Terpstra, Catharina Johanna",Beumer,,,NLD,,,Women
+2133,Maria,"Frank, Eva Erdelyi, Katalin Takacs, Csilla",Madarasz-Bajnogel-Dobai,,,HUN,,,Women
+2134,Lotten,"Andersson, Ulla Jafvert, Ann-Charlotte Lilja, Ann-Christine",Hagberg,,,SWE,,,Women
+2135,Rita,"Schumacher, Martina Grunert, Heidi Pechstein, Gertrude (Trudi)",Beierlein,,,GER,,,Women
+2136,Patricia,"E. Thompson, Helen Louise Kennedy, Marion Beverly Lay, Mary Pauline",Stewart,,,CAN,,,Women
+2137,Daniela,"Beneck, Mara Sacchi, Paola Saini, Maria Cristina",Pacifici,,,ITA,,,Women
+2138,William,"Norval Craig, Frederick Weber Schmidt, Stephen Edward Clark, Robert Earl Bennett, Walter Pierce Richardson, Virgil W. Luken, Harold Thompson Mann, Richard Michael",Mcgeagh,,,USA,,,Men
+2139,Horst-Günther,"Gregor, Ernst Joachim Küppers, Hans-Joachim Klein, Egon",Henninger,,,GER,,,Men
+2140,David,"Gavin Dickson, Peter James Tonkin, Peter Askin Reynolds, Lawrence Ian O'Brien, Kevin John",Berry,,,AUS,,,Men
+2141,Valentin,"Kuzmin, Viktor Mazanov, Vladimir Shuvalov, Georgi Prokopenko, Viktor Semchenkov, Aleksandr",Tutakaev,,,SUN,,,Men
+2142,Yukiaki,"Okabe, Kenji Ishikawa, Shigeo Fukushima, Isao",Nakajima,,,JPN,,,Men
+2143,Gyula,"Dobai, Jozsef Csikany, Jozsef Gulrich, Ferenc",Lenkei,,,HUN,,,Men
+2144,Pietro,"Boscaini, Giampiero Fossati, Chiaffredo Rora, Gian Corrado",Gross,,,ITA,,,Men
+2145,Geoffrey,"Richard Thwaites, Neil Nicholson, Robert Bilsland Mcgregor, Brian",Jenkins,,,GBR,,,Men
+2146,Sharon,"Marie Stouder, Cynthia Lee Goyette, Judith Anne Reeder, Cathy Ferguson, Nina Adams Harmer, Susanne Kay Pitt, Lillian Debra Watson, Kathy",Ellis,,,USA,,,Women
+2147,Aartje,"Elisabeth Lasterie, Clena Geertje Bimolt, Aagje Ada Kok, Erica Georgine Terpstra, Kornelia",Winkel,,,NLD,,,Women
+2148,Natalya,"Bystrova, Svetlana Babanina, Natalya Ustinova, Tatyana",Savelyeva,,,SUN,,,Women
+2149,Satoko,"Tanaka, Noriko Yamamoto, Eiko Takahashi, Michiko",Kihara,,,JPN,,,Women
+2150,Jill,"Rosemary Norfolk, Elizabeth Carole Long, Mary Anne Cotterill, Stella Marian M. Mitchell, Linda Kay",Ludgrove,,,GBR,,,Women
+2151,Helen,"Louise Kennedy, Marion Beverly Lay, Mary Pauline Stewart, Eileen",Weir,,,CAN,,,Women
+2152,Bärbel,"Grimmer, Ingrid Schmidt, Heike Hustede-Nagel, Martina",Grunert,,,GER,,,Women
+2153,Csilla,"Madarasz-Bajnogel-Dobai, Maria Balla-Lantos, Marta Egervary, Zsuzsa",Kovacs,,,HUN,,,Women
+2154,William,"Roy Mettler, David Chandler Lyons, Michael Allen Wall, Robert Edward Jr. Townsend, Donald Arthur Schollander, Gary Steven Ilman, Roy Allen Saari, Stephen Edward",Clark,,,USA,,,Men
+2155,Gerhard,"Hetz, Horst-Günther Gregor, Frank Wiegand, Hans-Joachim",Klein,,,GER,,,Men
+2156,Yukiaki,"Okabe, Makoto Fukui, Tsuyoshi Yamanaka, Toshio Shoji, Kunihiro",Iwasaki,,,JPN,,,Men
+2157,Peter,"John Doak, John (Jon) Konrads, Allan Wood, Robert George Windle, David Gavin Dickson, John",Ryan,,,AUS,,,Men
+2158,Hans,"Rosendahl, Lester Eriksson, Mats Svensson, Jan",Lundin,,,SWE,,,Men
+2159,Francis,"Luyce, Alain Gottvalles, Jean Pasqual Curtillet, Pierre",Canavese,,,FRA,,,Men
+2160,Yevgeni,"Novikov, Semyon Belits-Geiman, Vladimir Berezin, Aleksandr",Paramonov,,,SUN,,,Men
+2161,Giovanni,"Orlando, Pietro Boscaini, Sergio De Gregorio, Bruno",Bianchi,,,ITA,,,Men
+2162,David,Egmont,Theile,,,AUS,,,Men
+2163,Frank,Edward Jr.,Mckinney,,,USA,,,Men
+2164,Robert,,Christophe,,,FRA,,,Men
+2165,Leonid,,Barbier,,,URS,,,Men
+2166,Wolfgang,,Wagner,,,GER,,,Men
+2167,John,James,Monckton,,,AUS,,,Men
+2168,Veiko,,Siimar,,,URS,,,Men
+2169,Lynn,Edythe,Burke,,,USA,,,Women
+2170,Natalie,Alwyne,Steward,,,GBR,,,Women
+2171,Laura,,Ranwell,,,RSA,,,Women
+2172,Rose,,Piacentini,,,FRA,,,Women
+2173,Sylvia,Anne,Lewis,,,GBR,,,Women
+2174,Maria,(Ria) Martina Van,Velsen,,,NED,,,Women
+2175,Nadine,,Delache,,,FRA,,,Women
+2176,Carolyn,Jane,Schuler,,,USA,,,Women
+2177,Marianne,Yvonne,Heemskerk,,,NED,,,Women
+2178,Janice,,Andrew,,,AUS,,,Women
+2179,Sheila,,Watt,,,GBR,,,Women
+2180,Aartje,Johanna,Voorbij,,,NED,,,Women
+2181,Zinaida,,Belovetskaya,,,URS,,,Women
+2182,Kristina,,Larsson,,,SWE,,,Women
+2183,Carolyn,Virginia,Wood,,,USA,,,Women
+2184,John,,Devitt,,,AUS,,,Men
+2185,Lance,Melvin,Larson,,,USA,,,Men
+2186,Manuel,Dos Santos,Filho,,,BRA,,,Men
+2187,Richard,Bruce,Hunter,,,USA,,,Men
+2188,Richard,W.,Pound,,,CAN,,,Men
+2189,Aubrey,,Burer,,,RSA,,,Men
+2190,Per-Ola,,Lindberg,,,SWE,,,Men
+2191,Chris,Von,Saltza,,,USA,,,Women
+2192,Cocki,Van Engelsdorp,Gastelaars,,,NED,,,Women
+2193,John,(Jon),Konrads,,,AUS,,,Men
+2194,Murray,,Rose,,,AUS,,,Men
+2195,George,Thomas,Breen,,,USA,,,Men
+2196,Murray,,Mclachlan,,,RSA,,,Men
+2197,Alan,Brounell,Somers,,,USA,,,Men
+2198,Richard,,Campion,,,GBR,,,Men
+2199,William,Danforth,Mulliken,,,USA,,,Men
+2200,Yoshihiko,,Osaki,,,JPN,,,Men
+2201,Wieger,Emile,Mensonides,,,NED,,,Men
+2202,Roberto,,Lazzari,,,ITA,,,Men
+2203,Terence,,Gathercole,,,AUS,,,Men
+2204,Andrzej,,Klopotowski,,,POL,,,Men
+2205,Paul,William,Hait,,,USA,,,Men
+2206,Wiltrud,,Urselmann,,,GER,,,Women
+2207,Barbara,,Göbel,,,GER,,,Women
+2208,Adelaide,Henriette (Ada) Den,Haan,,,NED,,,Women
+2209,Margretta,(Gretta),Kok,,,NED,,,Women
+2210,Anna,Kindel,Warner,,,USA,,,Women
+2211,Patricia,,Kempner,,,USA,,,Women
+2212,Dorrit,Gosmer,Kristensen,,,DEN,,,Women
+2213,Michael,Francis,Troy,,,USA,,,Men
+2214,Neville,,Hayes,,,AUS,,,Men
+2215,John,David,Gillanders,,,USA,,,Men
+2216,Federico,,Dennerlein,,,ITA,,,Men
+2217,Haruo,,Yoshimuta,,,JPN,,,Men
+2218,Kenzo,,Izutsu,,,JPN,,,Men
+2219,Ian,Macintosh,Black,,,GBR,,,Men
+2220,Eugene,Carl,Lenz,,,USA,,,Men
+2221,Makoto,,Fukui,,,JPN,,,Men
+2222,Jane,,Cederqvist,,,SWE,,,Women
+2223,Catharina,(Tineke),Lagerberg,,,NED,,,Women
+2224,Ilsa,,Konrads,,,AUS,,,Women
+2225,Nancy,,Rae,,,GBR,,,Women
+2226,Cornelia,Hendrika,Schimmel,,,NED,,,Women
+2227,Birgitta,,Segerstrom,,,SWE,,,Women
+2228,Shirley,"Anne Stobs, Chris Von Saltza, Susan Elizabeth Doerr, Joan Arlene Spillane, Carolyn Virginia Wood, Mary (Molly) Rae Botkin, Donna Elizabeth De Varona, Sylvia Eliina",Ruuska,,,USA,,,Women
+2229,Alva,"Colquhoun, Dawn Fraser, Sandra Anne Morgan, Ruth Rhonda Everuss, Lorraine Joyce Crapp, Ilsa",Konrads,,,AUS,,,Women
+2230,Gisela,"Weiss, Christel Steffin, Heidi Pechstein, Ursula",Brunner,,,GER,,,Women
+2231,Maria,"Frank, Katalin Boros, Csilla",Madarasz-Bajnogel-Dobai,,,HUN,,,Women
+2232,Judith,"V. Samuel, Christine Robertson Harris, Natalie Alwyne Steward, Beryl O.",Noakes,,,GBR,,,Women
+2233,Inger,"Thorngren, Kristina Larsson, Birgitta Segerstrom, Karin",Larsson,,,SWE,,,Women
+2234,Anna,"Maria Cecchi, Rosanna Contardo, Paola Saini, Daniela Beneck, Maria Cristina",Pacifici,,,ITA,,,Women
+2235,Ulvi,"Voog, Galina Sosnova, Marina Shamal, Irina",Lyakhovskaya,,,SUN,,,Women
+2236,Paul,"William Hait, Robert Earl Bennett, Frank Edward Jr. Mckinney, John David Gillanders, Stephen Edward Clark, Lance Melvin Larson, Felix Geoffrey",Farrell,,,USA,,,Men
+2237,Kevin,"John Berry, Julian Carroll, Geoffrey Shipton, William Burton, Neville Hayes, David Egmont Theile, Terence",Gathercole,,,AUS,,,Men
+2238,Katsuki,"Ishihara, Kazuo Tomita, Yoshihiko Osaki, Kazuo Watanabe, Koichi Hirakida, Keigo",Shimizu,,,JPN,,,Men
+2239,Richard,"W. Pound, Robert Wheaton, Cameron Grout, Stephen",Rabinovitch,,,CAN,,,Men
+2240,Igor,"Luzhkovsky, Leonid Kolesnikov, Leonid",Barbier,,,SUN,,,Men
+2241,Roberto,"Lazzari, Federico Dennerlein, Bruno Bianchi, Giuseppe",Avellano,,,ITA,,,Men
+2242,Ian,"Macintosh Black, Christopher Charles Walkden, Stanley Richard Clarke, Graham",Sykes,,,GBR,,,Men
+2243,Ronald,"(Ron) Kroon, Johannes (Jan) Jiskoot, Wieger Emile Mensonides, Gerrit Jacobus",Korteweg,,,NLD,,,Men
+2244,Joan,"Arlene Spillane, Carolyn Jane Schuler, Anna Kindel Warner, Chris Von Saltza, Lynn Edythe Burke, Patricia Kempner, Carolyn Virginia",Wood,,,USA,,,Women
+2245,Ilsa,"Konrads, Dawn Fraser, Rosemary Lassig, Maryleen Joy Wilson, Janice",Andrew,,,AUS,,,Women
+2246,Bärbel,"Fuhrmann, Ingrid Schmidt, Ursula Brunner, Ursula",Küper,,,GER,,,Women
+2247,Marianne,"Yvonne Heemskerk, Erica Georgine Terpstra, Maria (Ria) Martina Van Velsen, Adelaide Henriette (Ada) Den Haan, Catharina (Tineke)",Lagerberg,,,NLD,,,Women
+2248,Jean,"Oldroyd, Sylvia Anne Lewis, Anita Lonsbrough, Natalie Alwyne Steward, Sheila",Watt,,,GBR,,,Women
+2249,Magdolna,"David, Klara Killerman Bartos, Csilla Madarasz-Bajnogel-Dobai, Marta",Egervary,,,HUN,,,Women
+2250,Yoshiko,"Takamatsu, Yoshiko Sato, Satoko Tanaka, Shizue",Miyabe,,,JPN,,,Women
+2251,Marina,"Shamal, Lyudmila Korobova, Zinaida Belovetskaya, Valentina Poznyak, Larisa",Viktorova,,,SUN,,,Women
+2252,Stephen,"Edward Clark, George Prifold Harrison, Felix Geoffrey Farrell, Richard Adolph Blick, Frank Thomas Winters, William Thomas Darnton, Michael Francis",Troy,,,USA,,,Men
+-1,,,,,,JPN,,,Men
+2253,David,"Gavin Dickson, Allan Wood, Murray Rose, John (Jon) Konrads, John Rigby, John",Devitt,,,AUS,,,Men
+2254,Ian,"Macintosh Black, John Martin-Dye, Richard Campion, Hamilton Pirie Matt",Milton,,,GBR,,,Men
+2255,Ilkka,"Suvanto, Stig-Olof Grenner, Kari Haavisto, Karri Kalervo",Kayhko,,,FIN,,,Men
+2256,Lars-Erik,"Bengtsson, Sven-Goran Johansson, Bengt Nordwall, Bengt-Olov Almstedt, Per-Ola",Lindberg,,,SWE,,,Men
+2257,Frank,"Wiegand, Hans-Joachim Klein, Hans Zierold, Gerhard",Hetz,,,GER,,,Men
+2258,Boris,"Nikitin, Vitali Sorokin, Sergei Tovstoplet, Igor",Luzhkovsky,,,SUN,,,Men
+2259,John,,Hayres,,,AUS,,,Men
+2260,Graham,,Sykes,,,GBR,,,Men
+2261,Albert,Marcus Jr.,Wiggins,,,USA,,,Men
+2262,Yoshinobu,,Oyakawa,,,USA,,,Men
+2263,Judith,Brenda,Grinham,,,GBR,,,Women
+2264,Carin,Alice,Cone,,,USA,,,Women
+2265,Margaret,,Edwards,,,GBR,,,Women
+2266,Helga,,Schmidt-Neuber,,,GER,,,Women
+2267,Maureen,Elizabeth,Murphy,,,USA,,,Women
+2268,Julie,,Hoyle,,,GBR,,,Women
+2269,Sara,,Barber-Jenkins,,,CAN,,,Women
+2270,Gerganiya,,Beckitt,,,AUS,,,Women
+2271,Shelley,Isabel,Mann,,,USA,,,Women
+2272,Nancy,Jane,Ramey,,,USA,,,Women
+2273,Mary,Jane,Sears,,,USA,,,Women
+2274,Mária,,Littomeritzky,,,HUN,,,Women
+2275,Beverly,,Bainbridge,,,AUS,,,Women
+2276,Jutta,,Langenau,,,GER,,,Women
+2277,Elizabeth,,Whittall,,,CAN,,,Women
+2278,Jon,Malcolm,Henricks,,,AUS,,,Men
+2279,Gary,,Chapman,,,AUS,,,Men
+2280,Logan,Reid,Patterson,,,USA,,,Men
+2281,Richard,Dennis,Hanley,,,USA,,,Men
+2282,William,Tripp,Woolsey,,,USA,,,Men
+2283,Atsushi,,Tani,,,JPN,,,Men
+2284,Aldo,,Eminente,,,FRA,,,Men
+2285,Lorraine,Joyce,Crapp,,,AUS,,,Women
+2286,Faith,Yvonne,Leech,,,AUS,,,Women
+2287,Joan,Ann,Rosazza,,,USA,,,Women
+2288,Virginia,,Grant,,,CAN,,,Women
+2289,Marrion,,Roe,,,NZL,,,Women
+2290,Natalie,Ann,Myburgh,,,RSA,,,Women
+2291,Murray,,Garretty,,,AUS,,,Men
+2292,William,,Slater,,,CAN,,,Men
+2293,Jean,,Boiteux,,,FRA,,,Men
+2294,Yukiyoshi,,Aoki,,,JPN,,,Men
+2295,Gary,,Winram,,,AUS,,,Men
+2296,Masaru,,Furukawa,,,JPN,,,Men
+2297,Masahiro,,Yoshimura,,,JPN,,,Men
+2298,Kharis,,Yunichev,,,URS,,,Men
+2299,Ihor,,Zaseda,,,URS,,,Men
+2300,Knud,Westrup,Gleie,,,DEN,,,Men
+2301,Manuel,Sanguily,Betancourt,,,CUB,,,Men
+2302,Hugues,,Broussard,,,FRA,,,Men
+2303,Ursula,,Happe-Krey,,,GER,,,Women
+2304,Eva,,Szekely,,,HUN,,,Women
+2305,Eva-Maria,Ten,Elsen,,,GER,,,Women
+2306,Vinka,,Jeričević,,,YUG,,,Women
+2307,Klara,Killerman,Bartos,,,HUN,,,Women
+2308,Helen,Orr,Gordon-Mckay,,,GBR,,,Women
+2309,Christine,Loraine,Gosden,,,GBR,,,Women
+2310,William,Albert Jr.,Yorzyk,,,USA,,,Men
+2311,Takashi,,Ishimoto,,,JPN,,,Men
+2312,György,,Tumpek,,,HUN,,,Men
+2313,Jack,Weyman,Nelson,,,USA,,,Men
+2314,John,Birnie,Marshall,,,AUS,,,Men
+2315,Eulalio,Rios,Aleman,,,MEX,,,Men
+2316,Brian,Harold,Wilkinson,,,AUS,,,Men
+2317,Alexandru,,Popescu,,,ROU,,,Men
+2318,Kevin,,O'Halloran,,,AUS,,,Men
+2319,Hans,,Zierold,,,GER,,,Men
+2320,Koji,,Nonoshita,,,JPN,,,Men
+2321,Angelo,,Romani,,,ITA,,,Men
+2322,Sylvia,Eliina,Ruuska,,,USA,,,Women
+2323,Marley,Lynn,Shriver,,,USA,,,Women
+2324,Rypszima,,Szekely,,,HUN,,,Women
+2325,Sandra,Anne,Morgan,,,AUS,,,Women
+2326,Heda,,Frost,,,FRA,,,Women
+2327,Valeria,,Gyenge,,,HUN,,,Women
+2328,Faith,"Yvonne Leech, Elizabeth Fraser, Lorraine Joyce Crapp, Dawn Fraser, Alva Colquhoun, Sandra Anne",Morgan,,,AUS,,,Women
+2329,Sylvia,"Eliina Ruuska, Joan Ann Rosazza, Shelley Isabel Mann, Nancy Joan Simons, Marley Lynn Shriver, Elizabeth Mullen Brey, Kathryn Elizabeth",Knapp,,,USA,,,Women
+2330,Moira,"Abernethy, Natalie Ann Myburgh, Jeanette Evelyn Myburgh, Susan Elizabeth",Roberts,,,ZAF,,,Women
+2331,Ingrid,"Kunzel, Katharine (Kathi) Jansen, Christel Steffin, Hertha Haase, Birgit",Klomp,,,GER,,,Women
+2332,Elizabeth,"Whittall, Gladys Jean Priesley-Watson, Sara",Barber-Jenkins,,,CAN,,,Women
+2333,Anita,"Andersson, Karin Larsson, Anita Hellstrom, Birgitta Wangberg, Kate",Jobson,,,SWE,,,Women
+2334,Valeria,"Gyenge, Eva Szekely, Judith Temes, Katalin",Szöke,,,HUN,,,Women
+2335,Margaret,"Therese Girvan, Margaret Edwards, Fearne Ewart, Judith Brenda Grinham, Frances",Hogben,,,GBR,,,Women
+2336,Graham,"Hamilton, John Devitt, Kevin O'Halloran, Murray Rose, Jon Malcolm Henricks, John (Jon) Konrads, Gary",Chapman,,,AUS,,,Men
+2337,George,"Prifold Harrison, William Tripp Woolsey, Ford Hiroshi Konno, Richard Tsugio Jr. Tanabe, Richard Dennis Hanley, Perry Timothy Jecko, George Thomas",Breen,,,USA,,,Men
+2338,Lev,"Balandin, Boris Nikitin, Vitali Sorokin, Vladimir Struzhanov, Gennadi",Androsov,,,SUN,,,Men
+2339,Atsushi,"Tani, Koji Nonoshita, Hiroshi Suzuki, Manabu Koga, Tsuyoshi",Yamanaka,,,JPN,,,Men
+2340,Paul,"Voell, Hans Kohler, Horst Bleeker, Hans-Joachim Reich, Hans",Zierold,,,GER,,,Men
+2341,Kenneth,"Williams, Ronald Nathan Roberts, Neil John Mckecknie, Hadyn Rigby, Graham Henry",Symonds,,,GBR,,,Men
+2342,Federico,"Dennerlein, Carlo Pedersoli, Guido Elmi, Angelo Romani, Paolo Galletti, Paolo Pucci, Giorgio",Perondini,,,ITA,,,Men
+2343,Peter,"John Duncan, Dennis George",Ford,,,ZAF,,,Men
+2344,Gilbert,,Bozon,,,FRA,,,Men
+2345,Jack,George Neil,Taylor,,,USA,,,Men
+2346,Allen,Mcintyre,Stack,,,USA,,,Men
+2347,Pedro,,Galvao,,,ARG,,,Men
+2348,Bert,,Wardrop,,,GBR,,,Men
+2349,Boris,,Skanata,,,YUG,,,Men
+2350,Nicolaas,Lingen,Meiring,,,RSA,,,Men
+2351,Joan,Cynthia,Harrison,,,RSA,,,Women
+2352,Geertje,,Wielema,,,NED,,,Women
+2353,Jean,,Stewart,,,NZL,,,Women
+2354,Johanna,Catharina De,Korte,,,NED,,,Women
+2355,Barbara,Lynn,Stark,,,USA,,,Women
+2356,Gertrud,,Herrbruck,,,GER,,,Women
+2357,Margaret,Gibson,Mcdowell,,,GBR,,,Women
+2358,Hendrika,Anna-Maria Van Der,Horst,,,NED,,,Women
+2359,Clark,Currie,Scholes,,,USA,,,Men
+2360,Hiroshi,,Suzuki,,,JPN,,,Men
+2361,Göran,,Larsson,,,SWE,,,Men
+2362,Toru,,Goto,,,JPN,,,Men
+2363,Geza,,Kadas,,,HUN,,,Men
+2364,Rex,,Aubrey,,,AUS,,,Men
+2365,Ronald,Francis,Gora,,,USA,,,Men
+2366,Katalin,,Szöke,,,HUN,,,Women
+2367,Johanna,Maria,Termeulen,,,NED,,,Women
+2368,Judith,,Temes,,,HUN,,,Women
+2369,Joan,,Alderson,,,USA,,,Women
+2370,Irma,,Heijting-Schuhmacher,,,NED,,,Women
+2371,Mary,Louise,Stepan,,,USA,,,Women
+2372,Angela,Mary,Barnwell,,,GBR,,,Women
+2373,Ford,Hiroshi,Konno,,,USA,,,Men
+2374,Shiro,,Hashizume,,,JPN,,,Men
+2375,Tetsuo,,Okamoto,,,BRA,,,Men
+2376,James,Price Jr.,Mclane,,,USA,,,Men
+2377,Joseph,,Bernardo,,,FRA,,,Men
+2378,Yasuo,,Kitamura,,,JPN,,,Men
+2379,Peter,John,Duncan,,,RSA,,,Men
+2380,John,Griffith,Davies,,,AUS,,,Men
+2381,Bowen,Dow,Stassforth,,,USA,,,Men
+2382,Herbert,,Klein,,,GER,,,Men
+2383,Nobuyasu,,Hirayama,,,JPN,,,Men
+2384,Takayoshi,,Kajikawa,,,JPN,,,Men
+2385,Jiro,,Nagasawa,,,JPN,,,Men
+2386,Maurice,,Lusien,,,FRA,,,Men
+2387,Ludevit,,Komadel,,,TCH,,,Men
+2388,Eva,,Novak-Gerard,,,HUN,,,Women
+2389,Jytte,Solveig,Hansen,,,DEN,,,Women
+2390,Mariya,,Havrysh,,,URS,,,Women
+2391,Ulla-Britt,,Eklund,,,SWE,,,Women
+2392,Petronella,Fredrika,Garritsen,,,NED,,,Women
+2393,Per-Olof,,Östrand,,,SWE,,,Men
+2394,Jack,,Wardrop,,,GBR,,,Men
+2395,Wayne,Richard,Moore,,,USA,,,Men
+2396,Hironoshin,,Furuhashi,,,JPN,,,Men
+2397,Evelyn,Tokue,Kawamoto,,,USA,,,Women
+2398,Carolyn,Virginia,Green,,,USA,,,Women
+2399,Ragnild,Tove,Hveger,,,DEN,,,Women
+2400,Ana,Maria,Schultz,,,ARG,,,Women
+2401,Greta,Marie,Andersen,,,DEN,,,Women
+2402,Judith,"Temes, Eva Novak-Gerard, Eva Szekely, Katalin Szöke, Ilona",Novak,,,HUN,,,Women
+2403,Hendrika,"Anna-Maria Van Der Horst, Geertje Wielema, Marie-Louise Jean Linssen-Vaessen, Cornelia (Koosje) Van Voorn, Johanna Maria Termeulen, Irma",Heijting-Schuhmacher,,,NLD,,,Women
+2404,Evelyn,"Tokue Kawamoto, Mary Louise Stepan, Joan Alderson, Judith Theresa",Roberts,,,USA,,,Women
+2405,Ragnild,"Tove Hveger, Rita Larsen, Greta Marie Andersen, Gerda Lilly Olsen, Mette Ove",Petersen,,,DEN,,,Women
+2406,Jean,"Annabel Botham, Phyllis Margaret Linton, Grace Wood, Lillian Preece, Angela Mary Barnwell, Daphne M.",Wilkinson,,,GBR,,,Women
+2407,Ingegärd,"Fredin, Anita Andersson, Marianne Lundquist, Maud Berglund, Ulla-Britt",Eklund,,,SWE,,,Women
+2408,Elisabeth,"Rechlin, Ursula Happe-Krey, Katharine (Kathi) Jansen, Gisela Arendt-Jacobs, Wera",Schäferkordt,,,GER,,,Women
+2409,Gaby,"Tanguy, Marysel Morandini, Ginette Jany-Sendral, Josette Arene, Odile Vouaux, Colette",Thomas,,,FRA,,,Women
+2410,William,"Tripp Woolsey, Wallace Perry Wolf, Burwell Otis Jones, Donald Alexander Sheff, Wayne Richard Moore, James Price Jr. Mclane, Ford Hiroshi Konno, Frank Martin",Dooley,,,USA,,,Men
+2411,Yoshihiro,"Hamaguchi, Hiroshi Suzuki, Teijiro Tanikawa, Toru",Goto,,,JPN,,,Men
+2412,Alexandre,"Jany, Joseph Bernardo, Aldo Eminente, Rene Million, Michel Van Damme, Jean",Boiteux,,,FRA,,,Men
+2413,Per-Olof,"Östrand, Göran Larsson, Rolf Olander, Lars Svantesson, Olle",Johansson,,,SWE,,,Men
+2414,Laszlo,"Gyöngyösi, Geza Kadas, Imre Nyeki, György",Csordas,,,HUN,,,Men
+2415,Peter,"Michael Head, Roland Stuart Burns, Frank Royston Botham, Thomas Douglas",Welsh,,,GBR,,,Men
+2416,Peter,"John Duncan, Dennis George Ford, John Diederik Durr, Graham Murray",Johnston,,,ZAF,,,Men
+2417,Marcelo,"Armando Trabucco, Severo Alfredo Yantorno, Federico Zwanck, Pedro Galvao, Carlos Alberto",Bonacicchi,,,ARG,,,Men
+2418,Robert,Elmer,Cowell,,,USA,,,Men
+2419,Georges,Vallerey,Jr.,,,FRA,,,Men
+2420,Mario,,Chavez,,,ARG,,,Men
+2421,Clemente,Mejia,Avila,,,MEX,,,Men
+2422,Jackie,,Wiid,,,RSA,,,Men
+2423,William,John,Brockway,,,GBR,,,Men
+2424,Albert,David,Kinnear,,,GBR,,,Men
+2425,Karen,Margrethe,Harup,,,DEN,,,Women
+2426,Suzanne,Winona,Zimmerman,,,USA,,,Women
+2427,Judith,Joy,Davies,,,AUS,,,Women
+2428,Ilona,,Novak,,,HUN,,,Women
+2429,Dirkje,Van,Ekris,,,NED,,,Women
+2430,Muriel,Jane,Mellon,,,USA,,,Women
+2431,Greetje,,Gaillard,,,NED,,,Women
+2432,Walter,Stephen,Ris,,,USA,,,Men
+2433,Alan,Robert,Ford,,,USA,,,Men
+2434,Keith,Eyre,Carter,,,USA,,,Men
+2435,Alexandre,,Jany,,,FRA,,,Men
+2436,Per-Olof,,Olsson,,,SWE,,,Men
+2437,Zoltan,,Szilard,,,HUN,,,Men
+2438,Taha,Yussuf El,Gamal,,,EGY,,,Men
+2439,Ann,Elisabeth,Curtis,,,USA,,,Women
+2440,Marie-Louise,Jean,Linssen-Vaessen,,,NED,,,Women
+2441,Ingegärd,,Fredin,,,SWE,,,Women
+2442,Elisabeth,,Ahlgren,,,SWE,,,Women
+2443,Fritze,Wulf,Carstensen,,,DEN,,,Women
+2444,György,,Mitro,,,HUN,,,Men
+2445,György,,Csordas,,,HUN,,,Men
+2446,Marijan,,Stipetić,,,YUG,,,Men
+2447,Forbes,Holten Jr.,Norris,,,USA,,,Men
+2448,Donald,,Bland,,,GBR,,,Men
+2449,William,W.Jr.,Heusner,,,USA,,,Men
+2450,Joseph,Thomas,Verdeur,,,USA,,,Men
+2451,Robert,Raymond,Sohl,,,USA,,,Men
+2452,Antun,(Tone),Cerer,,,YUG,,,Men
+2453,Willy,Otto,Jordan,,,BRA,,,Men
+2454,Ahmed,,Kandil,,,EGY,,,Men
+2455,Bob,Herbert,Bonte,,,NED,,,Men
+2456,Petronella,(Nel) Van,Vliet,,,NED,,,Women
+2457,Beatrice,Nancy,Lyons,,,AUS,,,Women
+2458,Adriana,Elisabeth De,Groot,,,NED,,,Women
+2459,Elizabeth,Mabel,Church,,,GBR,,,Women
+2460,Antonia,Johanna,Hom,,,NED,,,Women
+2461,William,M. Jr.,Smith,,,USA,,,Men
+2462,Jack,Irwin,Hale,,,GBR,,,Men
+2463,Severo,Alfredo,Yantorno,,,ARG,,,Men
+2464,Catherine,,Gibson,,,GBR,,,Women
+2465,Fernande,,Caroen,,,BEL,,,Women
+2466,Brenda,Merserau,Helser,,,USA,,,Women
+2467,Piedade,De Azevedo,Coutinho,,,BRA,,,Women
+2468,Nancy,Merki,Lees,,,USA,,,Women
+2469,Thelma,"H. Kalama, Ann Elisabeth Curtis, Brenda Merserau Helser, Marie Louise",Corridon,,,USA,,,Women
+2470,Greta,"Marie Andersen, Fritze Wulf Carstensen, Eva Johanne Riise, Karen Margrethe Harup, Elvi Johanne",Svendsen,,,DEN,,,Women
+2471,Margot,"Marsman, Johanna Maria Termeulen, Irma Heijting-Schuhmacher, Marie-Louise Jean",Linssen-Vaessen,,,NLD,,,Women
+2472,Margaret,"Olive Wellington, Patricia Eleanor Nielsen, Lillian Preece, Margaret Therese Girvan, Catherine Gibson, Phyllis Margaret",Linton,,,GBR,,,Women
+2473,Zsuzsa,"Nador, Eva Szekely, Eva Novak-Gerard, Ilona Novak, Judith",Temes,,,HUN,,,Women
+2474,Maria,"Angelica Leao Da Costa, Edith Nogueira Da Gama Groba, Talita De Alencar Rodrigues, Piedade De Azevedo",Coutinho,,,BRA,,,Women
+2475,Gisele,"Vallerey, Josette Arene, Ginette Jany-Sendral, Colette",Thomas,,,FRA,,,Women
+2476,Gisela,"Thidholm, Ingegärd Fredin, Elisabeth Ahlgren, Marianne",Lundquist,,,SWE,,,Women
+2477,Walter,"Stephen Ris, Wallace Perry Wolf, William M. Jr. Smith, Edwin Fisher Gilbert, William Henry Iii Dudley, Eugene Roy Rogers, James Price Jr.",Mclane,,,USA,,,Men
+2478,Elemer,"Szatmari, Geza Kadas, Zoltan Szilard, Imre Nyeki, György",Mitro,,,HUN,,,Men
+2479,Rene,"Cornu, Fernand Martinaux, Alexandre Jany, Georges Vallerey Jr., Joseph Bernardo, Henri Padou",Jr.,,,FRA,,,Men
+2480,Per-Olof,"Östrand, Martin Lunden, Hans Hellbrand, Per-Olof Olsson, Olle",Johansson,,,SWE,,,Men
+2481,Branko,"Vidovic, Boris",Skanata,,,YUG,,,Men
+2482,Juan,"Garay, Jose Duranona, Severo Alfredo",Yantorno,,,ARG,,,Men
+2483,Alberto,"Isaac Ahumada, Ramon Bravo Prieta, Cesar Pineda Borja, Apolonio Castillo Diaz, Clemente Mejia Avila, Angel Maldonado",Campos,,,MEX,,,Men
+2484,Paulo,"Enrique Da Silva, Rolf Egon Kestener, Willy Otto Jordan, Aram Boghossian, Plauto De Barros Guimaraes, Sergio Geraldo De Alencar",Rodrigues,,,BRA,,,Men
+2485,Adolph,Gustav,Kiefer,,,USA,,,Men
+2486,Al,Vande,Weghe,,,USA,,,Men
+2487,Masaji,,Kiyokawa,,,JPN,,,Men
+2488,Taylor,,Drysdale,,,USA,,,Men
+2489,Kiichi,,Yoshida,,,JPN,,,Men
+2490,Yasuhiko,,Kojima,,,JPN,,,Men
+2491,Percival,Cole,Oliver,,,AUS,,,Men
+2492,Kurt,,Patuzzi,,,AUT,,,Men
+2493,Dina,Willemina Jacoba,Senff,,,NED,,,Women
+2494,Hendrika,,Mastenbroek,,,NED,,,Women
+2495,Alice,W.,Bridges,,,USA,,,Women
+2496,Edith,,Motridge,,,USA,,,Women
+2497,Tove,Brunnstrom,Madsen,,,DEN,,,Women
+2498,Lorna,,Frampton,,,GBR,,,Women
+2499,Phyllis,,Harding,,,GBR,,,Women
+2500,Irene,,Pirie-Milton,,,CAN,,,Women
+2501,Ferenc,,Csik,,,HUN,,,Men
+2502,Masanori,,Yusa,,,JPN,,,Men
+2503,Shigeo,,Arai,,,JPN,,,Men
+2504,Masaharu,,Taguchi,,,JPN,,,Men
+2505,Helmuth,,Fischer,,,GER,,,Men
+2506,Peter,Joseph,Fick,,,USA,,,Men
+2507,Arthur,,Lindegren,,,USA,,,Men
+2508,Jan,,Guillini,,,BEL,,,Men
+2509,Jeanette,Morven,Campbell,,,ARG,,,Women
+2510,Gisela,,Arendt-Jacobs,,,GER,,,Women
+2511,Willemyntje,(Willy) Den,Ouden,,,NED,,,Women
+2512,Catharina,(Tini) Willemina,Wagner,,,NED,,,Women
+2513,Mary,Olive,Mckean,,,USA,,,Women
+2514,Katherine,Louise,Rawls,,,USA,,,Women
+2515,Jeanne,De,Rademaecker-Eyckmans,,,BEL,,,Women
+2516,Noboru,,Terada,,,JPN,,,Men
+2517,Jack,C.,Medica,,,USA,,,Men
+2518,Shunpei,,Uto,,,JPN,,,Men
+2519,Sunao,,Ishiharada,,,JPN,,,Men
+2520,Ralph,Drew,Flanagan,,,USA,,,Men
+2521,Robert,Hanford Joachim,Leivers,,,GBR,,,Men
+2522,Heinz,,Arendt,,,GER,,,Men
+2523,Tetsuo,,Hamuro,,,JPN,,,Men
+2524,Erwin,,Sietas,,,GER,,,Men
+2525,Reizo,,Koike,,,JPN,,,Men
+2526,John,Herbert,Higgins,,,USA,,,Men
+2527,Saburo,,Ito,,,JPN,,,Men
+2528,Joachim,(Jochen),Balke,,,GER,,,Men
+2529,Teofilo,,Yldefonso,,,PHI,,,Men
+2530,Leonard,,Spence,,,BER,,,Men
+2531,Hideko,,Maehata,,,JPN,,,Women
+2532,Martha,,Genenger,,,GER,,,Women
+2533,Inge,,Sörensen,,,DEN,,,Women
+2534,Hanni,,Hölzner,,,GER,,,Women
+2535,Johanna,Maria Elizabeth,Waalberg,,,NED,,,Women
+2536,Doris,,Storey,,,GBR,,,Women
+2537,Jeanette,Hermine,Kastein,,,NED,,,Women
+2538,Elfriede,,Freudenreich,,,AUT,,,Women
+2539,Shozo,,Makino,,,JPN,,,Men
+2540,Hiroshi,,Negami,,,JPN,,,Men
+2541,Jean,,Taris,,,FRA,,,Men
+2542,Günther,,Zobernig,,,AUT,,,Men
+2543,Lenore,,Kight-Wingard,,,USA,,,Women
+2544,Mary,Lou,Petty,,,USA,,,Women
+2545,Kazue,,Kojima,,,JPN,,,Women
+2546,Grethe,Ortved,Frederiksen,,,DEN,,,Women
+2547,Johanna,"Katarina Selbach, Willemyntje (Willy) Den Ouden, Catharina (Tini) Willemina Wagner, Hendrika Mastenbroek, Anna Petronella",Timmermans,,,NLD,,,Women
+2548,Maria,"Magdalene Lohmar -Henze, Ursula Pollack, Ruth Halbsguth, Gisela Arendt-Jacobs, Ingeborg",Schmitz,,,GER,,,Women
+2549,Mary,"Olive Mckean, Elizabeth Ryan, Dorothy June Schiller, Bernice Ruth Lapp, Mavis Anne Freeman, Katherine Louise",Rawls,,,USA,,,Women
+2550,Phyllis,"Dewar, Margaret Anne Stone, Mary Christine Mcconkey, Moel Gertrude Oxenbury-Morrow, Irene",Pirie-Milton,,,CAN,,,Women
+2551,Agnes,"Biro, Boriska Sothy, Ilona Acs, Vera Harsanyi, Magda",Lenkei,,,HUN,,,Women
+2552,Zilpha,"Grant, Audrey Morris Mavis Hancock, Margery Hinton, Edna Tildesley Hughes, Olive L. Wadham, Margaret K.",Jeffrey,,,GBR,,,Women
+2553,Grethe,"Ortved Frederiksen, Eva Johanne Riise, Ragnild Tove Hveger, Tove Brunnstrom Madsen, Elvi Johanne",Svendsen,,,DEN,,,Women
+2554,Shigeo,"Arai, Shigeo Sugiura, Masanori Yusa, Masaharu",Taguchi,,,JPN,,,Men
+2555,John,"Joseph Macionis, Ralph Gilman, Charles George Jr. Hutter, Jack C. Medica, Ralph Drew",Flanagan,,,USA,,,Men
+2556,Istvan,"Angyel, Ödön Grof, Oszkar Abay-Nemes, Arpad Lengyel, Ferenc",Csik,,,HUN,,,Men
+2557,Christian,"Talli, Jean Taris, Alfred Nakache, Rene Cavalero, Marco Diener, Claude",Desusclade,,,FRA,,,Men
+2558,Helmuth,"Fischer, Werner Plath, Wolfgang Heimlich, Heiko Schwartz, Hermann",Heibel,,,GER,,,Men
+2559,Robert,"Hanford Joachim Leivers, Mostyn Yanto Ffrench-Williams, Norman Wainwright, William Pearson, George Frederick",Dove,,,GBR,,,Men
+2560,Frederick,"Munroe Bourne, George Larson, Robert Percy Hooper, Robert Charles",Pirie,,,CAN,,,Men
+2561,Ake,"Julin, Björn Borg, Gunnar Werner, Sten-Olof",Bollden,,,SWE,,,Men
+2562,Toshio,,Iriye,,,JPN,,,Men
+2563,Kentaro,,Kawatsu,,,JPN,,,Men
+2564,Robert,Daniel,Zehr,,,USA,,,Men
+2565,Ernst,,Kuppers,,,GER,,,Men
+2566,Robert,William,Kerber,,,USA,,,Men
+2567,Marcel,,Noual,,,FRA,,,Men
+2568,Roberto,Guillermo,Peper,,,ARG,,,Men
+2569,Eleanor,,Holm,,,USA,,,Women
+2570,Bonnie,,Mealing,,,AUS,,,Women
+2571,Elizabeth,Valerie,Davies,,,GBR,,,Women
+2572,Joan,,Mcsheehy,,,USA,,,Women
+2573,Margaret,Joyce,Cooper,,,GBR,,,Women
+2574,Maria,Emma,Lenk-Zigler,,,BRA,,,Women
+2575,Yasuji,,Mioyazaki,,,JPN,,,Men
+2576,Tatsugo,,Kawaishi,,,JPN,,,Men
+2577,Albert,,Schwartz,,,USA,,,Men
+2578,Manuella,,Kalili,,,USA,,,Men
+2579,Zenjiro,,Takahashi,,,JPN,,,Men
+2580,Raymond,Webb Jr.,Thompson,,,USA,,,Men
+2581,Alberto,,Zorrilla,,,ARG,,,Men
+2582,Antônio,Luiz Dos,Santos,,,BRA,,,Men
+2583,Helene,,Madison,,,USA,,,Women
+2584,Eleanor,,Saville,,,USA,,,Women
+2585,Josephine,,Mckim,,,USA,,,Women
+2586,Neville,Frances,Bult,,,AUS,,,Women
+2587,Jenny,,Maakal,,,RSA,,,Women
+2588,Kusuo,,Kitamura,,,JPN,,,Men
+2589,James,Crapo Jr.,Cristy,,,USA,,,Men
+2590,Noel,Philip,Ryan,,,AUS,,,Men
+2591,Buster,,Crabbe,,,USA,,,Men
+2592,Yoshiyuki,,Tsuruta,,,JPN,,,Men
+2593,Jikirum,,Adjaluddin,,,PHI,,,Men
+2594,Shigeo,,Nakagawa,,,JPN,,,Men
+2595,Clare,,Dennis,,,AUS,,,Women
+2596,Else,Agnes Ella,Jacobsen,,,DEN,,,Women
+2597,Margery,,Hinton,,,GBR,,,Women
+2598,Margaret,,Hoffman,,,USA,,,Women
+2599,Anne,B.,Govednik,,,USA,,,Women
+2600,Jane,,Cadwell,,,USA,,,Women
+2601,Tsutomi,,Oyokota,,,JPN,,,Men
+2602,Takashi,,Yokoyama,,,JPN,,,Men
+2603,Noboru,,Sugimoto,,,JPN,,,Men
+2604,Andrew,Murray,Charlton,,,AUS,,,Men
+2605,Carlos,Ramon,Kennedy,,,ARG,,,Men
+2606,Yvonne,,Godard,,,FRA,,,Women
+2607,Norene,,Forbes,,,USA,,,Women
+2608,Eleanor,"Saville, Helene Madison, Helen Eileen Johns, Josephine",Mckim,,,USA,,,Women
+2609,Maria,"Vierdag, Willemyntje (Willy) Den Ouden, Maria Petronella Oversloot, Cornelia",Ladde,,,NLD,,,Women
+2610,Elizabeth,"Valerie Davies, Edna Tildesley Hughes, Helen Gradwell Varcoe, Margaret Joyce",Cooper,,,GBR,,,Women
+2611,Irene,"Pirie-Milton, Ruth",Kerr,,,CAN,,,Women
+2612,Misao,"Yokota, Yukie Arata, Kazue Kojima, Hatsuko",Morioka,,,JPN,,,Women
+2613,Yasuji,"Mioyazaki, Hisakichi Toyoda, Takashi Yokoyama, Masanori",Yusa,,,JPN,,,Men
+2614,Francis,"Ewen Booth, George Fissler, Manuella Kalili, Maiola",Kalili,,,USA,,,Men
+2615,Istvan,"Barany, Andras Wanie, László Szabados, Andras",Szekely,,,HUN,,,Men
+2616,George,"Larson, George Burrows, Frederick Munroe Bourne, Walter",Spence,,,CAN,,,Men
+2617,Reginald,"James Cushing Sutton, Robert Hanford Joachim Leivers, Joseph Whiteside, Mostyn Yanto",Ffrench-Williams,,,GBR,,,Men
+2618,Alfredo,"S. Rocca, Roberto Guillermo Peper, Carlos Ramon Kennedy, Leopoldo",Tahier,,,ARG,,,Men
+2619,Manoel,"Rocha Villar, Isaac Dos Santos Morais, Benevenuto Martins",Nunes,,,BRA,,,Men
+2620,George,Harold,Kojac,,,USA,,,Men
+2621,Walter,,Laufer,,,USA,,,Men
+2622,Paul,,Wyatt,,,USA,,,Men
+2623,John,Charles Preston,Besford,,,GBR,,,Men
+2624,Sante,,Omero,,,ITA,,,Men
+2625,Émile,,Thienpondt,,,BEL,,,Men
+2626,Maria,Johanna,Philipsen-Braun,,,NED,,,Women
+2627,Ellen,Elizabeth,King,,,GBR,,,Women
+2628,Marion,Ulmer,Gilman,,,USA,,,Women
+2629,Lisa,A.,Lindstrom,,,USA,,,Women
+2630,Ena,,Stockley,,,NZL,,,Women
+2631,Willy,Den,Turk,,,NED,,,Women
+2632,Johnny,,Weissmuller,,,USA,,,Men
+2633,Istvan,,Barany,,,HUN,,,Men
+2634,Katsuo,,Takaishi,,,JPN,,,Men
+2635,Walter,,Spence,,,CAN,,,Men
+2636,Henri,,Stoelen,,,BEL,,,Men
+2637,Albina,Lucy,Osipowich,,,USA,,,Women
+2638,Jean,H.,Mcdowall,,,GBR,,,Women
+2639,Susanne,E.,Laird,,,USA,,,Women
+2640,Lotte,,Lehmann,,,GER,,,Women
+2641,Sarolta,,Stieber,,,HUN,,,Women
+2642,Dora,,Schönemann,,,GER,,,Women
+2643,Arne,,Borg,,,SWE,,,Men
+2644,Raymond,Maurice,Ruddy,,,USA,,,Men
+2645,Garnet,Walter,Ault,,,CAN,,,Men
+2646,Takaji,,Takebayashi,,,JPN,,,Men
+2647,D.,D.,Mulji,,,IND,,,Men
+2648,Erich,,Rademacher,,,GER,,,Men
+2649,Eric,,Harling,,,SWE,,,Men
+2650,Joseph,De,Combe,,,BEL,,,Men
+2651,Edwin,,Friedberger,,,AUT,,,Men
+2652,Hilde,,Schrader,,,GER,,,Women
+2653,Mietje,,Baron,,,NED,,,Women
+2654,Charlotte,,Mühe,,,GER,,,Women
+2655,Brita,,Hazelius,,,SWE,,,Women
+2656,Fitzówna,,Fitzówna,,,POL,,,Women
+2657,Austin,Rhone,Clapp,,,USA,,,Men
+2658,Paul,,Radmilovic,,,GBR,,,Men
+2659,Martha,,Norelius,,,USA,,,Women
+2660,Sarah,Gillow Marshal,Stewart,,,GBR,,,Women
+2661,Freddie,Van Der,Goes,,,RSA,,,Women
+2662,Vera,,Tanner,,,GBR,,,Women
+2663,Marguerite,,Dockrell,,,IRL,,,Women
+2664,Halina,,Iżycka,,,POL,,,Women
+2665,Eleanor,"Saville, Albina Lucy Osipowich, Martha Norelius, Josephine Mckim, Adelaide T. Lambert, Susanne E.",Laird,,,USA,,,Women
+2666,Ellen,"Elizabeth King, Sarah Gillow Marshal Stewart, Margaret Joyce Cooper, Vera",Tanner,,,GBR,,,Women
+2667,Rhoda,,Rennie,,,ZAF,,,Women
+2668,Irmintraut,,Schneider,,,GER,,,Women
+2669,Anne,"A. Dupire, Marguerite M. Ledoux, Claire M.",Horrent,,,FRA,,,Women
+2670,Maria,"Johanna Philipsen-Braun, Maria",Vierdag,,,NLD,,,Women
+2671,Walter,"Laufer, George Harold Kojac, Paul Curkeet Samson, Austin Rhone Clapp, Johnny Weissmuller, David Turquand",Young,,,USA,,,Men
+2672,Katsuo,"Takaishi, Hiroshi Yoneyama, Nobuo Arai, Kazuo",Noda,,,JPN,,,Men
+2673,Walter,"Spence, Frederick Munroe Bourne, Garnet Walter",Ault,,,CAN,,,Men
+2674,Istvan,"Barany, Andras Wanie, Geza Szigritz, Rezsö",Wanié,,,HUN,,,Men
+2675,Arne,"Borg, Ake Borg, Aulo Gustafsson, Eskil",Lundahl,,,SWE,,,Men
+2676,Joseph,"Whiteside, Reginald James Cushing Sutton, Albert Edward Dickin, Edward Percival",Peter,,,GBR,,,Men
+-1,,,,,,ESP,,,Men
+2677,Herbert,,Heinrich,,,GER,,,Men
+2678,Warren,Paoa,Kealoha,,,USA,,,Men
+2679,Károly,,Bartha,,,HUN,,,Men
+2680,Gerard,,Blitz,,,BEL,,,Men
+2681,Austin,,Rawlinson,,,GBR,,,Men
+2682,Henry,,Luning,,,USA,,,Men
+2683,Juan,,Behrensen,,,ARG,,,Men
+2684,Aladár,,Bitskey,,,HUN,,,Men
+2685,Sybil,,Bauer,,,USA,,,Women
+2686,Aileen,,Riggin,,,USA,,,Women
+2687,Florence,,Chambers,,,USA,,,Women
+2688,Jarmila,,Müllerova,,,TCH,,,Women
+2689,Rigmor,,Olsen,,,DEN,,,Women
+2690,Duke,Paoa,Kahanamoku,,,USA,,,Men
+2691,Sam,,Kahanamoku,,,USA,,,Men
+2692,L.,,Henyeri,,,HUN,,,Men
+2693,A.,,Turnovsky,,,HUN,,,Men
+2694,Ethel,,Lackie,,,USA,,,Women
+2695,Mariechen,,Wehselau,,,USA,,,Women
+2696,Gertrude,,Ederle,,,USA,,,Women
+2697,Constance,Mabel,Jeans,,,GBR,,,Women
+2698,Gilberte,,Mortier,,,FRA,,,Women
+2699,Alida,Cornelia,Bolten,,,NED,,,Women
+2700,Frank,De,Beaurepaire,,,AUS,,,Men
+2701,John,Gatenby,Hatfield,,,GBR,,,Men
+2702,Gustave,,Klein,,,FRA,,,Men
+2703,Kazuo,,Onoda,,,JPN,,,Men
+2704,Antun,,Roje,,,YUG,,,Men
+2705,Robert,,Skelton,,,USA,,,Men
+2706,Bill,,Kirschbaum,,,USA,,,Men
+2707,Bengt,,Linders,,,SWE,,,Men
+2708,Robert,,Wyss,,,SUI,,,Men
+2709,John,,Faricey,,,USA,,,Men
+2710,B.,,Deak,,,YUG,,,Men
+2711,Lucille,,Morton,,,GBR,,,Women
+2712,Agnes,,Geraghty,,,USA,,,Women
+2713,Gladys,,Carson,,,GBR,,,Women
+2714,Wivan,,Pettersson,,,SWE,,,Women
+2715,Irene,,Gilbert,,,GBR,,,Women
+2716,Laury,,Koster,,,LUX,,,Women
+2717,Hjördis,,Töpel,,,SWE,,,Women
+2718,Ake,,Borg,,,SWE,,,Men
+2719,Andreas,,Assimakopoulos,,,GRE,,,Men
+2720,B.,,Eperjessy,,,HUN,,,Men
+2721,Renato,,Bacigalupo,,,ITA,,,Men
+2722,Helen,,Wainwright,,,USA,,,Women
+2723,Doris,,Molesworth,,,GBR,,,Women
+2724,Gwitha,,Shand,,,NZL,,,Women
+2725,M.,,Hansen,,,DEN,,,Women
+2726,Mariechen,"Wehselau, Ethel Lackie, Gertrude",Ederle,,,USA,,,Women
+2727,Constance,"Mabel Jeans, Grace Mac Kenzie, Florence Barker, Vera",Tanner,,,GBR,,,Women
+2728,Aina,"Berg, Wivan Pettersson, Gurli Ewerlund, Hjördis",Töpel,,,SWE,,,Women
+2729,Vibeke,"Möller, Karen Maud Rasmussen, Hedevig Rasmussen, Agnete",Olsen,,,DEN,,,Women
+2730,Gilberte,"Mortier, Ernestine",Lebrun,,,FRA,,,Women
+2731,Alida,"Cornelia Bolten, Maria Vierdag, Mietje",Baron,,,NLD,,,Women
+2732,Andrew,"Murray Charlton, Ernest M. Henry, Maurice F. Christie, Frank De Beaurepaire, Ivan",Stedman,,,AUS,,,Men
+2733,Georg,"Werner, O. Gösta A. Persson, Arne Borg, Orvar Trolle, Tor Henning, Ake",Borg,,,SWE,,,Men
+2734,Torahiko,"Miyahata, Kazuo Noda, Katsuo Takaishi, Kazuo",Onoda,,,JPN,,,Men
+2735,Harold,"Edward Annison, Edward Percival Peter, Leslie Savage, Albert Edward Dickin, John",Thomson,,,GBR,,,Men
+2736,Raymond,,Kegeris,,,USA,,,Men
+2737,Perry,,Mcgillivray,,,USA,,,Men
+2738,Stubby,,Kruger,,,USA,,,Men
+2739,Pua,Kela,Kealoha,,,USA,,,Men
+2740,William,,Harris,,,USA,,,Men
+2741,Billy,,Herald,,,AUS,,,Men
+2742,Norman,,Ross,,,USA,,,Men
+2743,Ethelda,,Bleibtrey,,,USA,,,Women
+2744,Irene,,Guest,,,USA,,,Women
+2745,Frances,,Schroth,,,USA,,,Women
+2746,Violet,,Walrond,,,NZL,,,Women
+2747,Jane,,Gylling,,,SWE,,,Women
+2748,Charlotte,,Boyle,,,USA,,,Women
+2749,George,,Vernot,,,CAN,,,Men
+2750,Fred,,Kahele,,,USA,,,Men
+2751,Eugene,,Bolden,,,USA,,,Men
+2752,Henry,,Taylor,,,GBR,,,Men
+2753,René,,Ricolfi-Doria,,,SUI,,,Men
+2754,Masaren,,Uchida,,,JPN,,,Men
+2755,Hakan,,Malmrot,,,SWE,,,Men
+2756,Tor,,Henning,,,SWE,,,Men
+2757,Arvo,Ossian,Aaltonen,,,FIN,,,Men
+2758,Jack,Zophar,Howell,,,USA,,,Men
+2759,Ivan,,Stedman,,,AUS,,,Men
+2760,Per,,Cederblom,,,SWE,,,Men
+2761,Sydney,,Gooday,,,CAN,,,Men
+2762,Luis,,Balcells,,,ESP,,,Men
+2763,Ludy,,Langer,,,USA,,,Men
+2764,Kenkichi,,Saito,,,JPN,,,Men
+2765,Keith,,Kirkland,,,AUS,,,Men
+2766,Irene,"Guest, Ethelda Bleibtrey, Frances Schroth, Margaret",Woodbridge,,,USA,,,Women
+2767,Constance,"Mabel Jeans, Charlotte Radcliffe, Grace Mac Kenzie, Hilda",James,,,GBR,,,Women
+2768,Emy,"Machnow, Karin Nilsson, Aina Berg, Jane",Gylling,,,SWE,,,Women
+2769,Norman,"Ross, Duke Paoa Kahanamoku, Perry Mcgillivray, Pua Kela",Kealoha,,,USA,,,Men
+2770,Ivan,"Stedman, Keith Kirkland, Frank De",Beaurepaire,,,AUS,,,Men
+2771,Harold,"Edward Annison, Henry Taylor, Leslie Savage, Edward Percival",Peter,,,GBR,,,Men
+2772,Robert,"T. Andersson, Frans Möller, Arne Borg, Orvar",Trolle,,,SWE,,,Men
+2773,Gilio,"Bisagno, Antonio Quarantotto, Agostino Frassinetti, Mario",Massa,,,ITA,,,Men
+2774,Harry,J.,Hebner,,,USA,,,Men
+2775,Otto,,Fahr,,,GER,,,Men
+2776,Paul,,Kellner,,,GER,,,Men
+2777,András,,Baronyi,,,HUN,,,Men
+2778,Otto,,Gross,,,GER,,,Men
+2779,Oscar,,Schiele,,,GER,,,Men
+2780,János,,Wenk,,,HUN,,,Men
+2781,Oscar,,Gregoire,,,BEL,,,Men
+2782,Cecil,,Healy,,,ANZ,,,Men
+2783,Kenneth,,Huszagh,,,USA,,,Men
+2784,Kurt,,Bretting,,,GER,,,Men
+2785,Walther,,Ramme,,,GER,,,Men
+2786,Mario,,Massa,,,ITA,,,Men
+2787,Walther,,Binner,,,GER,,,Men
+2788,Alois,Ferenc,Kenyery,,,HUN,,,Men
+2789,Fanny,,Durack,,,ANZ,,,Women
+2790,Mina,,Wylie,,,ANZ,,,Women
+2791,Jennie,,Fletcher,,,GBR,,,Women
+2792,Grete,,Rosenberg,,,GER,,,Women
+2793,Annie,,Speirs,,,GBR,,,Women
+2794,Irene,,Steer,,,GBR,,,Women
+2795,Aagot,,Normann,,,NOR,,,Women
+2796,George,Ritchie,Hodgson,,,CAN,,,Men
+2797,Harold,H.,Hardwick,,,ANZ,,,Men
+2798,Malcolm,,Champion,,,ANZ,,,Men
+2799,Béla,Las,Torres,,,HUN,,,Men
+2800,Herbert,Mauritz,Wetter,,,NOR,,,Men
+2801,Auguste,,Caby,,,FRA,,,Men
+2802,Walter,,Bathe,,,GER,,,Men
+2803,Willy,,Lützow,,,GER,,,Men
+2804,Kurt,Paul,Malisch,,,GER,,,Men
+2805,Percy,,Courtman,,,GBR,,,Men
+2806,Pontus,,Hansson,,,SWE,,,Men
+2807,Mike,,Mcdermott,,,USA,,,Men
+2808,George,,Innocent,,,GBR,,,Men
+2809,Zeno,Von,Siengalewicz,,,AUT,,,Men
+2810,Josef,,Wastl,,,AUT,,,Men
+2811,Pavel,,Avksentyev,,,RUS,,,Men
+2812,Theo,,Tartakover,,,ANZ,,,Men
+2813,Irene,"Steer, Jennie Fletcher, Isabella Mary Moore, Annie",Speirs,,,GBR,,,Women
+2814,Wally,"Dressel, Louise Otto, Grete Rosenberg, Hermine",Stindt,,,GER,,,Women
+2815,Margarete,"Adler, Bertha Zahourek, Josephine Sticker, Klara",Milch,,,AUT,,,Women
+2816,Greta,"Carlsson, Vera Thulin, Sonja Johnsson, Greta",Johansson,,,SWE,,,Women
+2817,Malcolm,"Champion, Cecil Healy, Harold H. Hardwick, Leslie",Boardman,,,AUS,,,Men
+2818,Duke,"Paoa Kahanamoku, Harry J. Hebner, Perry Mcgillivray, Kenneth",Huszagh,,,USA,,,Men
+2819,Thomas,"Sidney Battersby, Henry Taylor, John Gatenby Hatfield, William",Foster,,,GBR,,,Men
+2820,Georg,"Kunisch, Kurt Bretting, Oscar Schiele, Max",Ritter,,,GER,,,Men
