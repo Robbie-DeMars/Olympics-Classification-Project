@@ -75,7 +75,7 @@ It requires Linux, Java 11, and Python 3.11.
 
 2. Create and activate virtual env
    ```bash
-   python3.11 -m venv venv
+   python -m venv venv
    source venv/bin/activate
    ```
 
@@ -91,5 +91,4 @@ It requires Linux, Java 11, and Python 3.11.
    ```bash
    ./clean_data
    ./canonical
-   ./readable_results.csv
    
