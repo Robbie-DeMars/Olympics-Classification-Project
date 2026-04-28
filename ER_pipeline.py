@@ -49,13 +49,13 @@ import unicodedata
 #    pip install pyspark==3.5.3 graphframes-latest
 #    pip install --upgrade pip
 #
-# 4. Place the dataset folders as follows:
+# 4.  Verify the dataset folders contain the following:
 #    ./datasets/Scraped Data/   (original CSVs)
 #    ./datasets/Smaller Tables with Dummy Ids/   (swim, track CSVs)
 #    ./datasets/   (weight_height CSVs)
 #
 # 5. Run the script
-#    python csv_string_join.py
+#    python ER_pipeline.py
 #
 # 6. Output will appear in:
 #    ./clean_datasets/   (schema‑aligned CSVs)
@@ -72,15 +72,15 @@ spark = SparkSession.builder \
     .appName("olympic_joins") \
     .config("spark.jars.packages", "graphframes:graphframes:0.8.3-spark3.5-s_2.12") \
     .config("spark.local.dir", "/home/logan/tmp") \
-    .config("spark.driver.memory", "10g") \
-    .config("spark.executor.memory", "10g") \
+    .config("spark.driver.memory", "6g") \
+    .config("spark.executor.memory", "6g") \
     .config("spark.sql.adaptive.enabled", "true") \
     .config("spark.sql.adaptive.coalescePartitions.enabled", "true") \
     .getOrCreate()
 spark.conf.set("spark.sql.shuffle.partitions", "400") # For OOM
+spark.sparkContext.setLogLevel("ERROR") # Getting rid of the partition warnings to debug
 
 spark.sparkContext.setCheckpointDir("file:///mnt/c/temp/spark-checkpoint")
-
 
 # =============================================================================
 # =============================================================================
@@ -150,13 +150,13 @@ track_events = track_events.withColumn("source", F.lit("track_events"))
 events = events.withColumn("source", F.lit("base_events"))
 wh_events = wh_events.withColumn("source", F.lit("wh_events"))
 
-# First filter for athletics and swimming
-wh_events = wh_events.filter(F.col("event_type").isin("Athletics", "Swimming"))
+# Filter for athletics and swimming
+wh_events = wh_events.filter(F.lower(F.col("event_type")).isin("athletics", "swimming"))
 
 # BIG UNIFIED TABLE
 events_all = events.unionByName(swim_events.unionByName(track_events))
 events_all = events_all.unionByName(wh_events, allowMissingColumns=True)
-events_all = events_all.filter(F.col("event_type").isin("Athletics", "Swimming")) # Second filter for athletics and swimming
+events_all = events_all.filter(F.lower(F.col("event_type")).isin("athletics", "swimming"))
 
 events_all = events_all.withColumn("row_id", F.monotonically_increasing_id())
 
@@ -176,7 +176,7 @@ events_all = events_all.withColumn(
 
 # ==================================================================
 # ==================================================================
-###### PARSE EVENT ATTRIBUTES (distance, gender, discipline, round)
+# PARSE EVENT ATTRIBUTES (distance, gender, discipline, round)
 # ==================================================================
 # ==================================================================
 
@@ -287,7 +287,6 @@ events_all = events_all.select(
     "parsed.round"
 ).drop("parsed")
 
-
 # -----------------------------------------------------------------------------
 # Tokenize event names for fuzzy matching
 # -----------------------------------------------------------------------------
@@ -319,7 +318,7 @@ def jaccard(colA, colB):
 
 event_pairs = events_all.alias("a").join(
     events_all.alias("b"),
-    on=["olympics_id", "event_type"]
+    on=["olympics_id", "event_type", "gender"]
 ).filter(F.col("a.row_id") < F.col("b.row_id")) \
  .filter(F.col("a.distance") == F.col("b.distance"))
 
@@ -415,10 +414,24 @@ olympics_clusters = olympics_all.join(
     how="left"
 )
 
-# Assign sequential canon olympic IDs
+# -----------------------------------------------------------------------
+# Olympics canonical ID: sequential / readable but memory heavy
+# Alternative raw 64-bit cluster to execute program faster is below.
+# -----------------------------------------------------------------------
 window_oly = Window.orderBy("olympics_cluster_id")
 olympics_clusters = olympics_clusters.withColumn("canonical_olympics_id", F.row_number().over(window_oly))
 olympics_lookup = olympics_clusters.select("olympics_id", "canonical_olympics_id").distinct()
+
+# ----------------------------------------------------------------
+# --- Alternative raw cluster ID (non-sequential 64-bit number)---
+# ----------------------------------------------------------------
+#
+# olympics_clusters = olympics_clusters.withColumn(
+#     "canonical_olympics_id", F.col("olympics_cluster_id")
+# )
+# olympics_lookup = olympics_clusters.select(
+#     "olympics_id", "canonical_olympics_id"
+# ).distinct()
 
 # Give canon olympic ID to events
 events_all = events_all.join(olympics_lookup, on="olympics_id", how="left")
@@ -616,7 +629,7 @@ non_relay_df = non_relay_df.drop("relay_list")
 candidates_all = non_relay_df.unionByName(relay_exploded)
 
 # -----------------------------------------------------------------------------
-# Normalise names, handle suffixes, and create blocking keys
+# Normalize names, handle suffixes, and create blocking keys
 # -----------------------------------------------------------------------------
 # Get rid of any commas or whitespace
 candidates_all = candidates_all.withColumn("middle_name", F.regexp_replace(F.col("middle_name"), r",\s*$", ""))
@@ -659,6 +672,7 @@ candidates_all = candidates_all.withColumn(
      .otherwise(F.lit(0))
 )
 
+# Clean up garbage candidates
 candidates_all = candidates_all.filter(
     ~((F.col("first_name").rlike(r"^[a-z]\.$")) &
       (F.col("year_of_birth").isNull()) &
@@ -707,6 +721,103 @@ candidates_all = candidates_all.withColumn(
      .when(F.lower(F.col("gender")).startswith("f"), "F")
      .otherwise(F.col("gender"))
 )
+
+# ------------------------------------------------------------------
+# Global correction of short first names using similar longer ones
+# ------------------------------------------------------------------
+# Get frequency of each first_name
+# Using a window for specific global comparisons on frequency of small names
+name_freq_all = candidates_all.groupBy("first_name").agg(F.count("*").alias("freq"))
+
+# Self‑join to find the best correction for short first names that are
+# likely corrupted source truncations / data, but only if the short name appears
+# often enough to be suspicious (freq > 30).  Extremely rare short names
+# are left untouched because they're probably real.
+#
+# We compare short names (length ≤ 4) with longer names (length ≥ 5),
+# compute Levenshtein distance, and target names where:
+#   - distance ≤ 2, &&
+#   - distance equals the absolute length difference, (only targets
+#     missing letters, not substitutions).
+
+correct_pairs = name_freq_all.alias("a").join(
+    name_freq_all.alias("b"),
+    (F.length("a.first_name") <= 4) & (F.length("b.first_name") >= 5) &
+    (F.col("a.freq") > 30)  # Protects very low frequency names
+).withColumn("lev", levenshtein("a.first_name", "b.first_name")) \
+ .filter(F.col("lev") <= 2) \
+ .filter(F.col("lev") == F.abs(F.length("a.first_name") - F.length("b.first_name"))) \
+ .withColumn("row_number", F.row_number().over(
+     Window.partitionBy("a.first_name").orderBy(F.desc("b.freq"))
+ )) \
+ .filter(F.col("row_number") == 1) \
+ .select(
+     F.col("a.first_name").alias("old_name"),
+     F.col("b.first_name").alias("new_name")
+ )
+
+# Apply the correction
+candidates_all = candidates_all.join(correct_pairs,
+    candidates_all["first_name"] == correct_pairs["old_name"], "left") \
+ .withColumn("first_name", F.coalesce(F.col("new_name"), F.col("first_name"))) \
+ .drop("old_name", "new_name")
+
+# ------------------------------------------------------------------
+# Ultra‑strict last‑name correction with block of same nation
+# ------------------------------------------------------------------
+
+last_freq_nation = candidates_all.groupBy("country_code", "last_name") \
+    .agg(F.count("*").alias("freq"))
+
+# Group by country. This way we can compare last name
+# frequency compared to other countries to see if it
+# is likely to be a legitimate name.
+countries_per_name = candidates_all.groupBy("last_name") \
+    .agg(F.countDistinct("country_code").alias("num_countries"))
+
+# Only allow correction if the short surname has length ≤ 3, 
+# rare within its country (freq < 30), and
+# appears in exactly ONE country .
+# This ensures cross‑cultural short names are safe.
+safe_short = last_freq_nation.alias("s") \
+    .join(countries_per_name, on="last_name") \
+    .filter(F.col("num_countries") == 1) \
+    .filter(F.length("last_name") <= 3) \
+    .filter(F.col("freq") < 30) \
+    .select("country_code", "last_name", "freq")
+
+# Self‑join to find the best longer candidate:
+#    - same country
+#    - longer name (≥ 4)
+#    - frequent enough to be a plausible correction (≥ 100)
+#    - same first two letters
+correct_last = safe_short.alias("a").join(
+    last_freq_nation.alias("b"),
+    (F.col("a.country_code") == F.col("b.country_code")) &
+    (F.length("b.last_name") >= 4) &
+    (F.col("b.freq") >= 100) &
+    (F.substring("a.last_name", 1, 2) == F.substring("b.last_name", 1, 2))
+).withColumn("lev", levenshtein("a.last_name", "b.last_name")) \
+ .filter(F.col("lev") <= 2) \
+ .filter(F.col("lev") == F.abs(F.length("a.last_name") - F.length("b.last_name"))) \
+ .withColumn("row_number", F.row_number().over(
+     Window.partitionBy("a.country_code", "a.last_name").orderBy(F.desc("b.freq"))
+ )) \
+ .filter(F.col("row_number") == 1) \
+ .select(
+     F.col("a.country_code").alias("country"),
+     F.col("a.last_name").alias("old_last"),
+     F.col("b.last_name").alias("new_last")
+ )
+
+
+# Apply the correction
+candidates_all = candidates_all.join(correct_last,
+    (candidates_all["country_code"] == correct_last["country"]) &
+    (candidates_all["last_name"] == correct_last["old_last"]),
+    "left") \
+ .withColumn("last_name", F.coalesce(F.col("new_last"), F.col("last_name"))) \
+ .drop("country", "old_last", "new_last")
 
 # Create blocking keys
 candidates_all = candidates_all.withColumn(
@@ -782,7 +893,6 @@ athlete_pairs_strict = candidates_all.alias("a").join(candidates_all.alias("b"),
             F.col("a.name_tokens").alias("tokens_a"), F.col("b.name_tokens").alias("tokens_b"))
 athlete_pairs_strict = add_similarity_features(athlete_pairs_strict)
 
-
 # Relaxed block key (no birth decade) for athletes missing year_of_birth (Michael Phelps somehow)
 athlete_pairs_relaxed = candidates_all.alias("a").join(candidates_all.alias("b"), on="block_key_no_decade") \
     .filter(F.col("a.row_id") < F.col("b.row_id")) \
@@ -793,12 +903,42 @@ athlete_pairs_relaxed = candidates_all.alias("a").join(candidates_all.alias("b")
             F.col("a.name_tokens").alias("tokens_a"), F.col("b.name_tokens").alias("tokens_b"))
 athlete_pairs_relaxed = add_similarity_features(athlete_pairs_relaxed)
 
-# Union the two pairs
-athlete_pairs_all = athlete_pairs_strict.unionByName(athlete_pairs_relaxed)
+# --- Direct Levenshtein block for first‑name corruptions, lev_distance ≤ 2 ---
+athlete_pairs_lev = candidates_all.alias("a").join(
+    candidates_all.alias("b"),
+    on=["last_name", "gender", "country_code"]
+).filter(F.col("a.row_id") < F.col("b.row_id")) \
+ .filter(
+    levenshtein(F.col("a.first_name"), F.col("b.first_name")) <= 2
+ ) \
+ .select(
+    F.col("a.row_id").alias("row_id_a"),
+    F.col("b.row_id").alias("row_id_b"),
+    F.col("a.first_name").alias("first_a"),
+    F.col("b.first_name").alias("first_b"),
+    F.col("a.last_name").alias("last_a"),
+    F.col("b.last_name").alias("last_b"),
+    F.col("a.year_of_birth").alias("yob_a"),
+    F.col("b.year_of_birth").alias("yob_b"),
+    F.col("a.name_tokens").alias("tokens_a"),
+    F.col("b.name_tokens").alias("tokens_b")
+)
+athlete_pairs_lev = add_similarity_features(athlete_pairs_lev)
 
 
-# Cluster matches again
-athlete_matches = athlete_pairs_all.filter(F.col("score") >= 0.825)
+# We filter all blocks individually specifically for 
+# athlete_pairs_lev different threshold score
+athlete_pairs_strict = athlete_pairs_strict.filter(F.col("score") >= 0.825)
+athlete_pairs_relaxed = athlete_pairs_relaxed.filter(F.col("score") >= 0.825)
+athlete_pairs_lev = athlete_pairs_lev.filter(F.col("score") >= 0.55)   
+
+# Union the filtered pairs
+athlete_pairs_all = athlete_pairs_strict \
+    .unionByName(athlete_pairs_relaxed) \
+    .unionByName(athlete_pairs_lev)
+
+athlete_matches = athlete_pairs_all
+
 athlete_edges = athlete_matches.select(F.col("row_id_a").alias("src"), F.col("row_id_b").alias("dst"))
 
 g_athletes = GraphFrame(candidates_all.select(F.col("row_id").alias("id")), athlete_edges)
@@ -819,17 +959,23 @@ candidates_canon = candidates_canon.filter(
     (F.col("first_name") != "") | (F.col("last_name") != "")
 )
 
-# Help normalize athlete ID's to keep them at readable numbers. This is mem heavy right now.
+# -----------------------------------------------------------------------
+# Athlete canonical ID: sequential / readable but memory heavy
+# Alternative raw 64-bit cluster to execute program faster is below.
+# -----------------------------------------------------------------------
 window_spec = Window.orderBy("cluster_id")
 candidates_canon = candidates_canon.withColumn(
     "canonical_athlete_id",
     F.row_number().over(window_spec)
 )
+# Faster non‑sequential alternative:
+# candidates_canon = candidates_canon.withColumn(
+#     "canonical_athlete_id", F.col("cluster_id")
+# )
 
 # Create medal map for candidates
 # Maps raw athlete_id -> canonical_athlete_id
 medal_map = candidates_canon.select("athlete_id", F.col("canonical_athlete_id").alias("athlete_cluster_id")).distinct()
-
 
 # =============================================================================
 # ATTACH CANONICAL MEDAL WINNERS TO EVENTS
@@ -890,24 +1036,6 @@ athlete_id_map = candidates_canon.select(
 athlete_events_all = athlete_events_all.join(athlete_id_map, on="athlete_id", how="left")
 
 # =============================================================================
-# CANONICAL ATHLETE TABLE (FINAL DEDUP)
-# =============================================================================
-
-athletes_final = candidates_canon.groupBy("canonical_athlete_id").agg(
-    F.first("first_name").alias("first_name"),
-    F.first("last_name").alias("last_name"),
-    F.first("country_code").alias("country_code"),
-    F.first("year_of_birth", ignorenulls=True).alias("year_of_birth"),
-    F.first("gender", ignorenulls=True).alias("gender")
-)
-
-# One more dedup by (first, last, country, gender): The Michael Phelps safety
-athletes_final = athletes_final.groupBy("first_name", "last_name", "country_code", "gender").agg(
-    F.min("canonical_athlete_id").alias("athlete_id"),
-    F.first("year_of_birth", ignorenulls=True).alias("year_of_birth")
-)
-
-# =============================================================================
 # CANONICAL EVENT TABLE
 # =============================================================================
 events_clean_raw = events_canon.join(event_id_mapping, "cluster_id") \
@@ -926,7 +1054,6 @@ events_clean_raw = events_canon.join(event_id_mapping, "cluster_id") \
 
 events_final = events_clean_raw   # already one-per-event
 
-
 # =============================================================================
 # RESULTS TABLE
 # =============================================================================
@@ -936,7 +1063,6 @@ results_final = athlete_events_all.select("athlete_cluster_id", "event_cluster_i
 # =============================================================================
 # BUILD FINAL SCHEMA-ALIGNED CLEAN DATASETS
 # =============================================================================
-
 
 # --- Olympics Clean. Dedup by year+season then keep longest city name ---
 # Select year + sunmmer + olympic_id, get host_city_name, the aggregate on canon olympics.
@@ -977,11 +1103,11 @@ olympics_clean = olympics_clean.join(
 ).drop(countries["year"]) \
 .drop("country_id")
 
-
+olympics_clean = olympics_clean.withColumn("year", F.col("year").cast("int"))
 # --- Events Clean ---
 events_clean = events_clean_raw.select(
     "event_id", "gold_id", "silver_id", "bronze_id",
-    "olympics_id", "event_name", "event_type"
+    "olympics_id", "event_name", "event_type", "gender"
 ).distinct()
 
 # --- Olympics Remap. Maps old canon olympic ids to new olympic ids ---
@@ -992,7 +1118,7 @@ olympics_remap = olympics_clusters.select(
     olympics_clean, on=["year", "summer"]
 ).select("canonical_olympics_id", "olympics_id")
 
-olympics_clean = olympics_clean.select("year", "summer", "host_city_name", "olympics_id")
+olympics_clean = olympics_clean.select("olympics_id", "year", "summer", "host_city_name")
 
 events_clean = events_clean.join(
     olympics_remap,
@@ -1002,38 +1128,77 @@ events_clean = events_clean.join(
 ).drop(events_clean["olympics_id"]) \
  .drop("canonical_olympics_id") 
 
-# --- Athletes Clean (from candidates_canon. one row per cluster) ---
-# Canonical athletes – pick best values per cluster
-athletes_clean = candidates_canon.groupBy("canonical_athlete_id").agg(
-    # For names: use the longest available variant (drops short corruptions)
-    F.max(F.struct(F.length("first_name"), "first_name")).alias("first_name_struct"),
-    F.max(F.struct(F.length("last_name"), "last_name")).alias("last_name_struct"),
-    F.max(F.struct(F.length("middle_name"), "middle_name")).alias("middle_name_struct"),
-    F.max("year_of_birth").alias("year_of_birth"),
-    F.max("height(cm)").alias("height(cm)"),
-    F.max("weight(kg)").alias("weight(kg)"),
-    F.first("country_code", ignorenulls=True).alias("nationality_id"),
-    F.first("nationality_id_at_birth", ignorenulls=True).alias("nationality_id_at_birth"),
-    F.first("gender", ignorenulls=True).alias("gender")
-).select(
-    "canonical_athlete_id",
-    F.col("first_name_struct.first_name").alias("first_name"),
-    F.col("middle_name_struct.middle_name").alias("middle_name"),
-    F.col("last_name_struct.last_name").alias("last_name"),
-    "height(cm)", "weight(kg)", "nationality_id", "year_of_birth",
-    "nationality_id_at_birth", "gender"
+# Reformat to custom schema
+events_clean = events_clean.select(
+    "event_id", "gold_id", "silver_id",
+    "bronze_id", "olympics_id", "event_name",
+    "event_type", "gender"
 )
 
+# Normalise event gender to M / F
+events_clean = events_clean.withColumn(
+    "gender",
+    F.when(F.col("gender") == "men", "M")
+     .when(F.col("gender") == "women", "F")
+     .otherwise(None)
+)
+
+# --- Athletes Clean (from candidates_canon. one row per cluster) ---
+# Canonical athletes – pick best values per cluster, frequency based.
+
+name_freq = candidates_canon.groupBy("canonical_athlete_id", "first_name", "last_name") \
+    .agg(F.count("*").alias("name_count"))
+
+# Keep the cluster (first_name, last_name) combination that appears most often
+win_first = Window.partitionBy("canonical_athlete_id").orderBy(F.desc("name_count"), F.desc(F.length("last_name")))
+best_names = name_freq.withColumn("row_number", F.row_number().over(win_first)) \
+    .filter(F.col("row_number") == 1) \
+    .select("canonical_athlete_id", "first_name", "last_name")
+
+# Use best names and aggregate everything else
+athletes_clean = candidates_canon.join(best_names, on=["canonical_athlete_id", "first_name", "last_name"], how="inner") \
+    .groupBy("canonical_athlete_id", "first_name", "last_name") \
+    .agg(
+        F.max("height(cm)").alias("height(cm)"),
+        F.max("weight(kg)").alias("weight(kg)"),
+        F.first("country_code", ignorenulls=True).alias("nationality_id"),
+        F.first("year_of_birth", ignorenulls=True).alias("year_of_birth"),
+        F.first("nationality_id_at_birth", ignorenulls=True).alias("nationality_id_at_birth"),
+        F.first("gender", ignorenulls=True).alias("gender")
+    )
+
+
+# Pick the longest middle_name from the winning rows
+best_middle = candidates_canon.join(best_names, on=["canonical_athlete_id", "first_name", "last_name"], how="inner") \
+    .groupBy("canonical_athlete_id") \
+    .agg(F.max(F.struct(F.length("middle_name"), "middle_name")).alias("mid_struct")) \
+    .select("canonical_athlete_id", F.col("mid_struct.middle_name").alias("middle_name"))
+
+athletes_clean = athletes_clean.join(best_middle, on="canonical_athlete_id", how="left")
+
 # Dedup by identity features
-athletes_clean = athletes_clean.groupBy(
-    "first_name", "last_name", "nationality_id", "gender"
-).agg(
-    F.min("canonical_athlete_id").alias("athlete_id"),
-    F.first("middle_name", ignorenulls=True).alias("middle_name"),
-    F.first("height(cm)", ignorenulls=True).alias("height(cm)"),
-    F.first("weight(kg)", ignorenulls=True).alias("weight(kg)"),
-    F.first("year_of_birth", ignorenulls=True).alias("year_of_birth"),
-    F.first("nationality_id_at_birth", ignorenulls=True).alias("nationality_id_at_birth")
+athletes_clean = athletes_clean.groupBy("first_name", "last_name", "nationality_id", "gender") \
+    .agg(
+        F.min("canonical_athlete_id").alias("athlete_id"),
+        F.first("middle_name", ignorenulls=True).alias("middle_name"),
+        F.first("height(cm)", ignorenulls=True).alias("height(cm)"),
+        F.first("weight(kg)", ignorenulls=True).alias("weight(kg)"),
+        F.first("year_of_birth", ignorenulls=True).alias("year_of_birth"),
+        F.first("nationality_id_at_birth", ignorenulls=True).alias("nationality_id_at_birth")
+    )
+
+
+# Reformat to custom schema
+athletes_clean = athletes_clean.select(
+    "athlete_id", "first_name", "last_name", "middle_name",
+    "height(cm)", "weight(kg)", "nationality_id",
+    "year_of_birth", "nationality_id_at_birth", "gender"
+)
+
+athletes_clean = athletes_clean.withColumn("year_of_birth", F.col("year_of_birth").cast("int"))
+
+athletes_final = athletes_clean.select(
+    "athlete_id", "first_name", "last_name", "nationality_id", "gender", "year_of_birth"
 )
 
 # --- Athlete-Event Clean ---
@@ -1058,18 +1223,129 @@ athlete_event_clean_full = athlete_event_clean.join(
      .otherwise(None)
 ).drop("gold_id", "silver_id", "bronze_id")
 
-athlete_event_clean_full = athlete_event_clean_full.drop("medal")
+# ------------------------------------------------------------------
+# Filter athlete-event rows. Only keep Athletics/Swimming events and
+# only rows where the athlete gender matches the event gender.
+# ------------------------------------------------------------------
+
+# Attach event gender and event type from events_clean
+athlete_event_clean_full = (
+    athlete_event_clean_full.join(
+        events_clean.select("event_id", "event_type", F.col("gender").alias("evt_gender")),
+        on="event_id",
+        how="inner"
+    )
+)
+# Merges the IDs automatically
+athlete_event_clean_full = (
+    athlete_event_clean_full.join(
+        athletes_clean.select("athlete_id", F.col("gender").alias("ath_gender")),
+        on="athlete_id", 
+        how="inner"
+    )
+)
+# Keep only rows where athlete gender matches event gender
+athlete_event_clean_full = athlete_event_clean_full.filter(
+    F.col("ath_gender") == F.col("evt_gender")
+)
+
+# Drop the temporary columns
+athlete_event_clean_full = athlete_event_clean_full.drop("ath_gender", "evt_gender")
+
+# Drop duplicate athlete‑event pairs (keep first row)
+athlete_event_clean_full = athlete_event_clean_full.dropDuplicates(["athlete_id", "event_id"])
+
+# Filter athletes_clean and athletes_final to only athletes that appear in the filtered results
+athletes_with_results = athlete_event_clean_full.select("athlete_id").distinct()
+athletes_clean = athletes_clean.join(athletes_with_results, on="athlete_id")
+athletes_final = athletes_final.join(athletes_with_results, on="athlete_id")
 
 # --- Country and City cleanup ---
 city_country_code = (
     city_country
     .join(full_to_code, city_country["country_id"] == full_to_code["full_name"], "left")
-    .drop("full_name")
-    .withColumnRenamed("code", "country_code")
+    .drop("full_name", "country_id")
+    .withColumnRenamed("code", "country_id")
 )
 
-# Match schema
-city_country_code = city_country_code.drop("country_code")
+# =============================================================================
+# READABLE JOINED TABLE FOR FUN
+# =============================================================================
+
+readable_results = (
+    athlete_event_clean_full.alias("aec")
+    .join(
+        athletes_clean.select("athlete_id", "first_name", "last_name", "nationality_id", "gender"),
+        on="athlete_id", 
+        how="inner"
+    )
+    .join(
+        events_clean.select("event_id", "event_name", "olympics_id"),
+        on="event_id", 
+        how="inner"
+    )
+    .join(
+        olympics_clean.select("olympics_id", "year", "host_city_name"),
+        on="olympics_id", 
+        how="inner"
+    )
+    .select(
+        "athlete_id",
+        "first_name",
+        "last_name",
+        "nationality_id",
+        "gender",
+        "event_name",
+        "event_type",
+        "time",
+        "result",
+        "year",
+        "host_city_name"
+    )
+)
+
+# Remove impossible participations where athlete is born after
+# olympic year
+readable_results = readable_results.join(
+    athletes_clean.select("athlete_id", "year_of_birth"), on="athlete_id", how="left"
+).filter(
+    (F.col("year_of_birth") <= F.col("year")) | F.col("year_of_birth").isNull()
+).drop("year_of_birth")
+
+# Remove any person whose age at time of competition is greater than 70
+readable_results = readable_results.filter(
+    (F.col("year_of_birth").isNull()) |
+    ((F.col("year") - F.col("year_of_birth") >= 10) &
+     (F.col("year") - F.col("year_of_birth") < 80))
+)
+
+# Last-resort safety net remove any rows where the event name contradicts the athlete's gender
+readable_results = readable_results.filter(
+    ~(
+        (F.lower(F.col("event_name")).rlike("\\bwomen\\b") & (F.col("gender") != "F")) |
+        (F.lower(F.col("event_name")).rlike("\\bmen\\b")   & (F.col("gender") != "M"))
+    )
+)
+
+# Align to original schemas right before writing
+athlete_event_clean_full = athlete_event_clean_full.select(
+    "athlete_id", "event_id", "time", "result"
+)
+
+athletes_clean = athletes_clean.select(
+    "athlete_id", "first_name", "last_name", "middle_name", 
+    "height(cm)", "weight(kg)", "nationality_id", "year_of_birth",
+    "nationality_id_at_birth", "gender"
+)
+
+events_clean = events_clean.select(
+    "event_id", "gold_id", "silver_id", "bronze_id",
+    "olympics_id", "event_name", "event_type"
+)
+
+olympics_clean = olympics_clean.select(
+    "olympics_id", "year", "summer", "host_city_name"
+)
 
 # =============================================================================
 # WRITE CLEAN & CANONICAL CSVs
@@ -1092,15 +1368,13 @@ write_single_csv(events_clean, "./clean_datasets/events_clean.csv")
 write_single_csv(athlete_event_clean_full, "./clean_datasets/athlete_event_clean.csv")
 write_single_csv(athletes_clean, "./clean_datasets/athletes_clean.csv")
 write_single_csv(olympics_clean, "./clean_datasets/olympics_clean.csv")
-write_single_csv(athletes_final, "./canonical/athletes.csv")
-write_single_csv(events_final, "./canonical/events.csv")
-write_single_csv(results_final, "./canonical/results.csv")
 write_single_csv(city_country_code, "./clean_datasets/city_country_clean.csv")
 write_single_csv(countries, "./clean_datasets/countries_clean.csv")
 
+write_single_csv(athletes_final, "./canonical/athletes.csv")
+write_single_csv(events_final, "./canonical/events.csv")
+write_single_csv(results_final, "./canonical/results.csv")
+write_single_csv(readable_results, "./readable_results.csv")
+
 print("All done!")
 exit(0)
-
-# drop medals in athlete events,
-# 
-# host_country_full,host_country_code,gdp_per_capita
