@@ -47,22 +47,26 @@ The ER pipeline merges and cleans the scraped Olympic CSVs.
 It requires Linux, Java 11, and Python 3.11.
 
 1. Install packages (Java11, Python 3.11, venv)
-   \\\bash
+   ```bash
    sudo add-apt-repository ppa:deadsnakes/ppa -y
    sudo apt update
    sudo apt install python3.11 python3.11-venv python3.11-dev openjdk-11-jdk -y
 
 2. Create and activate virtual env
+   ```
    python3.11 -m venv venv
    source venv/bin/activate
 
 3. Install dependencies
+   ```
    pip install -r requirements.txt
 
 4. Run the ER pipeline
+   ```
    python ER_pipeline.py
    
-6. Outputs will appear in following folders:
+5. Outputs will appear in following folders:
+   ```
    ./clean_data
    ./canonical
    ./readable_results.csv
