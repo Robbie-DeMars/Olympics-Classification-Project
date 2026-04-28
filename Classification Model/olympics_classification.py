@@ -262,7 +262,6 @@ else:
     target_names = ["No Medal", "Gold", "Silver", "Bronze"]
 
 print(classification_report(y_test, y_pred, target_names = target_names))
-print(confusion_matrix(y_test, y_pred))
 
 #Evaluate mode
 
