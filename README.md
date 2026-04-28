@@ -41,7 +41,7 @@ or
 python olympics_classification.py small_weight_height
 
 
-### Entity Resolution Pipeline (Linux only)
+# Entity Resolution Pipeline (Linux only)
 
 The ER pipeline merges and cleans the scraped Olympic CSVs.
 It requires Linux, Java 11, and Python 3.11.
