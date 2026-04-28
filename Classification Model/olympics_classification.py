@@ -187,8 +187,6 @@ else:
 #Merge to host city
 df_tables_merged = pd.merge(df_tables_merged, df_host_countries, on = "olympics_id")
 
-df_tables_merged.to_csv("test.csv", index = False)
-
 #Preprocessing
 
 #Remove answers
