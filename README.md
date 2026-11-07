@@ -1,25 +1,30 @@
 # Olympics Classification Project
+
+Predicts Olympic medal outcomes (gold / silver / bronze / no medal) from athlete
+features. Final project for Managing Data for and with ML, University of Utah.
+
+- **Data:** merged Kaggle swim, track, and height/weight datasets, Maddison Project GDP data,
+  and scraped Wikipedia data, unified by an entity-resolution pipeline (PySpark, GraphFrames).
+- **Model:** XGBoost with class weighting; median imputation outperformed KNN.
+- **Robbie's contribution:** classification model and dataset-completeness evaluation.
+
 **Group:**
 
-Logan Hunter, u1342460
+Logan Hunter
 
-Quang Nguyen, u1470229
+Quang Nguyen
 
-Robbie DeMars, u1411323
+Robbie DeMars
 
 ---
 
 ### Setup
-1. **Clone Repository From:**
-   
-   (https version of clone):
+1. **Clone the repository and enter the project folder:**
    ```bash
-   git clone https://github.com/u1411323/olympics-classification-project
+   git clone https://github.com/Robbie-DeMars/Olympics-Classification-Project.git
+   cd Olympics-Classification-Project/olympics-classification-project
    ```
-   (ssh version of clone):
-   ```bash
-   git@github.com:u1411323/olympics-classification-project.git
-   ```
+   The `clean_data` CSVs are stored with Git LFS, so install Git LFS before cloning.
 
 2. **Create and activate virtual environment**
 
