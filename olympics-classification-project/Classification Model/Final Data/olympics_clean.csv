@@ -1,0 +1,68 @@
+olympics_id,year,summer,city_id
+1,1896,1,Athina
+3,1900,1,Paris
+6,1904,1,St. Louis
+167,1906,1,Athina
+8,1908,1,London
+11,1912,1,Stockholm
+15,1916,1,Berlin
+16,1920,1,Antwerpen
+24,1924,0,Chamonix
+20,1924,1,Paris
+30,1928,0,Sankt Moritz
+26,1928,1,Amsterdam
+34,1932,0,Lake Placid
+31,1932,1,Los Angeles
+40,1936,0,Garmisch-Partenkirchen
+36,1936,1,Berlin
+43,1940,0,Sapporo
+42,1940,1,Tokyo City
+45,1944,0,Cortina d'Ampezzo
+44,1944,1,London
+50,1948,0,Sankt Moritz
+46,1948,1,London
+55,1952,0,Oslo
+51,1952,1,Helsinki
+60,1956,0,Cortina d'Ampezzo
+57,1956,1,Melbourne / Stockholm
+65,1960,0,Olympic Valley
+62,1960,1,Rome
+70,1964,0,Innsbruck
+66,1964,1,Tokyo
+74,1968,0,Grenoble
+72,1968,1,Mexico City
+80,1972,0,Sapporo
+76,1972,1,Munich
+86,1976,0,Innsbruck
+82,1976,1,Montreal
+91,1980,0,Lake Placid
+88,1980,1,Moskva
+96,1984,0,Sarajevo
+93,1984,1,Los Angeles
+102,1988,0,Calgary
+98,1988,1,Seoul
+108,1992,0,Albertville
+104,1992,1,Barcelona
+110,1994,0,Lillehammer
+112,1996,1,Atlanta
+116,1998,0,Nagano
+118,2000,1,Sydney
+122,2002,0,Salt Lake City
+124,2004,1,Athina
+127,2006,0,Torino
+128,2008,1,Beijing
+132,2010,0,Vancouver
+134,2012,1,London
+138,2014,0,Sochi
+140,2016,1,Rio de Janeiro
+142,2018,0,Pyeongchang
+143,2020,1,Tokyo
+145,2022,0,Beijing
+146,2024,1,Paris
+147,2026,0,Milan
+148,2028,1,Los Angeles
+149,2030,0,
+150,2032,1,Brisbane
+151,2034,0,
+152,2036,1,
+153,2038,0,

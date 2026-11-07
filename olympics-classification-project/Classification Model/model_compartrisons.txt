@@ -1,0 +1,46 @@
+Accuracy:  0.7145071982281285
+              precision    recall  f1-score   support
+
+    No Medal       0.74      0.99      0.84      6281
+        Gold       0.48      0.18      0.26       967
+      Silver       0.27      0.03      0.06       900
+      Bronze       0.32      0.06      0.09       882
+
+    accuracy                           0.71      9030
+   macro avg       0.45      0.31      0.32      9030
+weighted avg       0.62      0.71      0.63      9030
+KNN + XGB
+Accuracy:  0.7223698781838317
+              precision    recall  f1-score   support
+
+    No Medal       0.76      0.98      0.86      6281
+        Gold       0.44      0.22      0.29       967
+      Silver       0.30      0.09      0.13       900
+      Bronze       0.30      0.08      0.12       882
+
+    accuracy                           0.72      9030
+   macro avg       0.45      0.34      0.35      9030
+weighted avg       0.64      0.72      0.65      9030
+
+[[6169   86   17    9]
+ [ 600  208   82   77]
+ [ 631  120   77   72]
+ [ 673   63   77   69]]
+Simple + XGB
+Accuracy:  0.6891472868217055
+              precision    recall  f1-score   support
+
+    No Medal       0.79      0.88      0.83      6281
+        Gold       0.41      0.35      0.38       967
+      Silver       0.29      0.21      0.24       900
+      Bronze       0.33      0.23      0.27       882
+
+    accuracy                           0.69      9030
+   macro avg       0.46      0.41      0.43      9030
+weighted avg       0.65      0.69      0.67      9030
+
+[[5500  263  271  247]
+ [ 438  334  116   79]
+ [ 505  124  188   83]
+ [ 519   88   74  201]]
+Simple + RF

@@ -1,0 +1,12 @@
+scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nationality_id,year_of_birth,nationality_at_birth,gender,match_notes
+,,,,,,,CHN,,,Women,no_name
+,,,,,,,CAN,,,Women,no_name
+,,,,,,,RUS,,,Women,no_name
+,,,,,,,GBR,,,Women,no_name
+,,,,,,,GER,,,Men,no_name
+,,,,,,,USA,,,Men,no_name
+,,,,,,,AUS,,,Men,no_name
+,,,,,,,ITA,,,Men,no_name
+,,,,,,,FRA,,,Men,no_name
+,,,,,,,JPN,,,Men,no_name
+,,,,,,,ESP,,,Men,no_name

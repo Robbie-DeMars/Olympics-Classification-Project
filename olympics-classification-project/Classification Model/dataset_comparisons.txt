@@ -1,0 +1,67 @@
+Final:
+
+Accuracy:  0.64136682989142
+              precision    recall  f1-score   support
+
+    No Medal       0.85      0.84      0.84      9790
+        Gold       0.45      0.51      0.48      3029
+      Silver       0.39      0.36      0.38      2965
+      Bronze       0.41      0.40      0.41      3004
+
+    accuracy                           0.64     18788
+   macro avg       0.53      0.53      0.53     18788
+weighted avg       0.64      0.64      0.64     18788
+
+Small Swim
+
+Accuracy:  0.5175202156334232
+              precision    recall  f1-score   support
+
+    No Medal       0.73      0.75      0.74       457
+        Gold       0.22      0.22      0.22        95
+      Silver       0.14      0.12      0.13        98
+      Bronze       0.08      0.09      0.09        92
+
+    accuracy                           0.52       742
+   macro avg       0.30      0.30      0.30       742
+weighted avg       0.51      0.52      0.51       742
+
+Small Track
+
+Accuracy:  0.26651480637813213
+              precision    recall  f1-score   support
+
+        Gold       0.26      0.24      0.25       152
+      Silver       0.28      0.29      0.28       148
+      Bronze       0.27      0.27      0.27       139
+
+    accuracy                           0.27       439
+   macro avg       0.27      0.27      0.27       439
+weighted avg       0.27      0.27      0.27       439
+
+Small Weight Height
+
+Accuracy:  0.630394857667585
+              precision    recall  f1-score   support
+
+        Gold       0.65      0.64      0.64      2190
+      Silver       0.61      0.61      0.61      2147
+      Bronze       0.63      0.65      0.64      2197
+
+    accuracy                           0.63      6534
+   macro avg       0.63      0.63      0.63      6534
+weighted avg       0.63      0.63      0.63      6534
+
+Scraped
+
+Accuracy:  0.6427785251314663
+              precision    recall  f1-score   support
+
+    No Medal       0.93      0.73      0.82     12332
+        Gold       0.34      0.44      0.39      1362
+      Silver       0.19      0.30      0.23      1395
+      Bronze       0.17      0.37      0.23      1265
+
+    accuracy                           0.64     16354
+   macro avg       0.41      0.46      0.42     16354
+weighted avg       0.76      0.64      0.69     16354

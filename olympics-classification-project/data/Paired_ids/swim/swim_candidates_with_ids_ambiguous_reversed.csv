@@ -1,0 +1,5 @@
+scraped_id,athlete_id,first_name,middle_name,last_name,height(cm),weight(kg),nationality_id,year_of_birth,nationality_at_birth,gender,match_notes
+20339|21732,TAE-HWAN_PARK,Tae-Hwan,,Park,,,KOR,,,Men,ambiguous_reversed
+17232|17369,YAN_CHEN,Yan,,Chen,,,CHN,,,Women,ambiguous_reversed
+17232|17369,YAN_CHEN,Yan,,Chen,,,CHN,,,Women,ambiguous_reversed
+17232|17369,YAN_CHEN,Yan,,Chen,,,CHN,,,Women,ambiguous_reversed
